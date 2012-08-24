@@ -6,7 +6,7 @@ task('permissions', function () {
 		complete();
 	};
 	var cmds = [
-		'chmod -R a=Xrw files/ packages/ updates/ config/ sitemap.xml'
+		'chmod -R a=Xrw web/files/ web/packages/ web/updates/ web/config/ web/sitemap.xml'
 	];
 	var ex = jake.createExec(cmds);
 	ex.addListener('error', done);
