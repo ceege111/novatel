@@ -26,7 +26,7 @@ nbproject
 
 .DS_Store
 
-*/config/site.php
+#*/config/site.php
 */files/cache/*
 
 */node_modules/
