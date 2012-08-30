@@ -1,8 +1,3 @@
-<html>
-<head>
-	<title>Novatel Wireless</title>
-</head>
-<body>
-
-</body>
-</html>
+<?php
+$this->inc('one_column.php');
+?>
