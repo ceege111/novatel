@@ -9,6 +9,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width">
 	<title><?php echo SITE; ?> - <?php
 		$page = Page::getCurrentPage();
 		echo $page->getCollectionName();
@@ -16,20 +21,23 @@
 	<?php Loader::element('header_required'); ?>
 
 	<!-- Site Header Content //-->
-	<link rel="stylesheet" media="screen" type="text/css" href="<?php echo $this->getStyleSheet('less/styles.css')?>" />
+	<link rel="stylesheet" media="screen" type="text/css" href="<?php echo $this->getStyleSheet('less/style.css')?>" />
 
 	<!-- All JavaScript at the bottom, except this Modernizr build.
 	Modernizr enables HTML5 elements & feature detects for optimal performance.
 	Create your own custom Modernizr build: www.modernizr.com/download/ -->
 	<script src="<?php echo $this->getThemePath(); ?>/js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
 </head>
+
 <body>
+<div class="wrap <?php if ($c->isEditMode()) echo "editMode"; ?>">
+
 <div class="mainHeader">
-	<span class="logo"><img src="http://rtio.nl/i/?w=300&h=150"></span>
-	<span>
+	<span class="logo"><img src="http://rtio.nl/i/?w=400&h=125&message=Novatel Wireless"></span>
+	<span class="mainMenu area">
 		<?php	
-			$fc = new Area('Main Menu');
-			$fc->display($c); 
+			$a = new GlobalArea('Header Nav');
+			$a->display($c); 
 		?>
 	</span>
 </div>

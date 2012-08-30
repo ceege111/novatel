@@ -2,7 +2,7 @@
 defined('C5_EXECUTE') or die("Access Denied.");
 $this->inc('elements/header.php'); ?>
 
-<header class="pageTitle">
+<div class="pageTitle">
 	<h1>
 	<?php
 		$page = Page::getCurrentPage();
@@ -15,16 +15,10 @@ $this->inc('elements/header.php'); ?>
 			$ah->display($c);
 		?>
 	</div>
-</header>
+</div>
 
-<div class="container threeColumn">
+<div class="container rightSidebar">
 	<section>
-		<section class="leftColumn area">
-			<?php 
-			$a = new Area('LeftSidebar');
-			$a->display($c);
-			?>
-		</section>
 		<section class="centerColumn area">
 			<?php 
 			$as = new Area('Main');

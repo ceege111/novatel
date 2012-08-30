@@ -1,24 +1,79 @@
 @import "bootstrap/bootstrap.less";
 
-body {
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-
-@import "bootstrap/responsive.less";
+// @import "bootstrap/responsive.less";
 
 
 /* ===== Primary Styles ========================================================
-   Author:
+   Author: Rational
    ========================================================================== */
 
+@headerHeight:			125px;
 
+body {
+	.wrap {
+		// background-color: @grayLighter;
+		margin: 0px auto;
+		width: 1024px;
 
+		.mainHeader{
+			.logo {
+				display: block;
+				float: left;
+				img {
+					height: @headerHeight;
+				}	
+			}
+			.mainMenu{
+				display: block;
+				height: @headerHeight;
+				.nav{
+					.clearfix;
+					padding: 0px 10px;
+					li {
+						padding: 80px 5px 10px 20px;
+						float: left;
+					}
+				}
+			}
+		}
 
+		.homeFeatured {
+		}
 
+		.homeMain {
 
+		}
 
+		.container {
+			width: 1024px;
 
+			.leftColumn {
+				float: left;
+			}
+			.centerColumn {
+				float: left;
+			}
+			.rightColumn {
+				float: right;
+			}
+		}
+		.container.rightSidebar{
+			.centerColumn {
+				float: left;
+			}
+		}
+
+	}
+
+	.wrap.editMode {
+		.area {
+			border: 1px dotted #f90;
+			background: @grayLighter;
+			margin-bottom: 32px;
+		}
+	}
+
+}
 
 
 

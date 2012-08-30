@@ -9,10 +9,16 @@ $this->inc('elements/header.php'); ?>
 		echo $page->getCollectionName();
 	?>
 	</h1>
+	<div class="subNav area">
+		<?php 
+			$ah = new Area("Sub Nav"); 
+			$ah->display($c);
+		?>
+	</div>
 </header>
 
 <div class="container oneColumn">
-	<section class="column">
+	<section class="column area">
 		<?php 
 		$as = new Area('Main');
 		$as->display($c);

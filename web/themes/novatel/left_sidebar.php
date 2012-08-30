@@ -9,17 +9,23 @@ $this->inc('elements/header.php'); ?>
 		echo $page->getCollectionName();
 	?>
 	</h1>
+	<div class="subNav area">
+		<?php 
+			$ah = new Area("Sub Nav"); 
+			$ah->display($c);
+		?>
+	</div>
 </div>
 
 <div class="container leftSidebar">
 	<section>
-		<section class="leftColumn">
+		<section class="leftColumn area">
 			<?php 
 			$a = new Area('LeftSidebar');
 			$a->display($c);
 			?>
 		</section>
-		<section class="rightColumn">
+		<section class="rightColumn area">
 			<?php 
 			$as = new Area('Main');
 			$as->display($c);
