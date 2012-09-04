@@ -26,9 +26,12 @@ nbproject
 
 .DS_Store
 
+#node modules not required in source
+/node_modules/
+*/node_modules/
+
 #*/config/site.php
 */files/cache/*
 
-*/node_modules/
 
 sftp-config.json
