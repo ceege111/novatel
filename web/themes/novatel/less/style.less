@@ -10,39 +10,82 @@
 @headerHeight:			125px;
 @bodyWidth:				1024px;
 
+html {  }
+
 body {
 	.wrap {
 		// background-color: @grayLighter;
 		margin: 0px auto;
+		padding-top: 25px;
 		width: @bodyWidth;
-
+		border-top: 5px solid @blueDark;
+		
 		.mainHeader{
+			> .row:first-child {
+				margin-bottom: 15px;
+			}
 			.logo {
-				display: block;
-				float: left;
+				// display: block;
+				// float: left;
+				// img {
+				// 	height: @headerHeight;
+				// }	
 				img {
-					height: @headerHeight;
-				}	
+					margin-left: 40px;
+				}
 			}
 			.mainMenu{
 				display: block;
-				height: @headerHeight;
+				// height: @headerHeight;
+				> div{
+					background: url(img/main_menu_bg.png);
+					.box-shadow(0px 0px 8px @grayLighter);
+				}
 				.nav{
-					.clearfix;
+					// .clearfix;
 					padding: 0px 10px;
-					li {
-						padding: 80px 5px 10px 20px;
+					> li {
+						border-right: 1px solid fadeout(@gray, 50%);
+						padding-right: 10px;
+						a, a:visited {
+							font-size: 16px;
+							line-height: 20px;
+							font-weight: 200;
+						}
+					}
+					> li:first-child{
+						margin-left: 100px;
+						border-left: 1px solid fadeout(@gray, 50%);
+					}
+					> li:last-child {
+						border-right: 1px solid fadeout(@gray, 50%);
+					}
+					> li {
+						padding: 12px 20px 10px 20px;
 						float: left;
+						a, a:visited {
+							color: fadeout(@white, 30%);
+							text-shadow:1px 1px @grayDark;
+						}
 					}
 				}
 			}
 		}
 
 		.homeFeatured {
+			margin-bottom: 10px;
 		}
 
 		.homeMain {
-
+			border-top: 1px soild @grayLighter;
+			margin-bottom: 20px;
+			> div {
+				> div{
+					border: 1px solid @grayLighter;
+					.box-shadow(0px 6px 8px @gray);			
+				}
+		
+			}
 		}
 
 		.container {
@@ -75,9 +118,20 @@ body {
 	}
 
 	.footer {
+		margin-bottom: 30px;
+		
+		background: @grayLighter;
+		#gradient .vertical(@white, @grayLighter);
+		border: 1px solid @grayLight;
+		border-bottom: 5px solid @blueDark;
+
+		>div {
+
+		}
 		ul.nav{
 			width: @bodyWidth;
-			margin: 0px auto;
+			margin: 10px 40px;
+			.clearfix;
 			>li:first-child {
 				display:none;
 			}

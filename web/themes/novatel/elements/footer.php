@@ -1,19 +1,21 @@
 <?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
 		</div><!-- .container" -->
 	<footer>
-		<span class="footer area">
-			<?php	
-				$a = new GlobalArea('Footer');
-				$a->display($c); 
-			?>
-		</span>
+		<div class="container">
+			<div class="row footer area">
+				<?php	
+					$a = new GlobalArea('Footer');
+					$a->display($c); 
+				?>
+			</div>
+		</div>
 	</footer>
 </div><!-- end .wrap -->
 	<!-- JavaScript at the bottom for fast page loading -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="<?php echo $this->getThemePath(); ?>/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
-	<script src="js/libs/bootstrap/bootstrap.min.js"></script>
+	<script src="<?php echo $this->getThemePath(); ?>/js/libs/bootstrap/bootstrap.min.js"></script>
 
 	<script src="<?php echo $this->getThemePath(); ?>/js/plugins.js"></script>
 	<script src="<?php echo $this->getThemePath(); ?>/js/script.js"></script>
