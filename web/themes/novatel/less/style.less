@@ -8,12 +8,13 @@
    ========================================================================== */
 
 @headerHeight:			125px;
+@bodyWidth:				1024px;
 
 body {
 	.wrap {
 		// background-color: @grayLighter;
 		margin: 0px auto;
-		width: 1024px;
+		width: @bodyWidth;
 
 		.mainHeader{
 			.logo {
@@ -70,6 +71,21 @@ body {
 			border: 1px dotted #f90;
 			background: @grayLighter;
 			margin-bottom: 32px;
+		}
+	}
+
+	.footer {
+		ul.nav{
+			width: @bodyWidth;
+			margin: 0px auto;
+			>li:first-child {
+				display:none;
+			}
+			>li {
+				display: block;
+				width: (@bodyWidth / 6);
+				float: left;
+			}
 		}
 	}
 

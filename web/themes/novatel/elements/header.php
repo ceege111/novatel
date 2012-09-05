@@ -33,7 +33,13 @@
 <div class="wrap <?php if ($c->isEditMode()) echo "editMode"; ?>">
 
 <div class="mainHeader">
-	<span class="logo"><img src="http://rtio.nl/i/?w=400&h=125&message=Novatel Wireless"></span>
+	<span class="logo"><a href="/"><img src="http://rtio.nl/i/?w=400&h=125&message=Novatel Wireless"></a></span>
+	<span class="altNav area">
+		<?php 
+			$b = new GlobalArea('Header Alt Nav');
+			$b->display($c);
+		?>
+	</span>
 	<span class="mainMenu area">
 		<?php	
 			$a = new GlobalArea('Header Nav');
