@@ -4983,6 +4983,7 @@ body .wrap .homeSocial .icons {
 body .wrap .homeMain {
   border-top: 1px soild #eeeeee;
   margin-bottom: 20px;
+  clear: both;
   *zoom: 1;
 }
 body .wrap .homeMain:before,
