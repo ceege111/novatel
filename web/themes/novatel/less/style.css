@@ -4970,8 +4970,18 @@ body .wrap .homeFeatured > img.ccm-image-block {
 }
 body .wrap .homeSocial {
   border-top: 1px solid #a1a1a1;
-  margin: 20px 15px 0px;
+  margin: 20px 15px 10px;
   padding-top: 10px;
+  *zoom: 1;
+}
+body .wrap .homeSocial:before,
+body .wrap .homeSocial:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+body .wrap .homeSocial:after {
+  clear: both;
 }
 body .wrap .homeSocial .homeNews {
   margin-left: 20px;
@@ -4983,7 +4993,6 @@ body .wrap .homeSocial .icons {
 body .wrap .homeMain {
   border-top: 1px soild #eeeeee;
   margin-bottom: 20px;
-  clear: both;
   *zoom: 1;
 }
 body .wrap .homeMain:before,
