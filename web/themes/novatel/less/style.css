@@ -4983,8 +4983,18 @@ body .wrap .homeSocial .icons {
 body .wrap .homeMain {
   border-top: 1px soild #eeeeee;
   margin-bottom: 20px;
+  *zoom: 1;
 }
-body .wrap .homeMain .clearfix.HTMLBlock img {
+body .wrap .homeMain:before,
+body .wrap .homeMain:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+body .wrap .homeMain:after {
+  clear: both;
+}
+body .wrap .homeMain .HTMLBlock img {
   margin-left: 10px;
 }
 body .wrap .container {
