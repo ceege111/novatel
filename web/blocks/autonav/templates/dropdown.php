@@ -65,7 +65,7 @@
 			}
 
 			if ($c->getCollectionID() == $_c->getCollectionID()) { 
-				echo('<li class="nav-selected nav-path-selected"><a class="nav-selected nav-path-selected" ' . $target . ' href="' . $pageLink . '">' . $ni->getName() . '</a>');
+				echo('<li class="nav-selected nav-path-selected"><a class="dropdown-toggle nav-selected nav-path-selected" ' . $target . ' href="' . $pageLink . '">' . $ni->getName() . '</a>');
 			} elseif ( in_array($_c->getCollectionID(),$selectedPathCIDs) && ($_c->getCollectionID() != HOME_CID) ) {
 				echo('<li class="nav-path-selected"><a class="nav-path-selected" href="' . $pageLink . '" ' . $target . '>' . $ni->getName() . '</a>');
 			} else {

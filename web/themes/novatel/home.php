@@ -11,6 +11,20 @@ $v = View::getInstance();
 			$fc->display($c); 
 		?>
 	</div>
+	<div class="homeSocial">
+		<div class="homeNews area">
+			<?php 
+				$ac = new Area("Main News");
+				$ac->display($c);
+			?>
+		</div>
+		<div class="icons">
+			<a href="#"><img src="<?php echo $this->getThemePath(); ?>/img/icons/email-icon.png"></a>
+			<a href="#"><img src="<?php echo $this->getThemePath(); ?>/img/icons/facebook-icon.png"></a>
+			<a href="#"><img src="<?php echo $this->getThemePath(); ?>/img/icons/twitter-icon.png"></a>
+			<a href="#"><img src="<?php echo $this->getThemePath(); ?>/img/icons/rss-icon.png"></a>
+		</div>
+	</div>
 	<div class="row homeMain area">
 		<?php 
 			$as = new Area('Main');

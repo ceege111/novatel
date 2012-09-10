@@ -4968,11 +4968,23 @@ body .wrap .homeFeatured {
 body .wrap .homeFeatured > img.ccm-image-block {
   margin-left: 20px;
 }
+body .wrap .homeSocial {
+  border-top: 1px solid #a1a1a1;
+  margin: 20px 15px 0px;
+  padding-top: 10px;
+}
+body .wrap .homeSocial .homeNews {
+  margin-left: 20px;
+  float: left;
+}
+body .wrap .homeSocial .icons {
+  float: right;
+}
 body .wrap .homeMain {
   border-top: 1px soild #eeeeee;
   margin-bottom: 20px;
 }
-body .wrap .homeMain .HTMLBlock img {
+body .wrap .homeMain .clearfix.HTMLBlock img {
   margin-left: 10px;
 }
 body .wrap .container {

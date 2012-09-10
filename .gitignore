@@ -35,3 +35,8 @@ nbproject
 
 
 sftp-config.json
+
+
+#template files ignored
+psd/
+*-ck.js
