@@ -4972,26 +4972,32 @@ body .wrap .homeMain {
   border-top: 1px soild #eeeeee;
   margin-bottom: 20px;
 }
-body .wrap .homeMain > div > div {
-  border: 1px solid #eeeeee;
-  -webkit-box-shadow: 0px 6px 8px #555555;
-  -moz-box-shadow: 0px 6px 8px #555555;
-  box-shadow: 0px 6px 8px #555555;
+body .wrap .homeMain .HTMLBlock img {
+  margin-left: 10px;
 }
 body .wrap .container {
   width: 1024px;
 }
 body .wrap .container .leftColumn {
   float: left;
+  width: 200px;
 }
 body .wrap .container .centerColumn {
   float: left;
 }
 body .wrap .container .rightColumn {
   float: right;
+  width: 200px;
+}
+body .wrap .container.leftColumn .centerColumn {
+  width: 800px;
+}
+body .wrap .container.threeColumn .centerColumn {
+  width: 624px;
 }
 body .wrap .container.rightSidebar .centerColumn {
   float: left;
+  width: 800px;
 }
 body .wrap.editMode .area {
   border: 1px dotted #f90;
@@ -5015,8 +5021,8 @@ body .footer {
   border-bottom: 5px solid #3361aa;
 }
 body .footer ul.nav {
-  width: 1024px;
-  margin: 10px 0px;
+  width: 1004px;
+  margin: 35px 0px 40px 100px;
   *zoom: 1;
 }
 body .footer ul.nav:before,
@@ -5036,6 +5042,15 @@ body .footer ul.nav > li:first-child {
 }
 body .footer ul.nav > li {
   display: block;
-  width: 170.66666666666666px;
+  width: 204.8px;
   float: left;
+}
+body .footer ul.nav > li > a {
+  font-weight: bold;
+}
+body .footer ul.nav ul {
+  margin: 0px;
+}
+body .footer .footer-sub {
+  margin-top: 15px;
 }

@@ -116,12 +116,11 @@ body {
 		.homeMain {
 			border-top: 1px soild @grayLighter;
 			margin-bottom: 20px;
-			> div {
-				> div{
-					border: 1px solid @grayLighter;
-					.box-shadow(0px 6px 8px @gray);			
-				}
-		
+
+			.HTMLBlock {
+				img {
+					margin-left: 10px;
+				}	
 			}
 		}
 
@@ -130,17 +129,33 @@ body {
 
 			.leftColumn {
 				float: left;
+				width: 200px;
 			}
 			.centerColumn {
 				float: left;
 			}
 			.rightColumn {
 				float: right;
+				width: 200px;
 			}
 		}
+
+		.container.leftColumn {
+			.centerColumn {
+				width: 800px;
+			}
+		}
+
+		.container.threeColumn {
+			.centerColumn {
+				width: 624px;
+			}
+		}
+
 		.container.rightSidebar{
 			.centerColumn {
 				float: left;
+				width: 800px;
 			}
 		}
 
@@ -157,20 +172,19 @@ body {
 	.footer {
 		margin-left: 0px;
 		margin-bottom: 30px;
-		
 		padding-right: 20px;
-
 		background: @grayLighter;
 		#gradient .vertical(@white, @grayLighter);
 		border: 1px solid @grayLight;
 		border-bottom: 5px solid @blueDark;
 
 		>div {
-
+			// margin-left: 0px;
 		}
+
 		ul.nav{
-			width: @bodyWidth;
-			margin: 10px 0px;
+			width: @bodyWidth - 20px;
+			margin: 35px 0px 40px 100px;
 			.clearfix;
 			li {
 				list-style: none;
@@ -179,10 +193,20 @@ body {
 				display:none;
 			}
 			>li {
+				>a {
+					font-weight: bold;
+				}
 				display: block;
-				width: (@bodyWidth / 6);
+				width: (@bodyWidth / 5);
 				float: left;
 			}
+			ul {
+				margin: 0px;
+			}
+		}
+
+		.footer-sub {
+			margin-top: 15px;
 		}
 	}
 
