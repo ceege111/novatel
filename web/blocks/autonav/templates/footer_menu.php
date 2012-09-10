@@ -31,14 +31,14 @@
 			}
 			if (!$containsPages) {
 				// this is the first time we've entered the loop so we print out the UL tag
-				echo("<ul class=\"dropdown nav\">");
+				echo("<ul class=\"nav\">");
 			}
 			
 			$containsPages = true;
 			
 			$thisLevel = $ni->getLevel();
 			if ($thisLevel > $lastLevel) {
-				echo("<ul class=\"dropdown-menu\" role=\"menu\">");
+				echo("<ul>");
 			} else if ($thisLevel < $lastLevel) {
 				for ($j = $thisLevel; $j < $lastLevel; $j++) {
 					if ($lastLevel - $j > 1) {
@@ -69,7 +69,7 @@
 			} elseif ( in_array($_c->getCollectionID(),$selectedPathCIDs) && ($_c->getCollectionID() != HOME_CID) ) {
 				echo('<li class="nav-path-selected"><a class="nav-path-selected" href="' . $pageLink . '" ' . $target . '>' . $ni->getName() . '</a>');
 			} else {
-				echo('<li><a class="dropdown-toggle" href="' . $pageLink . '" ' . $target . ' >' . $ni->getName() . '</a>');
+				echo('<li><a href="' . $pageLink . '" ' . $target . ' >' . $ni->getName() . '</a>');
 			}	
 			$lastLevel = $thisLevel;
 			$i++;

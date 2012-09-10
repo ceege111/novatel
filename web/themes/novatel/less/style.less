@@ -35,7 +35,7 @@ body {
 				}
 			}
 			.mainMenu{
-				display: block;
+				// display: block;
 				// height: @headerHeight;
 				> div{
 					background: url(img/main_menu_bg.png);
@@ -44,9 +44,9 @@ body {
 				.nav{
 					// .clearfix;
 					padding: 0px 10px;
+					margin-left: 100px;
 					> li {
-						border-right: 1px solid fadeout(@gray, 50%);
-						padding-right: 10px;
+						border-left: 1px solid fadeout(@gray, 50%);
 						a, a:visited {
 							font-size: 16px;
 							line-height: 20px;
@@ -56,16 +56,48 @@ body {
 					> li:first-child{
 						margin-left: 100px;
 						border-left: 1px solid fadeout(@gray, 50%);
+						display:none;
 					}
 					> li:last-child {
 						border-right: 1px solid fadeout(@gray, 50%);
 					}
 					> li {
-						padding: 12px 20px 10px 20px;
 						float: left;
 						a, a:visited {
 							color: fadeout(@white, 30%);
 							text-shadow:1px 1px @grayDark;
+							padding: 12px 20px 10px 20px;
+						}
+						a:hover{
+							color: @gray;
+							text-shadow:1px 1px @grayLighter;
+							.box-shadow(1px 2px 6px @gray);
+						}
+					}
+					.dropdown-menu {
+						top: 40px;
+						left: initial;
+						margin-left: -10px;
+						padding-bottom: 15px;
+						min-width: 200px;
+						background: fadeout(@white, 20%);
+						border-radius: 1px;
+						border-bottom: 5px solid @blueDark;	
+						li {
+							a,a:visited {
+								color: @gray;
+								text-shadow: 1px 1px @grayLighter;
+								padding: 6px 0px 4px;
+								margin-left: 20px;
+								margin-right: 20px;
+								border-bottom: 1px solid @grayLight;
+								font-size: 12px;
+								font-weight: bold;
+							}
+							a:hover {
+								color: @white;
+								text-shadow: 1px 1px @grayLight;
+							}
 						}
 					}
 				}
@@ -74,6 +106,11 @@ body {
 
 		.homeFeatured {
 			margin-bottom: 10px;
+			> img.ccm-image-block {
+				margin-left: 20px;
+				// .box-shadow(0px 3px 5px @gray);
+				// width: 100%;
+			}
 		}
 
 		.homeMain {
@@ -118,8 +155,11 @@ body {
 	}
 
 	.footer {
+		margin-left: 0px;
 		margin-bottom: 30px;
 		
+		padding-right: 20px;
+
 		background: @grayLighter;
 		#gradient .vertical(@white, @grayLighter);
 		border: 1px solid @grayLight;
@@ -130,8 +170,11 @@ body {
 		}
 		ul.nav{
 			width: @bodyWidth;
-			margin: 10px 40px;
+			margin: 10px 0px;
 			.clearfix;
+			li {
+				list-style: none;
+			}
 			>li:first-child {
 				display:none;
 			}
