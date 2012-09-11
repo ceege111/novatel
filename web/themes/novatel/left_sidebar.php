@@ -2,15 +2,15 @@
 defined('C5_EXECUTE') or die("Access Denied.");
 $this->inc('elements/header.php'); ?>
 
-<div class="pageTitle">
-	<div class="banner">
+<header class="pageTitle container">
+	<div class="row banner">
 	    <?php
 	    $a = new Area('Header Banner');
 	    if (($a->getTotalBlocksInArea($c) > 0) || ($c->isEditMode())) {
 	        $a->setBlockLimit(1);
 	        $a->display($c);
 	    } else { ?>
-	    	<h1>
+	    	<h1 class="span12">
 				<?php
 					$page = Page::getCurrentPage();
 					echo $page->getCollectionName();
