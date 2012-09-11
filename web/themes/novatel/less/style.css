@@ -4946,6 +4946,9 @@ body .wrap .mainHeader .mainMenu .nav > li a:hover {
   -moz-box-shadow: 1px 2px 6px #555555;
   box-shadow: 1px 2px 6px #555555;
 }
+body .wrap .mainHeader .mainMenu .nav > li.nav-selected {
+  background-color: rgba(51, 51, 51, 0.4);
+}
 body .wrap .mainHeader .mainMenu .nav .dropdown-menu {
   top: 40px;
   left: initial;
@@ -4969,6 +4972,7 @@ body .wrap .mainHeader .mainMenu .nav .dropdown-menu li a:visited {
 }
 body .wrap .mainHeader .mainMenu .nav .dropdown-menu li a:hover {
   color: #ffffff;
+  background-color: rgba(51, 51, 51, 0.4);
   text-shadow: 1px 1px #b4b4b4;
 }
 body .wrap .homeFeatured {

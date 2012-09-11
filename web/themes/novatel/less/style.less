@@ -89,6 +89,9 @@ body {
 							text-shadow:1px 1px @grayLighter;
 							.box-shadow(1px 2px 6px @gray);
 						}
+						&.nav-selected {
+							background-color: fadeout(@grayDark, 60%);	
+						}
 					}
 					.dropdown-menu {
 						top: 40px;
@@ -112,6 +115,7 @@ body {
 							}
 							a:hover {
 								color: @white;
+								background-color: fadeout(@grayDark, 60%);
 								text-shadow: 1px 1px @grayLight;
 							}
 						}
