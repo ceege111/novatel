@@ -5020,6 +5020,9 @@ body .wrap .homeMain:after {
 body .wrap .homeMain .HTMLBlock img {
   margin-left: 10px;
 }
+body .wrap .pageTitle .row .span12 img {
+  width: 100%;
+}
 body .wrap .container {
   width: 1024px;
 }
