@@ -15,7 +15,7 @@ $this->inc('elements/header.php'); ?>
 					$page = Page::getCurrentPage();
 					echo $page->getCollectionName();
 				?>
-			</h1>
+			</h1	>
 	    <?php } ?>
 	</div>
 	<div class="subNav area">

@@ -1,5 +1,5 @@
 <?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
-		</div><!-- .container" -->
+	</div><!-- .container" -->
 	<footer>
 		<div class="container">
 			<div class="row footer area">

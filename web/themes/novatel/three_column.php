@@ -27,7 +27,7 @@ $this->inc('elements/header.php'); ?>
 </header>
 
 <div class="container threeColumn">
-	<section>
+
 		<section class="leftColumn area">
 			<?php 
 			$a = new Area('LeftSidebar');
@@ -46,6 +46,5 @@ $this->inc('elements/header.php'); ?>
 			$as->display($c);
 			?>
 		</section>
-	</section>
 
 <?php  $this->inc('elements/footer.php'); ?>
