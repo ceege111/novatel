@@ -167,10 +167,17 @@ body {
 					}
 				}
 			}
+			.breadcrumb {
+				background-color: transparent;
+			}
 		}
 
 		.container {
 			width: 1024px;
+
+			&.oneColumn, &.leftColumn, &.rightColumn, &.threeColumn {
+				border: 1px solid @gray;
+			}
 
 			.leftColumn {
 				float: left;

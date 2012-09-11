@@ -5023,8 +5023,17 @@ body .wrap .homeMain .HTMLBlock img {
 body .wrap .pageTitle .row .span12 img {
   width: 100%;
 }
+body .wrap .pageTitle .breadcrumb {
+  background-color: transparent;
+}
 body .wrap .container {
   width: 1024px;
+}
+body .wrap .container.oneColumn,
+body .wrap .container.leftColumn,
+body .wrap .container.rightColumn,
+body .wrap .container.threeColumn {
+  border: 1px solid #555555;
 }
 body .wrap .container .leftColumn {
   float: left;
