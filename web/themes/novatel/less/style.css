@@ -5029,12 +5029,6 @@ body .wrap .pageTitle .breadcrumb {
 body .wrap .container {
   width: 1024px;
 }
-body .wrap .container.oneColumn,
-body .wrap .container.leftColumn,
-body .wrap .container.rightColumn,
-body .wrap .container.threeColumn {
-  border: 1px solid #555555;
-}
 body .wrap .container .leftColumn {
   float: left;
   width: 200px;
