@@ -4894,6 +4894,15 @@ body .wrap .mainHeader > .row:first-child {
 body .wrap .mainHeader .logo img {
   margin-left: 40px;
 }
+body .wrap .mainHeader .altNav p {
+  margin: 5px 0px 10px;
+}
+body .wrap .mainHeader .altNav form {
+  margin: 0px 30px 0px 0px;
+}
+body .wrap .mainHeader .altNav form input.searchInput {
+  width: 130px;
+}
 body .wrap .mainHeader .mainMenu > div {
   background: url(img/main_menu_bg.png);
   -webkit-box-shadow: 0px 0px 8px #eeeeee;
@@ -4943,7 +4952,7 @@ body .wrap .mainHeader .mainMenu .nav .dropdown-menu {
   margin-left: -10px;
   padding-bottom: 15px;
   min-width: 200px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 1px;
   border-bottom: 5px solid #3361aa;
 }
