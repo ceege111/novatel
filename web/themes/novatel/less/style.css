@@ -2317,21 +2317,6 @@ table [class*=span],
   color: #333333;
   white-space: nowrap;
 }
-.dropdown-menu li > a:hover,
-.dropdown-menu li > a:focus,
-.dropdown-submenu:hover > a {
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #555555;
-  background-color: #505050;
-  background-image: -moz-linear-gradient(top, #555555, #484848);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555555), to(#484848));
-  background-image: -webkit-linear-gradient(top, #555555, #484848);
-  background-image: -o-linear-gradient(top, #555555, #484848);
-  background-image: linear-gradient(to bottom, #555555, #484848);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff555555', endColorstr='#ff484848', GradientType=0);
-}
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
   color: #ffffff;
@@ -4933,18 +4918,16 @@ body .wrap .mainHeader .mainMenu .nav > li:last-child {
 body .wrap .mainHeader .mainMenu .nav > li {
   float: left;
 }
-body .wrap .mainHeader .mainMenu .nav > li a,
-body .wrap .mainHeader .mainMenu .nav > li a:visited {
+body .wrap .mainHeader .mainMenu .nav > li > a,
+body .wrap .mainHeader .mainMenu .nav > li > a:visited {
   color: rgba(255, 255, 255, 0.7);
   text-shadow: 1px 1px #333333;
   padding: 12px 20px 10px 20px;
 }
-body .wrap .mainHeader .mainMenu .nav > li a:hover {
+body .wrap .mainHeader .mainMenu .nav > li > a:hover,
+body .wrap .mainHeader .mainMenu .nav > li > a.hover {
   color: #555555;
-  text-shadow: 1px 1px #eeeeee;
-  -webkit-box-shadow: 1px 2px 6px #555555;
-  -moz-box-shadow: 1px 2px 6px #555555;
-  box-shadow: 1px 2px 6px #555555;
+  background-color: #eeeeee;
 }
 body .wrap .mainHeader .mainMenu .nav > li.nav-selected {
   background-color: rgba(51, 51, 51, 0.4);
@@ -4954,7 +4937,7 @@ body .wrap .mainHeader .mainMenu .nav .dropdown-menu {
   left: initial;
   margin-left: -10px;
   padding-bottom: 15px;
-  min-width: 200px;
+  min-width: 220px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 1px;
   border-bottom: 5px solid #3361aa;
@@ -4968,12 +4951,12 @@ body .wrap .mainHeader .mainMenu .nav .dropdown-menu li a:visited {
   margin-right: 20px;
   border-bottom: 1px solid #b4b4b4;
   font-size: 12px;
-  font-weight: bold;
+  text-decoration: none;
 }
 body .wrap .mainHeader .mainMenu .nav .dropdown-menu li a:hover {
-  color: #ffffff;
-  background-color: rgba(51, 51, 51, 0.4);
-  text-shadow: 1px 1px #b4b4b4;
+  font-weight: bold;
+  background-color: transparent;
+  background-image: none;
 }
 body .wrap .homeFeatured {
   margin-bottom: 10px;

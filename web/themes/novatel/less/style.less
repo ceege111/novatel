@@ -79,15 +79,16 @@ body {
 					}
 					> li {
 						float: left;
-						a, a:visited {
+						> a, > a:visited {
 							color: fadeout(@white, 30%);
 							text-shadow:1px 1px @grayDark;
 							padding: 12px 20px 10px 20px;
 						}
-						a:hover{
+						> a:hover, > a.hover {
 							color: @gray;
-							text-shadow:1px 1px @grayLighter;
-							.box-shadow(1px 2px 6px @gray);
+							background-color: @grayLighter;
+							// text-shadow:1px 1px @grayLighter;
+							// .box-shadow(1px 2px 6px @gray);
 						}
 						&.nav-selected {
 							background-color: fadeout(@grayDark, 60%);	
@@ -98,7 +99,7 @@ body {
 						left: initial;
 						margin-left: -10px;
 						padding-bottom: 15px;
-						min-width: 200px;
+						min-width: 220px;
 						background: fadeout(@white, 10%);
 						border-radius: 1px;
 						border-bottom: 5px solid @blueDark;	
@@ -111,12 +112,16 @@ body {
 								margin-right: 20px;
 								border-bottom: 1px solid @grayLight;
 								font-size: 12px;
-								font-weight: bold;
+								text-decoration: none;
+								// font-weight: bold;
 							}
 							a:hover {
-								color: @white;
-								background-color: fadeout(@grayDark, 60%);
-								text-shadow: 1px 1px @grayLight;
+								// color: @white;
+								// background-color: fadeout(@grayDark, 60%);
+								// text-shadow: 1px 1px @grayLight;
+								font-weight: bold;
+								background-color: transparent;
+								background-image: none;
 							}
 						}
 					}
@@ -174,10 +179,6 @@ body {
 
 		.container {
 			width: 1024px;
-
-			&.oneColumn, &.leftColumn, &.rightColumn, &.threeColumn {
-				// border: 1px solid @gray;
-			}
 
 			.leftColumn {
 				float: left;
