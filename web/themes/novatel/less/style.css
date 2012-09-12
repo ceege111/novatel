@@ -5071,7 +5071,6 @@ body .container.threeColumn .centerColumn {
 body .container.rightSidebar .centerColumn {
   float: left;
   width: 820px;
-  margin-left: -20px;
 }
 .wrap.editMode .area {
   border: 1px dotted #f90;

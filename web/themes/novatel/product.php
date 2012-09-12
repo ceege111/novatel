@@ -28,7 +28,7 @@ $this->inc('elements/header.php'); ?>
 
 <div class="container rightSidebar products">
 		<section class="centerColumn area">
-			<div class="span">
+			<div class="row">
 				<div class="span12 productTitle">
 					<?php 
 						$aj = new Area('Product Title');
@@ -37,7 +37,7 @@ $this->inc('elements/header.php'); ?>
 				</div>
 			</div>
 
-			<div class="span" >
+			<div class="row">
 				<div class="span3 productImages">
 					<?php 
 						$ag = new Area('Product Images');
@@ -51,10 +51,13 @@ $this->inc('elements/header.php'); ?>
 					?>
 				</div>			
 			</div>
-			<?php 
-			$as = new Area('Main');
-			$as->display($c);
-			?>
+			<div class="row">
+				<?php 
+					$as = new Area('Main');
+					$as->display($c);
+				?>	
+			</div>
+
 		</section>
 		<section class="rightColumn area">
 			<?php 
