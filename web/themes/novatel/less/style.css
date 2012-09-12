@@ -4927,6 +4927,9 @@ body .mainHeader .altNav form input.searchSubmit {
   width: 30px;
   height: 30px;
 }
+body .mainHeader .altNav form div {
+  display: none;
+}
 body .mainHeader .mainMenu > div {
   background: url(img/main_menu_bg.png);
 }
@@ -5039,11 +5042,18 @@ body .homeMain:after {
 body .homeMain .HTMLBlock img {
   margin-left: 10px;
 }
-body .pageTitle .row .span12 img {
-  width: 100%;
-}
 body .pageTitle .breadcrumb {
   background-color: transparent;
+  margin: 0px;
+}
+body .pageTitle .nav-header-tabs ul {
+  list-style: none;
+}
+body .pageTitle .nav-header-tabs ul li {
+  float: left;
+}
+body .pageTitle .row .span12 img {
+  width: 100%;
 }
 body .container {
   width: 1024px;
