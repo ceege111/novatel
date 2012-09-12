@@ -53,17 +53,25 @@ $this->inc('elements/header.php'); ?>
 			</div>
 			<div class="row">
 				<?php 
-					$as = new Area('Main');
-					$as->display($c);
+					$ap = new Area('Product More Info');
+					$ap->display($c);
 				?>	
 			</div>
 
 		</section>
 		<section class="rightColumn area">
 			<?php 
-			$as = new Area('RightSidebar');
-			$as->display($c);
+			$aq = new Area('RightSidebar');
+			$aq->display($c);
 			?>
+		</section>
+		<section>
+			<div class="row">
+				<?php 
+					$as = new Area('Main');
+					$as->display($c);
+				?>	
+			</div>
 		</section>
 
 <?php  $this->inc('elements/footer.php'); ?>
