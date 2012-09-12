@@ -31,23 +31,24 @@
 </head>
 
 <body>
-<div class="wrap <?php if ($c->isEditMode()) echo "editMode"; ?>">
-
-<div class="mainHeader container">
-	<div class="row">
-<!-- 		<div class="logo span6"><a href="/"><img src="http://rtio.nl/i/?w=400&h=125&message=Novatel Wireless"></a></div> -->		
-		<div class="logo span4"><?php  $al = new GlobalArea('Company Logo'); $al->display($c);?></div>
-		<div class="altNav area offset2 span6">
-			<?php 
-				$b = new GlobalArea('Header Alt Nav');
-				$b->display($c);
+<div class="headerWrap">
+	<div class="mainHeader container">
+		<div class="row">
+	<!-- 		<div class="logo span6"><a href="/"><img src="http://rtio.nl/i/?w=400&h=125&message=Novatel Wireless"></a></div> -->		
+			<div class="logo span4"><?php  $al = new GlobalArea('Company Logo'); $al->display($c);?></div>
+			<div class="altNav area offset2 span6">
+				<?php 
+					$b = new GlobalArea('Header Alt Nav');
+					$b->display($c);
+				?>
+			</div>
+		</div>
+		<div class="row mainMenu area">
+			<?php	
+				$a = new GlobalArea('Header Nav');
+				$a->display($c); 
 			?>
 		</div>
 	</div>
-	<div class="row mainMenu area">
-		<?php	
-			$a = new GlobalArea('Header Nav');
-			$a->display($c); 
-		?>
-	</div>
 </div>
+<div class="wrap <?php if ($c->isEditMode()) echo "editMode"; ?>">

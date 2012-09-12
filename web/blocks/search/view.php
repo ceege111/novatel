@@ -15,7 +15,7 @@
 	} ?>
 	
 	<input class="searchInput" name="query" type="text" placeholder="<?=$title?>" value="<?=htmlentities($query, ENT_COMPAT, APP_CHARSET)?>" class="ccm-search-block-text" />
-	
+	<!-- <a href="#"><img src="/themes/novatel/img/icons/search-icon.png"></a> -->
 	<input class="searchSubmit" name="submit" type="submit" value="<?=$buttonText?>" class="ccm-search-block-submit" />
 
 <? 

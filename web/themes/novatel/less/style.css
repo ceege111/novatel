@@ -700,7 +700,7 @@ address {
 code,
 pre {
   padding: 0 3px 2px;
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: "Open Sans", Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 10px;
   color: #333333;
   -webkit-border-radius: 3px;
@@ -4867,72 +4867,88 @@ a.badge:hover {
 /* ===== Primary Styles ========================================================
    Author: Rational
    ========================================================================== */
+body .headerWrap {
+  padding-top: 20px;
+  border-top: 5px solid #3361aa;
+  background: url(img/main_menu_bg.png) repeat-x 0px 74px transparent;
+}
 body .wrap {
   margin: 0px auto;
   padding-top: 25px;
   width: 1024px;
-  border-top: 5px solid #3361aa;
 }
-body .wrap .mainHeader > .row:first-child {
+body .mainHeader > .row:first-child {
   margin-bottom: 15px;
 }
-body .wrap .mainHeader .logo img {
+body .mainHeader .logo img {
   margin-left: 40px;
 }
-body .wrap .mainHeader .altNav p {
+body .mainHeader .altNav p {
   margin: 5px 0px 10px;
 }
-body .wrap .mainHeader .altNav form {
+body .mainHeader .altNav form {
   margin: 0px 30px 0px 0px;
 }
-body .wrap .mainHeader .altNav form input.searchInput {
+body .mainHeader .altNav form input {
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+body .mainHeader .altNav form input.searchInput {
   width: 130px;
 }
-body .wrap .mainHeader .mainMenu > div {
-  background: url(img/main_menu_bg.png);
-  -webkit-box-shadow: 0px 0px 8px #eeeeee;
-  -moz-box-shadow: 0px 0px 8px #eeeeee;
-  box-shadow: 0px 0px 8px #eeeeee;
+body .mainHeader .altNav form input.searchSubmit {
+  background: url(img/icons/search-icon.png) no-repeat 50% 50% transparent;
+  text-indent: -9999px;
+  margin-top: -10px;
+  margin-left: -4px;
+  width: 30px;
+  height: 30px;
 }
-body .wrap .mainHeader .mainMenu .nav {
+body .mainHeader .mainMenu > div {
+  background: url(img/main_menu_bg.png);
+}
+body .mainHeader .mainMenu .nav {
   padding: 0px 10px;
   margin-left: 100px;
 }
-body .wrap .mainHeader .mainMenu .nav > li {
+body .mainHeader .mainMenu .nav > li {
   border-left: 1px solid rgba(85, 85, 85, 0.5);
 }
-body .wrap .mainHeader .mainMenu .nav > li a,
-body .wrap .mainHeader .mainMenu .nav > li a:visited {
+body .mainHeader .mainMenu .nav > li a,
+body .mainHeader .mainMenu .nav > li a:visited {
   font-size: 16px;
   line-height: 20px;
   font-weight: 200;
 }
-body .wrap .mainHeader .mainMenu .nav > li:first-child {
+body .mainHeader .mainMenu .nav > li:first-child {
   margin-left: 100px;
   border-left: 1px solid rgba(85, 85, 85, 0.5);
   display: none;
 }
-body .wrap .mainHeader .mainMenu .nav > li:last-child {
+body .mainHeader .mainMenu .nav > li:last-child {
   border-right: 1px solid rgba(85, 85, 85, 0.5);
 }
-body .wrap .mainHeader .mainMenu .nav > li {
+body .mainHeader .mainMenu .nav > li {
   float: left;
 }
-body .wrap .mainHeader .mainMenu .nav > li > a,
-body .wrap .mainHeader .mainMenu .nav > li > a:visited {
+body .mainHeader .mainMenu .nav > li > a,
+body .mainHeader .mainMenu .nav > li > a:visited {
   color: rgba(255, 255, 255, 0.7);
   text-shadow: 1px 1px #333333;
   padding: 12px 20px 10px 20px;
 }
-body .wrap .mainHeader .mainMenu .nav > li > a:hover,
-body .wrap .mainHeader .mainMenu .nav > li > a.hover {
+body .mainHeader .mainMenu .nav > li > a:hover,
+body .mainHeader .mainMenu .nav > li > a.hover {
   color: #555555;
   background-color: #eeeeee;
 }
-body .wrap .mainHeader .mainMenu .nav > li.nav-selected {
+body .mainHeader .mainMenu .nav > li.nav-selected {
   background-color: rgba(51, 51, 51, 0.4);
 }
-body .wrap .mainHeader .mainMenu .nav .dropdown-menu {
+body .mainHeader .mainMenu .nav .dropdown-menu {
   top: 40px;
   left: initial;
   margin-left: -10px;
@@ -4942,8 +4958,8 @@ body .wrap .mainHeader .mainMenu .nav .dropdown-menu {
   border-radius: 1px;
   border-bottom: 5px solid #3361aa;
 }
-body .wrap .mainHeader .mainMenu .nav .dropdown-menu li a,
-body .wrap .mainHeader .mainMenu .nav .dropdown-menu li a:visited {
+body .mainHeader .mainMenu .nav .dropdown-menu li a,
+body .mainHeader .mainMenu .nav .dropdown-menu li a:visited {
   color: #555555;
   text-shadow: 1px 1px #eeeeee;
   padding: 6px 0px 4px;
@@ -4953,95 +4969,94 @@ body .wrap .mainHeader .mainMenu .nav .dropdown-menu li a:visited {
   font-size: 12px;
   text-decoration: none;
 }
-body .wrap .mainHeader .mainMenu .nav .dropdown-menu li a:hover {
+body .mainHeader .mainMenu .nav .dropdown-menu li a:hover {
   font-weight: bold;
   background-color: transparent;
   background-image: none;
 }
-body .wrap .homeFeatured {
+body .homeFeatured {
   margin-bottom: 10px;
 }
-body .wrap .homeFeatured > img.ccm-image-block {
+body .homeFeatured > img.ccm-image-block {
   margin-left: 20px;
 }
-body .wrap .homeSocial {
+body .homeSocial {
   border-top: 1px solid #a1a1a1;
   margin: 20px 15px 10px;
   padding-top: 10px;
   *zoom: 1;
 }
-body .wrap .homeSocial:before,
-body .wrap .homeSocial:after {
+body .homeSocial:before,
+body .homeSocial:after {
   display: table;
   content: "";
   line-height: 0;
 }
-body .wrap .homeSocial:after {
+body .homeSocial:after {
   clear: both;
 }
-body .wrap .homeSocial .homeNews {
+body .homeSocial .homeNews {
   margin-left: 20px;
   float: left;
 }
-body .wrap .homeSocial .icons {
+body .homeSocial .icons {
   float: right;
 }
-body .wrap .homeMain {
+body .homeMain {
   border-top: 1px soild #eeeeee;
   margin-bottom: 20px;
   *zoom: 1;
 }
-body .wrap .homeMain:before,
-body .wrap .homeMain:after {
+body .homeMain:before,
+body .homeMain:after {
   display: table;
   content: "";
   line-height: 0;
 }
-body .wrap .homeMain:after {
+body .homeMain:after {
   clear: both;
 }
-body .wrap .homeMain .HTMLBlock img {
+body .homeMain .HTMLBlock img {
   margin-left: 10px;
 }
-body .wrap .pageTitle .row .span12 img {
+body .pageTitle .row .span12 img {
   width: 100%;
 }
-body .wrap .pageTitle .breadcrumb {
+body .pageTitle .breadcrumb {
   background-color: transparent;
 }
-body .wrap .container {
+body .container {
   width: 1024px;
 }
-body .wrap .container .leftColumn {
+body .container .leftColumn {
   float: left;
   width: 200px;
 }
-body .wrap .container .centerColumn {
+body .container .centerColumn {
   float: left;
 }
-body .wrap .container .rightColumn {
+body .container .rightColumn {
   float: right;
   width: 200px;
 }
-body .wrap .container.leftColumn .centerColumn {
+body .container.leftColumn .centerColumn {
   width: 800px;
 }
-body .wrap .container.threeColumn .centerColumn {
+body .container.threeColumn .centerColumn {
   width: 624px;
 }
-body .wrap .container.rightSidebar .centerColumn {
+body .container.rightSidebar .centerColumn {
   float: left;
   width: 800px;
 }
-body .wrap.editMode .area {
+.wrap.editMode .area {
   border: 1px dotted #f90;
   background: #eeeeee;
   margin-bottom: 32px;
 }
-body .footer {
-  margin-left: 0px;
-  margin-bottom: 30px;
-  padding-right: 20px;
+.footerWrap {
+  margin-bottom: 5px;
+  border-bottom: 5px solid #3361aa;
   background: #eeeeee;
   background-color: #f8f8f8;
   background-image: -moz-linear-gradient(top, #ffffff, #eeeeee);
@@ -5051,40 +5066,43 @@ body .footer {
   background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
-  border: 1px solid #b4b4b4;
-  border-bottom: 5px solid #3361aa;
+  border-top: 1px solid #b4b4b4;
 }
-body .footer ul.nav {
+.footerWrap .footer {
+  margin-left: 0px;
+  padding-right: 20px;
+}
+.footerWrap .footer ul.nav {
   width: 1004px;
   margin: 35px 0px 40px 100px;
   *zoom: 1;
 }
-body .footer ul.nav:before,
-body .footer ul.nav:after {
+.footerWrap .footer ul.nav:before,
+.footerWrap .footer ul.nav:after {
   display: table;
   content: "";
   line-height: 0;
 }
-body .footer ul.nav:after {
+.footerWrap .footer ul.nav:after {
   clear: both;
 }
-body .footer ul.nav li {
+.footerWrap .footer ul.nav li {
   list-style: none;
 }
-body .footer ul.nav > li:first-child {
+.footerWrap .footer ul.nav > li:first-child {
   display: none;
 }
-body .footer ul.nav > li {
+.footerWrap .footer ul.nav > li {
   display: block;
   width: 204.8px;
   float: left;
 }
-body .footer ul.nav > li > a {
+.footerWrap .footer ul.nav > li > a {
   font-weight: bold;
 }
-body .footer ul.nav ul {
+.footerWrap .footer ul.nav ul {
   margin: 0px;
 }
-body .footer .footer-sub {
+.footerWrap .footer .footer-sub {
   margin-top: 15px;
 }

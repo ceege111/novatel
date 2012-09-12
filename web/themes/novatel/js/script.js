@@ -16,15 +16,9 @@ $(document).ready(function(){
 				$(this).hide();
 			});
 			$(currentMenu).fadeIn(100, 'swing', function(){
-				$(".nav ul.dropdown-menu").each(function(){
-					$(".nav ul.dropdown-menu").not(currentMenu).each(function(){
-						$(this).fadeOut();
-					});
-				});
 			});
 		});
 	});
-	$(".wrap").mouseout("");
 
 	$(".nav ul.dropdown-menu").each(function(){
 		$(this).mouseleave(function(){
