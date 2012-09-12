@@ -32,7 +32,7 @@ $this->inc('elements/header.php'); ?>
 				<div class="span12 productTitle">
 					<?php 
 						$aj = new Area('Product Title');
-						$ag->display($c);
+						$aj->display($c);
 					?>
 				</div>
 			</div>

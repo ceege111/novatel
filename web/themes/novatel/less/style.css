@@ -5073,7 +5073,8 @@ body .container.rightSidebar .centerColumn {
 }
 .footerWrap .footer ul.nav {
   width: 1004px;
-  margin: 35px 0px 40px 100px;
+  margin: 25px 0px 40px 100px;
+  height: 115px;
   *zoom: 1;
 }
 .footerWrap .footer ul.nav:before,
@@ -5094,7 +5095,8 @@ body .container.rightSidebar .centerColumn {
 .footerWrap .footer ul.nav > li {
   display: block;
   width: 204.8px;
-  float: left;
+  position: absolute;
+  margin-top: 5px;
 }
 .footerWrap .footer ul.nav > li > a {
   font-weight: bold;
