@@ -37,7 +37,7 @@ $this->inc('elements/header.php'); ?>
 				</div>
 			</div>
 
-			<div class="span">
+			<div class="span" >
 				<div class="span3 productImages">
 					<?php 
 						$ag = new Area('Product Images');
