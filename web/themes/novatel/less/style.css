@@ -5072,6 +5072,9 @@ body .container.rightSidebar .centerColumn {
   float: left;
   width: 820px;
 }
+.products p {
+  color: #555555;
+}
 .wrap.editMode .area {
   border: 1px dotted #f90;
   background: #eeeeee;
