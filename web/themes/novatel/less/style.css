@@ -5045,6 +5045,9 @@ body .pageTitle .row .span12 img {
 body .pageTitle .breadcrumb {
   background-color: transparent;
 }
+body .breadcrumb {
+  padding: 8px 0px;
+}
 body .container {
   width: 1024px;
 }

@@ -38,13 +38,13 @@ $this->inc('elements/header.php'); ?>
 			</div>
 
 			<div class="span">
-				<div class="span4 productImages">
+				<div class="span3 productImages">
 					<?php 
 						$ag = new Area('Product Images');
 						$ag->display($c);
 					?>
 				</div>
-				<div class="span4 productDescription">
+				<div class="span6 productDescription">
 					<?php 
 						$ah = new Area('Product Description');
 						$ah->display($c);
