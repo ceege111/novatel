@@ -1,4 +1,8 @@
 <?
+	/**
+	* Header Dropdown Menu
+	*/
+
 	defined('C5_EXECUTE') or die("Access Denied.");
 	$aBlocks = $controller->generateNav();
 	$c = Page::getCurrentPage();
@@ -22,9 +26,7 @@
 	
 	foreach($aBlocks as $ni) {
 		$_c = $ni->getCollectionObject();
-		if (!$_c->getCollectionAttributeValue('exclude_nav')) {
-			
-			
+		if (!($_c->getCollectionAttributeValue('exclude_nav') || $_c->getCollectionAttributeValue('exclude_dropdown_nav'))) {
 			$target = $ni->getTarget();
 			if ($target != '') {
 				$target = 'target="' . $target . '"';

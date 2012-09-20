@@ -19,7 +19,9 @@
 			$inspectC=Page::getById($cParentID);
 		}
 	} 	
-	
+
+	$colSkip = true;
+	echo("<ul class=\"nav\">");
 	foreach($aBlocks as $ni) {
 		$_c = $ni->getCollectionObject();
 		if (!$_c->getCollectionAttributeValue('exclude_nav')) {
@@ -31,24 +33,34 @@
 			}
 			if (!$containsPages) {
 				// this is the first time we've entered the loop so we print out the UL tag
-				echo("<ul class=\"nav\">");
+				echo("<ul class=\"footer-column\">");
 			}
 			
 			$containsPages = true;
 			
 			$thisLevel = $ni->getLevel();
 			if ($thisLevel > $lastLevel) {
-				echo("<ul>");
+				echo("<ul class='level-".$thisLevel."'>");
 			} else if ($thisLevel < $lastLevel) {
 				for ($j = $thisLevel; $j < $lastLevel; $j++) {
 					if ($lastLevel - $j > 1) {
 						echo("</li></ul>");
 					} else {
-						echo("</li></ul></li>");
+						if ($thisLevel == 0){
+							if($colSkip){
+								echo("</li></ul></li>");
+								$colSkip = false;
+							} else {
+								echo("</li></ul></li></ul><ul class=\"footer-column\">");
+								$colSkip = true;
+							}
+						} else {
+							echo("</li></ul></li>");
+						}
 					}
 				}
 			} else if ($i > 0) {
-				echo("</li>");
+					echo("</li>");
 			}
 
 			$pageLink = false;
@@ -65,12 +77,13 @@
 			}
 
 			if ($c->getCollectionID() == $_c->getCollectionID()) { 
-				echo('<li class="nav-selected nav-path-selected"><a class="nav-selected nav-path-selected" ' . $target . ' href="' . $pageLink . '">' . $ni->getName() . '</a>');
+				echo('<li class="level-'.$thisLevel.' nav-selected nav-path-selected"><a class="nav-selected nav-path-selected" ' . $target . ' href="' . $pageLink . '">' . $ni->getName() . '</a>');
 			} elseif ( in_array($_c->getCollectionID(),$selectedPathCIDs) && ($_c->getCollectionID() != HOME_CID) ) {
-				echo('<li class="nav-path-selected"><a class="nav-path-selected" href="' . $pageLink . '" ' . $target . '>' . $ni->getName() . '</a>');
+				echo('<li class="level-'.$thisLevel.' nav-path-selected"><a class="nav-path-selected" href="' . $pageLink . '" ' . $target . '>' . $ni->getName() . '</a>');
 			} else {
-				echo('<li><a href="' . $pageLink . '" ' . $target . ' >' . $ni->getName() . '</a>');
+				echo('<li class="level-'.$thisLevel.'"><a href="' . $pageLink . '" ' . $target . ' >' . $ni->getName() . '</a>');
 			}	
+
 			$lastLevel = $thisLevel;
 			$i++;
 			

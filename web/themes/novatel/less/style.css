@@ -4867,6 +4867,24 @@ a.badge:hover {
 /* ===== Primary Styles ========================================================
    Author: Rational
    ========================================================================== */
+body {
+  /* ===== Header LESS ===================================================== */
+
+  /* ===== Search Widget ===================================================== */
+
+  /* ===== Homepage LESS ===================================================== */
+
+  /* ===== Secondary / Subnav Elements ===================================================== */
+
+  /* ===== One, Two, Three Column Layouts ===================================================== */
+
+  /* ===== General Content Layout LESS ===================================================== */
+
+  /* ===== Edit Mode LESS ===================================================== */
+
+  /* ===== Footer LESS ===================================================== */
+
+}
 body .headerWrap {
   padding-top: 20px;
   border-top: 5px solid #3361aa;
@@ -4920,11 +4938,6 @@ body .headerWrap .mainHeader .mainMenu .nav > li a:visited {
   font-size: 16px;
   line-height: 20px;
   font-weight: 200;
-}
-body .headerWrap .mainHeader .mainMenu .nav > li:first-child {
-  margin-left: 100px;
-  border-left: 1px solid rgba(85, 85, 85, 0.5);
-  display: none;
 }
 body .headerWrap .mainHeader .mainMenu .nav > li:last-child {
   border-right: 1px solid rgba(85, 85, 85, 0.5);
@@ -5107,15 +5120,15 @@ body .container.rightSidebar .centerColumn {
   float: left;
   width: 820px;
 }
-.products p {
+body .products p {
   color: #555555;
 }
-.wrap.editMode .area {
+body .wrap.editMode .area {
   border: 1px dotted #f90;
   background: #eeeeee;
   margin-bottom: 32px;
 }
-.footerWrap {
+body .footerWrap {
   margin-top: 10px;
   margin-bottom: 5px;
   border-bottom: 5px solid #3361aa;
@@ -5130,43 +5143,50 @@ body .container.rightSidebar .centerColumn {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
   border-top: 1px solid #b4b4b4;
 }
-.footerWrap .footer {
+body .footerWrap .footer {
   margin-left: 0px;
   padding-right: 20px;
 }
-.footerWrap .footer ul.nav {
+body .footerWrap .footer ul.nav {
   width: 1004px;
-  margin: 25px 0px 40px 100px;
-  height: 115px;
+  margin: 25px 0px 5px 100px;
   *zoom: 1;
 }
-.footerWrap .footer ul.nav:before,
-.footerWrap .footer ul.nav:after {
+body .footerWrap .footer ul.nav:before,
+body .footerWrap .footer ul.nav:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.footerWrap .footer ul.nav:after {
+body .footerWrap .footer ul.nav:after {
   clear: both;
 }
-.footerWrap .footer ul.nav li {
+body .footerWrap .footer ul.nav ul.footer-column {
+  float: left;
+  width: 200px;
+  *zoom: 1;
+}
+body .footerWrap .footer ul.nav ul.footer-column:before,
+body .footerWrap .footer ul.nav ul.footer-column:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+body .footerWrap .footer ul.nav ul.footer-column:after {
+  clear: both;
+}
+body .footerWrap .footer ul.nav ul.footer-column li {
   list-style: none;
 }
-.footerWrap .footer ul.nav > li:first-child {
-  display: none;
-}
-.footerWrap .footer ul.nav > li {
-  display: block;
-  width: 204.8px;
-  float: left;
-  margin-top: 5px;
-}
-.footerWrap .footer ul.nav > li > a {
+body .footerWrap .footer ul.nav ul.footer-column > li > a {
   font-weight: bold;
 }
-.footerWrap .footer ul.nav ul {
+body .footerWrap .footer ul.nav ul.footer-column > li.level-0 {
+  margin-bottom: 10px;
+}
+body .footerWrap .footer ul.nav ul.footer-column ul {
   margin: 0px;
 }
-.footerWrap .footer .footer-sub {
+body .footerWrap .footer .footer-sub {
   margin-top: 15px;
 }
