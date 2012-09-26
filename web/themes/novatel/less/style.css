@@ -4868,21 +4868,23 @@ a.badge:hover {
    Author: Rational
    ========================================================================== */
 body {
-  /* ===== Header LESS ===================================================== */
+  /* =============== Header LESS =============== */
 
-  /* ===== Search Widget ===================================================== */
+  /* =============== Search Widget =============== */
 
-  /* ===== Homepage LESS ===================================================== */
+  /* =============== Homepage LESS =============== */
 
-  /* ===== Secondary / Subnav Elements ===================================================== */
+  /* =============== Secondary / Subnav Elements =============== */
 
-  /* ===== One, Two, Three Column Layouts ===================================================== */
+  /* =============== One, Two, Three Column Layouts =============== */
 
-  /* ===== General Content Layout LESS ===================================================== */
+  /* =============== General Main/Center Content Layout LESS =============== */
 
-  /* ===== Edit Mode LESS ===================================================== */
+  /* =============== General Right Sidbar Layout LESS =============== */
 
-  /* ===== Footer LESS ===================================================== */
+  /* =============== Edit Mode LESS =============== */
+
+  /* =============== Footer LESS =============== */
 
 }
 body .headerWrap {
@@ -5122,6 +5124,10 @@ body .container.rightSidebar .centerColumn {
 }
 body .products p {
   color: #555555;
+}
+body .container .rightColumn .sidebar-block h1 {
+  font-size: 16px;
+  line-height: 18px;
 }
 body .wrap.editMode .area {
   border: 1px dotted #f90;
