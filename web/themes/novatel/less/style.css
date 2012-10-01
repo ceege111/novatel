@@ -5125,6 +5125,26 @@ body .container.rightSidebar .centerColumn {
 body .products p {
   color: #555555;
 }
+body .product-list .row {
+  margin-bottom: 15px;
+}
+body .product-list a.find-out-more {
+  text-indent: 9999px;
+}
+body .product-list hr {
+  margin: 0px 100px 15px;
+  border-top: 1px solid #b4b4b4;
+  *zoom: 1;
+}
+body .product-list hr:before,
+body .product-list hr:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+body .product-list hr:after {
+  clear: both;
+}
 body .container .rightColumn .sidebar-block h1 {
   font-size: 16px;
   line-height: 18px;

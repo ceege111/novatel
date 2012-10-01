@@ -58,6 +58,25 @@ $this->inc('elements/header.php'); ?>
 				?>	
 			</div>
 
+			<?php //Product Details Tabs: When in edit mode we display these as a table, in normal viewing mode we display them as tabs
+				if ($c->isEditMode()): //edit mode rendering ?>
+				<div class="row">
+					<div class="span12">
+						<?php 
+							$tabs = new Area('Product Tabs');
+							$tabs->display($c);
+						?>
+					</div>
+				</div>
+			<?php else:  //normal template rendering?>
+				<div class="tab-titles"></div>
+				<div class="tabs">
+					<?php 
+						$tabs = new Area('Product Tabs');
+						$tabs->display($c);
+					?>
+				</div>		
+			<?php endif; ?>
 		</section>
 		<section class="rightColumn area">
 			<?php 
