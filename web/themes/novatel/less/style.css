@@ -5154,6 +5154,13 @@ body .wrap.editMode .area {
   background: #eeeeee;
   margin-bottom: 32px;
 }
+body .wrap.editMode .edit-tabs {
+  margin-left: 0px;
+  border: 2px solid green;
+}
+body .wrap.editMode .edit-tabs .tab {
+  margin-bottom: 20px;
+}
 body .footerWrap {
   margin-top: 10px;
   margin-bottom: 5px;

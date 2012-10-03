@@ -10,7 +10,7 @@ $this->inc('elements/header.php'); ?>
 	        $a->setBlockLimit(1);
 	        $a->display($c);
 	    } else { ?>
-	    	<h1 class="span12">
+	    	<h1 class="span8">
 				<?php
 					$page = Page::getCurrentPage();
 					echo $page->getCollectionName();
@@ -57,7 +57,7 @@ $this->inc('elements/header.php'); ?>
 				if ($c->isEditMode()): //edit mode rendering ?>
 
 				<div class="row edit-info">
-					<div class="span12">
+					<div class="span8">
 						<?php 
 							$ap = new Area('Product More Info');
 							$ap->display($c);
@@ -67,89 +67,83 @@ $this->inc('elements/header.php'); ?>
 
 				<div class="row edit-tabs">
 
-					<div class="span12 tab-title">
+					<div class="span8 tab-title">
 						<?php 
 							$tab_title_01 = new Area('Product Tab Title 01');
 							$tab_title_01->display($c);
 						?>
 					</div>
-					<div class="span12 tab">
+					<div class="span8 tab">
 						<?php 
 							$tab_01 = new Area('Product Tab 01');
 							$tab_01->display($c);
 						?>
 					</div>
-					<hr>
 
-					<div class="span12 tab-title">
+					<div class="span8 tab-title">
 						<?php 
 							$tab_title_02 = new Area('Product Tab Title 02');
 							$tab_title_02->display($c);
 						?>
 					</div>
-					<div class="span12 tab">
+					<div class="span8 tab">
 						<?php 
 							$tab_02 = new Area('Product Tab 02');
 							$tab_02->display($c);
 						?>
 					</div>
-					<hr>
 
-					<div class="span12 tab-title">
+					<div class="span8 tab-title">
 						<?php 
 							$tab_title_03 = new Area('Product Tab Title 03');
 							$tab_title_03->display($c);
 						?>
 					</div>
-					<div class="span12 tab">
+					<div class="span8 tab">
 						<?php 
 							$tab_03 = new Area('Product Tab 03');
 							$tab_03->display($c);
 						?>
 					</div>
-					<hr>
 
-					<div class="span12 tab-title">
+					<div class="span8 tab-title">
 						<?php 
 							$tab_title_04 = new Area('Product Tab Title 04');
 							$tab_title_04->display($c);
 						?>
 					</div>
-					<div class="span12 tab">
+					<div class="span8 tab">
 						<?php 
 							$tab_04 = new Area('Product Tab 04');
 							$tab_04->display($c);
 						?>
 					</div>
-					<hr>
 
-					<div class="span12 tab-title">
+					<div class="span8 tab-title">
 						<?php 
 							$tab_title_05 = new Area('Product Tab Title 05');
 							$tab_title_05->display($c);
 						?>
 					</div>
-					<div class="span12 tab">
+					<div class="span8 tab">
 						<?php 
 							$tab_05 = new Area('Product Tab 05');
 							$tab_05->display($c);
 						?>
 					</div>
-					<hr>
 
-					<div class="span12 tab-title">
+					<div class="span8 tab-title">
 						<?php 
 							$tab_title_06 = new Area('Product Tab Title 06');
 							$tab_title_06->display($c);
 						?>
 					</div>
-					<div class="span12 tab">
+					<div class="span8 tab">
 						<?php 
 							$tab_06 = new Area('Product Tab 06');
 							$tab_06->display($c);
 						?>
 					</div>
-					<hr>
 
 				</div>
 			<?php else:  //normal template rendering?>
