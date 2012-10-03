@@ -51,15 +51,20 @@ $this->inc('elements/header.php'); ?>
 					?>
 				</div>			
 			</div>
-			<div class="row">
-				<?php 
-					$ap = new Area('Product More Info');
-					$ap->display($c);
-				?>	
-			</div>
+
 
 			<?php //Product Details Tabs: When in edit mode we display these as a table, in normal viewing mode we display them as tabs
 				if ($c->isEditMode()): //edit mode rendering ?>
+
+				<div class="row edit-info">
+					<div class="span12">
+						<?php 
+							$ap = new Area('Product More Info');
+							$ap->display($c);
+						?>	
+					</div>
+				</div>
+
 				<div class="row edit-tabs">
 
 					<div class="span12 tab-title">
@@ -148,6 +153,14 @@ $this->inc('elements/header.php'); ?>
 
 				</div>
 			<?php else:  //normal template rendering?>
+
+				<div class="row">
+					<?php 
+						$ap = new Area('Product More Info');
+						$ap->display($c);
+					?>	
+				</div>
+
 				<ul id="productTabs" class="nav nav-tabs tab-titles">
 					<?php $tab_title_01 = new Area('Product Tab Title 01'); if($tab_title_01->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title'><a href='#tabOne'>";   $tab_title_01->display($c); echo "</a></li>\n"; } ?>
 					<?php $tab_title_02 = new Area('Product Tab Title 02'); if($tab_title_02->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title'><a href='#tabTwo'>";   $tab_title_02->display($c); echo "</a></li>\n"; } ?>
@@ -171,14 +184,6 @@ $this->inc('elements/header.php'); ?>
 			$aq = new Area('RightSidebar');
 			$aq->display($c);
 			?>
-		</section>
-		<section class="productMain area">
-			<div class="row">
-				<?php 
-					$as = new Area('Main');
-					$as->display($c);
-				?>	
-			</div>
 		</section>
 
 <?php  $this->inc('elements/footer.php'); ?>
