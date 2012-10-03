@@ -164,12 +164,12 @@ $this->inc('elements/header.php'); ?>
 					<?php $tab_title_06 = new Area('Product Tab Title 06'); if($tab_title_06->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title'><a href='#tabSix'>";   $tab_title_06->display($c); echo "</a></li>\n"; } ?>
 				</ul>
 				<div id="productTabsContenl" class="tab-content tabs">
-					<?php $tab_01 = new Area('Product Tab 01'); if($tab_01->getTotalBlocksInArea($c) > 0){ echo "<div id='tabOne'   class='tab-pane fade tab active'>"; $tab_01->display($c); echo "</div>\n"; } ?>
-					<?php $tab_02 = new Area('Product Tab 02'); if($tab_02->getTotalBlocksInArea($c) > 0){ echo "<div id='tabTwo'   class='tab-pane fade tab'>"; $tab_02->display($c); echo "</div>\n"; } ?>
-					<?php $tab_03 = new Area('Product Tab 03'); if($tab_03->getTotalBlocksInArea($c) > 0){ echo "<div id='tabThree' class='tab-pane fade tab'>"; $tab_03->display($c); echo "</div>\n"; } ?>
-					<?php $tab_04 = new Area('Product Tab 04'); if($tab_04->getTotalBlocksInArea($c) > 0){ echo "<div id='tabFour'  class='tab-pane fade tab'>"; $tab_04->display($c); echo "</div>\n"; } ?>
-					<?php $tab_05 = new Area('Product Tab 05'); if($tab_05->getTotalBlocksInArea($c) > 0){ echo "<div id='tabFive'  class='tab-pane fade tab'>"; $tab_05->display($c); echo "</div>\n"; } ?>
-					<?php $tab_06 = new Area('Product Tab 06'); if($tab_06->getTotalBlocksInArea($c) > 0){ echo "<div id='tabSix'   class='tab-pane fade tab'>"; $tab_06->display($c); echo "</div>\n"; } ?>
+					<?php $tab_01 = new Area('Product Tab 01'); if($tab_01->getTotalBlocksInArea($c) > 0){ echo "<div id='tabOne'   class='tab-pane tab active'>"; $tab_01->display($c); echo "</div>\n"; } ?>
+					<?php $tab_02 = new Area('Product Tab 02'); if($tab_02->getTotalBlocksInArea($c) > 0){ echo "<div id='tabTwo'   class='tab-pane tab'>"; $tab_02->display($c); echo "</div>\n"; } ?>
+					<?php $tab_03 = new Area('Product Tab 03'); if($tab_03->getTotalBlocksInArea($c) > 0){ echo "<div id='tabThree' class='tab-pane tab'>"; $tab_03->display($c); echo "</div>\n"; } ?>
+					<?php $tab_04 = new Area('Product Tab 04'); if($tab_04->getTotalBlocksInArea($c) > 0){ echo "<div id='tabFour'  class='tab-pane tab'>"; $tab_04->display($c); echo "</div>\n"; } ?>
+					<?php $tab_05 = new Area('Product Tab 05'); if($tab_05->getTotalBlocksInArea($c) > 0){ echo "<div id='tabFive'  class='tab-pane tab'>"; $tab_05->display($c); echo "</div>\n"; } ?>
+					<?php $tab_06 = new Area('Product Tab 06'); if($tab_06->getTotalBlocksInArea($c) > 0){ echo "<div id='tabSix'   class='tab-pane tab'>"; $tab_06->display($c); echo "</div>\n"; } ?>
 				</div>		
 			<?php endif; ?>
 		</section>
