@@ -154,14 +154,14 @@ $this->inc('elements/header.php'); ?>
 						$ap->display($c);
 					?>	
 				</div>
-
+				<hr>
 				<ul id="productTabs" class="nav nav-tabs tab-titles">
-					<?php $tab_title_01 = new Area('Product Tab Title 01'); if($tab_title_01->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title'><a href='#tabOne'>";   $tab_title_01->display($c); echo "</a></li>\n"; } ?>
-					<?php $tab_title_02 = new Area('Product Tab Title 02'); if($tab_title_02->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title'><a href='#tabTwo'>";   $tab_title_02->display($c); echo "</a></li>\n"; } ?>
-					<?php $tab_title_03 = new Area('Product Tab Title 03'); if($tab_title_03->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title'><a href='#tabThree'>"; $tab_title_03->display($c); echo "</a></li>\n"; } ?>
-					<?php $tab_title_04 = new Area('Product Tab Title 04'); if($tab_title_04->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title'><a href='#tabFour'>";  $tab_title_04->display($c); echo "</a></li>\n"; } ?>
-					<?php $tab_title_05 = new Area('Product Tab Title 05'); if($tab_title_05->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title'><a href='#tabFive'>";  $tab_title_05->display($c); echo "</a></li>\n"; } ?>
-					<?php $tab_title_06 = new Area('Product Tab Title 06'); if($tab_title_06->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title'><a href='#tabSix'>";   $tab_title_06->display($c); echo "</a></li>\n"; } ?>
+					<?php $tab_title_01 = new Area('Product Tab Title 01'); if($tab_title_01->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title'><a data-toggle='tab' href='#tabOne'>";   $tab_title_01->display($c); echo "</a></li>\n"; } ?>
+					<?php $tab_title_02 = new Area('Product Tab Title 02'); if($tab_title_02->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title'><a data-toggle='tab' href='#tabTwo'>";   $tab_title_02->display($c); echo "</a></li>\n"; } ?>
+					<?php $tab_title_03 = new Area('Product Tab Title 03'); if($tab_title_03->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title'><a data-toggle='tab' href='#tabThree'>"; $tab_title_03->display($c); echo "</a></li>\n"; } ?>
+					<?php $tab_title_04 = new Area('Product Tab Title 04'); if($tab_title_04->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title'><a data-toggle='tab' href='#tabFour'>";  $tab_title_04->display($c); echo "</a></li>\n"; } ?>
+					<?php $tab_title_05 = new Area('Product Tab Title 05'); if($tab_title_05->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title'><a data-toggle='tab' href='#tabFive'>";  $tab_title_05->display($c); echo "</a></li>\n"; } ?>
+					<?php $tab_title_06 = new Area('Product Tab Title 06'); if($tab_title_06->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title'><a data-toggle='tab' href='#tabSix'>";   $tab_title_06->display($c); echo "</a></li>\n"; } ?>
 				</ul>
 				<div id="productTabsContenl" class="tab-content tabs">
 					<?php $tab_01 = new Area('Product Tab 01'); if($tab_01->getTotalBlocksInArea($c) > 0){ echo "<div id='tabOne'   class='tab-pane tab active'>"; $tab_01->display($c); echo "</div>\n"; } ?>
