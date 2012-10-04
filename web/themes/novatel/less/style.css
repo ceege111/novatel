@@ -4917,7 +4917,7 @@ body .headerWrap .mainHeader .altNav form input.searchInput {
 body .headerWrap .mainHeader .altNav form input.searchSubmit {
   background: url(img/icons/search-icon.png) no-repeat 50% 50% transparent;
   text-indent: -9999px;
-  margin-top: -10px;
+  margin-top: -8px;
   margin-left: -4px;
   width: 30px;
   height: 30px;
@@ -4992,7 +4992,7 @@ body .wrap {
   width: 1024px;
 }
 body form.header-search-form {
-  margin: 0px 30px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 body form.header-search-form input {
   border: 1px solid #ccc;
@@ -5002,12 +5002,12 @@ body form.header-search-form input {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 body form.header-search-form input.searchInput {
-  width: 125px;
+  width: 155px;
 }
 body form.header-search-form input.searchSubmit {
   background: url(img/icons/search-icon.png) no-repeat 50% 50% transparent;
   text-indent: -9999px;
-  margin-top: -10px;
+  margin-top: -8px;
   margin-left: -4px;
   width: 30px;
   height: 30px;
@@ -5100,6 +5100,30 @@ body .pageTitle .row .span12 img {
 }
 body .container {
   width: 1024px;
+}
+body .container .leftColumn .sidebar-block,
+body .container .rightColumn .sidebar-block {
+  border: 1px solid #b4b4b4;
+  border-top: 2px solid #8dc63f;
+  margin: 0px 0px 15px;
+  padding: 3px 10px;
+  -webkit-box-shadow: 0px 3px 4px #a1a1a1;
+  -moz-box-shadow: 0px 3px 4px #a1a1a1;
+  box-shadow: 0px 3px 4px #a1a1a1;
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+}
+body .container .leftColumn .sidebar-block h1,
+body .container .rightColumn .sidebar-block h1 {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #b4b4b4;
 }
 body .container .leftColumn {
   float: left;

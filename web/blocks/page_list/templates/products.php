@@ -51,7 +51,7 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 		/* End data preparation. */
 
 		/* The HTML from here through "endforeach" is repeated for every item in the list... */ ?>
-		<div class="row">
+		<div class="row product-item">
 			<img class="span3 offset1" src="<?php echo $thumb->src ?>" width="<?php echo $thumb->width ?>" height="<?php echo $thumb->height ?>" alt="" />
 			<div class="span6 offset1">
 				<h3 class="ccm-page-list-title">
@@ -63,6 +63,7 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 				<br>
 				<a style="margin-left: -5px;" class="find-out-more" href="<?php echo $url ?>"><img src="/themes/novatel/img/products/find_out_more.png"></a>
 			</div>
+			<hr>
 		</div>
 			
 	<?php endforeach; ?>
