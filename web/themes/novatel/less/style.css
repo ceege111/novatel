@@ -5146,6 +5146,10 @@ body .container.rightSidebar .centerColumn {
   float: left;
   width: 800px;
 }
+body .ccm-block-styles img.feature {
+  margin-top: -6px;
+  margin-right: 4px;
+}
 body .ccm-block-styles h1.feature img {
   margin-top: -6px;
   margin-right: 4px;
