@@ -5146,6 +5146,12 @@ body .container.rightSidebar .centerColumn {
   float: left;
   width: 800px;
 }
+body .ccm-block-styles img.feature {
+  margin-top: -7px;
+}
+body .ccm-block-styles p.feature {
+  margin-left: 30px;
+}
 body .product p {
   color: #555555;
 }
