@@ -4949,7 +4949,7 @@ body .headerWrap .mainHeader .mainMenu .nav > li {
 body .headerWrap .mainHeader .mainMenu .nav > li > a,
 body .headerWrap .mainHeader .mainMenu .nav > li > a:visited {
   color: rgba(255, 255, 255, 0.7);
-  text-shadow: 1px 1px #333333;
+  text-shadow: 1px 1px #eeeeee;
   padding: 12px 20px 10px 20px;
 }
 body .headerWrap .mainHeader .mainMenu .nav > li > a:hover,
