@@ -5144,7 +5144,7 @@ body .container.rightSidebar .centerColumn {
   float: left;
   width: 800px;
 }
-body .ccm-page-list {
+body .ccm-page-list h3 {
   background: url(/themes/novatel/img/icons/content-arrow.png) no-repeat 0% 50% transparent;
   padding-left: 30px;
 }
