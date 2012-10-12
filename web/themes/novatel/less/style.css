@@ -2272,7 +2272,6 @@ table [class*=span],
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
   z-index: 1000;
   display: none;
   float: left;
@@ -4963,7 +4962,6 @@ body .headerWrap .mainHeader .mainMenu .nav > li.nav-selected {
 }
 body .headerWrap .mainHeader .mainMenu .nav .dropdown-menu {
   top: 40px;
-  left: initial;
   margin-left: -10px;
   padding-bottom: 15px;
   min-width: 220px;
