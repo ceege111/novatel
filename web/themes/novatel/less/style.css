@@ -5144,6 +5144,10 @@ body .container.rightSidebar .centerColumn {
   float: left;
   width: 800px;
 }
+body .ccm-page-list {
+  background: url(/themes/novatel/img/icons/content-arrow.png) no-repeat 0% 50% transparent;
+  padding-left: 30px;
+}
 body .ccm-block-styles img.feature {
   margin-top: -6px;
   margin-right: 4px;
