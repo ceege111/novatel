@@ -52,7 +52,7 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 
 		/* The HTML from here through "endforeach" is repeated for every item in the list... */ ?>
 		<div class="row product-item">
-			<img class="span3 offset1" src="<?php echo $thumb->src ?>" width="<?php echo $thumb->width ?>" height="<?php echo $thumb->height ?>" alt="" />
+			<a href="<?php echo $url ?>"><img class="span3 offset1" src="<?php echo $thumb->src ?>" width="<?php echo $thumb->width ?>" height="<?php echo $thumb->height ?>" alt="" /></a>
 			<div class="span6 offset1">
 				<h3 class="ccm-page-list-title">
 					<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
