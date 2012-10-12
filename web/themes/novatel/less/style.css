@@ -5145,8 +5145,13 @@ body .container.rightSidebar .centerColumn {
   width: 800px;
 }
 body .ccm-page-list h3 {
-  background: url(img/icons/content-arrow.png) no-repeat 0% 50% transparent;
+  background: url(img/icons/list-arrow.png) no-repeat 0% 50% transparent;
   padding-left: 30px;
+}
+body .ccm-page-list h3 a,
+body .ccm-page-list h3 a:visited {
+  color: #3361aa;
+  font-size: 18px;
 }
 body .ccm-block-styles img.feature {
   margin-top: -6px;
