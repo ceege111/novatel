@@ -5192,6 +5192,8 @@ body .product-list .row {
 }
 body .product-list a.find-out-more {
   text-indent: 9999px;
+}
+body .product-list a.find-out-more img {
   margin-bottom: 20px;
 }
 body .product-list hr {
