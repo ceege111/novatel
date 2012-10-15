@@ -30,10 +30,10 @@ $(document).ready(function(){
 	});
 
 	//iframe content resize
-	var calculatedHeight = $(window).innerHeight() - $(".headerWrap").outerHeight();
+	var calculatedHeight = $(window).innerHeight() - $(".headerWrap").outerHeight(true);
 	$("#iframeContent").attr('height', calculatedHeight);
 	$(window).resize(function(){
-		var calcHeight = $(window).innerHeight() - $(".headerWrap").outerHeight();
+		var calcHeight = $(window).innerHeight() - $(".headerWrap").outerHeight(true);
 		$("#iframeContent").attr('height',calcHeight);
 	});
 
