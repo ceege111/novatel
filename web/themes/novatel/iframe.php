@@ -1,6 +1,7 @@
 <?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 $this->inc('elements/header.php'); ?>
+$page = Page::getCurrentPage();
 
 <header class="pageTitle container">
 	<div class="row banner">
@@ -12,7 +13,6 @@ $this->inc('elements/header.php'); ?>
 	    } else { ?>
 	    	<h1 class="span12">
 				<?php
-					$page = Page::getCurrentPage();
 					echo $page->getCollectionName();
 				?>
 			</h1>
