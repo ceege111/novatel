@@ -29,6 +29,13 @@ $(document).ready(function(){
 		});
 	});
 
+	//iframe content resize
+	var calculatedHeight = $(window).innerHeight() - $(".headerWrap").outerHeight() - $(".footerWrap").outerHeight();
+	$("#iframeContent").attr('height', calculatedHeight);
+	$(window).resize(function(){
+		var calcHeight = $(window).innerHeight() - $(".headerWrap").outerHeight() - $(".footerWrap").outerHeight();
+		$("#iframeContent").attr('height',calcHeight);
+	});
 
 });
 

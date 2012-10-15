@@ -40,7 +40,7 @@ $this->inc('elements/header.php'); ?>
 	?>
 	<!-- iframe goes here -->
 	<?php if($url != ''):?>	
-		<iframe src="<?php echo $url; ?>" seamless allowtransparency="0" frameborder="0" class="embeddedContent" id="iframeContent" width="1024" height="2000"></iframe>
+		<iframe src="<?php echo $url; ?>" seamless allowtransparency="0" frameborder="0" class="embeddedContent" id="iframeContent" width="1024" height="1200"></iframe>
 	<?php endif; ?>
 
 	<section class="column area">
@@ -49,6 +49,5 @@ $this->inc('elements/header.php'); ?>
 		$as->display($c);
 		?>
 	</section>
-	
 
 <?php  $this->inc('elements/footer.php'); ?>
