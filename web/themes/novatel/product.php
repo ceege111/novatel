@@ -39,10 +39,19 @@ $this->inc('elements/header.php'); ?>
 
 			<div class="row">
 				<div class="span3 offset1 productImages">
-					<?php 
-						$ag = new Area('Product Images');
-						$ag->display($c);
-					?>
+					<div class="productImages">
+						<?php 
+							$ag = new Area("Product Images");
+							$ag->display($c);
+						?>
+					</div>
+					<div class="productMoreImages">
+						<?php 
+							$ak = new Area("Product More Images");
+							$ak->display($c);
+						?>
+					</div>
+					<!-- social plugins go here -->
 				</div>
 				<div class="span5 productDescription">
 					<?php 

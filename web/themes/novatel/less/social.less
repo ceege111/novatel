@@ -1,0 +1,159 @@
+body {
+	/* ========================================================
+	   Share Buttons
+	   ===================================================== */
+	.share-btn {
+	  position: relative;
+	  display: inline-block;
+	  vertical-align: top;
+	  margin: 0 20px;
+	  padding-top: 40px;
+	  width: 80px;
+	  font-weight: bold;
+	  text-align: center;
+	  text-decoration: none;
+	  border-radius: 8px;
+	  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	}
+	.share-btn:active {
+	  margin-top: 3px;
+	}
+	.share-btn:active .share-btn-action {
+	  padding-bottom: 3px;
+	  -webkit-box-shadow: inset 0 -3px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.15);
+	  box-shadow: inset 0 -3px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.15);
+	}
+	.share-btn:active .share-btn-action:after {
+	  bottom: 3px;
+	}
+
+	.share-btn-count {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  line-height: 40px;
+	  font-size: 19px;
+	  letter-spacing: -1px;
+	  color: #555;
+	  text-shadow: 0 1px white;
+	  border-width: 1px 1px 0;
+	  border-style: solid;
+	  border-color: #c5c5c5 #bbb;
+	  border-radius: 8px 8px 0 0;
+	  background-color: #e6eff5;
+	  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.03)), color-stop(40%, transparent));
+	  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.03) 0%, transparent 40%);
+	  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.03) 0%, transparent 40%);
+	  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.03) 0%, transparent 40%);
+	  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.03) 0%, transparent 40%);
+	  background-image: linear-gradient(top, rgba(0, 0, 0, 0.03) 0%, transparent 40%);
+	  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px rgba(0, 0, 0, 0.18), 0 2px rgba(0, 0, 0, 0.07);
+	  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px rgba(0, 0, 0, 0.18), 0 2px rgba(0, 0, 0, 0.07);
+	}
+	.share-btn-count:before, .share-btn-count:after {
+	  content: '';
+	  position: absolute;
+	  top: 100%;
+	  left: 50%;
+	  margin-left: -6px;
+	  border: 6px solid transparent;
+	  border-top-color: #e6eff5;
+	}
+	.share-btn-count:before {
+	  border-width: 7px;
+	  border-top-color: rgba(0, 0, 0, 0.07);
+	  margin-left: -7px;
+	  margin-top: 1px;
+	}
+
+	.share-btn-action {
+	  position: relative;
+	  display: block;
+	  line-height: 32px;
+	  padding: 2px 0 6px;
+	  font-size: 12px;
+	  color: white;
+	  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	  border: solid rgba(0, 0, 0, 0.18);
+	  border-width: 0 1px;
+	  border-radius: 0 0 8px 8px;
+	}
+	.share-btn-action:before {
+	  content: '';
+	  display: inline-block;
+	  vertical-align: top;
+	  margin: 8px 2px 0 0;
+	  width: 18px;
+	  height: 18px;
+	  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAASCAYAAAAzI3woAAAC+ElEQVR42uVWSWhTURS1jW0NdtDiAAlYK2kjOGBquohLV9GKICK4ChVMunAhUhKyUEkTF7ooKILYjWYTzCISAoIgNhYCTesicSGl0qQVMtWUkrFp5u+58D5+P4ltV1V8cMjn3eGfe+5972cPx3F/Ff5PQktLS92ZTGaYQM+7QgirZWFhoa9QKLyp1+tlji16pj2ykc/OCbHkkUhEnsvlxlClbssq4Q8fVa1W+8E1WWQLh8NqMaltkUkkEpdQWV6QLL64uKjkk4lhMpm6SqVSSEgAhcRGR0f1iLmoVqsv016xWAyT704J7UPgd0qwsbER1ev1N9PpdACye2Frb+Dfury8fFusiNfrfQbb4OTk5IVAIPCY3ydfimlICEtSLpefQsoBqp7gcrlUfDCqTrvd7gcgFoFKxVgsdmdqaqpNlKNjbW3NLSY0PT1thq0XSr0W7pMvxTQjJF1fX3/JDx8IfKlUKqtNZqCSSqU+YbauCSvE6kIOv9DX7/e/0ul0Kth6rFarxm63j/M25PhMMb/ioQJacoIpIu3v71eGQqG33B9WtVotmc1mA/xPAgcAiSBhD5T7IPQPBoMvjEbjALXf4XCch1r3eRv5UoyQkARVXqeOkCKbm5vfuC3W/Py8neYBOEhyixTq9vl8j8QxKysrY1RwNpv9rdiZmRkrxQgJ7QUOz87OPkSbaluRQUUBmUymIplJ1UaHYGho6Gw+n0+KVLpLM5RMJt/xe7hGVsmXYoSEWlnywYmJCT2O+NdmbcIsOBUKhQa+h4RtEh8M4IjFYtFh+FN8/Nzc3Djtx+Px9+yA5Gw22y3aE58ynlQn0AcMa7XaG06n84nH43lOANF7Go3mCmynGRl2shqDtfHYyMjIVcyjj4rhCUWjUQ/2PtL1wd7X0fAeYkPdzoZUDigAJZuV48BRRlqyncuU2gDIgHNyuVxjMBjO0MzRocHvKfYOqbjtzZJJWJVSlriNVNzpt4zFdQO9wH7KyX47ma1lF772jBzDP/d/6CdNGpR2FzGYjQAAAABJRU5ErkJggg==);
+	}
+	.share-btn-action:after {
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  bottom: 6px;
+	  left: 0;
+	  right: 0;
+	  border-radius: 0 0 6px 6px;
+	  -webkit-box-shadow: inset 0 -1px 2px rgba(255, 255, 255, 0.25);
+	  box-shadow: inset 0 -1px 2px rgba(255, 255, 255, 0.25);
+	}
+
+	.share-btn-tweet {
+	  background-color: #83cfe8;
+	  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #83cfe8), color-stop(100%, #6ebbd4));
+	  background-image: -webkit-linear-gradient(top, #83cfe8, #6ebbd4);
+	  background-image: -moz-linear-gradient(top, #83cfe8, #6ebbd4);
+	  background-image: -ms-linear-gradient(top, #83cfe8, #6ebbd4);
+	  background-image: -o-linear-gradient(top, #83cfe8, #6ebbd4);
+	  background-image: linear-gradient(top, #83cfe8, #6ebbd4);
+	  -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.16), inset 0 -1px rgba(0, 0, 0, 0.15);
+	  box-shadow: inset 0 -6px rgba(0, 0, 0, 0.16), inset 0 -1px rgba(0, 0, 0, 0.15);
+	}
+	.share-btn-tweet:before {
+	  margin-left: -3px;
+	}
+	.share-btn-tweet:after {
+	  -webkit-box-shadow: inset 0 -1px 2px rgba(255, 255, 255, 0.5);
+	  box-shadow: inset 0 -1px 2px rgba(255, 255, 255, 0.5);
+	}
+	.share-btn-tweet + .share-btn-count {
+	  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px rgba(0, 0, 0, 0.12), 0 2px rgba(0, 0, 0, 0.04);
+	  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px rgba(0, 0, 0, 0.12), 0 2px rgba(0, 0, 0, 0.04);
+	}
+	.share-btn-tweet + .share-btn-count:before {
+	  border-top-color: rgba(0, 0, 0, 0.05);
+	}
+
+	.share-btn-like {
+	  background-color: #6480bd;
+	  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6480bd), color-stop(100%, #3c5894));
+	  background-image: -webkit-linear-gradient(top, #6480bd, #3c5894);
+	  background-image: -moz-linear-gradient(top, #6480bd, #3c5894);
+	  background-image: -ms-linear-gradient(top, #6480bd, #3c5894);
+	  background-image: -o-linear-gradient(top, #6480bd, #3c5894);
+	  background-image: linear-gradient(top, #6480bd, #3c5894);
+	  -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.2);
+	  box-shadow: inset 0 -6px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.2);
+	}
+	.share-btn-like:before {
+	  background-position: -18px 0;
+	}
+
+	.share-btn-plus {
+	  background-color: #626262;
+	  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #626262), color-stop(100%, #404040));
+	  background-image: -webkit-linear-gradient(top, #626262, #404040);
+	  background-image: -moz-linear-gradient(top, #626262, #404040);
+	  background-image: -ms-linear-gradient(top, #626262, #404040);
+	  background-image: -o-linear-gradient(top, #626262, #404040);
+	  background-image: linear-gradient(top, #626262, #404040);
+	  -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+	  box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+	}
+	.share-btn-plus:before {
+	  display: none;
+	}
+}

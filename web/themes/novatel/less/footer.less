@@ -1,0 +1,52 @@
+body {
+/* =============== Footer LESS =============== */
+
+	.footerWrap {
+		margin-top: 10px;
+		margin-bottom: 5px;
+		border-bottom: 5px solid @blueDark;
+		background: @grayLighter;
+		#gradient .vertical(@white, @grayLighter);
+		border-top: 1px solid @grayLight;
+		.footer {
+			margin-left: 0px;
+			padding-right: 20px;
+			>div {
+				// margin-left: 0px;
+			}
+			ul.nav{
+				width: @bodyWidth - 20px;
+				margin: 25px 0px 5px 100px;
+				// height: 115px;
+				// .content-columns(4);
+				.clearfix;
+				ul.footer-column{
+					float: left;
+					width: 200px;
+					.clearfix;
+					li {
+						list-style: none;
+					}
+					>li:first-child {
+						// display:none;
+					}
+					>li {
+						>a {
+							font-weight: bold;
+						}
+						&.level-0{
+							margin-bottom: 10px;
+						}
+					}
+
+					ul {
+						margin: 0px;
+					}
+				}
+			}
+			.footer-sub {
+				margin-top: 15px;
+			}
+		}
+	}
+}

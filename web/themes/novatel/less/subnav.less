@@ -1,0 +1,39 @@
+body {
+/* =============== Secondary / Subnav Elements =============== */
+
+	.pageTitle {
+		margin-bottom: 15px;
+		.breadcrumb {
+			background-color: transparent;
+			margin: 0px;
+		}
+		.nav-header-tabs {
+			margin: 0px;
+			padding: 0px 10px;
+			list-style: none;
+			background-color: @grayLight;
+			border: 1px solid @grayLightish;	
+			border-bottom: 3px solid @green;
+			.clearfix;
+			li {
+				display: block;
+				padding: 5px 10px;
+				float: left;
+				border-right: 1px solid fadeout(@grayLightish, 30%);
+				&.nav-selected {
+					font-weight: bold;
+					a, a:visited {
+						color: @blueDarkish;
+					}
+				}
+			}
+		}
+		.row {
+			.span12 {
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

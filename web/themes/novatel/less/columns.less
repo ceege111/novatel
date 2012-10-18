@@ -1,0 +1,58 @@
+body {
+/* =============== One, Two, Three Column Layouts =============== */
+
+	.container {
+		width: 1024px;
+
+		//styled sidebar blocks
+		.leftColumn, .rightColumn {
+			.sidebar-block {
+				border: 1px solid @grayLight;
+				border-top: 2px solid @green;
+				margin: 0px 0px 15px;
+				padding: 3px 20px;
+				.box-shadow(0px 3px 4px @grayLightish);
+				#gradient .vertical(@white, darken(@white, 5%));
+
+				h1 {
+					text-align: center;
+					padding-bottom: 10px;
+					border-bottom: 1px dashed @grayLight;
+				}
+			}
+		}	
+		.leftColumn {
+			float: left;
+			width: 240px;
+		}
+		.centerColumn {
+			float: left;
+		}
+		.rightColumn {
+			float: right;
+			width: 240px;
+		}
+	}
+
+	.container.leftSidebar {
+		.centerColumn {
+			width: 765px;
+		}
+	}
+
+	.container.threeColumn {
+		.centerColumn {
+			width: 624px;
+		}
+	}
+
+	.container.rightSidebar{
+		.centerColumn {
+			float: left;
+			width: 765px;
+		}
+		.rightColumn {
+
+		}
+	}
+}

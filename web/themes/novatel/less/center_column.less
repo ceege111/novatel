@@ -1,0 +1,64 @@
+body {
+/* =============== General Main/Center Content Layout LESS =============== */
+
+	.ccm-page-list {
+		h3 {
+			background: url(img/icons/list-arrow.png) no-repeat 0% 50% transparent;
+			padding-left: 30px;
+			a,a:visited{
+				color: @blueDark;
+				font-size: 18px;
+			}
+		}
+	}
+
+	.ccm-block-styles {
+		img.feature {
+			margin-top: -6px;
+			margin-right: 4px;
+		}
+		h1.feature {
+			img {
+				margin-top: -6px;
+				margin-right: 4px;
+			}
+		}
+		p.feature {
+			margin-left: 30px;
+		}
+	}
+
+	.product {
+		p {
+			color: @gray;
+		}
+
+		.tab-titles{
+			.clearfix;
+			list-style: none;
+			margin: 0px 0px 5px;
+			padding: 0px;
+			border-bottom: 1px solid @grayLight;
+			li {
+				float: left;
+				border-right: 2px solid @white;
+				padding: 3px 15px;
+				text-align: center;
+				line-height: 13px;
+				color: @grayLighter;
+				background: @grayLightish;
+				a,a:visited {
+					color: @white;
+					p {
+						margin: auto;
+						color: @grayLighter;
+						font-weight: 300;
+					}
+				}
+				&.active {
+					background: @green;
+				}
+			}
+		}
+	}
+}
