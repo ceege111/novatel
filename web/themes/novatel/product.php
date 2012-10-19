@@ -1,6 +1,18 @@
 <?php 
 defined('C5_EXECUTE') or die("Access Denied.");
-$this->inc('elements/header.php'); ?>
+$this->inc('elements/header.php'); 
+$ih = Loader::helper('image'); //<--uncomment this line if displaying image attributes (see below)
+
+$page = Page::getCurrentPage();
+$img = $page->getAttribute('product_image');
+
+if ($img){
+	$thumb = $ih->getThumbnail($img, 250, 9999, false);
+}
+
+?>
+
+
 
 <header class="pageTitle container">
 	<div class="row banner">
@@ -39,12 +51,19 @@ $this->inc('elements/header.php'); ?>
 
 			<div class="row">
 				<div class="span3 offset1 productImages">
+					<!-- TODO: If no images found load the image from Custom Attributes -->
+					<?php  
+						$ag = new Area("Product Images");
+					?>
+					<?php if ($ag->getTotalBlocksInArea($c) == 0 && isset($thumb)): ?>
+						<img src="<?php echo $thumb->src ?>" width="<?php echo $thumb->width ?>" height="<?php echo $thumb->height ?>" alt="" />
+					<?php else: ?>
 					<div class="productImages">
 						<?php 
-							$ag = new Area("Product Images");
 							$ag->display($c);
 						?>
 					</div>
+					<?php endif; ?>
 					<div class="productMoreImages">
 						<?php 
 							$ak = new Area("Product More Images");

@@ -33,7 +33,7 @@ $this->inc('elements/header.php'); ?>
 			$a->display($c);
 			?>
 		</section>
-		<section class="rightColumn area">
+		<section class="centerColumn area">
 			<?php 
 			$as = new Area('Main');
 			$as->display($c);
