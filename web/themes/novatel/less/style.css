@@ -5234,6 +5234,12 @@ body .product-list hr:after {
 body .product-list hr:after {
   clear: both;
 }
+body .rightSidebar .product-list.container {
+  width: 765px;
+}
+body .rightSidebar .product-list.container .offset1 {
+  margin-left: 15px;
+}
 body {
   /* =============== General Right Sidbar Layout LESS =============== */
 
