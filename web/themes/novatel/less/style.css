@@ -5055,6 +5055,23 @@ body .pageTitle .breadcrumb {
   background-color: transparent;
   margin: 0px;
 }
+body .pageTitle .defaultBanner {
+  background: url(img/banner_generic.png) no-repeat top right transparent;
+  height: 112px;
+}
+body .pageTitle .defaultBanner h1.defaultTitle {
+  width: 45%;
+  color: #eeeeee;
+  padding: 5px;
+  padding-left: 50px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: right;
+  background-color: #7bac37;
+  background-color: rgba(125, 174, 55, 0.65);
+}
 body .pageTitle .nav-header-tabs {
   margin: 0px;
   padding: 0px 10px;

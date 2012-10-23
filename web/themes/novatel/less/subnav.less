@@ -7,6 +7,23 @@ body {
 			background-color: transparent;
 			margin: 0px;
 		}
+		.defaultBanner {
+			background: url(img/banner_generic.png) no-repeat top right transparent;
+			height: 112px;
+			h1.defaultTitle {
+				width: 45%;
+				color: @grayLighter;
+				padding: 5px;
+				padding-left: 50px;
+				margin-top: 40px;
+				margin-bottom: 0px;
+				font-size: 30px;
+				font-weight: 400;
+				text-align: right;
+				background-color: @greenLight;
+				#translucent .background(@greenLight, 0.65);
+			}
+		}
 		.nav-header-tabs {
 			margin: 0px;
 			padding: 0px 10px;
