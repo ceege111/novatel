@@ -5052,6 +5052,7 @@ body .pageTitle {
   margin-bottom: 15px;
 }
 body .pageTitle .breadcrumb {
+  clear: both;
   background-color: transparent;
   margin: 0px;
 }
