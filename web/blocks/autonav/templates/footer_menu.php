@@ -94,6 +94,9 @@
 	$thisLevel = 0;
 	if ($containsPages) {
 		for ($i = $thisLevel; $i <= $lastLevel; $i++) {
+			if ($i == $lastLevel){
+				echo("<img class='iso-logo' src='/themes/novatel/img/icons/iso-logo.png' alt=''>");
+			}
 			echo("</li></ul>");
 		}
 	}
