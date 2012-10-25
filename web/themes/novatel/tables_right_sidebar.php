@@ -81,15 +81,13 @@ defined('C5_EXECUTE') or die("Access Denied.");
 				
 			</div>	
 		<?php else: ?>	
-			<table class="table table-striped tableHeader">
+			<table class="table table-striped tableHeader tableContent">
 				<?php 
 					$tableHeader = new Area('Table Header');
-					$tableHeader->setBlockWrapperStart('<tr>');
+					$tableHeader->setBlockWrapperStart('<tr class="tableHeader">');
 					$tableHeader->setBlockWrapperEnd('</tr>');
 					$tableHeader->display($c);
 				?>
-			</table>			
-			<table class="table table-striped tableContent">
 
 				<!-- Display Section 1 -->
 				<?php 

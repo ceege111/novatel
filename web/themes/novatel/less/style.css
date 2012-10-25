@@ -5163,6 +5163,12 @@ body .container .leftColumn .sidebar-block p.float-left:last-child,
 body .container .rightColumn .sidebar-block p.float-left:last-child {
   margin-bottom: 10px;
 }
+body .container .leftColumn .sidebar-block a,
+body .container .rightColumn .sidebar-block a,
+body .container .leftColumn .sidebar-block a:visited,
+body .container .rightColumn .sidebar-block a:visited {
+  color: #3361aa;
+}
 body .container .leftColumn {
   float: left;
   width: 240px;

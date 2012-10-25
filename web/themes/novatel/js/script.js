@@ -48,7 +48,7 @@ $(document).ready(function(){
 				$(this).removeClass('nav-selected');
 			});
 			$(this).addClass('nav-selected');
-			$(".table.tableContent tr").not(".table.tableContent tr.tableSection"+$(this).data('tableSection')).each(function(){
+			$(".table.tableContent tr").not(".table.tableContent tr.tableSection"+$(this).data('tableSection')).not(".table.tableContent tr.tableHeader").each(function(){
 				$(this).hide();
 			});
 			$(".table.tableContent tr.tableSection"+$(this).data('tableSection')).each(function(){
