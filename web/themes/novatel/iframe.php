@@ -5,18 +5,20 @@ $page = Page::getCurrentPage();
 ?>
 
 <header class="pageTitle container">
-	<div class="row banner">
-	    <?php
+    <?php
 	    $a = new Area('Header Banner');
 	    if (($a->getTotalBlocksInArea($c) > 0) || ($c->isEditMode())) {
+	    	echo '<div class="row banner">';
 	        $a->setBlockLimit(1);
 	        $a->display($c);
 	    } else { ?>
-	    	<h1 class="span12">
-				<?php
-					echo $page->getCollectionName();
-				?>
-			</h1>
+			<div class="row defaultBanner banner">
+		    	<h1 class="defaultTitle span12">
+					<?php
+						$page = Page::getCurrentPage();
+						echo $page->getCollectionName();
+					?>
+				</h1>
 	    <?php } ?>
 	</div>
 	<div class="subNav area">
