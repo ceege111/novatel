@@ -37,6 +37,10 @@ $(document).ready(function(){
 		$("#iframeContent").attr('height',calcHeight);
 	});
 
+	//table tabs
+	$(".tableTabs li.tab:first-child").addClass('nav-selected');
+
+
 });
 
 

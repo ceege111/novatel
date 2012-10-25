@@ -23,7 +23,7 @@ nbproject
 *.sublime-workspace
 
 */img/.DS_Store
-
+*/.DS_Store
 .DS_Store
 
 #node modules not required in source

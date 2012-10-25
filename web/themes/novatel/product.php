@@ -9,33 +9,11 @@ $img = $page->getAttribute('product_image');
 if ($img){
 	$thumb = $ih->getThumbnail($img, 250, 9999, false);
 }
-
 ?>
 
-
-
 <header class="pageTitle container">
-	<div class="row banner">
-	    <?php
-	    $a = new Area('Header Banner');
-	    if (($a->getTotalBlocksInArea($c) > 0) || ($c->isEditMode())) {
-	        $a->setBlockLimit(1);
-	        $a->display($c);
-	    } else { ?>
-	    	<h1 class="span8">
-				<?php
-					$page = Page::getCurrentPage();
-					echo $page->getCollectionName();
-				?>
-			</h1>
-	    <?php } ?>
-	</div>
-	<div class="subNav area">
-		<?php 
-			$ah = new Area("Sub Nav"); 
-			$ah->display($c);
-		?>
-	</div>
+	<?php $this->inc('elements/content_banner.php'); ?>
+	<?php $this->inc('elements/subnav.php'); ?>
 </header>
 
 <div class="container rightSidebar product">

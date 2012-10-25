@@ -5,31 +5,13 @@ $page = Page::getCurrentPage();
 ?>
 
 <header class="pageTitle container">
-    <?php
-	    $a = new Area('Header Banner');
-	    if (($a->getTotalBlocksInArea($c) > 0) || ($c->isEditMode())) {
-	    	echo '<div class="row banner">';
-	        $a->setBlockLimit(1);
-	        $a->display($c);
-	    } else { ?>
-			<div class="row defaultBanner banner">
-		    	<h1 class="defaultTitle span12">
-					<?php
-						$page = Page::getCurrentPage();
-						echo $page->getCollectionName();
-					?>
-				</h1>
-	    <?php } ?>
-	</div>
-	<div class="subNav area">
-		<?php 
-			$ah = new Area("Sub Nav");
-			$ah->display($c);
-		?>
-	</div>
+	<?php $this->inc('elements/content_banner.php'); ?>
+	<?php $this->inc('elements/subnav.php'); ?>
 </header>
 
 <div class="container oneColumn">
+
+	<!-- Main Content -->
 	<section class="column area">
 		<?php 
 		$as = new Area('Main');
@@ -46,6 +28,7 @@ $page = Page::getCurrentPage();
 		<iframe src="<?php echo $url; ?>" seamless allowtransparency="0" frameborder="0" class="embeddedContent" id="iframeContent" width="1024" height="1200"></iframe>
 	<?php endif; ?>
 
+	<!-- Secondary Main Content (After iframe) -->
 	<section class="column area">
 		<?php 
 		$as = new Area('Secondary Main');
@@ -53,4 +36,5 @@ $page = Page::getCurrentPage();
 		?>
 	</section>
 
+<!-- Footer -->
 <?php  $this->inc('elements/footer.php'); ?>

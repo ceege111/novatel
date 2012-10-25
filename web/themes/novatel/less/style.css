@@ -5228,6 +5228,48 @@ body {
   /* =============== General Main/Center Content Layout LESS =============== */
 
 }
+body .tables .nav-header-tabs {
+  margin: 0px;
+  padding: 0px 10px;
+  list-style: none;
+  background-color: #b4b4b4;
+  border: 1px solid #a1a1a1;
+  border-bottom: 3px solid #8dc63f;
+  *zoom: 1;
+}
+body .tables .nav-header-tabs:before,
+body .tables .nav-header-tabs:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+body .tables .nav-header-tabs:after {
+  clear: both;
+}
+body .tables .nav-header-tabs li {
+  display: block;
+  padding: 5px 10px;
+  float: left;
+  border-right: 1px solid rgba(161, 161, 161, 0.7);
+}
+body .tables .nav-header-tabs li p {
+  margin: 0;
+}
+body .tables .nav-header-tabs li.nav-selected {
+  font-weight: bold;
+}
+body .tables .nav-header-tabs li.nav-selected a,
+body .tables .nav-header-tabs li.nav-selected a:visited {
+  color: #1f3e6f;
+}
+body .tables .table.tableContent {
+  margin-top: 10px;
+}
+body .tables .table.tableContent th {
+  background: #2d4761;
+  color: #eeeeee;
+  font-weight: bold;
+}
 body .product-list .row {
   margin-bottom: 15px;
 }

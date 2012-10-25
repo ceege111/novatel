@@ -3,28 +3,8 @@ defined('C5_EXECUTE') or die("Access Denied.");
 $this->inc('elements/header.php'); ?>
 
 <header class="pageTitle container">
-    <?php
-	    $a = new Area('Header Banner');
-	    if (($a->getTotalBlocksInArea($c) > 0) || ($c->isEditMode())) {
-	    	echo '<div class="row banner">';
-	        $a->setBlockLimit(1);
-	        $a->display($c);
-	    } else { ?>
-			<div class="row defaultBanner banner">
-		    	<h1 class="defaultTitle span12">
-					<?php
-						$page = Page::getCurrentPage();
-						echo $page->getCollectionName();
-					?>
-				</h1>
-	    <?php } ?>
-	</div>
-	<div class="subNav area">
-		<?php 
-			$ah = new Area("Sub Nav");
-			$ah->display($c);
-		?>
-	</div>
+	<?php $this->inc('elements/content_banner.php'); ?>
+	<?php $this->inc('elements/subnav.php'); ?>
 </header>
 
 <div class="container oneColumn">
