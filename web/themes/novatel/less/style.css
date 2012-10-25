@@ -5156,7 +5156,8 @@ body .container .rightColumn .sidebar-block p.float-left {
   padding: 0;
   margin: 0;
   float: left;
-  min-width: 45%;
+  min-width: 50%;
+  font-size: 11px;
 }
 body .container .leftColumn {
   float: left;
