@@ -5262,10 +5262,11 @@ body .tables .nav-header-tabs li.nav-selected a,
 body .tables .nav-header-tabs li.nav-selected a:visited {
   color: #1f3e6f;
 }
-body .tables .table.tableContent {
+body .tables .table.tableHeader {
   margin-top: 10px;
+  margin-bottom: 0px;
 }
-body .tables .table.tableContent th {
+body .tables .table.tableHeader th {
   background: #2d4761;
   color: #eeeeee;
   font-weight: bold;
