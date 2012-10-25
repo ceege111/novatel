@@ -5159,6 +5159,10 @@ body .container .rightColumn .sidebar-block p.float-left {
   min-width: 50%;
   font-size: 11px;
 }
+body .container .leftColumn .sidebar-block p.float-left:last-child,
+body .container .rightColumn .sidebar-block p.float-left:last-child {
+  margin-bottom: 10px;
+}
 body .container .leftColumn {
   float: left;
   width: 240px;
