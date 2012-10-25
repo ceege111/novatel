@@ -5116,6 +5116,7 @@ body .container {
 }
 body .container .leftColumn .sidebar-block,
 body .container .rightColumn .sidebar-block {
+  *zoom: 1;
   border: 1px solid #b4b4b4;
   border-top: 2px solid #8dc63f;
   margin: 0px 0px 15px;
@@ -5132,11 +5133,30 @@ body .container .rightColumn .sidebar-block {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
 }
+body .container .leftColumn .sidebar-block:before,
+body .container .rightColumn .sidebar-block:before,
+body .container .leftColumn .sidebar-block:after,
+body .container .rightColumn .sidebar-block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+body .container .leftColumn .sidebar-block:after,
+body .container .rightColumn .sidebar-block:after {
+  clear: both;
+}
 body .container .leftColumn .sidebar-block h1,
 body .container .rightColumn .sidebar-block h1 {
   text-align: center;
   padding-bottom: 10px;
   border-bottom: 1px dashed #b4b4b4;
+}
+body .container .leftColumn .sidebar-block p.float-left,
+body .container .rightColumn .sidebar-block p.float-left {
+  padding: 0;
+  margin: 0;
+  float: left;
+  min-width: 45%;
 }
 body .container .leftColumn {
   float: left;

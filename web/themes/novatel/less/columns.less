@@ -7,6 +7,7 @@ body {
 		//styled sidebar blocks
 		.leftColumn, .rightColumn {
 			.sidebar-block {
+				.clearfix;
 				border: 1px solid @grayLight;
 				border-top: 2px solid @green;
 				margin: 0px 0px 15px;
@@ -18,6 +19,15 @@ body {
 					text-align: center;
 					padding-bottom: 10px;
 					border-bottom: 1px dashed @grayLight;
+				}
+
+				p {
+					&.float-left{
+						padding: 0;
+						margin: 0;
+						float: left;
+						min-width: 45%;
+					}
 				}
 			}
 		}	
