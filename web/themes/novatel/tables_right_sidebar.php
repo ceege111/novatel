@@ -109,7 +109,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 					}
 				?>
 
-				<!-- Display Section 1 -->
+				<!-- Display Section 3 -->
 				<?php 
 					$tableSection3= new Area('Table Section 3');
 					if ($tableSection3->getTotalBlocksInArea($c) > 0){
@@ -119,7 +119,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 					}
 				?>
 
-				<!-- Display Section 1 -->
+				<!-- Display Section 4 -->
 				<?php 
 					$tableSection4= new Area('Table Section 4');
 					if ($tableSection4->getTotalBlocksInArea($c) > 0){
@@ -129,7 +129,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 					}
 				?>
 
-				<!-- Display Section 1 -->
+				<!-- Display Section 5 -->
 				<?php 
 					$tableSection5= new Area('Table Section 5');
 					if ($tableSection5->getTotalBlocksInArea($c) > 0){

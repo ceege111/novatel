@@ -25,6 +25,27 @@ body {
 				#translucent .background(@greenLight, 0.65);
 			}
 		}
+		.banner {
+			img {
+				.box-shadow(0px 3px 4px @grayLightish);
+			}
+			h1.bannerTitle {
+				display: block;
+				position: absolute;
+				padding: 0;
+				margin: 0;
+				max-width: 450px;
+				padding-left: 50px;
+				padding-right: 10px;
+				text-align: right;
+				font-size: 30px;
+				font-weight: 400;
+				color: @grayLighter;
+				background: @greenLight;
+				#translucent .background(@greenLight, 0.65);
+				margin-top: -100px;
+			}
+		}
 		.nav-header-tabs {
 			margin: 0px;
 			padding: 0px 10px;
