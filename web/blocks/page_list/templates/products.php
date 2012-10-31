@@ -20,19 +20,26 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 		$description = $th->entities($description);	
 
 		$img = $page->getAttribute('product_image');
-		$fullPath = $img->getPath();
-		$fullsize = $img->getRelativePath();
-		$size = @getimagesize($fullPath);
-		if ( ($size[0] > 250) || ($size[1] > 300) ){
-			$thumb = $ih->getThumbnail($img, 250, 300, false);
-			$thumbSrc = $thumb->src;
-			$thumbWidth = $thumb->width;
-			$thumbHeight = $thumb->height;
+		if (){
+			$fullPath = $img->getPath();
+			$fullsize = $img->getRelativePath();
+			$size = @getimagesize($fullPath);
+			if ( ($size[0] > 250) || ($size[1] > 300) ){
+				$thumb = $ih->getThumbnail($img, 250, 300, false);
+				$thumbSrc = $thumb->src;
+				$thumbWidth = $thumb->width;
+				$thumbHeight = $thumb->height;
+			} else {
+				$thumbSrc = $fullsize;
+				$thumbWidth = $size[0];
+				$thumbHeight = $size[1];
+			}
 		} else {
-			$thumbSrc = $fullsize;
-			$thumbWidth = $size[0];
-			$thumbHeight = $size[1];
+			$thumbSrc = '';
+			$thumbWidth = '';
+			$thumbHeight = '';
 		}
+
 		
 		//Other useful page data...
 		//$date = date('F j, Y', strtotime($page->getCollectionDatePublic()));
