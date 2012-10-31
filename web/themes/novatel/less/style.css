@@ -5621,6 +5621,7 @@ body .socialButtons {
    ========================================================================== */
 body .productImages img {
   cursor: pointer;
+  text-align: center;
 }
 body .productMoreImages img {
   cursor: pointer;
