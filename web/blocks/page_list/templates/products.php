@@ -20,7 +20,7 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 		$description = $th->entities($description);	
 
 		$img = $page->getAttribute('product_image');
-		if (){
+		if ($img){
 			$fullPath = $img->getPath();
 			$fullsize = $img->getRelativePath();
 			$size = @getimagesize($fullPath);
