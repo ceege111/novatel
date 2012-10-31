@@ -69,6 +69,7 @@ $th = Loader::helper('text');
 			<h3 class="ccm-page-list-title">
 				<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $description ?></a>
 			</h3>
+			<div><?php echo $date; ?></div>
 			<div class="ccm-page-list-description">
 				<?php echo $source ?>	
 			</div>
