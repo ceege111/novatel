@@ -5345,25 +5345,28 @@ body .tables .table.tableHeader th {
 body .product-list .row {
   margin-bottom: 15px;
 }
-body .product-list a.find-out-more {
+body .product-list .row .productThumbnail {
+  text-align: center;
+}
+body .product-list .row a.find-out-more {
   text-indent: 9999px;
 }
-body .product-list a.find-out-more img {
+body .product-list .row a.find-out-more img {
   margin-bottom: 20px;
 }
-body .product-list hr {
+body .product-list .row hr {
   margin: 0px 100px 15px;
   border-top: 1px solid #b4b4b4;
   *zoom: 1;
   clear: both;
 }
-body .product-list hr:before,
-body .product-list hr:after {
+body .product-list .row hr:before,
+body .product-list .row hr:after {
   display: table;
   content: "";
   line-height: 0;
 }
-body .product-list hr:after {
+body .product-list .row hr:after {
   clear: both;
 }
 body .rightSidebar .product-list.container {
