@@ -5211,6 +5211,15 @@ body .container .rightColumn {
   float: right;
   width: 240px;
 }
+body .container.oneColumn .product-list .offset1 {
+  margin-left: 35px;
+}
+body .container.oneColumn .product-list .span6 {
+  width: 720px;
+}
+body .container.oneColumn .product-list hr {
+  margin: 0px 20px 15px;
+}
 body .container.leftSidebar .centerColumn {
   width: 765px;
 }
@@ -5613,7 +5622,7 @@ body .share-btn-plus:before {
   display: none;
 }
 body .socialButtons {
-  margin-top: 10px;
+  margin-top: 15px;
   text-align: center;
 }
 /* ===== Primary Styles ========================================================
@@ -5622,6 +5631,8 @@ body .socialButtons {
 body .productImages img {
   cursor: pointer;
   text-align: center;
+  display: block;
+  margin: 0px auto;
 }
 body .productMoreImages img {
   cursor: pointer;
