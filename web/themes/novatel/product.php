@@ -69,11 +69,11 @@
 				</script>
 				<!-- social plugins go here -->
 				<div class="socialButtons">
-				    <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.webinterfacelab.com%2Fsnippets%2Fshare-buttons&amp;via=WebInterfaceLab&amp;text=CSS3%20snippet%3A%20share%20buttons" class="share-btn" target="_blank">
+				    <a href="#" class="share-btn" target="_blank" onclick="alert('social buttons disabled on test server');return false;">
 				      <span class="share-btn-action share-btn-tweet">Tweet</span>
 				      <span id="twitterCount" class="share-btn-count">0</span>
 				    </a>
-				    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.webinterfacelab.com%2Fsnippets%2Fshare-buttons" class="share-btn" target="_blank">
+				    <a href="#" class="share-btn" target="_blank" onclick="alert('social buttons disabled on test server');return false;">
 				      <span class="share-btn-action share-btn-like">Like</span>
 				      <span id="facebookCount" class="share-btn-count">0</span>
 				    </a>
