@@ -17,7 +17,7 @@ $th = Loader::helper('text');
 	</div>
 <?php endif; ?>
 
-<table class="table table-striped tableHeader tableContent">
+<table class="table news-list table-striped tableHeader tableContent">
 	<?php foreach ($pages as $page):
 		// Prepare data for each page being listed...
 		$title = $th->entities($page->getCollectionName());

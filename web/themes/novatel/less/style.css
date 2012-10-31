@@ -5308,7 +5308,7 @@ body {
 
 }
 body #pagination.newsPagination {
-  padding: 5px;
+  padding: 3px 20px;
   background: #2d4761;
   color: #eeeeee;
   font-size: 11px;
@@ -5316,6 +5316,19 @@ body #pagination.newsPagination {
 body #pagination.newsPagination a,
 body #pagination.newsPagination a:visited {
   color: #eeeeee;
+}
+body table.news-list td {
+  padding: 0px 0px 0px 20px;
+}
+body table.news-list td h3 {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+}
+body table.news-list td h3 a,
+body table.news-list td h3 a:visited {
+  color: #3361aa;
 }
 body .tables .nav-header-tabs {
   margin: 0px;
