@@ -48,7 +48,41 @@
 						$ak->display($c);
 					?>
 				</div>
+				<script type="text/javascript">
+					$(document).ready(function(){
+						$(".productImages img, .productMoreImages img").each(function(){
+							$(this).css('cursor','pointer');
+							$(this).click(function(){
+								var imageModal = $("<div></div>");
+								$(imageModal).html("<div class=\"modal-header\"><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">×</button></div><div><img src=\""+$(this).data('fullimage')+"\"></div>");
+								$(imageModal).addClass('modal hide fade');
+								$(this).parent().append(imageModal);
+								$(imageModal).modal({backdrop: true});
+								$(imageModal).on('hidden', function(){
+									$(this).remove();
+									$('div.modal-backdrop').remove();
+								})
+							});
+						});
+					});
+				</script>
 				<!-- social plugins go here -->
+				<div class="socialButtons">
+				    <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.webinterfacelab.com%2Fsnippets%2Fshare-buttons&amp;via=WebInterfaceLab&amp;text=CSS3%20snippet%3A%20share%20buttons" class="share-btn" target="_blank">
+				      <span class="share-btn-action share-btn-tweet">Tweet</span>
+				      <span id="twitterCount" class="share-btn-count">0</span>
+				    </a>
+				    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.webinterfacelab.com%2Fsnippets%2Fshare-buttons" class="share-btn" target="_blank">
+				      <span class="share-btn-action share-btn-like">Like</span>
+				      <span id="facebookCount" class="share-btn-count">0</span>
+				    </a>
+				    <script type="text/javascript">
+				    	$(document).ready(function(){
+				    		var currentUrl = document.URL;
+				    		console.log("current URL: "+currentUrl);
+				    	});
+				    </script>
+			    </div>
 			</div>
 			<div class="span5 productDescription">
 				<?php 

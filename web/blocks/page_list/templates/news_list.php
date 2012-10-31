@@ -30,6 +30,7 @@ $th = Loader::helper('text');
 
 		$url = ($page->getAttribute('iframe_url') != '') ? $page->getAttribute('iframe_url') : $nh->getLinkToCollection($page);;
 		$source = ($page->getAttribute('external_content_title') != '') ? $page->getAttribute('external_content_title') : '';
+		$date = = ($page->getAttribute('external_content_posted_date') != '') ? $page->getAttribute('external_content_posted_date') : '';
 
 
 		// $img = $page->getAttribute('product_image');

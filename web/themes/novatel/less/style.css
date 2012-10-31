@@ -4138,8 +4138,18 @@ input[type="submit"].btn.btn-mini {
   top: 50%;
 }
 .modal-header {
+  *zoom: 1;
   padding: 9px 15px;
   border-bottom: 1px solid #eee;
+}
+.modal-header:before,
+.modal-header:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.modal-header:after {
+  clear: both;
 }
 .modal-header .close {
   margin-top: 2px;
@@ -5456,7 +5466,7 @@ body .share-btn {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  margin: 0 20px;
+  margin: 0 10px;
   padding-top: 40px;
   width: 80px;
   font-weight: bold;
@@ -5536,7 +5546,7 @@ body .share-btn-action:before {
   margin: 8px 2px 0 0;
   width: 18px;
   height: 18px;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAASCAYAAAAzI3woAAAC+ElEQVR42uVWSWhTURS1jW0NdtDiAAlYK2kjOGBquohLV9GKICK4ChVMunAhUhKyUEkTF7ooKILYjWYTzCISAoIgNhYCTesicSGl0qQVMtWUkrFp5u+58D5+P4ltV1V8cMjn3eGfe+5972cPx3F/Ff5PQktLS92ZTGaYQM+7QgirZWFhoa9QKLyp1+tlji16pj2ykc/OCbHkkUhEnsvlxlClbssq4Q8fVa1W+8E1WWQLh8NqMaltkUkkEpdQWV6QLL64uKjkk4lhMpm6SqVSSEgAhcRGR0f1iLmoVqsv016xWAyT704J7UPgd0qwsbER1ev1N9PpdACye2Frb+Dfury8fFusiNfrfQbb4OTk5IVAIPCY3ydfimlICEtSLpefQsoBqp7gcrlUfDCqTrvd7gcgFoFKxVgsdmdqaqpNlKNjbW3NLSY0PT1thq0XSr0W7pMvxTQjJF1fX3/JDx8IfKlUKqtNZqCSSqU+YbauCSvE6kIOv9DX7/e/0ul0Kth6rFarxm63j/M25PhMMb/ioQJacoIpIu3v71eGQqG33B9WtVotmc1mA/xPAgcAiSBhD5T7IPQPBoMvjEbjALXf4XCch1r3eRv5UoyQkARVXqeOkCKbm5vfuC3W/Py8neYBOEhyixTq9vl8j8QxKysrY1RwNpv9rdiZmRkrxQgJ7QUOz87OPkSbaluRQUUBmUymIplJ1UaHYGho6Gw+n0+KVLpLM5RMJt/xe7hGVsmXYoSEWlnywYmJCT2O+NdmbcIsOBUKhQa+h4RtEh8M4IjFYtFh+FN8/Nzc3Djtx+Px9+yA5Gw22y3aE58ynlQn0AcMa7XaG06n84nH43lOANF7Go3mCmynGRl2shqDtfHYyMjIVcyjj4rhCUWjUQ/2PtL1wd7X0fAeYkPdzoZUDigAJZuV48BRRlqyncuU2gDIgHNyuVxjMBjO0MzRocHvKfYOqbjtzZJJWJVSlriNVNzpt4zFdQO9wH7KyX47ma1lF772jBzDP/d/6CdNGpR2FzGYjQAAAABJRU5ErkJggg==);
+  background-image: url(img/icons.png);
 }
 body .share-btn-action:after {
   content: '';
@@ -5602,6 +5612,16 @@ body .share-btn-plus {
 body .share-btn-plus:before {
   display: none;
 }
+body .socialButtons {
+  margin-top: 10px;
+  text-align: center;
+}
 /* ===== Primary Styles ========================================================
    Author: Rational
    ========================================================================== */
+body .productImages img {
+  cursor: pointer;
+}
+body .productMoreImages img {
+  cursor: pointer;
+}
