@@ -103,7 +103,7 @@
 				$sizeStr = $size[3];
 			}
 			
-			$img = "<img border=\"0\" class=\"ccm-image-block customImage\" alt=\"{$this->altText}\" src=\"{$relPath}\" {$sizeStr} data-fullimage=\"{$originalPath}\"";
+			$img = "<img border=\"0\" class=\"ccm-image-block\" alt=\"{$this->altText}\" src=\"{$relPath}\" {$sizeStr} data-fullimage=\"{$originalPath}\"";
 			$img .= ($align) ? "align=\"{$align}\" " : '';
 			
 			$img .= ($style) ? "style=\"{$style}\" " : '';

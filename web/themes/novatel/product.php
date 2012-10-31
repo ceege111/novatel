@@ -8,6 +8,7 @@
 
 	if ($img){
 		$thumb = $ih->getThumbnail($img, 250, 9999, false);
+		$fullsize = $img->getRelativePath();
 	}
 ?>
 
@@ -34,7 +35,7 @@
 					$ag = new Area("Product Images");
 				?>
 				<?php if ($ag->getTotalBlocksInArea($c) == 0 && isset($thumb)): ?>
-					<img src="<?php echo $thumb->src ?>" width="<?php echo $thumb->width ?>" height="<?php echo $thumb->height ?>" alt="" />
+					<img src="<?php echo $thumb->src ?>" width="<?php echo $thumb->width ?>" height="<?php echo $thumb->height ?>" alt="" data-fullimage="<?php echo $fullsize; ?>"/>
 				<?php else: ?>
 				<div class="productImages">
 					<?php 
