@@ -23,7 +23,7 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 		$fullPath = $img->getPath();
 		$fullsize = $img->getRelativePath();
 		$size = @getimagesize($fullPath);
-		if ( ($size[0] < 250) || ($size[1] < 300) ){
+		if ( ($size[0] > 250) || ($size[1] > 300) ){
 			$thumb = $ih->getThumbnail($img, 250, 300, false);
 			$thumbSrc = $thumb->src;
 			$thumbWidth = $thumb->width;
