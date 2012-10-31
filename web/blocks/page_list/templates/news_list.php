@@ -7,7 +7,7 @@ $th = Loader::helper('text');
 ?>
 
 <?php if ($showPagination): ?>
-	<div id="pagination">
+	<div id="pagination" class="newsPagination">
 		<div class="ccm-spacer"></div>
 		<div class="ccm-pagination">
 			<span class="ccm-page-left"><?php echo $paginator->getPrevious('&laquo; ' . t('Previous')) ?></span>

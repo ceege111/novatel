@@ -5307,6 +5307,16 @@ body {
   /* =============== General Main/Center Content Layout LESS =============== */
 
 }
+body #pagination.newsPagination {
+  padding: 5px;
+  background: #3361aa;
+  color: #eeeeee;
+  font-size: 11px;
+}
+body #pagination.newsPagination a,
+body #pagination.newsPagination a:visited {
+  color: #eeeeee;
+}
 body .tables .nav-header-tabs {
   margin: 0px;
   padding: 0px 10px;
