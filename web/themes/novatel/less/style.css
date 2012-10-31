@@ -5364,6 +5364,7 @@ body .product-list .row {
 body .product-list .row .productThumbnail {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 body .product-list .row .productThumbnail img {
   border: 1px solid #c2c2c2;
