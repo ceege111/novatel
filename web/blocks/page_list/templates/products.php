@@ -20,7 +20,19 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 		$description = $th->entities($description);	
 
 		$img = $page->getAttribute('product_image');
-		$thumb = $ih->getThumbnail($img, 250, 9999, false);
+		$fullPath = $img->getPath();
+		$fullsize = $img->getRelativePath();
+		$size = @getimagesize($fullPath);
+		if ( ($size[0] < 250) || ($size[1] < 300) ){
+			$thumb = $ih->getThumbnail($img, 250, 300, false);
+			$thumbSrc = $thumb->src;
+			$thumbWidth = $thumb->width;
+			$thumbHeight = $thumb->height;
+		} else {
+			$thumbSrc = $fullsize;
+			$thumbWidth = $size[0];
+			$thumbHeight = $size[1];
+		}
 		
 		//Other useful page data...
 		//$date = date('F j, Y', strtotime($page->getCollectionDatePublic()));
@@ -52,7 +64,7 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 
 		/* The HTML from here through "endforeach" is repeated for every item in the list... */ ?>
 		<div class="row product-item">
-			<a href="<?php echo $url ?>"><img class="span3" src="<?php echo $thumb->src ?>" width="<?php echo $thumb->width ?>" height="<?php echo $thumb->height ?>" alt="" /></a>
+			<a href="<?php echo $url ?>"><img class="span3" src="<?php echo $thumbSrc ?>" width="<?php echo $thumbWidth ?>" height="<?php echo $thumbHeight ?>" alt="" /></a>
 			<div class="span6 offset1">
 				<h3 class="ccm-page-list-title">
 					<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
