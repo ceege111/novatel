@@ -5376,6 +5376,7 @@ body .product-list .row a.find-out-more img {
   margin-bottom: 20px;
 }
 body .product-list .row h3 {
+  padding-left: 0px;
   background: none transparent;
   line-height: 26px;
 }
