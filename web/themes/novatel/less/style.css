@@ -5065,6 +5065,7 @@ body .pageTitle .breadcrumb {
   clear: both;
   background-color: transparent;
   margin: 0px;
+  padding-left: 20px;
 }
 body .pageTitle .defaultBanner {
   background: url(img/banner_generic.png) no-repeat top right transparent;
@@ -5696,4 +5697,7 @@ body .productMoreImages img {
 body .modal .modal-body {
   text-align: center;
   padding: 20px 0px 30px;
+}
+body .slideImgWrap img {
+  border: 1px solid #c2c2c2;
 }
