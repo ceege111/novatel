@@ -34,15 +34,15 @@
 				<?php  
 					$ag = new Area("Product Images");
 				?>
-				<?php if ($ag->getTotalBlocksInArea($c) == 0 && isset($thumb) && (!$c->isEditMode())): ?>
-					<img src="<?php echo $thumb->src ?>" width="<?php echo $thumb->width ?>" height="<?php echo $thumb->height ?>" alt="" data-fullimage="<?php echo $fullsize; ?>"/>
-				<?php else: ?>
-				<div class="productImages">
-					<?php 
-						$ag->display($c);
-					?>
+				<div class="productMainImages">
+					<?php if ($ag->getTotalBlocksInArea($c) == 0 && isset($thumb) && (!$c->isEditMode())): ?>
+						<img src="<?php echo $thumb->src ?>" width="<?php echo $thumb->width ?>" height="<?php echo $thumb->height ?>" alt="" data-fullimage="<?php echo $fullsize; ?>"/>
+					<?php else: ?>
+						<?php 
+							$ag->display($c);
+						?>
+					<?php endif; ?>
 				</div>
-				<?php endif; ?>
 				<div class="productMoreImages">
 					<?php 
 						$ak = new Area("Product More Images");
