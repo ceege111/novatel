@@ -4939,8 +4939,8 @@ body .headerWrap .mainHeader .mainMenu .nav > li {
 }
 body .headerWrap .mainHeader .mainMenu .nav > li > a,
 body .headerWrap .mainHeader .mainMenu .nav > li > a:visited {
-  color: #ffffff;
-  font-weight: bold;
+  color: #eeeeee;
+  font-weight: 400;
   padding: 12px 20px 10px 20px;
 }
 body .headerWrap .mainHeader .mainMenu .nav > li > a:hover,
