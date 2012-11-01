@@ -5698,6 +5698,6 @@ body .modal .modal-body {
   text-align: center;
   padding: 20px 0px 30px;
 }
-body .slideImgWrap img {
+body .slideImgWrap {
   border: 1px solid #c2c2c2;
 }
