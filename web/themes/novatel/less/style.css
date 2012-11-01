@@ -5689,3 +5689,7 @@ body .productMainImages img {
 body .productMoreImages img {
   cursor: pointer;
 }
+body .modal .modal-body {
+  text-align: center;
+  padding: 20px 0px;
+}

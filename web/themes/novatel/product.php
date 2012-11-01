@@ -55,7 +55,7 @@
 							$(this).css('cursor','pointer');
 							$(this).click(function(){
 								var imageModal = $("<div></div>");
-								$(imageModal).html("<div class=\"modal-header\"><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">×</button></div><div><img src=\""+$(this).data('fullimage')+"\"></div>");
+								$(imageModal).html("<div class=\"modal-header\"><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">×</button></div><div class=\"modal-body\"><img src=\""+$(this).data('fullimage')+"\"></div>");
 								$(imageModal).addClass('modal hide fade');
 								$(this).parent().append(imageModal);
 								$(imageModal).modal({backdrop: true});
