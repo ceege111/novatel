@@ -15,6 +15,13 @@ defined('C5_EXECUTE') or die("Access Denied.");
 	<!-- Main Content -->
 	<section class="centerColumn area">
 
+		<div>
+			<?php 
+				$as = new Area('Main');
+				$as->display($c);
+			?>
+		</div>
+
 		<!-- Tab Header -->
 		<?php if ($c->isEditMode()): ?>
 			<div class="editMode">
@@ -141,10 +148,6 @@ defined('C5_EXECUTE') or die("Access Denied.");
 
 			</table>
 		<?php endif ?>
-		<?php 
-		$as = new Area('Main');
-		$as->display($c);
-		?>
 	</section>
 
 	<!-- Right Sidebar -->
