@@ -5680,7 +5680,7 @@ body .socialButtons {
 /* ===== Primary Styles ========================================================
    Author: Rational
    ========================================================================== */
-body .productImages img {
+body .productMainImages img {
   cursor: pointer;
   text-align: center;
   display: block;
