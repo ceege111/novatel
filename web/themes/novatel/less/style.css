@@ -5680,6 +5680,9 @@ body .socialButtons {
 /* ===== Primary Styles ========================================================
    Author: Rational
    ========================================================================== */
+body .productTitle {
+  margin-bottom: 15px;
+}
 body .productMainImages img {
   cursor: pointer;
   text-align: center;
@@ -5691,5 +5694,5 @@ body .productMoreImages img {
 }
 body .modal .modal-body {
   text-align: center;
-  padding: 20px 0px;
+  padding: 20px 0px 30px;
 }
