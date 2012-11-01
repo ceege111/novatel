@@ -69,7 +69,7 @@ $th = Loader::helper('text');
 			<h3 class="ccm-page-list-title">
 				<?php if ($url == ''): ?>
 					<?php echo $description ?>
-				<?php elseif: ?>
+				<?php else: ?>
 					<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $description ?></a>
 				<?php endif; ?>
 			</h3>
