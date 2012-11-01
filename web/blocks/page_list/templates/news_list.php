@@ -21,14 +21,14 @@ $th = Loader::helper('text');
 	<?php foreach ($pages as $page):
 		// Prepare data for each page being listed...
 		$title = $th->entities($page->getCollectionName());
-		$url = $nh->getLinkToCollection($page);
+		// $url = $nh->getLinkToCollection($page);
 		$target = ($page->getCollectionPointerExternalLink() != '' && $page->openCollectionPointerExternalLinkInNewWindow()) ? '_blank' : $page->getAttribute('nav_target');
 		$target = empty($target) ? '_self' : $target;
 		$description = $page->getCollectionDescription();
 		$description = $controller->truncateSummaries ? $th->shorten($description, $controller->truncateChars) : $description;
 		$description = $th->entities($description);	
 
-		$url = ($page->getAttribute('iframe_url') != '') ? $page->getAttribute('iframe_url') : $nh->getLinkToCollection($page);;
+		$url = ($page->getAttribute('iframe_url') != '') ? $page->getAttribute('iframe_url') : '';
 		$source = ($page->getAttribute('external_content_title') != '') ? $page->getAttribute('external_content_title') : '';
 		$date = ($page->getAttribute('external_content_posted_date') != '') ? $page->getAttribute('external_content_posted_date') : '';
 
@@ -67,7 +67,11 @@ $th = Loader::helper('text');
 		/* The HTML from here through "endforeach" is repeated for every item in the list... */ ?>
 		<tr><td class="row product-item">
 			<h3 class="ccm-page-list-title">
-				<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $description ?></a>
+				<?php if ($url == ''): ?>
+					<?php echo $description ?>
+				<?php elseif: ?>
+					<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $description ?></a>
+				<?php endif; ?>
 			</h3>
 			<div><?php echo $date; ?></div>
 			<div class="ccm-page-list-description">
