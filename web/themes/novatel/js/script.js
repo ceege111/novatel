@@ -34,6 +34,9 @@ $(document).ready(function(){
 	$("#iframeContent").attr('height', calculatedHeight);
 	$(window).resize(function(){
 		var calcHeight = $(window).innerHeight() - $(".headerWrap").outerHeight(true) - 20;
+		if (calcHeight < 1000){
+			calcHeight = 1000;
+		}
 		$("#iframeContent").attr('height',calcHeight);
 	});
 
