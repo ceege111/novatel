@@ -1,5 +1,6 @@
 <?php 
 defined('C5_EXECUTE') or die("Access Denied.");
+$page = Page::getCurrentPage();
 ?>
 
 <!-- Header -->
@@ -18,7 +19,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 		$as = new Area('Main');
 		$as->display($c);
 		?>
-		
+
 		<?php 
 			//check for iframe url 
 			$url = ($page->getAttribute('iframe_url') != '') ? $page->getAttribute('iframe_url') : '';
