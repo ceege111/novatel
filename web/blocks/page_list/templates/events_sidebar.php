@@ -53,7 +53,6 @@ $th = Loader::helper('text');
 			<strong><?php echo $date ?>:</strong>
 			<div><?php echo $title ?></div>
 		</div>
-		<br>
 		
 	<?php endforeach; ?>
  

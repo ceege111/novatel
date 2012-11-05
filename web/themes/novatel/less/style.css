@@ -5220,6 +5220,7 @@ body .container .rightColumn .sidebar-block .sidebarNews a:visited {
 body .container .leftColumn .sidebar-block .sidebarEvents .sidebarEvent,
 body .container .rightColumn .sidebar-block .sidebarEvents .sidebarEvent {
   font-size: 10px;
+  margin-bottom: 5px;
 }
 body .container .leftColumn {
   float: left;
