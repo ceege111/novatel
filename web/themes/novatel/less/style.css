@@ -5074,16 +5074,19 @@ body .pageTitle .breadcrumb {
 body .pageTitle .defaultBanner {
   background: url(img/banner_generic.png) no-repeat top right transparent;
   height: 112px;
+  position: relative;
 }
 body .pageTitle .defaultBanner h1.defaultTitle {
+  display: block;
+  position: absolute;
   color: #eeeeee;
   padding: 0;
   margin: 0;
   max-width: 450px;
   padding-left: 50px;
   padding-right: 10px;
-  margin-top: 40px;
   margin-left: 20px;
+  bottom: 10px;
   font-size: 30px;
   line-height: 50px;
   font-weight: 400;
