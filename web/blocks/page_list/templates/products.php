@@ -81,6 +81,7 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 				</div>
 				<br>
 				<a style="margin-left:-5px;clear:both;" class="clearfix btn btn-primary" href="<?php echo $url ?>">Learn More</a>
+				<br>
 			</div>
 			<hr>
 		</div>
