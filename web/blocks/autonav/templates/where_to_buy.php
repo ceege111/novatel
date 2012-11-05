@@ -20,7 +20,7 @@
 		}
 	} 	
 	
-	echo "\n<td>\n";
+	// echo "\n<td>\n";
 
 	//arrays for template output
 	$pos = array( '','','' );
@@ -106,15 +106,52 @@
 	}
 
 	//debug
-	echo ("<pre>");
-	print_r($region_list);
-	echo "\n----\n";
-	print_r($country_list);
-	echo "\n----\n";
-	print_r($carrier_list);
+	// echo ("<pre>");
+	// print_r($region_list);
+	// echo "\n----\n";
+	// print_r($country_list);
+	// echo "\n----\n";
+	// print_r($carrier_list);
 
+	//output dropdown menus
+
+	echo("<th><select>\n");
+	foreach ($region_list as $region) {
+		echo("<option class='menu-region'>");
+		echo($region);
+		echo("</option>\n");
+	}
+	echo ("</select></th>\n");
+
+
+	echo ("<th>\n");
+	foreach ($country_list as $region => $countries) {
+		echo("<select style='display:none' class='menu-".$region."'>");
+		foreach ($countries as $country) {
+			echo("<option>");
+			echo($country);
+			echo("</option>\n");
+		}
+		echo("</select>\n")
+	}
+	echo ("</th>\n");
+
+
+	echo ("</tr><tr><td>\n");
+
+		foreach ($carrier_list as $country => $carriers) {
+			echo("<div style='display:none;' class='carrier-list menu-'".$country."''>");
+			foreach ($carriers as $carrier) {
+				echo("<div class='carrier-item'>");
+				echo($carrier);
+				echo("</div>\n");
+			}
+			echo("</div>")
+		}
+
+	echo ("</td>\n")
 			
-	echo "\n</td>\n";
+	// echo "\n</td>\n";
 
 		// $thisLevel = 0;
 		// if ($containsPages) {
