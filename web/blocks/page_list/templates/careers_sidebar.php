@@ -49,9 +49,8 @@ $th = Loader::helper('text');
 		/* End data preparation. */
 
 		/* The HTML from here through "endforeach" is repeated for every item in the list... */ ?>
-			<div class="ccm-page-list-title">
-				<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
-			</div>
+		<div class="ccm-page-list-title">
+			<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
 		</div>
 		
 	<?php endforeach; ?>
@@ -63,7 +62,7 @@ $th = Loader::helper('text');
 		</div>
 		<link href="<?php echo BASE_URL.$rssUrl ?>" rel="alternate" type="application/rss+xml" title="<?php echo $rssTitle; ?>" />
 	<?php endif; ?>
- 
+	<br> 
 </div><!-- end .ccm-page-list -->
 
 
