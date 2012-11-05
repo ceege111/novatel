@@ -4911,6 +4911,10 @@ body .headerWrap .mainHeader .altNav form input.searchSubmit {
   margin-left: -4px;
   width: 30px;
   height: 30px;
+  border: 0px solid transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 body .headerWrap .mainHeader .altNav form div {
   display: none;

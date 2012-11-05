@@ -80,7 +80,7 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 					<?php echo $description ?>
 				</div>
 				<br>
-				<a style="margin-left: -5px;" class="find-out-more" href="<?php echo $url ?>"><img src="/themes/novatel/img/products/find_out_more.png"></a>
+				<a style="margin-left: -5px;" class="find-out-more btn btn-primary" href="<?php echo $url ?>">Learn More</a>
 			</div>
 			<hr>
 		</div>
