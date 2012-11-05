@@ -132,7 +132,7 @@
 			echo($country);
 			echo("</option>\n");
 		}
-		echo("</select>\n")
+		echo("</select>\n");
 	}
 	echo ("</th>\n");
 
@@ -146,10 +146,10 @@
 				echo($carrier);
 				echo("</div>\n");
 			}
-			echo("</div>")
+			echo("</div>");
 		}
 
-	echo ("</td>\n")
+	echo ("</td>\n");
 			
 	// echo "\n</td>\n";
 
