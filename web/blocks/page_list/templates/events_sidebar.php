@@ -52,6 +52,7 @@ $th = Loader::helper('text');
 		<div class="sidebarEvent">
 			<?php echo $date ?>: <?php echo $title ?>
 		</div>
+		<br>
 		
 	<?php endforeach; ?>
  
