@@ -21,6 +21,13 @@
 	} 	
 	
 	echo "\n<td>\n";
+
+	//arrays for template output
+	$pos = array( '','','' );
+	$region_list = array();
+	$country_list = array();
+	$carrier_list = array();
+
 	foreach($aBlocks as $ni) {
 		$_c = $ni->getCollectionObject();
 		if (!$_c->getCollectionAttributeValue('exclude_nav')) {
@@ -39,6 +46,22 @@
 			// $containsPages = true;
 			
 			$thisLevel = $ni->getLevel();
+
+			//set the current hierarchy while we are traversing
+			$pos[$thisLevel] = $ni->getName(); 
+
+			if($thisLevel == 0){
+				$region_list[] = $ni->getName();
+			}
+
+			if($thisLevel == 1) {
+				$country_list[$pos[0]][] = $ni->getName();
+			}
+
+			if($thisLevel == 2) {
+				$carrier_list[$pos[1]][] = $ni->getName();
+			}
+
 			// if ($thisLevel > $lastLevel) {
 			// 	echo("<ul>");
 			// } else if ($thisLevel < $lastLevel) {
@@ -74,16 +97,23 @@
 			// 	echo('<li><a href="' . $pageLink . '" ' . $target . ' >' . $ni->getName() . '</a>');
 			// }
 
-			echo( '<div class="target-level-'.$thisLevel.'">'.$ni->getName().'</div>' );
-			echo ("\n");
+			// echo( '<div class="target-level-'.$thisLevel.'">'.$ni->getName().'</div>' );
+			// echo ("\n");
 
 			$lastLevel = $thisLevel;
 			$i++;
-			
-			
 		}
 	}
-	
+
+	//debug
+	echo ("<pre>");
+	print_r($region_list);
+	echo "\n----\n";
+	print_r($country_list);
+	echo "\n----\n";
+	print_r($carrier_list);
+
+			
 	echo "\n</td>\n";
 
 		// $thisLevel = 0;
