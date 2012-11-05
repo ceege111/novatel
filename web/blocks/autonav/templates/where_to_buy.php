@@ -48,18 +48,22 @@
 			$thisLevel = $ni->getLevel();
 
 			//set the current hierarchy while we are traversing
-			$pos[$thisLevel] = $ni->getName(); 
+
+			$current_name = strtolower($ni->getName());
+			$current_name = str_replace(" ", "-", $current_name);
+
+			$pos[$thisLevel] = $current_name; 
 
 			if($thisLevel == 0){
-				$region_list[] = $ni->getName();
+				$region_list[] = $current_name;
 			}
 
 			if($thisLevel == 1) {
-				$country_list[$pos[0]][] = $ni->getName();
+				$country_list[$pos[0]][] = $current_name;
 			}
 
 			if($thisLevel == 2) {
-				$carrier_list[$pos[1]][] = $ni->getName();
+				$carrier_list[$pos[1]][] = $current_name;
 			}
 
 			// if ($thisLevel > $lastLevel) {
