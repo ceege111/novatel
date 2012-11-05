@@ -119,7 +119,7 @@
 
 	//output dropdown menus
 
-	echo("<th><select>\n");
+	echo("<th><select class='region-menu'>\n");
 	foreach ($region_list as $region) {
 		echo("<option class='menu-region'>");
 		echo($region);
@@ -130,7 +130,7 @@
 
 	echo ("<th>\n");
 	foreach ($country_list as $region => $countries) {
-		echo("<select style='display:none' class='menu-".str_replace(" ", "-", strtolower($region))."'>");
+		echo("<select style='display:none' class='country-menu menu-".str_replace(" ", "-", strtolower($region))."'>");
 		foreach ($countries as $country) {
 			echo("<option>");
 			echo($country);
