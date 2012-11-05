@@ -49,11 +49,8 @@ $th = Loader::helper('text');
 		/* End data preparation. */
 
 		/* The HTML from here through "endforeach" is repeated for every item in the list... */ ?>
-		<div>
-			<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
-			<div>
-				&nbsp;&nbsp;&nbsp;<?php echo $date ?>
-			</div>	
+		<div class="sidebarEvent">
+			<?php echo $date ?>: <?php echo $title ?>
 		</div>
 		
 	<?php endforeach; ?>
