@@ -6,8 +6,7 @@ $th = Loader::helper('text');
 //Note that $nh (navigation helper) is already loaded for us by the controller (for legacy reasons)
 ?>
 
-<div>
-
+<div class="sidebarEvents">
 	<h1>Upcoming Events</h1>
 	<?php foreach ($pages as $page):
 
@@ -19,6 +18,7 @@ $th = Loader::helper('text');
 		$description = $page->getCollectionDescription();
 		$description = $controller->truncateSummaries ? $th->shorten($description, $controller->truncateChars) : $description;
 		$description = $th->entities($description);	
+		$date = ($page->getAttribute('external_content_posted_date') != '') ? $page->getAttribute('external_content_posted_date') : '';
 		
 		//Other useful page data...
 		//$date = date('F j, Y', strtotime($page->getCollectionDatePublic()));
@@ -49,11 +49,11 @@ $th = Loader::helper('text');
 		/* End data preparation. */
 
 		/* The HTML from here through "endforeach" is repeated for every item in the list... */ ?>
-		<h3 class="ccm-page-list-title">
+		<div>
 			<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
-		</h3>
-		<div class="ccm-page-list-description">
-			<?php echo $description ?>
+			<div>
+				&nbsp;&nbsp;&nbsp;<?php echo $date ?>
+			</div>	
 		</div>
 		
 	<?php endforeach; ?>
