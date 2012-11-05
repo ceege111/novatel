@@ -6,8 +6,7 @@ $th = Loader::helper('text');
 //Note that $nh (navigation helper) is already loaded for us by the controller (for legacy reasons)
 ?>
 
-<div>
-
+<div class="sidebarNews">
 	<h1>Novatel Wireless in the News</h1>
 	<?php foreach ($pages as $page):
 

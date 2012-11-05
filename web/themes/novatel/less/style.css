@@ -5211,6 +5211,16 @@ body .container .leftColumn .sidebar-block a:visited,
 body .container .rightColumn .sidebar-block a:visited {
   color: #3361aa;
 }
+body .container .leftColumn .sidebar-block .sidebarNews a,
+body .container .rightColumn .sidebar-block .sidebarNews a,
+body .container .leftColumn .sidebar-block .sidebarEvents a,
+body .container .rightColumn .sidebar-block .sidebarEvents a,
+body .container .leftColumn .sidebar-block .sidebarNews a:visited,
+body .container .rightColumn .sidebar-block .sidebarNews a:visited,
+body .container .leftColumn .sidebar-block .sidebarEvents a:visited,
+body .container .rightColumn .sidebar-block .sidebarEvents a:visited {
+  font-size: 9px;
+}
 body .container .leftColumn {
   float: left;
   width: 240px;
