@@ -8,7 +8,7 @@ $th = Loader::helper('text');
 
 <div>
 
-	<h1>Careers at Novatel Wireless</h1>
+	<h1>Upcoming Events</h1>
 	<?php foreach ($pages as $page):
 
 		// Prepare data for each page being listed...
