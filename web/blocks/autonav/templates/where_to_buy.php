@@ -49,21 +49,21 @@
 
 			//set the current hierarchy while we are traversing
 
-			$current_name = strtolower($ni->getName());
-			$current_name = str_replace(" ", "-", $current_name);
+			// $current_name = strtolower($ni->getName());
+			// $current_name = str_replace(" ", "-", $current_name);
 
-			$pos[$thisLevel] = $current_name; 
+			$pos[$thisLevel] = $ni->getName(); 
 
 			if($thisLevel == 0){
-				$region_list[] = $current_name;
+				$region_list[] = $ni->getName();
 			}
 
 			if($thisLevel == 1) {
-				$country_list[$pos[0]][] = $current_name;
+				$country_list[$pos[0]][] = $ni->getName();
 			}
 
 			if($thisLevel == 2) {
-				$carrier_list[$pos[1]][] = $current_name;
+				$carrier_list[$pos[1]][] = $ni->getName();
 			}
 
 			// if ($thisLevel > $lastLevel) {
@@ -130,7 +130,7 @@
 
 	echo ("<th>\n");
 	foreach ($country_list as $region => $countries) {
-		echo("<select style='display:none' class='menu-".$region."'>");
+		echo("<select style='display:none' class='menu-".str_replace(" ", "-", strtolower($region))."'>");
 		foreach ($countries as $country) {
 			echo("<option>");
 			echo($country);
@@ -144,7 +144,7 @@
 	echo ("</tr><tr><td>\n");
 
 		foreach ($carrier_list as $country => $carriers) {
-			echo("<div style='display:none;' class='carrier-list menu-'".$country."''>");
+			echo("<div style='display:none;' class='carrier-list menu-'".str_replace(" ", "-", strtolower($country))."''>");
 			foreach ($carriers as $carrier) {
 				echo("<div class='carrier-item'>");
 				echo($carrier);
