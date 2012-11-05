@@ -49,11 +49,8 @@ $th = Loader::helper('text');
 		/* End data preparation. */
 
 		/* The HTML from here through "endforeach" is repeated for every item in the list... */ ?>
-		<h3 class="ccm-page-list-title">
+		<div class="ccm-page-list-title">
 			<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
-		</h3>
-		<div class="ccm-page-list-description">
-			<?php echo $description ?>
 		</div>
 		
 	<?php endforeach; ?>

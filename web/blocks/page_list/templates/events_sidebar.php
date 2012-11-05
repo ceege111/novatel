@@ -50,7 +50,8 @@ $th = Loader::helper('text');
 
 		/* The HTML from here through "endforeach" is repeated for every item in the list... */ ?>
 		<div class="sidebarEvent">
-			<strong><?php echo $date ?>:</strong> <?php echo $title ?>
+			<strong><?php echo $date ?>:</strong>
+			<div><?php echo $title ?></div>
 		</div>
 		<br>
 		
