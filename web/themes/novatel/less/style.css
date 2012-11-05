@@ -5108,8 +5108,11 @@ body .pageTitle .banner h1.bannerTitle {
   font-weight: 400;
   color: #eeeeee;
   background: url(img/hero_title_bg.png) repeat-x transparent;
-  margin-top: -110px;
+  bottom: 10px;
   line-height: 50px;
+}
+body .pageTitle .banner > div {
+  position: relative;
 }
 body .pageTitle .nav-header-tabs {
   margin: 0px;

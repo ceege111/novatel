@@ -13,7 +13,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 						console.log("banner image alt: "+$(this).attr('alt'));
 						if ($(this).attr('alt')){
 							var bannerTitle = $("<h1>"+$(this).attr('alt')+"</h1>")
-							$(bannerTitle).addClass('bannerTitle span12').css('display','none');
+							$(bannerTitle).addClass('bannerTitle').css('display','none');
 							$(this).parent().append(bannerTitle);
 							$(bannerTitle).delay(100).fadeIn();
 						}
