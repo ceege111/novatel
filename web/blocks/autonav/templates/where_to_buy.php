@@ -129,7 +129,7 @@
 	}
 	echo ("</select>\n");
 
-	echo ("\n");
+	echo ("\n&nbsp;&nbsp;");
 	foreach ($country_list as $region => $countries) {
 		echo("<select style='display:none' class='country-menu menu-".str_replace(" ", "-", strtolower($region))."'>");
 		echo("<option value=-'-''>Select a Country:</option>\n");
