@@ -69,6 +69,19 @@ $(document).ready(function(){
 				$(this).hide();
 			});
 			$('select.country-menu.menu-'+region).show();
+			$('div.carrier-list').each(function(){
+				$(this).hide();
+			});
+		});
+	});
+	$("select.country-menu").each(function(){
+		$(this).change(function(){
+			var country = $(this).val();
+			console.log('changing country to '+country);
+			$("div.carrier-list").not('div.carrier-list menu-'+country).each(function(){
+				$(this).hide();
+			});
+			$("div.carrier-list menu-"+country).show();
 		});
 	});
 
