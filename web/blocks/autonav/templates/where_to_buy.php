@@ -63,7 +63,7 @@
 			}
 
 			if($thisLevel == 2) {
-				$url = ($_c->getCollectionAttributeValue('iframe_url') != '') ? $_c->getCollectionAttributeValue('iframe_url') : $ni->getURL();
+				$url = ($_c->getCollectionAttributeValue('iframe_url') != '') ? $_c->getCollectionAttributeValue('iframe_url') : '';
 				$description = $_c->getCollectionDescription();
 				$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description);
 			}
@@ -151,6 +151,13 @@
 			echo("<div style='display:none;' class='carrier-list menu-".str_replace(" ", "-", strtolower($country))."''>");
 			foreach ($carriers as $carrier) {
 				echo("<div class='carrier-item'>");
+				if ($carrier['url'] = ''){
+					echo($carrier['name']);
+				}else{
+					echo("<a href='".$carrier['url']."'>");
+					echo($carrier['name']);
+					echo("</a>");
+				}
 				echo("<a href='".$carrier['url']."'>");
 				echo($carrier['name']);
 				echo("</a>");
