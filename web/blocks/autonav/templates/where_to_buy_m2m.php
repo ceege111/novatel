@@ -59,7 +59,10 @@
 			}
 
 			if($thisLevel == 1) {
-				$country_list[$pos[0]][] = $ni->getName();
+				// $country_list[$pos[0]][] = $ni->getName();
+				$url = ($_c->getCollectionAttributeValue('iframe_url') != '') ? $_c->getCollectionAttributeValue('iframe_url') : '';
+				$description = $_c->getCollectionDescription();
+				$country_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description);
 			}
 
 			if($thisLevel == 2) {
@@ -130,25 +133,25 @@
 	}
 	echo ("</select>\n");
 
-	echo ("\n&nbsp;&nbsp;");
-	foreach ($country_list as $region => $countries) {
-		echo("<select style='display:none' class='country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($region))."'>");
-		echo("<option value=-'-''>Select a Country:</option>\n");
-		foreach ($countries as $country) {
-			if (count($carrier_list[$country]) > 0) {
-				echo("<option value='".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."'>");
-				echo($country);
-				echo("</option>\n");			
-			}
-		}
-		echo("</select>\n");
-	}
+	// echo ("\n&nbsp;&nbsp;");
+	// foreach ($country_list as $region => $countries) {
+	// 	echo("<select style='display:none' class='country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($region))."'>");
+	// 	echo("<option value=-'-''>Select a Country:</option>\n");
+	// 	foreach ($countries as $country) {
+	// 		if (count($carrier_list[$country]) > 0) {
+	// 			echo("<option value='".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."'>");
+	// 			echo($country);
+	// 			echo("</option>\n");			
+	// 		}
+	// 	}
+	// 	echo("</select>\n");
+	// }
 	echo ("</div>\n");
 
 	echo ("<div>\n");
 
-		foreach ($carrier_list as $country => $carriers) {
-			echo("<div style='display:none;' class='carrier-list menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."''>");
+		foreach ($country_list as $country => $carriers) {
+			echo("<div style='display:none;' class='carrier-list country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($region))."''>");
 			foreach ($carriers as $carrier) {
 				echo("<div class='carrier-item'>");
 				if ($carrier['url'] == ''){
