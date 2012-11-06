@@ -16,12 +16,6 @@ defined('C5_EXECUTE') or die("Access Denied.");
 	<section class="centerColumn area">
 
 		<!-- main content -->
-		<div>
-			<?php 
-				$as = new Area('Main');
-				$as->display($c);
-			?>
-		</div>
 
 		<div>
 			<?php 
