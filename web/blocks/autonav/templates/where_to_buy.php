@@ -159,9 +159,7 @@
 					echo($carrier['name']);
 					echo("</a>");
 				}
-				echo("<a href='".$carrier['url']."'>");
-				echo($carrier['name']);
-				echo("</a>");
+
 				if( $carrier['description'] != ''){
 					echo("\n<div class='carrier-sub'>");
 					echo(str_replace("\n", "<br>", $carrier['description']) );
