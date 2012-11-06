@@ -151,10 +151,10 @@
 			echo("<div style='display:none;' class='carrier-list menu-".str_replace(" ", "-", strtolower($country))."''>");
 			foreach ($carriers as $carrier) {
 				echo("<div class='carrier-item'>");
-				if ($carrier['url'] = ''){
+				if ($carrier['url'] == ''){
 					echo($carrier['name']);
 				}else{
-					echo("<a href='".$carrier['url']."'>");
+					echo("<a target='_blank' href='".$carrier['url']."'>");
 					echo($carrier['name']);
 					echo("</a>");
 				}
@@ -178,5 +178,4 @@
 		// 		echo("</li></ul>");
 		// 	}
 		// }
-
 ?>
