@@ -143,7 +143,7 @@
 	echo ("</th>\n");
 
 
-	echo ("</tr><tr><td colspan='3'>\n");
+	echo ("</tr><tr><td style='min-height:200px;' colspan='3'>\n");
 
 		foreach ($carrier_list as $country => $carriers) {
 			echo("<div style='display:none;' class='carrier-list menu-".str_replace(" ", "-", strtolower($country))."''>");
