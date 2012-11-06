@@ -128,7 +128,6 @@
 	}
 	echo ("</select></th>\n");
 
-
 	echo ("<th>\n");
 	foreach ($country_list as $region => $countries) {
 		echo("<select style='display:none' class='country-menu menu-".str_replace(" ", "-", strtolower($region))."'>");
@@ -142,8 +141,7 @@
 	}
 	echo ("</th>\n");
 
-
-	echo ("</tr><tr><td style='min-height:200px;' colspan='3'>\n");
+	echo ("</tr><tr class='extra-row'><td style='min-height:200px;' colspan='3'>\n");
 
 		foreach ($carrier_list as $country => $carriers) {
 			echo("<div style='display:none;' class='carrier-list menu-".str_replace(" ", "-", strtolower($country))."''>");
