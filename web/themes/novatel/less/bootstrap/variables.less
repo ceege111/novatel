@@ -67,8 +67,9 @@
 
 // Tables
 // -------------------------
-@tableBackground:                   transparent; // overall background-color
-@tableBackgroundAccent:             #f9f9f9; // for striping
+@tableBackground:                   @grayLighter; // overall background-color
+@tableBackgroundAccent:             darken(@tableBackground, 10%); // for striping
+// @tableBackgroundAccent:             #f9f9f9; // for striping
 @tableBackgroundHover:              #f5f5f5; // for hover
 @tableBorder:                       #ddd; // table and cell border
 
