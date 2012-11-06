@@ -155,9 +155,9 @@
 				echo($carrier['name']);
 				echo("</a>");
 				if( $carrier['description'] != ''){
-					echo("\n<div class='carrier-sub'>");
+					echo("\n<pre class='carrier-sub'>");
 					echo($carrier['description']);
-					echo("</div>\n");
+					echo("</pre>\n");
 				}
 				echo("</div>\n");
 			}
