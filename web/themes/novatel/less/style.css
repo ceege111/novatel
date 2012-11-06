@@ -5765,5 +5765,6 @@ body .underline .ccm-page-list-title {
 }
 body select.region-menu,
 body select.country-menu {
-  width: 260px;
+  width: auto;
+  min-width: 220px;
 }
