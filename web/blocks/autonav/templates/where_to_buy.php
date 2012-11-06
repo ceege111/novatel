@@ -153,6 +153,7 @@
 				echo("<div class='carrier-item'>");
 				if ($carrier['url'] = ''){
 					echo($carrier['name']);
+					echo("<br>");
 				}else{
 					echo("<a href='".$carrier['url']."'>");
 					echo($carrier['name']);
@@ -163,7 +164,7 @@
 				echo("</a>");
 				if( $carrier['description'] != ''){
 					echo("\n<div class='carrier-sub'>");
-					echo($carrier['description']);
+					echo(str_replace("\n", "<br>", $carrier['description']) );
 					echo("</div>\n");
 				}
 				echo("</div>\n");
