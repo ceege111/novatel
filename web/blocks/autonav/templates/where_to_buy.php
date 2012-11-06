@@ -150,7 +150,7 @@
 				echo("<div class='carrier-item'>");
 				echo("<a href='".$carrier['url']."'>");
 				echo($carrier['name']);
-				echo("</a>")
+				echo("</a>");
 				echo("</div>\n");
 			}
 			echo("</div>");
