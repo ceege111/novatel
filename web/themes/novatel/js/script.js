@@ -65,7 +65,10 @@ $(document).ready(function(){
 
 	//extra rows need right display class
 	$(".table tr.extra-row").each(function(){
-		var prevRow = $(this).prev('tr').attr('class');
+		var prevRow = $(this).prev('tr');
+		var prevClass = $(prevRow).attr('class');
+		console.log(prevRow);
+		console.log	(prevClass);
 		$(this).addClass(prevRow);
 	});
 
