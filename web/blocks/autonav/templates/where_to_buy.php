@@ -64,7 +64,8 @@
 
 			if($thisLevel == 2) {
 				$url = ($_c->getCollectionAttributeValue('iframe_url') != '') ? $_c->getCollectionAttributeValue('iframe_url') : $ni->getURL();
-				$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url);
+				$description = $_c->getCollectionAttributeValue('description');
+				$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description);
 			}
 
 			// if ($thisLevel > $lastLevel) {
@@ -152,6 +153,10 @@
 				echo("<div class='carrier-item'>");
 				echo("<a href='".$carrier['url']."'>");
 				echo($carrier['name']);
+				if( $carrier['description'] != ''){
+					echo("\n<br>\n");
+					echo($carrier['description']);
+				}
 				echo("</a>");
 				echo("</div>\n");
 			}
