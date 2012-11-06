@@ -64,13 +64,13 @@ $(document).ready(function(){
 	//where to buy menus
 
 	//extra rows need right display class
-	$(".tableContent tr.extra").each(function(){
-		var prevRow = $(this).prev('tr');
-		var prevClass = $(prevRow).attr('class');
-		console.log(prevRow);
-		console.log	(prevClass);
-		$(this).addClass(prevClass);
-	});
+	// $(".tableContent tr.extra").each(function(){
+	// 	var prevRow = $(this).prev('tr');
+	// 	var prevClass = $(prevRow).attr('class');
+	// 	console.log(prevRow);
+	// 	console.log	(prevClass);
+	// 	$(this).addClass(prevClass);
+	// });
 
 	$("select.region-menu").each(function(){
 		$(this).change(function(){
