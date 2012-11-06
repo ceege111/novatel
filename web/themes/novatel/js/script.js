@@ -59,4 +59,19 @@ $(document).ready(function(){
 			});
 		});
 	});
+
+	//where to buy menus
+	$("select.region-menu").each(function(){
+		$(this).change(function(){
+			var region = $(this).val();
+			console.log('changing to region '+region);
+			$('select.country-menu').not('select.country-menu.menu-'+region).each(function(){
+				$(this).hide();
+			});
+			$('select.country-menu.menu-'+region).show();
+		});
+	});
+
+
+
 });
