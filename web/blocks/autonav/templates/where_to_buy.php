@@ -118,7 +118,7 @@
 	// print_r($carrier_list);
 
 	//output dropdown menus
-
+	echo("<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>");
 	echo("<th><select class='region-menu'>\n");
 	echo("<option value='-'>Select a Region:</option>\n");
 	foreach ($region_list as $region) {
