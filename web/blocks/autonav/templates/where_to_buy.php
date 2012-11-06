@@ -134,9 +134,11 @@
 		echo("<select style='display:none' class='country-menu menu-".str_replace(" ", "-", strtolower($region))."'>");
 		echo("<option value=-'-''>Select a Country:</option>\n");
 		foreach ($countries as $country) {
-			echo("<option value='".str_replace(" ", "-", strtolower($country))."'>");
-			echo($country);
-			echo("</option>\n");
+			if (count($carrier_list[$country]) > 0) {
+				echo("<option value='".str_replace(" ", "-", strtolower($country))."'>");
+				echo($country);
+				echo("</option>\n");			
+			}
 		}
 		echo("</select>\n");
 	}
