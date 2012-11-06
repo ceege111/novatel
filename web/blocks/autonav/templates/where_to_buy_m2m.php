@@ -62,7 +62,7 @@
 				// $country_list[$pos[0]][] = $ni->getName();
 				$url = ($_c->getCollectionAttributeValue('iframe_url') != '') ? $_c->getCollectionAttributeValue('iframe_url') : '';
 				$description = $_c->getCollectionDescription();
-				$country_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description);
+				$country_list[$pos[0]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description);
 			}
 
 			if($thisLevel == 2) {
@@ -114,13 +114,13 @@
 		}
 	}
 
-	// debug
-	echo ("<pre>");
-	print_r($region_list);
-	echo "\n----\n";
-	print_r($country_list);
-	echo "\n----\n";
-	print_r($carrier_list);
+	// // debug
+	// echo ("<pre>");
+	// print_r($region_list);
+	// echo "\n----\n";
+	// print_r($country_list);
+	// echo "\n----\n";
+	// print_r($carrier_list);
 
 	//output dropdown menus
 	// echo("<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>");
