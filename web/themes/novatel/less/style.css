@@ -5738,6 +5738,10 @@ body .slideImgWrap {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
+body .region-menu,
+body .country-menu {
+  margin-bottom: 0px;
+}
 body .carrier-list {
   margin: 20px 10px 10px;
 }

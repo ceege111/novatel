@@ -56,36 +56,37 @@ $(document).ready(function(){
 			});
 			$(".table.tableContent tr.tableSection"+$(this).data('tableSection')).each(function(){
 				$(this).show();
+				//where to buy menus
+				$("select.region-menu").each(function(){
+					$(this).change(function(){
+						var region = $(this).val();
+						console.log('changing to region '+region);
+						$('select.country-menu').not('select.country-menu.menu-'+region).each(function(){
+							$(this).hide();
+						});
+						$('select.country-menu.menu-'+region).show();
+						$('div.carrier-list').each(function(){
+							$(this).hide();
+						});
+						// var country = $('select.country-menu.menu-'+region).val();
+						// $("div.carrier-list.menu-"+country).show();
+					});
+				});
+				$("select.country-menu").each(function(){
+					$(this).change(function(){
+						var country = $(this).val();
+						console.log('changing country to '+country);
+						$("div.carrier-list").not('div.carrier-list.menu-'+country).each(function(){
+							$(this).hide();
+						});
+						$("div.carrier-list.menu-"+country).show();
+					});
+				});
 			});
 		});
 	});
 
-	//where to buy menus
-	$("select.region-menu").each(function(){
-		$(this).change(function(){
-			var region = $(this).val();
-			console.log('changing to region '+region);
-			$('select.country-menu').not('select.country-menu.menu-'+region).each(function(){
-				$(this).hide();
-			});
-			$('select.country-menu.menu-'+region).show();
-			$('div.carrier-list').each(function(){
-				$(this).hide();
-			});
-			// var country = $('select.country-menu.menu-'+region).val();
-			// $("div.carrier-list.menu-"+country).show();
-		});
-	});
-	$("select.country-menu").each(function(){
-		$(this).change(function(){
-			var country = $(this).val();
-			console.log('changing country to '+country);
-			$("div.carrier-list").not('div.carrier-list.menu-'+country).each(function(){
-				$(this).hide();
-			});
-			$("div.carrier-list.menu-"+country).show();
-		});
-	});
+
 
 
 
