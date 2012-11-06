@@ -63,7 +63,8 @@
 			}
 
 			if($thisLevel == 2) {
-				$carrier_list[$pos[1]][] = $ni->getName();
+				$url = ($ni->getAttribute('iframe_url') != '') ? $ni->getAttribute('iframe_url') : $ni->getURL();
+				$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url;
 			}
 
 			// if ($thisLevel > $lastLevel) {
@@ -147,7 +148,9 @@
 			echo("<div style='display:none;' class='carrier-list menu-".str_replace(" ", "-", strtolower($country))."''>");
 			foreach ($carriers as $carrier) {
 				echo("<div class='carrier-item'>");
-				echo($carrier);
+				echo("<a href='".$carrier['url']."'>");
+				echo($carrier['name']);
+				echo("</a>")
 				echo("</div>\n");
 			}
 			echo("</div>");
