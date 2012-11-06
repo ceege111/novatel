@@ -64,7 +64,7 @@ $(document).ready(function(){
 	//where to buy menus
 
 	//extra rows need right display class
-	$(".table tr.extra-row").each(function(){
+	$(".tableContent tr.extra-row").each(function(){
 		var prevRow = $(this).prev('tr');
 		var prevClass = $(prevRow).attr('class');
 		console.log(prevRow);
