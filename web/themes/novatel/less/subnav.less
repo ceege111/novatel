@@ -64,7 +64,7 @@ body {
 		}
 		.nav-header-tabs {
 			margin: 0px;
-			padding: 0px 10px;
+			padding: 0px;
 			list-style: none;
 			background-color: @grayLight;
 			#gradient .vertical(#bcbcbc, #d9d9d9);
@@ -76,10 +76,14 @@ body {
 				padding: 5px 10px;
 				float: left;
 				border-right: 1px solid fadeout(@grayLightish, 30%);
+				&:first-child{
+					padding-left: 10px;
+				}
 				&.nav-selected {
 					font-weight: bold;
+					#gradient .vertical(@gray, @grayDark);
 					a, a:visited {
-						color: @blueDarkish;
+						color: @greyLighter;
 					}
 				}
 			}
