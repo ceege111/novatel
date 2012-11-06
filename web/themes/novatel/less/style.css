@@ -5119,7 +5119,7 @@ body .pageTitle .banner > div {
 }
 body .pageTitle .nav-header-tabs {
   margin: 0px;
-  padding: 0px 10px;
+  padding: 0px;
   list-style: none;
   background-color: #b4b4b4;
   background-color: #c8c8c8;
@@ -5149,12 +5149,23 @@ body .pageTitle .nav-header-tabs li {
   float: left;
   border-right: 1px solid rgba(161, 161, 161, 0.7);
 }
+body .pageTitle .nav-header-tabs li:first-child {
+  padding-left: 10px;
+}
 body .pageTitle .nav-header-tabs li.nav-selected {
   font-weight: bold;
+  background-color: #474747;
+  background-image: -moz-linear-gradient(top, #555555, #333333);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555555), to(#333333));
+  background-image: -webkit-linear-gradient(top, #555555, #333333);
+  background-image: -o-linear-gradient(top, #555555, #333333);
+  background-image: linear-gradient(to bottom, #555555, #333333);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff555555', endColorstr='#ff333333', GradientType=0);
 }
 body .pageTitle .nav-header-tabs li.nav-selected a,
 body .pageTitle .nav-header-tabs li.nav-selected a:visited {
-  color: #1f3e6f;
+  color: #eeeeee;
 }
 body .pageTitle .row .span12 img {
   width: 100%;
@@ -5357,7 +5368,7 @@ body table.news-list td h3 a:visited {
 }
 body .tables .nav-header-tabs {
   margin: 0px;
-  padding: 0px 10px;
+  padding: 0px;
   list-style: none;
   background-color: #b4b4b4;
   background-color: #c8c8c8;
@@ -5390,12 +5401,23 @@ body .tables .nav-header-tabs li {
 body .tables .nav-header-tabs li p {
   margin: 0;
 }
+body .tables .nav-header-tabs li:first-child {
+  padding-left: 10px;
+}
 body .tables .nav-header-tabs li.nav-selected {
   font-weight: bold;
+  background-color: #474747;
+  background-image: -moz-linear-gradient(top, #555555, #333333);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555555), to(#333333));
+  background-image: -webkit-linear-gradient(top, #555555, #333333);
+  background-image: -o-linear-gradient(top, #555555, #333333);
+  background-image: linear-gradient(to bottom, #555555, #333333);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff555555', endColorstr='#ff333333', GradientType=0);
 }
 body .tables .nav-header-tabs li.nav-selected a,
 body .tables .nav-header-tabs li.nav-selected a:visited {
-  color: #1f3e6f;
+  color: #b4b4b4;
 }
 body .tables .table.tableHeader {
   margin-top: 10px;
