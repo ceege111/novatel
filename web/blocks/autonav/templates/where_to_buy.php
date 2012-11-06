@@ -154,8 +154,9 @@
 				echo("<a href='".$carrier['url']."'>");
 				echo($carrier['name']);
 				if( $carrier['description'] != ''){
-					echo("\n<br>\n");
+					echo("\n<div class='carrier-sub'>");
 					echo($carrier['description']);
+					echo("</div>\n")
 				}
 				echo("</a>");
 				echo("</div>\n");

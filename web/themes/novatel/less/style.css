@@ -5752,3 +5752,6 @@ body .carrier-list .carrier-item {
   font-size: 16px;
   color: #3361aa;
 }
+body .carrier-list .carrier-item .carrier-sub {
+  font-size: 12px;
+}
