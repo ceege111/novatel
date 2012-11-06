@@ -151,7 +151,7 @@
 	echo ("<div>\n");
 
 		foreach ($country_list as $country => $carriers) {
-			echo("<div style='display:none;' class='carrier-list country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($region))."''>");
+			echo("<div style='display:none;' class='carrier-list country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."''>");
 			foreach ($carriers as $carrier) {
 				echo("<div class='carrier-item'>");
 				if ($carrier['url'] == ''){
