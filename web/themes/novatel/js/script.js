@@ -55,7 +55,7 @@ $(document).ready(function(){
 				$(this).hide();
 			});
 			$(".table.tableContent tr.tableSection"+$(this).data('tableSection')).each(function(){
-				$(this).show();
+				$(this).fadeIn();
 			});
 		});
 	});
@@ -79,7 +79,7 @@ $(document).ready(function(){
 			$('select.country-menu').not('select.country-menu.menu-'+region).each(function(){
 				$(this).hide();
 			});
-			$('select.country-menu.menu-'+region).show();
+			$('select.country-menu.menu-'+region).fadeIn();
 			$('div.carrier-list').each(function(){
 				$(this).hide();
 			});
@@ -94,7 +94,7 @@ $(document).ready(function(){
 			$("div.carrier-list").not('div.carrier-list.menu-'+country).each(function(){
 				$(this).hide();
 			});
-			$("div.carrier-list.menu-"+country).show();
+			$("div.carrier-list.menu-"+country).fadeIn();
 		});
 	});
 
