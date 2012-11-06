@@ -64,9 +64,9 @@ $(document).ready(function(){
 	//where to buy menus
 
 	//extra rows need right display class
-	$("table.table tr.extra-row").each(function(){
+	$(".table tr.extra-row").each(function(){
 		var prevRow = $(this).prev('tr').attr('class');
-		$(this).addClass('prevRow');
+		$(this).addClass(prevRow);
 	});
 
 	$("select.region-menu").each(function(){
