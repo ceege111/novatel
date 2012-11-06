@@ -80,9 +80,9 @@ $(document).ready(function(){
 				$(this).hide();
 			});
 			$('.country-menu.menu-'+region).fadeIn();
-			$('div.carrier-list').each(function(){
-				$(this).hide();
-			});
+			// $('div.carrier-list').each(function(){
+			// 	$(this).hide();
+			// });
 			// var country = $('select.country-menu.menu-'+region).val();
 			// $("div.carrier-list.menu-"+country).show();
 		});
