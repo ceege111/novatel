@@ -5157,7 +5157,7 @@ body .pageTitle .nav-header-tabs li:first-child {
 }
 body .pageTitle .nav-header-tabs li.nav-selected {
   font-weight: bold;
-  background-color: rgba(51, 51, 51, 0.4);
+  background-color: rgba(51, 51, 51, 0.6);
 }
 body .pageTitle .nav-header-tabs li.nav-selected a,
 body .pageTitle .nav-header-tabs li.nav-selected a:visited {
@@ -5402,7 +5402,7 @@ body .tables .nav-header-tabs li:first-child {
 }
 body .tables .nav-header-tabs li.nav-selected {
   font-weight: bold;
-  background-color: rgba(51, 51, 51, 0.4);
+  background-color: rgba(51, 51, 51, 0.6);
 }
 body .tables .nav-header-tabs li.nav-selected a,
 body .tables .nav-header-tabs li.nav-selected a:visited {
