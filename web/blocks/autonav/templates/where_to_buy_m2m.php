@@ -111,7 +111,7 @@
 		}
 	}
 
-	debug
+	// debug
 	echo ("<pre>");
 	print_r($region_list);
 	echo "\n----\n";
