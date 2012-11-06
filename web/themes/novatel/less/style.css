@@ -5727,3 +5727,9 @@ body .slideImgWrap {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
+body .carrier-item {
+  padding: 20px;
+  margin: 10px;
+  float: left;
+  font-size: 16px;
+}
