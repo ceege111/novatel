@@ -5763,3 +5763,7 @@ body .carrier-list .carrier-item:nth-child(3n+4) {
 body .underline .ccm-page-list-title {
   border-bottom: 1px solid #555555;
 }
+body select.region-menu,
+body select.country-menu {
+  width: 260px;
+}
