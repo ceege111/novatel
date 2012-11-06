@@ -48,9 +48,9 @@ body {
 				}
 				&.nav-selected {
 					font-weight: bold;
-					#gradient .vertical(@gray, @grayDark);
+					background-color: fadeout(@grayDark, 60%);
 					a, a:visited {
-						color: @grayLight;
+						color: @grayLighter;
 					}
 				}
 			}

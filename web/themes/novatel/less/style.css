@@ -4955,6 +4955,9 @@ body .headerWrap .mainHeader .mainMenu .nav > li > a.hover {
 body .headerWrap .mainHeader .mainMenu .nav > li.nav-selected {
   background-color: rgba(51, 51, 51, 0.4);
 }
+body .headerWrap .mainHeader .mainMenu .nav > li.nav-selected-path {
+  background-color: rgba(51, 51, 51, 0.4);
+}
 body .headerWrap .mainHeader .mainMenu .nav .dropdown-menu {
   top: 40px;
   margin-left: -10px;
@@ -5154,14 +5157,7 @@ body .pageTitle .nav-header-tabs li:first-child {
 }
 body .pageTitle .nav-header-tabs li.nav-selected {
   font-weight: bold;
-  background-color: #474747;
-  background-image: -moz-linear-gradient(top, #555555, #333333);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555555), to(#333333));
-  background-image: -webkit-linear-gradient(top, #555555, #333333);
-  background-image: -o-linear-gradient(top, #555555, #333333);
-  background-image: linear-gradient(to bottom, #555555, #333333);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff555555', endColorstr='#ff333333', GradientType=0);
+  background-color: rgba(51, 51, 51, 0.4);
 }
 body .pageTitle .nav-header-tabs li.nav-selected a,
 body .pageTitle .nav-header-tabs li.nav-selected a:visited {
@@ -5406,18 +5402,11 @@ body .tables .nav-header-tabs li:first-child {
 }
 body .tables .nav-header-tabs li.nav-selected {
   font-weight: bold;
-  background-color: #474747;
-  background-image: -moz-linear-gradient(top, #555555, #333333);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555555), to(#333333));
-  background-image: -webkit-linear-gradient(top, #555555, #333333);
-  background-image: -o-linear-gradient(top, #555555, #333333);
-  background-image: linear-gradient(to bottom, #555555, #333333);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff555555', endColorstr='#ff333333', GradientType=0);
+  background-color: rgba(51, 51, 51, 0.4);
 }
 body .tables .nav-header-tabs li.nav-selected a,
 body .tables .nav-header-tabs li.nav-selected a:visited {
-  color: #b4b4b4;
+  color: #eeeeee;
 }
 body .tables .table.tableHeader {
   margin-top: 10px;
