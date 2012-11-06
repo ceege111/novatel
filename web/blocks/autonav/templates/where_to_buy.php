@@ -162,9 +162,9 @@
 				echo($carrier['name']);
 				echo("</a>");
 				if( $carrier['description'] != ''){
-					echo("\n<pre class='carrier-sub'>");
+					echo("\n<div class='carrier-sub'>");
 					echo($carrier['description']);
-					echo("</pre>\n");
+					echo("</div>\n");
 				}
 				echo("</div>\n");
 			}
