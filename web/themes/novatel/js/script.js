@@ -72,8 +72,8 @@ $(document).ready(function(){
 			$('div.carrier-list').each(function(){
 				$(this).hide();
 			});
-			var country = $('select.country-menu.menu-'+region).val();
-			$("div.carrier-list.menu-"+country).show();
+			// var country = $('select.country-menu.menu-'+region).val();
+			// $("div.carrier-list.menu-"+country).show();
 		});
 	});
 	$("select.country-menu").each(function(){
