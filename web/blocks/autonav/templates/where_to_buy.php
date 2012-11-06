@@ -119,7 +119,7 @@
 
 	//output dropdown menus
 	// echo("<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>");
-	echo("<td><div><select class='region-menu'>\n");
+	echo("<td style='min-height:200px;'><div><select class='region-menu'>\n");
 	echo("<option value='-'>Select a Region:</option>\n");
 	foreach ($region_list as $region) {
 		echo("<option class='menu-region' value='".str_replace(" ", "-", strtolower($region))."'>");
