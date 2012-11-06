@@ -144,7 +144,7 @@
 	echo ("</tr><tr><td>\n");
 
 		foreach ($carrier_list as $country => $carriers) {
-			echo("<div style='display:none;' class='carrier-list menu-'".str_replace(" ", "-", strtolower($country))."''>");
+			echo("<div style='display:none;' class='carrier-list menu-".str_replace(" ", "-", strtolower($country))."''>");
 			foreach ($carriers as $carrier) {
 				echo("<div class='carrier-item'>");
 				echo($carrier);
