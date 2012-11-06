@@ -63,7 +63,7 @@
 			}
 
 			if($thisLevel == 2) {
-				$url = ($ni->getCollectionAttributeValue('iframe_url') != '') ? $ni->getCollectionAttributeValue('iframe_url') : $ni->getURL();
+				$url = ($_c->getCollectionAttributeValue('iframe_url') != '') ? $_c->getCollectionAttributeValue('iframe_url') : $ni->getURL();
 				$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url);
 			}
 
