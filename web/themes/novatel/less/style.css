@@ -5245,7 +5245,7 @@ body .container .leftColumn {
 }
 body .container .centerColumn {
   float: left;
-  min-height: 300px;
+  min-height: 400px;
 }
 body .container .rightColumn {
   float: right;
@@ -5262,16 +5262,13 @@ body .container.oneColumn .product-list hr {
 }
 body .container.leftSidebar .centerColumn {
   width: 765px;
-  min-height: 300px;
 }
 body .container.threeColumn .centerColumn {
   width: 624px;
-  min-height: 300px;
 }
 body .container.rightSidebar .centerColumn {
   float: left;
   width: 765px;
-  min-height: 300px;
 }
 body {
   /* =============== General Main/Center Content Layout LESS =============== */
