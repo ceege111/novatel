@@ -64,7 +64,7 @@
 
 			if($thisLevel == 2) {
 				$url = ($ni->getAttribute('iframe_url') != '') ? $ni->getAttribute('iframe_url') : $ni->getURL();
-				$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url;
+				$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url);
 			}
 
 			// if ($thisLevel > $lastLevel) {
