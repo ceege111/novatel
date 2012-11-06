@@ -1529,7 +1529,7 @@ legend + .control-group {
 }
 table {
   max-width: 100%;
-  background-color: #b4b4b4;
+  background-color: #8dc63f;
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -1637,7 +1637,7 @@ table {
 }
 .table-striped tbody tr:nth-child(odd) td,
 .table-striped tbody tr:nth-child(odd) th {
-  background-color: #ffffff;
+  background-color: #049cdb;
 }
 .table-hover tbody tr:hover td,
 .table-hover tbody tr:hover th {
