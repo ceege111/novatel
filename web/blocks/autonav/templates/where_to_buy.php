@@ -64,7 +64,7 @@
 
 			if($thisLevel == 2) {
 				$url = ($_c->getCollectionAttributeValue('iframe_url') != '') ? $_c->getCollectionAttributeValue('iframe_url') : $ni->getURL();
-				$description = $_c->getCollectionAttributeValue('description');
+				$description = $_c->getCollectionDescription();
 				$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description);
 			}
 
