@@ -4955,7 +4955,7 @@ body .headerWrap .mainHeader .mainMenu .nav > li > a.hover {
 body .headerWrap .mainHeader .mainMenu .nav > li.nav-selected {
   background-color: rgba(51, 51, 51, 0.4);
 }
-body .headerWrap .mainHeader .mainMenu .nav > li.nav-selected-path {
+body .headerWrap .mainHeader .mainMenu .nav > li.nav-path-selected {
   background-color: rgba(51, 51, 51, 0.4);
 }
 body .headerWrap .mainHeader .mainMenu .nav .dropdown-menu {
