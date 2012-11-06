@@ -124,7 +124,7 @@
 	echo("<td style='min-height:200px;'><div><select class='region-menu'>\n");
 	echo("<option value='-'>Select a Region:</option>\n");
 	foreach ($region_list as $region) {
-		echo("<option class='menu-region' value='".str_replace(" ", "-", strtolower($region))."'>");
+		echo("<option class='menu-region' value='".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($region))."'>");
 		echo($region);
 		echo("</option>\n");
 	}
@@ -132,11 +132,11 @@
 
 	echo ("\n&nbsp;&nbsp;");
 	foreach ($country_list as $region => $countries) {
-		echo("<select style='display:none' class='country-menu menu-".str_replace(" ", "-", strtolower($region))."'>");
+		echo("<select style='display:none' class='country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($region))."'>");
 		echo("<option value=-'-''>Select a Country:</option>\n");
 		foreach ($countries as $country) {
 			if (count($carrier_list[$country]) > 0) {
-				echo("<option value='".str_replace(" ", "-", strtolower($country))."'>");
+				echo("<option value='".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."'>");
 				echo($country);
 				echo("</option>\n");			
 			}
@@ -148,7 +148,7 @@
 	echo ("<div>\n");
 
 		foreach ($carrier_list as $country => $carriers) {
-			echo("<div style='display:none;' class='carrier-list menu-".str_replace(" ", "-", strtolower($country))."''>");
+			echo("<div style='display:none;' class='carrier-list menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."''>");
 			foreach ($carriers as $carrier) {
 				echo("<div class='carrier-item'>");
 				if ($carrier['url'] == ''){
