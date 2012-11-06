@@ -34,6 +34,9 @@ $(document).ready(function(){
 	$("#iframeContent").attr('height', calculatedHeight);
 	$(window).resize(function(){
 		var calcHeight = $(window).innerHeight() - $(".headerWrap").outerHeight(true) - 20;
+		if (calcHeight < 1000){
+			calcHeight = 1000;
+		}
 		$("#iframeContent").attr('height',calcHeight);
 	});
 
@@ -56,4 +59,45 @@ $(document).ready(function(){
 			});
 		});
 	});
+
+
+	//where to buy menus
+
+	//extra rows need right display class
+	// $(".tableContent tr.extra").each(function(){
+	// 	var prevRow = $(this).prev('tr');
+	// 	var prevClass = $(prevRow).attr('class');
+	// 	console.log(prevRow);
+	// 	console.log	(prevClass);
+	// 	$(this).addClass(prevClass);
+	// });
+
+	$("select.region-menu").each(function(){
+		$(this).change(function(){
+			var region = $(this).val();
+			console.log('changing to region '+region);
+			$('select.country-menu').not('select.country-menu.menu-'+region).each(function(){
+				$(this).hide();
+			});
+			$('select.country-menu.menu-'+region).show();
+			$('div.carrier-list').each(function(){
+				$(this).hide();
+			});
+			// var country = $('select.country-menu.menu-'+region).val();
+			// $("div.carrier-list.menu-"+country).show();
+		});
+	});
+	$("select.country-menu").each(function(){
+		$(this).change(function(){
+			var country = $(this).val();
+			console.log('changing country to '+country);
+			$("div.carrier-list").not('div.carrier-list.menu-'+country).each(function(){
+				$(this).hide();
+			});
+			$("div.carrier-list.menu-"+country).show();
+		});
+	});
+
+
+
 });

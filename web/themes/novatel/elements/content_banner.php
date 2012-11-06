@@ -23,7 +23,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 	    <?php
 	    } else { ?>
 			<div class="row defaultBanner banner">
-		    	<h1 class="defaultTitle span12">
+		    	<h1 class="defaultTitle">
 					<?php
 						$page = Page::getCurrentPage();
 						echo $page->getCollectionName();
