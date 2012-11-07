@@ -76,13 +76,13 @@ $(document).ready(function(){
 		$(this).change(function(){
 			var region = $(this).val();
 			console.log('changing to region '+region);
-			$('select.country-menu').not('select.country-menu.menu-'+region).each(function(){
+			$('.country-menu').not('.country-menu.menu-'+region).each(function(){
 				$(this).hide();
 			});
-			$('select.country-menu.menu-'+region).fadeIn();
-			$('div.carrier-list').each(function(){
-				$(this).hide();
-			});
+			$('.country-menu.menu-'+region).fadeIn();
+			// $('div.carrier-list').each(function(){
+			// 	$(this).hide();
+			// });
 			// var country = $('select.country-menu.menu-'+region).val();
 			// $("div.carrier-list.menu-"+country).show();
 		});

@@ -5760,6 +5760,15 @@ body .carrier-list .carrier-item .carrier-sub {
 body .carrier-list .carrier-item:nth-child(3n+4) {
   clear: left;
 }
+body .carrier-list .carrier-item.carrier-item-full {
+  width: 100%;
+  clear: both;
+}
 body .underline .ccm-page-list-title {
   border-bottom: 1px solid #555555;
+}
+body select.region-menu,
+body select.country-menu {
+  width: auto;
+  min-width: 220px;
 }
