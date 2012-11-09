@@ -5739,6 +5739,9 @@ body .slideImgWrap {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
+body .where-to-buy-results {
+  min-height: 300px;
+}
 body .where-to-buy-results .carrier-list {
   margin: 20px 10px 10px;
 }
