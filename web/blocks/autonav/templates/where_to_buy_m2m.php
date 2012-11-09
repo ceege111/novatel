@@ -124,7 +124,7 @@
 
 	//output dropdown menus
 	// echo("<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>");
-	echo("<td style='min-height:200px;'><div><select class='region-menu'>\n");
+	echo("<td style='min-height:200px;'><div class='where-to-buy-header'><select class='region-menu'>\n");
 	echo("<option value='-'>Select a Region:</option>\n");
 	foreach ($region_list as $region) {
 		echo("<option class='menu-region' value='".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($region))."'>");
@@ -148,7 +148,7 @@
 	// }
 	echo ("</div>\n");
 
-	echo ("<div>\n");
+	echo ("<div class='where-to-buy-results'>\n");
 
 		foreach ($country_list as $country => $carriers) {
 			echo("<div style='display:none;' class='carrier-list country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."''>");
