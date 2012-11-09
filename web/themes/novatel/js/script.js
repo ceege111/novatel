@@ -82,7 +82,7 @@ $(document).ready(function(){
 			$('.country-menu').not('.country-menu.menu-'+region).each(function(){
 				$(this).hide();
 			});
-			$(this).parent().find('.country-menu.menu-'+region).delay(50).fadeIn();
+			$(this).parentsUntil('td').find('.country-menu.menu-'+region).delay(50).fadeIn();
 
 			// var country = $('select.country-menu.menu-'+region).val();
 			// $("div.carrier-list.menu-"+country).show();
@@ -92,10 +92,10 @@ $(document).ready(function(){
 		$(this).change(function(){
 			var country = $(this).val();
 			console.log('changing country to '+country);
-			$("div.carrier-list").not('div.carrier-list.menu-'+country).each(function(){
+			$("div.carrier-list").not('.carrier-list.menu-'+country).each(function(){
 				$(this).hide();
 			});
-			$(this).parent().find("div.carrier-list.menu-"+country).fadeIn();
+			$(this).parentsUntil('td').find('.carrier-list.menu-'+country).fadeIn();
 		});
 	});
 
