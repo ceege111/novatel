@@ -5510,7 +5510,7 @@ body .footerWrap .footer {
 }
 body .footerWrap .footer ul.nav {
   width: 1004px;
-  margin: 25px 0px 5px 100px;
+  margin: 25px 0px 5px 50px;
   *zoom: 1;
 }
 body .footerWrap .footer ul.nav:before,
@@ -5524,7 +5524,7 @@ body .footerWrap .footer ul.nav:after {
 }
 body .footerWrap .footer ul.nav ul.footer-column {
   float: left;
-  width: 200px;
+  width: 215px;
   *zoom: 1;
 }
 body .footerWrap .footer ul.nav ul.footer-column:before,
