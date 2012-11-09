@@ -5163,6 +5163,24 @@ body .pageTitle .nav-header-tabs li.nav-selected a,
 body .pageTitle .nav-header-tabs li.nav-selected a:visited {
   color: #eeeeee;
 }
+body .pageTitle .m2m .nav-header-tabs li {
+  padding: 0px 15px;
+}
+body .pageTitle .m2m .nav-header-tabs li:first-child {
+  padding-left: 15px;
+}
+body .pageTitle .m2m .nav-header-tabs li:last-child {
+  border-right: 0px solid transparent;
+}
+body .pageTitle .solutions .nav-header-tabs li {
+  padding: 0px 15px;
+}
+body .pageTitle .solutions .nav-header-tabs li:first-child {
+  padding-left: 15px;
+}
+body .pageTitle .solutions .nav-header-tabs li:last-child {
+  border-right: 0px solid transparent;
+}
 body .pageTitle .row .span12 img {
   width: 100%;
 }
@@ -5776,7 +5794,7 @@ body .underline hr {
 body .ccm-page-list h5 {
   font-weight: normal;
   font-size: 12px;
-  margin-left: 10px;
+  margin-left: 3px;
   margin-top: -15px;
   margin-bottom: -10px;
 }
