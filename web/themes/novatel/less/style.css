@@ -5776,8 +5776,9 @@ body .underline hr {
 body .ccm-page-list h5 {
   font-weight: normal;
   font-size: 12px;
-  margin-left: 20px;
-  margin-top: -20px;
+  margin-left: 10px;
+  margin-top: -15px;
+  margin-bottom: -10px;
 }
 body select.region-menu,
 body select.country-menu {
