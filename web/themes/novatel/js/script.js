@@ -76,13 +76,13 @@ $(document).ready(function(){
 		$(this).change(function(){
 			var region = $(this).val();
 			console.log('changing to region '+region);
-			$('div.carrier-list').each(function(){
+			$(this).parentsUntil('tr').find('div.carrier-list').each(function(){
 				$(this).hide();
 			});
-			$('.country-menu').not('.country-menu.menu-'+region).each(function(){
+			$(this).parentsUntil('tr').find('.country-menu').not('.country-menu.menu-'+region).each(function(){
 				$(this).hide();
 			});
-			$(this).parentsUntil('tr').find('.country-menu.menu-'+region).delay(50).fadeIn();
+			$(this).parentsUntil('tr').find('.country-menu.menu-'+region).delay(25).fadeIn(200);
 
 			// var country = $('select.country-menu.menu-'+region).val();
 			// $("div.carrier-list.menu-"+country).show();
@@ -93,10 +93,10 @@ $(document).ready(function(){
 			var country = $(this).val();
 			console.log('changing country to '+country);
 			console.log($(this).parentsUntil('td'));
-			$("div.carrier-list").not('.carrier-list.menu-'+country).each(function(){
+			$(this).parentsUntil('tr').find("div.carrier-list").not('.carrier-list.menu-'+country).each(function(){
 				$(this).hide();
 			});
-			$(this).parentsUntil('tr').find('.carrier-list.menu-'+country).fadeIn();
+			$(this).parentsUntil('tr').find('.carrier-list.menu-'+country).fadeIn(200);
 		});
 	});
 
