@@ -5164,19 +5164,16 @@ body .pageTitle .nav-header-tabs li.nav-selected a:visited {
   color: #eeeeee;
 }
 body .pageTitle .m2m .nav-header-tabs li {
-  padding: 5px 15px;
+  padding: 5px 14px;
 }
 body .pageTitle .m2m .nav-header-tabs li:first-child {
-  padding-left: 15px;
+  padding-left: 14px;
 }
 body .pageTitle .m2m .nav-header-tabs li:last-child {
   border-right: 0px solid transparent;
 }
 body .pageTitle .solutions .nav-header-tabs li {
-  padding: 5px 15px;
-}
-body .pageTitle .solutions .nav-header-tabs li:first-child {
-  padding-left: 15px;
+  padding: 5px 16px;
 }
 body .pageTitle .solutions .nav-header-tabs li:last-child {
   border-right: 0px solid transparent;
