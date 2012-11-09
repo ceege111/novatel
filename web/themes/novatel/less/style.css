@@ -5770,6 +5770,15 @@ body .country-menu {
 body .underline .ccm-page-list-title {
   border-bottom: 1px solid #555555;
 }
+body .underline hr {
+  border-bottom: 1px solid #555555;
+}
+body .ccm-page-list h5 {
+  font-weight: normal;
+  font-size: 12px;
+  margin-left: 20px;
+  margin-top: -20px;
+}
 body select.region-menu,
 body select.country-menu {
   width: auto;
