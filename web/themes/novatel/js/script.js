@@ -92,6 +92,7 @@ $(document).ready(function(){
 		$(this).change(function(){
 			var country = $(this).val();
 			console.log('changing country to '+country);
+			console.log($(this).parentsUntil('td'));
 			$("div.carrier-list").not('.carrier-list.menu-'+country).each(function(){
 				$(this).hide();
 			});
