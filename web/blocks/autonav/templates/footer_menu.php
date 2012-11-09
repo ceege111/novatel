@@ -20,7 +20,7 @@
 		}
 	} 	
 
-	$colSkip = true;
+	$colSkip = false;
 	echo("<ul class=\"nav\">");
 	foreach($aBlocks as $ni) {
 		$_c = $ni->getCollectionObject();
