@@ -127,7 +127,7 @@ textarea {
   clear: both;
 }
 .hide-text {
-  font: a;
+  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -5739,30 +5739,30 @@ body .slideImgWrap {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-body .region-menu,
-body .country-menu {
-  margin-bottom: 0px;
-}
-body .carrier-list {
+body .where-to-buy-results .carrier-list {
   margin: 20px 10px 10px;
 }
-body .carrier-list .carrier-item {
+body .where-to-buy-results .carrier-list .carrier-item {
   margin: 10px 10px;
   width: 30%;
   float: left;
   font-size: 16px;
   color: #3361aa;
 }
-body .carrier-list .carrier-item .carrier-sub {
+body .where-to-buy-results .carrier-list .carrier-item .carrier-sub {
   color: #555555;
   font-size: 12px;
 }
-body .carrier-list .carrier-item:nth-child(3n+4) {
+body .where-to-buy-results .carrier-list .carrier-item:nth-child(3n+4) {
   clear: left;
 }
-body .carrier-list .carrier-item.carrier-item-full {
+body .where-to-buy-results .carrier-list .carrier-item.carrier-item-full {
   width: 100%;
   clear: both;
+}
+body .region-menu,
+body .country-menu {
+  margin-bottom: 0px;
 }
 body .underline .ccm-page-list-title {
   border-bottom: 1px solid #555555;
