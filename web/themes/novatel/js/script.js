@@ -82,7 +82,7 @@ $(document).ready(function(){
 			$(this).parentsUntil('tr').find('.country-menu').not('.country-menu.menu-'+region).each(function(){
 				$(this).hide();
 			});
-			$(this).parentsUntil('tr').find('.country-menu.menu-'+region).delay(25).fadeIn(200);
+			$(this).parentsUntil('tr').find('.country-menu.menu-'+region).delay(25).fadeIn(200).val('-');
 
 			// var country = $('select.country-menu.menu-'+region).val();
 			// $("div.carrier-list.menu-"+country).show();
