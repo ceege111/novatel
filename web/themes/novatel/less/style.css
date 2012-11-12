@@ -5811,7 +5811,7 @@ body .table.support-results tr td h5 {
   margin: 0px;
   padding: 0px;
 }
-body .table.support-results tr.support-header td {
+body .table.support-results tr.support-header th {
   margin-top: 10px;
 }
 body .underline .ccm-page-list-title {
