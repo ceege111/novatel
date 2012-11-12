@@ -5782,6 +5782,36 @@ body .region-menu,
 body .country-menu {
   margin-bottom: 0px;
 }
+body .table.support-results {
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: -8px;
+  width: 765px;
+}
+body .table.support-results tr th {
+  padding: 10px;
+}
+body .table.support-results tr td {
+  margin: 2px;
+  padding: 10px;
+  border: 1px solid #eeeeee;
+}
+body .table.support-results tr td.product-thumbnail {
+  min-width: 100px;
+  text-align: center;
+  background: #ffffff;
+}
+body .table.support-results tr td.product-name {
+  min-width: 300px;
+}
+body .table.support-results tr td.product-description {
+  min-width: 200px;
+}
+body .table.support-results tr td h5 {
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+}
 body .underline .ccm-page-list-title {
   border-bottom: 1px solid #555555;
 }
