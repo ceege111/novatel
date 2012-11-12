@@ -157,7 +157,7 @@
 
 	echo ("<table class='table support-results'>\n");
 		foreach ($country_list as $country => $carriers) {
-			echo("<tr style='display:none;' class='carrier-list country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."'><th>Product Image</th><th>Product Name:</th><th>Support Links:</th></tr>\n");
+			echo("<tr style='display:none;' class='carrier-list support-header country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."'><th>Product Image</th><th>Product Name:</th><th>Support Links:</th></tr>\n");
 			foreach ($carriers as $carrier) {
 				echo("<tr style='display:none;' class='carrier-list country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."'>");
 				echo("<td class='product-thumbnail'>");
