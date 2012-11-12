@@ -160,6 +160,18 @@
 			echo("<div style='display:none;' class='carrier-list country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."''>");
 			foreach ($carriers as $carrier) {
 				echo("<div class='carrier-item carrier-item-full'>");
+				if($carrier['img']){
+					$fullPath = $img->getPath();
+					$fullsize = $img->getRelativePath();
+					$size = @getimagesize($fullPath);
+					$thumb = $ih->getThumbnail($img, 250, 300, false);
+					$thumbSrc = $thumb->src;
+					$thumbWidth = $thumb->width;
+					$thumbHeight = $thumb->height;
+					echo("<div class='product-thumbnail'>");
+					echo("<img src=\"$thumbSrc\" width=\"$thumbWidth\" height=\"$thumbHeight\" alt=\"\" />");
+					echo("</div>");
+				}
 				if ($carrier['url'] == ''){
 					echo($carrier['name']);
 				}else{
