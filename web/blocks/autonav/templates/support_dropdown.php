@@ -153,14 +153,12 @@
 	// 	}
 	// 	echo("</select>\n");
 	// }
-	echo ("</div></td></tr>\n");
+	echo ("</div>\n");
 
-	// echo ("<div class='where-to-buy-results'>\n");
-
+	echo ("<table class='table table-striped where-to-buy-results'>\n");
 		foreach ($country_list as $country => $carriers) {
-			// echo("<div style='display:none;' class='carrier-list country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."''>");
+			echo("<tr style='display:none;' class='carrier-list country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."''>");
 			foreach ($carriers as $carrier) {
-				echo("<tr style='display:none;' class='carrier-list country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."''>");
 				echo("<td class='product-thumbnail'>");
 				if($carrier['img']){
 					$img = $carrier['img'];
@@ -173,7 +171,7 @@
 					$thumbHeight = $thumb->height;
 					echo("<img src=\"$thumbSrc\" width=\"$thumbWidth\" height=\"$thumbHeight\" alt=\"\" />");
 				}
-				echo("</td></td>");
+				echo("</td><td>");
 				if ($carrier['url'] == ''){
 					echo($carrier['name']);
 				}else{
@@ -183,16 +181,17 @@
 				}
 				echo("</td><td>");
 				if( $carrier['description'] != ''){
-					echo("\n<td class='carrier-sub'>");
-					echo(str_replace("\n", "<br>", $carrier['description']));
-					echo("</td>\n");
+					// echo("\n<div class='carrier-sub'>");
+					// echo(str_replace("\n", "<br>", $carrier['description']));
+					// echo("</div>\n");
 				}
-				echo("</td></tr>\n");
+				echo("</td>");
 			}
-			// echo("</div>");
+			echo("</tr>");
 		}
+	echo("</table>\n");
 
-	// echo ("</td>\n");
+	echo("</td>\n");
 			
 	// echo "\n</td>\n";
 
