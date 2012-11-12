@@ -66,14 +66,14 @@
 				// $country_list[$pos[0]][] = $ni->getName();
 				$url = ($_c->getCollectionAttributeValue('iframe_url') != '') ? $_c->getCollectionAttributeValue('iframe_url') : '';
 				$description = $_c->getCollectionDescription();
-				$country_list[$pos[0]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description);
+				$img = $_c->getCollectionAttributeValue('product_image');
+				$country_list[$pos[0]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description,'img'=>$img);
 			}
 
 			if($thisLevel == 2) {
 				$url = ($_c->getCollectionAttributeValue('iframe_url') != '') ? $_c->getCollectionAttributeValue('iframe_url') : '';
 				$description = $_c->getCollectionDescription();
 				$img = $_c->getCollectionAttributeValue('product_image');
-
 				$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description, 'img'=>$img);
 			}
 
