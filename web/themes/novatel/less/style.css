@@ -5787,6 +5787,9 @@ body .table.support-results {
   margin-right: -8px;
   width: 765px;
 }
+body .table.support-results th {
+  padding: 10px;
+}
 body .table.support-results td {
   margin: 2px;
   padding: 10px;
