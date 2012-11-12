@@ -181,9 +181,9 @@
 				}
 				echo("</td><td>");
 				if( $carrier['description'] != ''){
-					// echo("\n<div class='carrier-sub'>");
-					// echo(str_replace("\n", "<br>", $carrier['description']));
-					// echo("</div>\n");
+					echo("\n<div class='carrier-sub'>");
+					echo(str_replace("\n", "<br>", $carrier['description']));
+					echo("</div>\n");
 				}
 				echo("</td>");
 			}
