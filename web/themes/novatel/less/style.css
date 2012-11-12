@@ -5800,6 +5800,8 @@ body .table.support-results td.product-description {
 }
 body .table.support-results td h5 {
   font-size: 12px;
+  margin: 0px;
+  padding: 0px;
 }
 body .underline .ccm-page-list-title {
   border-bottom: 1px solid #555555;
