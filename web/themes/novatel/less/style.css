@@ -5782,7 +5782,7 @@ body .region-menu,
 body .country-menu {
   margin-bottom: 0px;
 }
-body .table.support-results tr {
+body .table.support-results {
   margin-left: -8px;
   margin-right: -8px;
   width: 765px;
@@ -5810,9 +5810,6 @@ body .table.support-results tr td h5 {
   font-size: 12px;
   margin: 0px;
   padding: 0px;
-}
-body .table.support-results tr.support-header th {
-  margin-top: 10px;
 }
 body .underline .ccm-page-list-title {
   border-bottom: 1px solid #555555;
