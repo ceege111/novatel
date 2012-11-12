@@ -121,12 +121,13 @@
 	}
 
 	// debug
-	echo ("<pre>");
+	echo ("\n\n<pre style='display:none'>");
 	print_r($region_list);
 	echo "\n----\n";
 	print_r($country_list);
 	echo "\n----\n";
 	print_r($carrier_list);
+	echo("</pre>\n\n");
 
 	//output dropdown menus
 	// echo("<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>");
