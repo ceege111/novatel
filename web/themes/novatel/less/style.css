@@ -5789,7 +5789,7 @@ body .table.support-results {
 }
 body .table.support-results td {
   margin: 2px;
-  padding: 2px;
+  padding: 10px;
   border: 1px solid #eeeeee;
 }
 body .table.support-results td.product-thumbnail {
