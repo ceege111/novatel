@@ -165,24 +165,22 @@
 					$fullPath = $img->getPath();
 					$fullsize = $img->getRelativePath();
 					$size = @getimagesize($fullPath);
-					$thumb = $ih->getThumbnail($img, 150, 150, false);
+					$thumb = $ih->getThumbnail($img, 100, 100, false);
 					$thumbSrc = $thumb->src;
 					$thumbWidth = $thumb->width;
 					$thumbHeight = $thumb->height;
 					echo("<img src=\"$thumbSrc\" width=\"$thumbWidth\" height=\"$thumbHeight\" alt=\"\" />");
 				}
 				echo("</td><td class='product-name'>");
+				echo("<h5>");
 				if ($carrier['url'] == ''){
-					echo("<h4>");
 					echo($carrier['name']);
-					echo("</h4>");
 				}else{
-					echo("<h4>");
 					echo("<a target='_blank' href='".$carrier['url']."'>");
 					echo($carrier['name']);
 					echo("</a>");
-					echo("</h4>");
 				}
+				echo("</h5>");
 				echo("</td><td class='product-description'>");
 				if( $carrier['description'] != ''){
 					echo(str_replace("\n", "<br>", $carrier['description']));
