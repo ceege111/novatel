@@ -5782,6 +5782,11 @@ body .region-menu,
 body .country-menu {
   margin-bottom: 0px;
 }
+body .table.support-results {
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 765px;
+}
 body .table.support-results td {
   margin: 2px;
   padding: 2px;
