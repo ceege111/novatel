@@ -5785,6 +5785,9 @@ body .country-menu {
 body .support-results .product-thumbnail {
   min-width: 200px;
 }
+body .support-results .product-name {
+  min-width: 200px;
+}
 body .underline .ccm-page-list-title {
   border-bottom: 1px solid #555555;
 }

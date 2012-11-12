@@ -171,7 +171,7 @@
 					$thumbHeight = $thumb->height;
 					echo("<img src=\"$thumbSrc\" width=\"$thumbWidth\" height=\"$thumbHeight\" alt=\"\" />");
 				}
-				echo("</td><td>");
+				echo("</td><td class='product-name'>");
 				if ($carrier['url'] == ''){
 					echo($carrier['name']);
 				}else{
@@ -179,11 +179,9 @@
 					echo($carrier['name']);
 					echo("</a>");
 				}
-				echo("</td><td>");
+				echo("</td><td class='product-description'>");
 				if( $carrier['description'] != ''){
-					echo("\n<div class='carrier-sub'>");
 					echo(str_replace("\n", "<br>", $carrier['description']));
-					echo("</div>\n");
 				}
 				echo("</td>");
 				echo("</tr>");
