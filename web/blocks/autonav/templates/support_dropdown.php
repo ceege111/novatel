@@ -70,12 +70,12 @@
 				$country_list[$pos[0]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description,'img'=>$img);
 			}
 
-			if($thisLevel == 2) {
-				$url = ($_c->getCollectionAttributeValue('iframe_url') != '') ? $_c->getCollectionAttributeValue('iframe_url') : '';
-				$description = $_c->getCollectionDescription();
-				$img = $_c->getCollectionAttributeValue('product_image');
-				$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description, 'img'=>$img);
-			}
+			// if($thisLevel == 2) {
+			// 	$url = ($_c->getCollectionAttributeValue('iframe_url') != '') ? $_c->getCollectionAttributeValue('iframe_url') : '';
+			// 	$description = $_c->getCollectionDescription();
+			// 	$img = $_c->getCollectionAttributeValue('product_image');
+			// 	$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description, 'img'=>$img);
+			// }
 
 			// if ($thisLevel > $lastLevel) {
 			// 	echo("<ul>");
@@ -161,6 +161,7 @@
 			foreach ($carriers as $carrier) {
 				echo("<div class='carrier-item carrier-item-full'>");
 				if($carrier['img']){
+					$img = $carrier['img'];
 					$fullPath = $img->getPath();
 					$fullsize = $img->getRelativePath();
 					$size = @getimagesize($fullPath);
