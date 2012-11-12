@@ -157,8 +157,8 @@
 
 	echo ("<table class='table table-striped where-to-buy-results'>\n");
 		foreach ($country_list as $country => $carriers) {
-			echo("<tr style='display:none;' class='carrier-list country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."''>");
 			foreach ($carriers as $carrier) {
+				echo("<tr style='display:none;' class='carrier-list country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."''>");
 				echo("<td class='product-thumbnail'>");
 				if($carrier['img']){
 					$img = $carrier['img'];
@@ -186,8 +186,8 @@
 					echo("</div>\n");
 				}
 				echo("</td>");
+				echo("</tr>");
 			}
-			echo("</tr>");
 		}
 	echo("</table>\n");
 
