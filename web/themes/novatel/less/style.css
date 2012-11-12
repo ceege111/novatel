@@ -5784,6 +5784,8 @@ body .country-menu {
 }
 body .support-results .product-thumbnail {
   min-width: 200px;
+  background: #ffffff;
+  text-align: center;
 }
 body .support-results .product-name {
   min-width: 200px;
