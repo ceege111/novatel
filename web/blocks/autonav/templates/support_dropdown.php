@@ -173,11 +173,15 @@
 				}
 				echo("</td><td class='product-name'>");
 				if ($carrier['url'] == ''){
+					echo("<h4>");
 					echo($carrier['name']);
+					echo("</h4>");
 				}else{
+					echo("<h4>");
 					echo("<a target='_blank' href='".$carrier['url']."'>");
 					echo($carrier['name']);
 					echo("</a>");
+					echo("</h4>");
 				}
 				echo("</td><td class='product-description'>");
 				if( $carrier['description'] != ''){
