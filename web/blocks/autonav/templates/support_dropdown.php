@@ -155,7 +155,7 @@
 	// }
 	echo ("</div>\n");
 
-	echo ("<table class='table table-striped support-results'>\n");
+	echo ("<table class='table support-results'>\n");
 		foreach ($country_list as $country => $carriers) {
 			foreach ($carriers as $carrier) {
 				echo("<tr style='display:none;' class='carrier-list country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."''>");

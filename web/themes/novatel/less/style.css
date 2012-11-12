@@ -5782,12 +5782,16 @@ body .region-menu,
 body .country-menu {
   margin-bottom: 0px;
 }
-body .support-results .product-thumbnail {
-  min-width: 150px;
+body .table.support-results td.product-thumbnail {
+  min-width: 100px;
   text-align: center;
+  background: #ffffff;
 }
-body .support-results .product-name {
+body .table.support-results td.product-name {
   min-width: 300px;
+}
+body .table.support-results td h5 {
+  font-size: 12px;
 }
 body .underline .ccm-page-list-title {
   border-bottom: 1px solid #555555;
