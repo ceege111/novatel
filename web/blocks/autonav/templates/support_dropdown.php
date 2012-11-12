@@ -183,7 +183,8 @@
 				echo("</h5>");
 				echo("</td><td class='product-description'>");
 				if( $carrier['description'] != ''){
-					echo(str_replace("\n", "<br>", $carrier['description']));
+					// echo(str_replace("\n", "<br>", $carrier['description']));
+					echo("<a href=''>Link to Carrier Support Page</a>");
 				}
 				echo("</td>");
 				echo("</tr>");
