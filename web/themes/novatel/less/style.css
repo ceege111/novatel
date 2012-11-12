@@ -5785,6 +5785,7 @@ body .country-menu {
 body .table.support-results {
   margin-left: -8px;
   margin-right: -8px;
+  margin-bottom: -8px;
   width: 765px;
 }
 body .table.support-results tr th {
