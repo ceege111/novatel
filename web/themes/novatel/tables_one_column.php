@@ -7,7 +7,7 @@ $this->inc('elements/header.php'); ?>
 	<?php $this->inc('elements/subnav.php'); ?>
 </header>
 
-<div class="container oneColumn">
+<div class="container oneColumn tables">
 	<section class="column area">
 		<!-- main content -->
 		<div>
