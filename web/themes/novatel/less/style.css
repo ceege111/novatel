@@ -5379,6 +5379,7 @@ body table.news-list td h3 a:visited {
   color: #3361aa;
 }
 body .tables .nav-header-tabs {
+  clear: both;
   margin: 0px;
   padding: 0px;
   list-style: none;
