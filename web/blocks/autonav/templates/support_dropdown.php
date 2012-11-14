@@ -157,7 +157,7 @@
 
 	echo ("<table class='table support-results'>\n");
 		foreach ($country_list as $country => $carriers) {
-			if (!array_search($country, $region_list)){
+			if (array_search($country, $region_list) !== false){ //if category is not found in the dropdown list we skip rendering the contents
 				continue;
 			}
 			echo("<tr style='display:none;' class='carrier-list support-header country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."'><th>Product Image</th><th>Product Name:</th><th>Support Links:</th></tr>\n");
