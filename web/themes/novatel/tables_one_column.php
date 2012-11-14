@@ -8,7 +8,9 @@ $this->inc('elements/header.php'); ?>
 </header>
 
 <div class="container oneColumn tables">
+
 	<section class="column area">
+
 		<!-- main content -->
 		<div>
 			<?php 
@@ -36,6 +38,7 @@ $this->inc('elements/header.php'); ?>
 				?>
 			</ul>
 		<?php endif ?>
+		
 		<!-- Table Content -->
 		<?php if ($c->isEditMode()): ?>
 			<div class="editMode">
