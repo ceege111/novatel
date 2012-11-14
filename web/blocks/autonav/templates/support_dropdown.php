@@ -169,7 +169,7 @@
 					$fullPath = $img->getPath();
 					$fullsize = $img->getRelativePath();
 					$size = @getimagesize($fullPath);
-					$thumb = $ih->getThumbnail($img, 100, 100, false);
+					$thumb = $ih->getThumbnail($img, 200, 150, false);
 					$thumbSrc = $thumb->src;
 					$thumbWidth = $thumb->width;
 					$thumbHeight = $thumb->height;
