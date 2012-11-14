@@ -5742,6 +5742,9 @@ body .socialButtons {
 /* ===== Primary Styles ========================================================
    Author: Rational
    ========================================================================== */
+body .span3 {
+  width: 225px;
+}
 body .productTitle {
   margin-bottom: 10px;
 }
