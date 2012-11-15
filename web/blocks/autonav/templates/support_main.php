@@ -61,7 +61,7 @@
 		}
 		echo("<table class='table table-striped support-list menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."'>");
 		foreach ($product as $product_row) {
-			echo("<tr>")
+			echo("<tr>");
 				echo("<td class='product-thumbnail'>");
 				if($product_row['img']){
 					$img = $product_row['img'];
