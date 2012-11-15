@@ -104,7 +104,7 @@ $(document).ready(function(){
 		$("table.support-results").not("table.support-results:nth-child(1)").each(function(){
 			$(this).hide();
 		});
-		$("table.support-results:nth-child(1)").show();
+		$("table.support-results:nth-child(1)").fadeIn(100);
 		return false;
 	});
 
@@ -112,7 +112,7 @@ $(document).ready(function(){
 		$("table.support-results").not("table.support-results:nth-child(2)").each(function(){
 			$(this).hide();
 		});
-		$("table.support-results:nth-child(2)").show();
+		$("table.support-results:nth-child(2)").fadeIn(100);
 		return false;
 	});
 
@@ -120,7 +120,7 @@ $(document).ready(function(){
 		$("table.support-results").not("table.support-results:nth-child(3)").each(function(){
 			$(this).hide();
 		});
-		$("table.support-results:nth-child(3)").show();
+		$("table.support-results:nth-child(3)").fadeIn(100);
 		return false;
 	});
 
@@ -128,7 +128,7 @@ $(document).ready(function(){
 		$("table.support-results").not("table.support-results:nth-child(4)").each(function(){
 			$(this).hide();
 		});
-		$("table.support-results:nth-child(4)").show();
+		$("table.support-results:nth-child(4)").fadeIn(100);
 		return false;
 	});
 
