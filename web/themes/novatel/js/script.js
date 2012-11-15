@@ -100,12 +100,13 @@ $(document).ready(function(){
 		});
 	});
 
-	$("#support_mifi").click(function(){
+	$(".support_mifi").click(function(){
 		$("table.support-results").not("table.support-results:nth-child(1)").each(function(){
 			$(this).hide();
 		});
 		$("table.support-results:nth-child(1)").show();
 		console.log("showing mifi support items");
+		return false;
 	});
 
 });
