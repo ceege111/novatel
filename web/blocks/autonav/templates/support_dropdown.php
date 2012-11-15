@@ -56,9 +56,9 @@
 			// $current_name = strtolower($ni->getName());
 			// $current_name = str_replace(" ", "-", $current_name);
 
-			$pos[$thisLevel] = $ni->getName(); 
+			$pos[$thisLevel] = $ni->getName();
 
-			if($thisLevel == 0){
+			if($thisLevel == 0 && !$_c->getCollectionAttributeValue('exclude_support') ){
 				$region_list[] = $ni->getName();
 			}
 
@@ -120,14 +120,14 @@
 		}
 	}
 
-	// // debug
-	// echo ("\n\n<pre style='display:none;'>");
-	// print_r($region_list);
-	// echo "\n----\n";
-	// print_r($country_list);
-	// echo "\n----\n";
-	// print_r($carrier_list);
-	// echo("</pre>\n\n");
+	// debug
+	echo ("\n\n<pre style='display:none;'>");
+	print_r($region_list);
+	echo "\n----\n";
+	print_r($country_list);
+	echo "\n----\n";
+	print_r($carrier_list);
+	echo("</pre>\n\n");
 
 	//output dropdown menus
 	// echo("<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>");
@@ -157,6 +157,9 @@
 
 	echo ("<table class='table support-results'>\n");
 		foreach ($country_list as $country => $carriers) {
+			if (array_search($country, $region_list) === false){ //if category is not found in the dropdown list we skip rendering the contents
+				continue;
+			}
 			echo("<tr style='display:none;' class='carrier-list support-header country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."'><th>Product Image</th><th>Product Name:</th><th>Support Links:</th></tr>\n");
 			foreach ($carriers as $carrier) {
 				echo("<tr style='display:none;' class='carrier-list country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."'>");
@@ -166,7 +169,7 @@
 					$fullPath = $img->getPath();
 					$fullsize = $img->getRelativePath();
 					$size = @getimagesize($fullPath);
-					$thumb = $ih->getThumbnail($img, 100, 100, false);
+					$thumb = $ih->getThumbnail($img, 200, 150, false);
 					$thumbSrc = $thumb->src;
 					$thumbWidth = $thumb->width;
 					$thumbHeight = $thumb->height;

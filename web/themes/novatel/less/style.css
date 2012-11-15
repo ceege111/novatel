@@ -5378,7 +5378,9 @@ body table.news-list td h3 a,
 body table.news-list td h3 a:visited {
   color: #3361aa;
 }
-body .tables .nav-header-tabs {
+body .tables .nav-header-tabs,
+body .support-results .nav-header-tabs {
+  clear: both;
   margin: 0px;
   padding: 0px;
   list-style: none;
@@ -5396,39 +5398,62 @@ body .tables .nav-header-tabs {
   *zoom: 1;
 }
 body .tables .nav-header-tabs:before,
-body .tables .nav-header-tabs:after {
+body .support-results .nav-header-tabs:before,
+body .tables .nav-header-tabs:after,
+body .support-results .nav-header-tabs:after {
   display: table;
   content: "";
   line-height: 0;
 }
-body .tables .nav-header-tabs:after {
+body .tables .nav-header-tabs:after,
+body .support-results .nav-header-tabs:after {
   clear: both;
 }
-body .tables .nav-header-tabs li {
+body .tables .nav-header-tabs:before,
+body .support-results .nav-header-tabs:before,
+body .tables .nav-header-tabs:after,
+body .support-results .nav-header-tabs:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+body .tables .nav-header-tabs:after,
+body .support-results .nav-header-tabs:after {
+  clear: both;
+}
+body .tables .nav-header-tabs li,
+body .support-results .nav-header-tabs li {
   display: block;
   padding: 5px 10px;
   float: left;
   border-right: 1px solid rgba(161, 161, 161, 0.7);
 }
-body .tables .nav-header-tabs li p {
+body .tables .nav-header-tabs li p,
+body .support-results .nav-header-tabs li p {
   margin: 0;
 }
-body .tables .nav-header-tabs li:first-child {
+body .tables .nav-header-tabs li:first-child,
+body .support-results .nav-header-tabs li:first-child {
   padding-left: 10px;
 }
-body .tables .nav-header-tabs li.nav-selected {
+body .tables .nav-header-tabs li.nav-selected,
+body .support-results .nav-header-tabs li.nav-selected {
   font-weight: bold;
   background-color: rgba(51, 51, 51, 0.6);
 }
 body .tables .nav-header-tabs li.nav-selected a,
-body .tables .nav-header-tabs li.nav-selected a:visited {
+body .support-results .nav-header-tabs li.nav-selected a,
+body .tables .nav-header-tabs li.nav-selected a:visited,
+body .support-results .nav-header-tabs li.nav-selected a:visited {
   color: #eeeeee;
 }
-body .tables .table.tableHeader {
+body .tables .table.tableHeader,
+body .support-results .table.tableHeader {
   margin-top: 10px;
   margin-bottom: 0px;
 }
-body .tables .table.tableHeader th {
+body .tables .table.tableHeader th,
+body .support-results .table.tableHeader th {
   background: #2d4761;
   color: #eeeeee;
   font-weight: bold;
@@ -5732,6 +5757,12 @@ body .socialButtons {
 /* ===== Primary Styles ========================================================
    Author: Rational
    ========================================================================== */
+body .span3 {
+  width: 225px;
+}
+body .oneColumn .span12 {
+  margin-left: 0px;
+}
 body .productTitle {
   margin-bottom: 10px;
 }
@@ -5782,30 +5813,27 @@ body .region-menu,
 body .country-menu {
   margin-bottom: 0px;
 }
-body .table.support-results {
-  margin-left: -8px;
-  margin-right: -8px;
-  margin-bottom: -8px;
-  width: 765px;
-}
 body .table.support-results tr th {
+  min-width: 200px;
   padding: 10px;
+  background: #2d4761;
+  border: 1px solid #2d4761;
+  color: #eeeeee;
+  font-weight: bold;
 }
 body .table.support-results tr td {
   margin: 2px;
   padding: 10px;
-  border: 1px solid #eeeeee;
+  border: 1px solid #b4b4b4;
 }
 body .table.support-results tr td.product-thumbnail {
   min-width: 100px;
   text-align: center;
+  vertical-align: middle;
   background: #ffffff;
 }
 body .table.support-results tr td.product-name {
   min-width: 300px;
-}
-body .table.support-results tr td.product-description {
-  min-width: 200px;
 }
 body .table.support-results tr td h5 {
   font-size: 12px;

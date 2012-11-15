@@ -100,6 +100,36 @@ $(document).ready(function(){
 		});
 	});
 
+	$(".support_mifi").click(function(){
+		$("table.support-results").not("table.support-results:nth-child(1)").each(function(){
+			$(this).hide();
+		});
+		$("table.support-results:nth-child(1)").fadeIn(100);
+		return false;
+	});
 
+	$(".support_modem").click(function(){
+		$("table.support-results").not("table.support-results:nth-child(2)").each(function(){
+			$(this).hide();
+		});
+		$("table.support-results:nth-child(2)").fadeIn(100);
+		return false;
+	});
+
+	$(".support_datacard").click(function(){
+		$("table.support-results").not("table.support-results:nth-child(3)").each(function(){
+			$(this).hide();
+		});
+		$("table.support-results:nth-child(3)").fadeIn(100);
+		return false;
+	});
+
+	$(".support_embedded").click(function(){
+		$("table.support-results").not("table.support-results:nth-child(4)").each(function(){
+			$(this).hide();
+		});
+		$("table.support-results:nth-child(4)").fadeIn(100);
+		return false;
+	});
 
 });
