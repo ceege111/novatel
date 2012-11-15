@@ -96,10 +96,10 @@
 		echo("</table>\n");
 	}
 
-	// debug
-	echo ("\n\n<pre>");
-	print_r($category_list);
-	echo "\n----\n";
-	print_r($product_list);
-	echo "\n----\n</pre>";
+	// // debug
+	// echo ("\n\n<pre>");
+	// print_r($category_list);
+	// echo "\n----\n";
+	// print_r($product_list);
+	// echo "\n----\n</pre>";
 ?>
