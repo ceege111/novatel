@@ -5466,9 +5466,6 @@ body .product-list .row .productThumbnail {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-body .product-list .row .productThumbnail img {
-  border: 1px solid #c2c2c2;
-}
 body .product-list .row a.find-out-more {
   text-indent: 9999px;
 }
