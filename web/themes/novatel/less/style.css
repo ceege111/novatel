@@ -5378,7 +5378,8 @@ body table.news-list td h3 a,
 body table.news-list td h3 a:visited {
   color: #3361aa;
 }
-body .tables .nav-header-tabs {
+body .tables .nav-header-tabs,
+body .support-results .nav-header-tabs {
   clear: both;
   margin: 0px;
   padding: 0px;
@@ -5397,48 +5398,71 @@ body .tables .nav-header-tabs {
   *zoom: 1;
 }
 body .tables .nav-header-tabs:before,
-body .tables .nav-header-tabs:after {
+body .support-results .nav-header-tabs:before,
+body .tables .nav-header-tabs:after,
+body .support-results .nav-header-tabs:after {
   display: table;
   content: "";
   line-height: 0;
 }
-body .tables .nav-header-tabs:after {
+body .tables .nav-header-tabs:after,
+body .support-results .nav-header-tabs:after {
   clear: both;
 }
 body .tables .nav-header-tabs:before,
-body .tables .nav-header-tabs:after {
+body .support-results .nav-header-tabs:before,
+body .tables .nav-header-tabs:after,
+body .support-results .nav-header-tabs:after {
   display: table;
   content: "";
   line-height: 0;
 }
-body .tables .nav-header-tabs:after {
+body .tables .nav-header-tabs:after,
+body .support-results .nav-header-tabs:after {
   clear: both;
 }
-body .tables .nav-header-tabs li {
+body .tables .nav-header-tabs li,
+body .support-results .nav-header-tabs li {
   display: block;
   padding: 5px 10px;
   float: left;
   border-right: 1px solid rgba(161, 161, 161, 0.7);
 }
-body .tables .nav-header-tabs li p {
+body .tables .nav-header-tabs li p,
+body .support-results .nav-header-tabs li p {
   margin: 0;
 }
-body .tables .nav-header-tabs li:first-child {
+body .tables .nav-header-tabs li:first-child,
+body .support-results .nav-header-tabs li:first-child {
   padding-left: 10px;
 }
-body .tables .nav-header-tabs li.nav-selected {
+body .tables .nav-header-tabs li.nav-selected,
+body .support-results .nav-header-tabs li.nav-selected {
   font-weight: bold;
   background-color: rgba(51, 51, 51, 0.6);
 }
 body .tables .nav-header-tabs li.nav-selected a,
-body .tables .nav-header-tabs li.nav-selected a:visited {
+body .support-results .nav-header-tabs li.nav-selected a,
+body .tables .nav-header-tabs li.nav-selected a:visited,
+body .support-results .nav-header-tabs li.nav-selected a:visited {
   color: #eeeeee;
 }
-body .tables .table.tableHeader {
+body .tables .table.tableHeader,
+body .support-results .table.tableHeader {
   margin-top: 10px;
   margin-bottom: 0px;
 }
-body .tables .table.tableHeader th {
+body .tables .table.tableHeader th,
+body .support-results .table.tableHeader th {
+  background: #2d4761;
+  color: #eeeeee;
+  font-weight: bold;
+}
+body .table.support-results {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+body .table.support-results th {
   background: #2d4761;
   color: #eeeeee;
   font-weight: bold;
