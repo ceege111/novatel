@@ -5814,6 +5814,7 @@ body .country-menu {
   margin-bottom: 0px;
 }
 body .table.support-results tr th {
+  min-width: 200px;
   padding: 10px;
   background: #2d4761;
   color: #eeeeee;
@@ -5831,9 +5832,6 @@ body .table.support-results tr td.product-thumbnail {
 }
 body .table.support-results tr td.product-name {
   min-width: 300px;
-}
-body .table.support-results tr td.product-description {
-  min-width: 200px;
 }
 body .table.support-results tr td h5 {
   font-size: 12px;
