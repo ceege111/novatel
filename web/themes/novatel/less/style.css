@@ -5824,7 +5824,7 @@ body .table.support-results tr th {
 body .table.support-results tr td {
   margin: 2px;
   padding: 10px;
-  border: 1px solid #eeeeee;
+  border: 1px solid #555555;
 }
 body .table.support-results tr td.product-thumbnail {
   min-width: 100px;
