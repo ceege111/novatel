@@ -5458,15 +5458,6 @@ body .support-results .table.tableHeader th {
   color: #eeeeee;
   font-weight: bold;
 }
-body .table.support-results {
-  margin-top: 10px;
-  margin-bottom: 0px;
-}
-body .table.support-results th {
-  background: #2d4761;
-  color: #eeeeee;
-  font-weight: bold;
-}
 body .product-list .row {
   margin-bottom: 15px;
 }
@@ -5824,6 +5815,9 @@ body .country-menu {
 }
 body .table.support-results tr th {
   padding: 10px;
+  background: #2d4761;
+  color: #eeeeee;
+  font-weight: bold;
 }
 body .table.support-results tr td {
   margin: 2px;
