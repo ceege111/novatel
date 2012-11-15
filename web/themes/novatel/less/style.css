@@ -5828,6 +5828,7 @@ body .table.support-results tr td {
 body .table.support-results tr td.product-thumbnail {
   min-width: 100px;
   text-align: center;
+  vertical-align: middle;
   background: #ffffff;
 }
 body .table.support-results tr td.product-name {
