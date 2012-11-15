@@ -55,13 +55,6 @@
 		}
 	}
 
-	// debug
-	echo ("\n\n<pre>");
-	print_r($category_list);
-	echo "\n----\n";
-	print_r($product_list);
-	echo "\n----\n</pre>";
-
 	foreach ($product_list as $category => $product) {
 		if (array_search($category, $category_list) === false) {
 				continue;
@@ -102,4 +95,10 @@
 
 	}
 
+	// debug
+	echo ("\n\n<pre>");
+	print_r($category_list);
+	echo "\n----\n";
+	print_r($product_list);
+	echo "\n----\n</pre>";
 ?>
