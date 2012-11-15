@@ -88,7 +88,7 @@
 				echo("</td><td class='product-support'>");
 				if( $product_row['support'] != ''){
 					// echo(str_replace("\n", "<br>", $product_row['description']));
-					echo("support");
+					echo($product_row['support']);
 				}
 				echo("</td>");
 			echo("</tr>");
