@@ -62,6 +62,44 @@
 	print_r($product_list);
 	echo "\n----\n</pre>";
 
+	foreach ($product_list as $category => $product) {
+		if (array_search($category, $category_list) === false) {
+				continue;
+		}
+		echo("<table class='table table-striped support-list menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."'>");
+		foreach ($product as $product_row) {
+			echo("<tr>")
+				echo("<td class='product-thumbnail'>");
+				if($product_row['img']){
+					$img = $product_row['img'];
+					$fullPath = $img->getPath();
+					$fullsize = $img->getRelativePath();
+					$size = @getimagesize($fullPath);
+					$thumb = $ih->getThumbnail($img, 200, 150, false);
+					$thumbSrc = $thumb->src;
+					$thumbWidth = $thumb->width;
+					$thumbHeight = $thumb->height;
+					echo("<img src=\"$thumbSrc\" width=\"$thumbWidth\" height=\"$thumbHeight\" alt=\"\" />");
+				}
+				echo("</td><td class='product-name'>");
+				echo("<h5>");
+				if ($product_row['url'] == ''){
+					echo($product_row['name']);
+				}else{
+					echo("<a target='_blank' href='".$product_row['url']."'>");
+					echo($product_row['name']);
+					echo("</a>");
+				}
+				echo("</h5>");
+				echo("</td><td class='product-support'>");
+				if( $product_row['support'] != ''){
+					// echo(str_replace("\n", "<br>", $product_row['description']));
+					echo("support");
+				}
+				echo("</td>");
+			echo("</tr>");
+		}
 
+	}
 
 ?>
