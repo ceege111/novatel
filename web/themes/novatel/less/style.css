@@ -5312,23 +5312,23 @@ body .ccm-block-styles p.feature {
 body .product p {
   color: #555555;
 }
-body .product .tab-titles {
+body .tab-titles {
   *zoom: 1;
   list-style: none;
   margin: 0px 0px 5px;
   padding: 0px;
   border-bottom: 1px solid #b4b4b4;
 }
-body .product .tab-titles:before,
-body .product .tab-titles:after {
+body .tab-titles:before,
+body .tab-titles:after {
   display: table;
   content: "";
   line-height: 0;
 }
-body .product .tab-titles:after {
+body .tab-titles:after {
   clear: both;
 }
-body .product .tab-titles li {
+body .tab-titles li {
   float: left;
   border-right: 2px solid #ffffff;
   padding: 3px 15px;
@@ -5337,17 +5337,17 @@ body .product .tab-titles li {
   color: #eeeeee;
   background: #a1a1a1;
 }
-body .product .tab-titles li a,
-body .product .tab-titles li a:visited {
+body .tab-titles li a,
+body .tab-titles li a:visited {
   color: #ffffff;
 }
-body .product .tab-titles li a p,
-body .product .tab-titles li a:visited p {
+body .tab-titles li a p,
+body .tab-titles li a:visited p {
   margin: auto;
   color: #eeeeee;
   font-weight: 300;
 }
-body .product .tab-titles li.active {
+body .tab-titles li.active {
   background: #8dc63f;
 }
 body {
