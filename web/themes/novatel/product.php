@@ -208,7 +208,7 @@
 					//check for support content
 					$support = ($page->getAttribute('product_support') != '') ? $page->getAttribute('product_support') : '';
 					if($support != ''){
-						echo "<li class='tab-title'><a data-toggle='tab' href='#tabSupport'>Support</a></li>\n";
+						echo "<li class='tab-title'><a data-toggle='tab' href='#tabSupport'><p>Support</p></a></li>\n";
 					}
 				?>
 			</ul>

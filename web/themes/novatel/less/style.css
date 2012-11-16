@@ -143,7 +143,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   line-height: 20px;
   color: #333333;
@@ -700,7 +700,7 @@ address {
 code,
 pre {
   padding: 0 3px 2px;
-  font-family: "Open Sans", Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: "Open Sans", monospace;
   font-size: 10px;
   color: #333333;
   -webkit-border-radius: 3px;
@@ -779,7 +779,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 label {
   display: block;
@@ -3580,7 +3580,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   margin-bottom: 0;
   padding: 4px 14px;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
