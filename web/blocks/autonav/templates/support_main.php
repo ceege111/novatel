@@ -81,7 +81,7 @@
 				if ($product_row['url'] == ''){
 					echo($product_row['name']);
 				}else{
-					echo("<a target='_blank' href='".$product_row['url']."'>");
+					echo("<a href='".$product_row['url']."'>");
 					echo($product_row['name']);
 					echo("</a>");
 				}
