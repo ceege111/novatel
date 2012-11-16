@@ -44,11 +44,12 @@
 
 			if($thisLevel == 1) {
 				// $product_list[$pos[0]][] = $ni->getName();
+				$pageLink = $ni->getURL();
 				$url = ($_c->getCollectionAttributeValue('iframe_url') != '') ? $_c->getCollectionAttributeValue('iframe_url') : '';
 				$description = $_c->getCollectionDescription();
 				$img = $_c->getCollectionAttributeValue('product_image');
 				$support = $_c->getCollectionAttributeValue('product_support');
-				$product_list[$pos[0]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description,'img'=>$img, 'support'=>$support);
+				$product_list[$pos[0]][] = array( 'name' => $ni->getName(), 'url'=>$pageLink, 'description'=>$description,'img'=>$img, 'support'=>$support);
 			}
 			$lastLevel = $thisLevel;
 			$i++;
