@@ -203,6 +203,14 @@
 				<?php $tab_title_04 = new Area('Product Tab Title 04'); if($tab_title_04->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title       '><a data-toggle='tab' href='#tabFour'>";  $tab_title_04->display($c); echo "</a></li>\n"; } ?>
 				<?php $tab_title_05 = new Area('Product Tab Title 05'); if($tab_title_05->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title       '><a data-toggle='tab' href='#tabFive'>";  $tab_title_05->display($c); echo "</a></li>\n"; } ?>
 				<?php $tab_title_06 = new Area('Product Tab Title 06'); if($tab_title_06->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title       '><a data-toggle='tab' href='#tabSix'>";   $tab_title_06->display($c); echo "</a></li>\n"; } ?>
+				
+				<?php 
+					//check for support content
+					$support = ($page->getAttribute('product_support') != '') ? $page->getAttribute('product_support') : '';
+					if($support != ''){
+						echo "<li class='tab-title'><a data-toggle='tab' href='#tabSupport'><p>Support</p></a></li>\n";
+					}
+				?>
 			</ul>
 			<div id="productTabsContenl" class="tab-content tabs">
 				<?php $tab_01 = new Area('Product Tab 01'); if($tab_01->getTotalBlocksInArea($c) > 0){ echo "<div id='tabOne'   class='tab-pane tab active'>"; $tab_01->display($c); echo "</div>\n"; } ?>
@@ -211,6 +219,7 @@
 				<?php $tab_04 = new Area('Product Tab 04'); if($tab_04->getTotalBlocksInArea($c) > 0){ echo "<div id='tabFour'  class='tab-pane tab       '>"; $tab_04->display($c); echo "</div>\n"; } ?>
 				<?php $tab_05 = new Area('Product Tab 05'); if($tab_05->getTotalBlocksInArea($c) > 0){ echo "<div id='tabFive'  class='tab-pane tab       '>"; $tab_05->display($c); echo "</div>\n"; } ?>
 				<?php $tab_06 = new Area('Product Tab 06'); if($tab_06->getTotalBlocksInArea($c) > 0){ echo "<div id='tabSix'   class='tab-pane tab       '>"; $tab_06->display($c); echo "</div>\n"; } ?>
+				<?php if($support != '') { echo "<div id='tabSupport' class='tab-pane tab'>".$support."</div>\n"; } ?>
 			</div>		
 		<?php endif; ?>
 	</section>

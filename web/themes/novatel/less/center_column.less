@@ -32,33 +32,33 @@ body {
 		p {
 			color: @gray;
 		}
-
-		.tab-titles{
-			.clearfix;
-			list-style: none;
-			margin: 0px 0px 5px;
-			padding: 0px;
-			border-bottom: 1px solid @grayLight;
-			li {
-				float: left;
-				border-right: 2px solid @white;
-				padding: 3px 15px;
-				text-align: center;
-				line-height: 13px;
-				color: @grayLighter;
-				background: @grayLightish;
-				a,a:visited {
-					color: @white;
-					p {
-						margin: auto;
-						color: @grayLighter;
-						font-weight: 300;
-					}
-				}
-				&.active {
-					background: @green;
+	}
+	
+	.tab-titles{
+		.clearfix;
+		list-style: none;
+		margin: 0px 0px 5px;
+		padding: 0px;
+		border-bottom: 1px solid @grayLight;
+		li {
+			float: left;
+			border-right: 2px solid @white;
+			padding: 3px 15px;
+			text-align: center;
+			line-height: 13px;
+			color: @grayLighter;
+			background: @grayLightish;
+			a,a:visited {
+				color: @white;
+				p {
+					margin: auto;
+					color: @grayLighter;
+					font-weight: 300;
 				}
 			}
+			&.active {
+				background: @green;
+			}
 		}
-	}
+		}
 }
