@@ -38,6 +38,7 @@ $(document).ready(function(){
 			calcHeight = 1000;
 		}
 		$("#iframeContent").attr('height',calcHeight);
+		console.log('iframe height changed to: '+calcHeight);
 	});
 
 	//table tabs
