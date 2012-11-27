@@ -3,8 +3,9 @@
 */
 
 $(document).ready(function(){
-	// $('div.mainMenu>div>ul.nav').dropdown();
 
+	//dropdown menu
+	window.dropdownTimer = '';
 	$(".mainMenu .nav > li > a.dropdown-toggle").each(function(e){
 		var currentMenu = $(this).next("ul");
 		$(this).mouseover(function(e){
@@ -16,6 +17,7 @@ $(document).ready(function(){
 				$(this).hide();
 			});
 			$(currentMenu).fadeIn(100, 'swing', function(){
+				clearTimeout(window.dropdownTimer);	
 			});
 		});
 	});
@@ -25,6 +27,7 @@ $(document).ready(function(){
 			$(".mainMenu .nav > li > a.dropdown-toggle").each(function(){
 				$(this).removeClass('hover');
 			});
+			window.dropdownTimer = setTimeout(function(){$("ul.dropdown-menu li").not(".hover").each(function(){$(this).fadeOut();});},800);
 			$(this).fadeOut();
 		});
 	});
