@@ -35,7 +35,11 @@
 			if (strcasecmp($name, "Home") == 0){
 				$name = "<i class='icon-home'></i> ";
 			}
-			echo('<a href="' . $pageLink . '" ' . $target . '>' . $name . '</a>');
+			if ($_c->getCollectionAttributeValue('not_menu_link')){
+				echo($name);
+			} else {
+				echo('<a href="' . $pageLink . '" ' . $target . '>' . $name . '</a>');
+			}
 		}	
 		$lastLevel = $thisLevel;
 		$i++;

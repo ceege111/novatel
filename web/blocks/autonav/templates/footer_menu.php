@@ -77,11 +77,23 @@
 			}
 
 			if ($c->getCollectionID() == $_c->getCollectionID()) { 
-				echo('<li class="level-'.$thisLevel.' nav-selected nav-path-selected"><a class="nav-selected nav-path-selected" ' . $target . ' href="' . $pageLink . '">' . $ni->getName() . '</a>');
+				if ($_c->getCollectionAttributeValue('not_menu_link')){
+					echo('<li class="level-'.$thisLevel.' nav-selected nav-path-selected">' . $ni->getName() );
+				} else {
+					echo('<li class="level-'.$thisLevel.' nav-selected nav-path-selected"><a class="nav-selected nav-path-selected" ' . $target . ' href="' . $pageLink . '">' . $ni->getName() . '</a>');
+				}
 			} elseif ( in_array($_c->getCollectionID(),$selectedPathCIDs) && ($_c->getCollectionID() != HOME_CID) ) {
-				echo('<li class="level-'.$thisLevel.' nav-path-selected"><a class="nav-path-selected" href="' . $pageLink . '" ' . $target . '>' . $ni->getName() . '</a>');
+				if ($_c->getCollectionAttributeValue('not_menu_link')){
+					echo('<li class="level-'.$thisLevel.' nav-path-selected">' . $ni->getName() );
+				} else {
+					echo('<li class="level-'.$thisLevel.' nav-path-selected"><a class="nav-path-selected" href="' . $pageLink . '" ' . $target . '>' . $ni->getName() . '</a>');
+				}
 			} else {
-				echo('<li class="level-'.$thisLevel.'"><a href="' . $pageLink . '" ' . $target . ' >' . $ni->getName() . '</a>');
+				if ($_c->getCollectionAttributeValue('not_menu_link')){
+					echo('<li class="level-'.$thisLevel.'">' . $ni->getName() );
+				} else {
+					echo('<li class="level-'.$thisLevel.'"><a href="' . $pageLink . '" ' . $target . ' >' . $ni->getName() . '</a>');
+				}
 			}	
 
 			$lastLevel = $thisLevel;

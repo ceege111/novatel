@@ -67,11 +67,24 @@
 			}
 
 			if ($c->getCollectionID() == $_c->getCollectionID()) { 
-				echo('<li class="nav-selected nav-path-selected"><a class="dropdown-toggle nav-selected nav-path-selected" ' . $target . ' href="' . $pageLink . '">' . $ni->getName() . '</a>');
+				if($_c->getCollectionAttributeValue('not_menu_link')){
+					echo('<li class="nav-selected nav-path-selected">' . $ni->getName() );
+				} else {
+					echo('<li class="nav-selected nav-path-selected"><a class="dropdown-toggle nav-selected nav-path-selected" ' . $target . ' href="' . $pageLink . '">' . $ni->getName() . '</a>');
+				}
 			} elseif ( in_array($_c->getCollectionID(),$selectedPathCIDs) && ($_c->getCollectionID() != HOME_CID) ) {
-				echo('<li class="nav-path-selected"><a class="dropdown-toggle nav-path-selected" href="' . $pageLink . '" ' . $target . '>' . $ni->getName() . '</a>');
+				if ($_c->getCollectionAttributeValue('not_menu_link')){
+					echo('<li class="nav-path-selected">' . $ni->getName() );
+				} else {
+					echo('<li class="nav-path-selected"><a class="dropdown-toggle nav-path-selected" href="' . $pageLink . '" ' . $target . '>' . $ni->getName() . '</a>');
+				}
 			} else {
-				echo('<li><a class="dropdown-toggle" href="' . $pageLink . '" ' . $target . ' >' . $ni->getName() . '</a>');
+				if ($_c->getCollectionAttributeValue('not_menu_link')){
+					echo('<li>' . $ni->getName() );
+
+				} else {
+					echo('<li><a class="dropdown-toggle" href="' . $pageLink . '" ' . $target . ' >' . $ni->getName() . '</a>');
+				}
 			}	
 			$lastLevel = $thisLevel;
 			$i++;
