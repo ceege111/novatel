@@ -1531,6 +1531,7 @@ table {
   max-width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
+  border: 0px solid transparent;
 }
 .table {
   background-color: #eeeeee;
