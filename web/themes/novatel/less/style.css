@@ -1531,7 +1531,6 @@ table {
   max-width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-  border: 0px solid transparent;
 }
 .table {
   background-color: #eeeeee;
@@ -5859,6 +5858,9 @@ body .ccm-page-list h5 {
   margin-left: 3px;
   margin-top: -15px;
   margin-bottom: -10px;
+}
+body .ccm-gallery {
+  border: 0px solid transparent;
 }
 body select.region-menu,
 body select.country-menu {
