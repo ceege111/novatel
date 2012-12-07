@@ -4984,6 +4984,7 @@ body .headerWrap .mainHeader .mainMenu .nav .dropdown-menu li a:hover {
   background-image: none;
 }
 body .headerWrap .mainHeader .mainMenu .nav .dropdown-menu li span.nav-static {
+  display: block;
   text-shadow: 1px 1px #eeeeee;
   padding: 6px 0px 4px;
   margin-left: 20px;
