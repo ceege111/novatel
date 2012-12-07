@@ -1529,11 +1529,11 @@ legend + .control-group {
 }
 table {
   max-width: 100%;
-  background-color: #eeeeee;
   border-collapse: collapse;
   border-spacing: 0;
 }
 .table {
+  background-color: #eeeeee;
   width: 100%;
   margin-bottom: 20px;
 }
