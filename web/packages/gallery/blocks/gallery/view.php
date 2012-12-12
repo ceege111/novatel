@@ -74,7 +74,7 @@
 					?>
 					<div style="display:none">
 						<!-- <a class="ccmGalleryImage" href="<?php   echo $f->getRelativePath()?>" title="<?php   echo $imgInfo['caption']?>"><?php    $ih->outputThumbnail($thumbf,$thumbnailWidth,$thumbnailHeight,''); ?></a> -->
-						<a style="cursor:default;" class="ccmGalleryImage" href="#" title="<?php   echo $imgInfo['caption']?>"><?php    $ih->outputThumbnail($thumbf,$thumbnailWidth,$thumbnailHeight,''); ?></a>
+						<?php    $ih->outputThumbnail($thumbf,$thumbnailWidth,$thumbnailHeight,''); ?>
 					</div>
 					<?php   
 					$postTableHiddenImgs.=ob_get_contents();
@@ -88,7 +88,7 @@
 					
 					<td id="file_<?php   echo $imgInfo['fID'];?>" class="galleryImages"> 
 						<!-- <a class="ccmGalleryImage" href="<?php   echo $f->getRelativePath()?>" title="<?php   echo $imgInfo['caption']?>"><?php    $ih->outputThumbnail($thumbf,$thumbnailWidth,$thumbnailHeight,'', false, true); ?></a>			 -->
-						<a style="cursor:default;" class="ccmGalleryImage" href="#" title="<?php   echo $imgInfo['caption']?>"><?php    $ih->outputThumbnail($thumbf,$thumbnailWidth,$thumbnailHeight,'', false, true); ?></a>			
+						<?php    $ih->outputThumbnail($thumbf,$thumbnailWidth,$thumbnailHeight,'', false, true); ?>		
 					</td>
 	
 			<?php    
