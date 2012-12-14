@@ -5295,7 +5295,7 @@ body .container.rightSidebar .centerColumn {
   width: 765px;
 }
 body {
-  /* =============== General Main/Center Content Layout LESS =============== */
+  /* =============== Center Column Content Layout LESS =============== */
 
 }
 body .ccm-page-list h3 {
@@ -5306,6 +5306,7 @@ body .ccm-page-list h3 a,
 body .ccm-page-list h3 a:visited {
   color: #3361aa;
   font-size: 18px;
+  font-weight: normal;
 }
 body .ccm-block-styles img.feature {
   margin-top: -6px;
