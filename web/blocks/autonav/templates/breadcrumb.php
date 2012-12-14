@@ -36,7 +36,8 @@
 				$name = "<i class='icon-home'></i> ";
 			}
 			if ($_c->getCollectionAttributeValue('not_menu_link')){
-				echo($name);
+				// echo($name);
+				echo('<a href="/products/" ' . $target . '>' . $name . '</a>');
 			} else {
 				echo('<a href="' . $pageLink . '" ' . $target . '>' . $name . '</a>');
 			}
