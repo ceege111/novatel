@@ -35,7 +35,6 @@ $(document).ready(function(){
 			$(".mainMenu .nav > li > a.dropdown-toggle").each(function(){
 				$(this).removeClass('hover');
 			});
-			$("ul.dropdown-menu li").not(".hover").each(function(){$(this).fadeOut();});
 			$(this).fadeOut();
 		});
 	});
