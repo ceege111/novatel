@@ -160,12 +160,25 @@
 				echo("<h3>".$carrier['name']."</h3>\n");
 				if ($carrier['press_materials']!=''){
 					echo("<div>");
+						if ($carrier['img']){
+							$img = $carrier['img'];
+							$fullPath = $img->getPath();
+							$fullsize = $img->getRelativePath();
+							$size = @getimagesize($fullPath);
+							$thumb = $ih->getThumbnail($img, 200, 150, false);
+							$thumbSrc = $thumb->src;
+							$thumbWidth = $thumb->width;
+							$thumbHeight = $thumb->height;
+							echo("<img src=\"$thumbSrc\" width=\"$thumbWidth\" height=\"$thumbHeight\" alt=\"\" />");
+							echo("<a href='".$fullPath."' target='_blank'>Product Image</a>");
+							echo("</div>\n");
+						}
 					echo($carrier['press_materials']);
 					echo("</div>\n");
 				} else {
 					if ($carrier['img']){
 						$img = $carrier['img'];
-						$fullPath = $img->getPath();
+						$fullPath = $img->getRelativePath();
 						echo("<div>");
 						echo("<a href='".$fullPath."' target='_blank'>Product Image</a>");
 						echo("</div>\n");
