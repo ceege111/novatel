@@ -59,13 +59,7 @@
 			}
 
 			if($thisLevel == 1) {
-				// $country_list[$pos[0]][] = $ni->getName();
-				$url = ($_c->getCollectionAttributeValue('iframe_url') != '') ? $_c->getCollectionAttributeValue('iframe_url') : '';
-				$description = $_c->getCollectionDescription();
-				$download = $_c->getCollectionAttributeValue('press_materials');
-				$support = $_c->getCollectionAttributeValue('product_support');
-				$img = $_c->getCollectionAttributeValue('product_image');
-				$country_list[$pos[0]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description, 'download'=>$download, 'support'=>$support, 'img'=>$img);
+				$country_list[$pos[0]][] = $ni->getName();
 			}
 
 			if($thisLevel == 2) {
@@ -120,7 +114,7 @@
 		}
 	}
 
-	// // debug
+	//debug
 	// echo ("<pre>");
 	// print_r($region_list);
 	// echo "\n----\n";
@@ -131,7 +125,7 @@
 	//output dropdown menus
 	// echo("<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>");
 	echo("<td style='min-height:200px;'><div class='where-to-buy-header'><select class='region-menu'>\n");
-	echo("<option value='-'>Select a Product</option>\n");
+	echo("<option value='-'>Select a Product:</option>\n");
 	foreach ($region_list as $region) {
 		echo("<option class='menu-region' value='".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($region))."'>");
 		echo($region);
@@ -139,30 +133,28 @@
 	}
 	echo ("</select>\n");
 
-	// echo ("\n&nbsp;&nbsp;");
-	// foreach ($country_list as $region => $countries) {
-	// 	echo("<select style='display:none' class='country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($region))."'>");
-	// 	echo("<option value=-'-''>Select a Country:</option>\n");
-	// 	foreach ($countries as $country) {
-	// 		if (count($carrier_list[$country]) > 0) {
-	// 			echo("<option value='".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."'>");
-	// 			echo($country);
-	// 			echo("</option>\n");			
-	// 		}
-	// 	}
-	// 	echo("</select>\n");
-	// }
+	echo ("\n&nbsp;&nbsp;");
+	foreach ($country_list as $region => $countries) {
+		echo("<select style='display:none' class='country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($region))."'>");
+		echo("<option value=-'-''>Select a Country:</option>\n");
+		foreach ($countries as $country) {
+			if (count($carrier_list[$country]) > 0) {
+				echo("<option value='".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."'>");
+				echo($country);
+				echo("</option>\n");			
+			}
+		}
+		echo("</select>\n");
+	}
 	echo ("</div>\n");
 
 	echo ("<div class='where-to-buy-results'>\n");
 
-		foreach ($country_list as $country => $carriers) {
-			echo("<div style='display:none;' class='carrier-list country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."''>");
+		foreach ($carrier_list as $country => $carriers) {
+			echo("<div style='display:none;' class='carrier-list menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."''>");
 			foreach ($carriers as $carrier) {
 				echo("<div class='carrier-item carrier-item-full'>");
-
 				echo("<h3>".$carrier['name']."</h3>\n");
-
 				if ($carrier['press_materials']!=''){
 					echo("<div>");
 					echo($carrier['press_materials']);
@@ -181,9 +173,10 @@
 						echo("</div>\n");
 					}
 				}
-
+				
 				// if ($carrier['url'] == ''){
 				// 	echo($carrier['name']);
+				// 	echo("<br>");
 				// }else{
 				// 	echo("<a target='_blank' href='".$carrier['url']."'>");
 				// 	echo($carrier['name']);
