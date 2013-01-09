@@ -6,19 +6,27 @@ $(document).ready(function(){
 
 	//dropdown menu
 	window.dropdownTimer = '';
+	var menuMouseover = function(obj){
+		var currentMenu = $(obj).next("ul");
+		$(".mainMenu .nav > li > a.dropdown-toggle").unbind();
+		$(".mainMenu .nav > li > a.dropdown-toggle").not(obj).each(function(){
+			$(this).removeClass('hover');
+		});
+		$(obj).addClass('hover');
+		$(".nav ul.dropdown-menu").not(currentMenu).each(function(){
+			$(this).hide();
+		});
+		$(currentMenu).fadeIn(100, 'swing', function(){
+			$(".mainMenu .nav > li > a.dropdown-toggle").each(function(){
+				$(this).mouseover(function(){
+					menuMouseover(this);
+				});
+			};
+		});
+	};
 	$(".mainMenu .nav > li > a.dropdown-toggle").each(function(e){
-		var currentMenu = $(this).next("ul");
-		$(this).mouseover(function(e){
-			$(".mainMenu .nav > li > a.dropdown-toggle").not(this).each(function(){
-				$(this).removeClass('hover');
-			});
-			$(this).addClass('hover');
-			$(".nav ul.dropdown-menu").not(currentMenu).each(function(){
-				$(this).hide();
-			});
-			$(currentMenu).fadeIn(100, 'swing', function(){
-				clearTimeout(window.dropdownTimer);	
-			});
+		$(this).mouseover(function(){
+			menuMouseover(this);
 		});
 	});
 
@@ -27,7 +35,7 @@ $(document).ready(function(){
 			$(".mainMenu .nav > li > a.dropdown-toggle").each(function(){
 				$(this).removeClass('hover');
 			});
-			window.dropdownTimer = setTimeout(function(){$("ul.dropdown-menu li").not(".hover").each(function(){$(this).fadeOut();});},800);
+			$("ul.dropdown-menu li").not(".hover").each(function(){$(this).fadeOut();});
 			$(this).fadeOut();
 		});
 	});
