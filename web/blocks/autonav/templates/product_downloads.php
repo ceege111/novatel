@@ -60,16 +60,19 @@
 
 			if($thisLevel == 1) {
 				$country_list[$pos[0]][] = $ni->getName();
+				$download = $_c->getCollectionAttributeValue('press_materials');
+				$img = $_c->getCollectionAttributeValue('product_image');
+				$carrier_list[$ni->getName()][] = array( 'name' => $ni->getName(), 'download'=>$download, 'img'=>$img);
 			}
 
-			if($thisLevel == 2) {
-				// $url = ($_c->getCollectionAttributeValue('iframe_url') != '') ? $_c->getCollectionAttributeValue('iframe_url') : '';
-				// $description = $_c->getCollectionDescription();
-				$download = $_c->getCollectionAttributeValue('press_materials');
-				// $support = $_c->getCollectionAttributeValue('product_support');
-				$img = $_c->getCollectionAttributeValue('product_image');
-				$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'download'=>$download, 'img'=>$img);
-			}
+			// if($thisLevel == 2) {
+			// 	// $url = ($_c->getCollectionAttributeValue('iframe_url') != '') ? $_c->getCollectionAttributeValue('iframe_url') : '';
+			// 	// $description = $_c->getCollectionDescription();
+			// 	$download = $_c->getCollectionAttributeValue('press_materials');
+			// 	// $support = $_c->getCollectionAttributeValue('product_support');
+			// 	$img = $_c->getCollectionAttributeValue('product_image');
+			// 	$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'download'=>$download, 'img'=>$img);
+			// }
 
 			// if ($thisLevel > $lastLevel) {
 			// 	echo("<ul>");
