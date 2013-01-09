@@ -158,7 +158,7 @@
 			foreach ($carriers as $carrier) {
 				echo("<div class='carrier-item carrier-item-full'>");
 				echo("<h3>".$carrier['name']."</h3>\n");
-				if ($carrier['press_materials']!=''){
+				if ($carrier['download']!=''){
 					echo("<div>");
 						if ($carrier['img']){
 							$img = $carrier['img'];
@@ -173,7 +173,7 @@
 							echo("<a href='".$fullPath."' target='_blank'>Product Image</a>");
 							echo("</div>\n");
 						}
-					echo($carrier['press_materials']);
+					echo($carrier['download']);
 					echo("</div>\n");
 				} else {
 					if ($carrier['img']){
