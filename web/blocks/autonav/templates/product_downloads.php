@@ -178,9 +178,15 @@
 				} else {
 					if ($carrier['img']){
 						$img = $carrier['img'];
-						$fullPath = $img->getRelativePath();
+						$fullPath = $img->getPath();
+						$fullsize = $img->getRelativePath();
+						$size = @getimagesize($fullPath);
+						$thumb = $ih->getThumbnail($img, 200, 150, false);
+						$thumbSrc = $thumb->src;
+						$thumbWidth = $thumb->width;
+						$thumbHeight = $thumb->height;
 						echo("<div>");
-						echo("<a href='".$fullPath."' target='_blank'>Product Image</a>");
+						echo("<a href='".$fullsize."' target='_blank'><img src=\"$thumbSrc\" width=\"$thumbWidth\" height=\"$thumbHeight\" alt=\"\" /><br>(Click for high-res image)</a>");
 						echo("</div>\n");
 					}				
 					// if ($carrier['support']!=''){
