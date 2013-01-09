@@ -30,7 +30,7 @@
 
 	foreach($aBlocks as $ni) {
 		$_c = $ni->getCollectionObject();
-		if (!$_c->getCollectionAttributeValue('exclude_nav')) {
+		// if (!$_c->getCollectionAttributeValue('exclude_nav')) {
 			
 			
 			// $target = $ni->getTarget();
@@ -111,7 +111,7 @@
 
 			$lastLevel = $thisLevel;
 			$i++;
-		}
+		// }
 	}
 
 	//debug
