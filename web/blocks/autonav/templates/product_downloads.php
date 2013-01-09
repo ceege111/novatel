@@ -66,9 +66,9 @@
 				$url = ($_c->getCollectionAttributeValue('iframe_url') != '') ? $_c->getCollectionAttributeValue('iframe_url') : '';
 				$description = $_c->getCollectionDescription();
 				$download = $_c->getCollectionAttributeValue('press_materials');
-				$support = $_c->getCollectionAttributeValue('product_support');
+				// $support = $_c->getCollectionAttributeValue('product_support');
 				$img = $_c->getCollectionAttributeValue('product_image');
-				$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description, 'download'=>$download, 'support'=>$support, 'img'=>$img);
+				$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description, 'download'=>$download, 'img'=>$img);
 			}
 
 			// if ($thisLevel > $lastLevel) {
@@ -167,11 +167,11 @@
 						echo("<a href='".$fullPath."' target='_blank'>Product Image</a>");
 						echo("</div>\n");
 					}				
-					if ($carrier['support']!=''){
-						echo("<div>");
-						echo($carrier['support']);
-						echo("</div>\n");
-					}
+					// if ($carrier['support']!=''){
+					// 	echo("<div>");
+					// 	echo($carrier['support']);
+					// 	echo("</div>\n");
+					// }
 				}
 
 				// if ($carrier['url'] == ''){
