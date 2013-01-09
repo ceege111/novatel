@@ -16,7 +16,7 @@ $(document).ready(function(){
 		$(".nav ul.dropdown-menu").not(currentMenu).each(function(){
 			$(this).hide();
 		});
-		$(currentMenu).fadeIn(100, 'swing', function(){
+		$(currentMenu).fadeIn(50, 'swing', function(){
 			$(".mainMenu .nav > li > a.dropdown-toggle").each(function(){
 				$(this).mouseover(function(){
 					menuMouseover(this);
