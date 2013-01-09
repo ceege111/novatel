@@ -60,9 +60,9 @@
 
 			if($thisLevel == 1) {
 				$country_list[$pos[0]][] = $ni->getName();
-				$download = $_c->getCollectionAttributeValue('press_materials');
+				$press_materials = $_c->getCollectionAttributeValue('press_materials');
 				$img = $_c->getCollectionAttributeValue('product_image');
-				$carrier_list[$ni->getName()][] = array( 'name' => $ni->getName(), 'download'=>$download, 'img'=>$img);
+				$carrier_list[$ni->getName()][] = array( 'name' => $ni->getName(), 'press_materials'=>$press_materials, 'img'=>$img);
 			}
 
 			// if($thisLevel == 2) {
@@ -158,7 +158,7 @@
 			foreach ($carriers as $carrier) {
 				echo("<div class='carrier-item carrier-item-full'>");
 				echo("<h3>".$carrier['name']."</h3>\n");
-				if ($carrier['download']!=''){
+				if ($carrier['press_materials']!=''){
 					echo("<div>");
 						if ($carrier['img']){
 							$img = $carrier['img'];
@@ -170,10 +170,8 @@
 							$thumbWidth = $thumb->width;
 							$thumbHeight = $thumb->height;
 							echo("<img src=\"$thumbSrc\" width=\"$thumbWidth\" height=\"$thumbHeight\" alt=\"\" />");
-							echo("<a href='".$fullPath."' target='_blank'>Product Image</a>");
-							echo("</div>\n");
 						}
-					echo($carrier['download']);
+					echo($carrier['press_materials']);
 					echo("</div>\n");
 				} else {
 					if ($carrier['img']){
