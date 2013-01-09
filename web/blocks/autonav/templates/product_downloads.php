@@ -65,7 +65,7 @@
 				$download = $_c->getCollectionAttributeValue('press_materials');
 				$support = $_c->getCollectionAttributeValue('product_support');
 				$img = $_c->getCollectionAttributeValue('product_image');
-				$country_list[$pos[0]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description, 'download'=$download, 'support'=$support, 'img'=$img);
+				$country_list[$pos[0]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description, 'download'=>$download, 'support'=>$support, 'img'=>$img);
 			}
 
 			if($thisLevel == 2) {
@@ -74,7 +74,7 @@
 				$download = $_c->getCollectionAttributeValue('press_materials');
 				$support = $_c->getCollectionAttributeValue('product_support');
 				$img = $_c->getCollectionAttributeValue('product_image');
-				$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description, 'download'=$download, 'support'=$support, 'img'=$img);
+				$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description, 'download'=>$download, 'support'=>$support, 'img'=>$img);
 			}
 
 			// if ($thisLevel > $lastLevel) {
