@@ -30,7 +30,7 @@
 
 	foreach($aBlocks as $ni) {
 		$_c = $ni->getCollectionObject();
-		// if (!$_c->getCollectionAttributeValue('exclude_nav')) {
+		if (!$_c->getCollectionAttributeValue('exclude_nav')) {
 			
 			
 			// $target = $ni->getTarget();
@@ -65,10 +65,7 @@
 			if($thisLevel == 2) {
 				$url = ($_c->getCollectionAttributeValue('iframe_url') != '') ? $_c->getCollectionAttributeValue('iframe_url') : '';
 				$description = $_c->getCollectionDescription();
-				$download = $_c->getCollectionAttributeValue('press_materials');
-				// $support = $_c->getCollectionAttributeValue('product_support');
-				$img = $_c->getCollectionAttributeValue('product_image');
-				$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description, 'download'=>$download, 'img'=>$img);
+				$carrier_list[$pos[1]][] = array( 'name' => $ni->getName(), 'url'=>$url, 'description'=>$description);
 			}
 
 			// if ($thisLevel > $lastLevel) {
@@ -111,21 +108,21 @@
 
 			$lastLevel = $thisLevel;
 			$i++;
-		// }
+		}
 	}
 
 	//debug
-	echo ("<pre>");
-	print_r($region_list);
-	echo "\n----\n";
-	print_r($country_list);
-	echo "\n----\n";
-	print_r($carrier_list);
+	// echo ("<pre>");
+	// print_r($region_list);
+	// echo "\n----\n";
+	// print_r($country_list);
+	// echo "\n----\n";
+	// print_r($carrier_list);
 
 	//output dropdown menus
 	// echo("<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>");
 	echo("<td style='min-height:200px;'><div class='where-to-buy-header'><select class='region-menu'>\n");
-	echo("<option value='-'>Select a Category:</option>\n");
+	echo("<option value='-'>Select a Region:</option>\n");
 	foreach ($region_list as $region) {
 		echo("<option class='menu-region' value='".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($region))."'>");
 		echo($region);
@@ -136,7 +133,7 @@
 	echo ("\n&nbsp;&nbsp;");
 	foreach ($country_list as $region => $countries) {
 		echo("<select style='display:none' class='country-menu menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($region))."'>");
-		echo("<option value=-'-''>Select a Product:</option>\n");
+		echo("<option value=-'-''>Select a Country:</option>\n");
 		foreach ($countries as $country) {
 			if (count($carrier_list[$country]) > 0) {
 				echo("<option value='".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."'>");
@@ -153,40 +150,20 @@
 		foreach ($carrier_list as $country => $carriers) {
 			echo("<div style='display:none;' class='carrier-list menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."''>");
 			foreach ($carriers as $carrier) {
-				echo("<div class='carrier-item carrier-item-full'>");
-				echo("<h3>".$carrier['name']."</h3>\n");
-				if ($carrier['press_materials']!=''){
-					echo("<div>");
-					echo($carrier['press_materials']);
-					echo("</div>\n");
-				} else {
-					if ($carrier['img']){
-						$img = $carrier['img'];
-						$fullPath = $img->getPath();
-						echo("<div>");
-						echo("<a href='".$fullPath."' target='_blank'>Product Image</a>");
-						echo("</div>\n");
-					}				
-					// if ($carrier['support']!=''){
-					// 	echo("<div>");
-					// 	echo($carrier['support']);
-					// 	echo("</div>\n");
-					// }
+				echo("<div class='carrier-item'>");
+				if ($carrier['url'] == ''){
+					echo($carrier['name']);
+					echo("<br>");
+				}else{
+					echo("<a target='_blank' href='".$carrier['url']."'>");
+					echo($carrier['name']);
+					echo("</a>");
 				}
-
-				// if ($carrier['url'] == ''){
-				// 	echo($carrier['name']);
-				// 	echo("<br>");
-				// }else{
-				// 	echo("<a target='_blank' href='".$carrier['url']."'>");
-				// 	echo($carrier['name']);
-				// 	echo("</a>");
-				// }
-				// if( $carrier['description'] != ''){
-				// 	echo("\n<div class='carrier-sub'>");
-				// 	echo(str_replace("\n", "<br>", $carrier['description']));
-				// 	echo("</div>\n");
-				// }
+				if( $carrier['description'] != ''){
+					echo("\n<div class='carrier-sub'>");
+					echo(str_replace("\n", "<br>", $carrier['description']));
+					echo("</div>\n");
+				}
 				echo("</div>\n");
 			}
 			echo("</div>");
