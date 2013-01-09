@@ -21,7 +21,7 @@ $(document).ready(function(){
 				$(this).mouseover(function(){
 					menuMouseover(this);
 				});
-			};
+			});
 		});
 	};
 	$(".mainMenu .nav > li > a.dropdown-toggle").each(function(e){
