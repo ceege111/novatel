@@ -154,13 +154,13 @@
 	}
 	echo ("</div>\n");
 
-	echo ("<div class='where-to-buy-results'>\n");
+	echo ("<div class='where-to-buy-results' style='min-height:200px;'>\n");
 
 		foreach ($carrier_list as $country => $carriers) {
 			echo("<div style='display:none;' class='carrier-list menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($country))."''>");
 			foreach ($carriers as $carrier) {
-				echo("<div class='carrier-item carrier-item-full'>");
-				echo("<h3>".$carrier['name']."</h3>\n");
+				echo("<div class='carrier-item carrier-item-full' style='margin:0;padding:0;text-align:center;'>");
+				echo("<h4>".$carrier['name']."</h4>\n");
 				if ($carrier['press_materials']!=''){
 					echo("<div>");
 						if ($carrier['img']){
