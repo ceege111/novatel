@@ -1,10 +1,7 @@
 <?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 $page = Page::getCurrentPage();
-?>
-
-<!-- Header -->
-<?php $this->inc('elements/header.php'); ?>
+$this->inc('elements/header.php'); ?>
 
 <header class="pageTitle container">
 	<?php $this->inc('elements/content_banner.php'); ?>
