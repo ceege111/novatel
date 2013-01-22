@@ -17,18 +17,7 @@ These instructions assume that the environments will all be deployed to one serv
 
 Obtain Source Code
 
-•	An FTP server with a zipped up archive of the source code can be provided.
-
-•	The source will be available from the following ftp server:
-
-o	ftp://source.rtio.nl/
-
-o	Login: amazon_nafc
-
-o	Password: wReyaB4N
-
-o	Filename: amazon_nafc.zip
-
+	Source code available from private git repo.
 
 AWS Account Setup
 •	Create or gain access to an AWS account at http://aws.amazon.com
@@ -177,7 +166,7 @@ o	sudo /etc/init.d/apache2 restart
 
 Database Setup
 
-•	To set up the database, a user with the name amazon and a database named amazon_fulfillment needs to be added to MySQL First we log into MySQL:
+•	To set up the database, a user with the name novatel and a database named novatel needs to be added to MySQL First we log into MySQL:
 
 o	mysql –u root –p 
 
@@ -185,9 +174,9 @@ o	mysql –u root –p
 
 
 
-o	create database amazon_fulfillment;
+o	create database novatel;
 
-o	grant all on amazon_fullfillment.* to ‘amazon’@’localhost’ identified by ‘Xm89TdNsDX’;
+o	grant all on novatel.* to ‘novatel’@’localhost’ identified by ‘Xm89TdNsDX’;
 
 	note: The password as set by this command can be changed, however it will also need to be changed in the jake deploy config file public_html/jakelib/db.jake
 
