@@ -33,16 +33,19 @@ $(document).ready(function(){
 		console.log(key);
 		console.log(list);
 		var slide = $("<div class='item'></div>");
+		slide.addClass('slider-group-'+item.groupSet);
+		var link = $("<a></a>");
+		link.attr('href',item.url);
 		if (key == 0){
 			slide.addClass('active');
 		}
 		var image = $("<img>");
 		image.attr('src',item.fullFilePath);
-		slide.append(image);
-		container.append(slide);
+		link.append(image);
+		container.append(link);
 		if (key == list.length-1){
 			console.log("starting carousel...");
-			$("#ccm-SlideshowBlock-display<?=intval($bID)?>").carousel({pause:'click'});
+			$("#ccm-SlideshowBlock-display<?=intval($bID)?>").gridSlider();
 		}
 	});
 });
