@@ -8468,7 +8468,7 @@ body .socialButtons {
 }
 /* line 175, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003175}}
-.ether-ctrl-pag > div:after {
+.ether-ctrl-pag > div:before {
   content: ".";
 }
 /* line 176, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
