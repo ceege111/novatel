@@ -40,8 +40,10 @@ $(document).ready(function(){
 		image.attr('src',item.fullFilePath);
 		slide.append(image);
 		container.append(slide);
+		if (key = list.length()-1){
+			$("#ccm-SlideshowBlock-display<?=intval($bID)?>").delay(100).carousel();
+		}
 	});
-	$("#ccm-SlideshowBlock-display<?=intval($bID)?>").delay(100).carousel();
 });
 
 //]]>
