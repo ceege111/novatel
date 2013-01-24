@@ -42,7 +42,7 @@ $(document).ready(function(){
 		container.append(slide);
 		if (key == list.length-1){
 			console.log("starting carousel...");
-			$("#ccm-SlideshowBlock-display<?=intval($bID)?>").carousel({interval: 2000,pause:'click'});
+			$("#ccm-SlideshowBlock-display<?=intval($bID)?>").carousel({interval: 4000,pause:'click'});
 		}
 	});
 });
