@@ -4,7 +4,7 @@
 //<![CDATA[
 $(document).ready(function(){
 	console.log('slideshow init...');
-	imgInfos = {[
+	imgInfos = {slides:[
 	<? 
 	$notFirst=1;
 	foreach($images as $imgInfo) {
