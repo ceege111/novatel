@@ -6787,7 +6787,7 @@ body .headerWrap .mainHeader .mainMenu .nav > li {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/header\.less}line{font-family:\0000364}}
 body .headerWrap .mainHeader .mainMenu .nav > li a,
 body .headerWrap .mainHeader .mainMenu .nav > li a:visited {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   font-weight: 200;
 }
