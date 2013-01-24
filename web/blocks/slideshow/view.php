@@ -42,7 +42,7 @@ $(document).ready(function(){
 		container.append(slide);
 		if (key == list.length-1){
 			console.log("starting carousel...");
-			$("#ccm-SlideshowBlock-display<?=intval($bID)?>").delay(100).carousel();
+			$("#ccm-SlideshowBlock-display<?=intval($bID)?>").carousel({interval: 2000,pause:'click'});
 		}
 	});
 });
@@ -50,7 +50,7 @@ $(document).ready(function(){
 //]]>
 </script>
 
-<div class="ccm-SlideshowBlock-display carousel slide">
+<div class="ccm-SlideshowBlock-display carousel fade">
 	<div id="ccm-SlideshowBlock-display<?=intval($bID)?>" class="carousel-inner">
 		<?php 
 
