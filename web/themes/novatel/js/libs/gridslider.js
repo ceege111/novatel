@@ -318,16 +318,16 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 			if (cfg.$ctrl_wrap) 
 			{
 				cfg.$ctrl_wrap
-					.css({	
-						'margin-left': function() 
-						{
-							return -$(this).outerWidth()/2;
-						},
-						'margin-top': function () 
-						{
-							return -$(this).outerHeight()/2 - cfg.col_spacing_size / 2 * cfg.col_spacing_enable;
-						}
-					})
+					// .css({	
+					// 	'margin-left': function() 
+					// 	{
+					// 		return -$(this).outerWidth()/2;
+					// 	},
+					// 	'margin-top': function () 
+					// 	{
+					// 		return -$(this).outerHeight()/2 - cfg.col_spacing_size / 2 * cfg.col_spacing_enable;
+					// 	}
+					// })
 					.find('.' + egs.add_prefix('ctrl'))
 						.attr('unselectable', 'on')
 						.css({

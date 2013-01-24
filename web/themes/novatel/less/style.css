@@ -8310,8 +8310,8 @@ body .socialButtons {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003138}}
 .ether-ctrl-wrap {
   position: absolute;
-  top: 0px;
-  left: 50%;
+  bottom: 0px;
+  right: 0px;
   z-index: 20;
   z-index: 100;
   padding: 5px;
