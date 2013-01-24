@@ -50,7 +50,7 @@ $(document).ready(function(){
 //]]>
 </script>
 
-<div class="ccm-SlideshowBlock-display carousel fade">
+<div class="ccm-SlideshowBlock-display carousel slide">
 	<div id="ccm-SlideshowBlock-display<?=intval($bID)?>" class="carousel-inner">
 		<?php 
 
