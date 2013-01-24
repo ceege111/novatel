@@ -48,7 +48,7 @@ $(document).ready(function(){
 		container.append(link);
 		if (key == list.length-1){
 			console.log("starting carousel...");
-			$("#ccm-SlideshowBlock-display<?=intval($bID)?>").gridSlider({autoplay_enable:true,autoplay_interval:6,scroll_axis:'x',loop:true,ctrl_always_visible:true});
+			$("#ccm-SlideshowBlock-display<?=intval($bID)?>").gridSlider({autoplay_enable:true,autoplay_interval:6,scroll_axis:'x',loop:true,ctrl_arrows:false,ctrl_pag:true,ctrl_always_visible:true});
 		}
 	});
 });
