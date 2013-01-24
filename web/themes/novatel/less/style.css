@@ -8333,7 +8333,7 @@ body .socialButtons {
 .ether-ctrl-wrap {
   position: absolute;
   bottom: -39px;
-  right: 25px;
+  right: 20px;
   z-index: 20;
   z-index: 100;
   padding: 5px;
@@ -8375,7 +8375,7 @@ body .socialButtons {
 /* line 151, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003151}}
 .ether-ctrl-wrap .ether-ctrl {
-  background-color: #049cdb;
+  background-color: #42454c;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   border-radius: 100px;
