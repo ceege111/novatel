@@ -17,6 +17,7 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="<?php echo $this->getThemePath(); ?>/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
+	<script src="<?php echo $this->getThemePath(); ?>/js/libs/underscore-min.js"></script>
 	<script src="<?php echo $this->getThemePath(); ?>/js/libs/bootstrap/bootstrap.min.js"></script>
 
 	<script src="<?php echo $this->getThemePath(); ?>/js/plugins.js"></script>
