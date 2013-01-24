@@ -26,13 +26,24 @@ $(document).ready(function(){
 		<? }
 		} ?>
 	]};
-	$("#ccm-SlideshowBlock-display<?=intval($bID)?>").carousel();
+	var container = $("#ccm-SlideshowBlock-display<?=intval($bID)?>");
+	_.each(imgInfos.slides, function(slide,key,list){
+		var slide = $("<div class='item'></div>");
+		var image = $("<img>");
+		image.attr('src',slide->fullFilePath);
+		slide.append(image);
+		container.append();
+	}
+	$("#ccm-SlideshowBlock-display<?=intval($bID)?>").delay(100).carousel();
 });
 
 //]]>
 </script>
 
-<div id="ccm-SlideshowBlock-display<?=intval($bID)?>" class="ccm-SlideshowBlock-display">
-<div id="ccm-SlideshowBlock-heightSetter<?=intval($bID)?>" class="ccm-SlideshowBlock-heightSetter"></div>
-<div class="ccm-SlideshowBlock-clear" ></div>
+<div class="ccm-SlideshowBlock-display carousel slide">
+	<div id="ccm-SlideshowBlock-display<?=intval($bID)?>" class="carousel-inner">
+
+	</div>
+	<div id="ccm-SlideshowBlock-heightSetter<?=intval($bID)?>" class="ccm-SlideshowBlock-heightSetter"></div>
+	<div class="ccm-SlideshowBlock-clear" ></div>
 </div>
