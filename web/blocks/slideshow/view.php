@@ -33,10 +33,13 @@ $(document).ready(function(){
 		console.log(key);
 		console.log(list);
 		var slide = $("<div class='item'></div>");
+		if (key == 0){
+			slide.addClass('active');
+		}
 		var image = $("<img>");
 		image.attr('src',item.fullFilePath);
 		slide.append(image);
-		container.append();
+		container.append(slide);
 	});
 	$("#ccm-SlideshowBlock-display<?=intval($bID)?>").delay(100).carousel();
 });
@@ -46,7 +49,9 @@ $(document).ready(function(){
 
 <div class="ccm-SlideshowBlock-display carousel slide">
 	<div id="ccm-SlideshowBlock-display<?=intval($bID)?>" class="carousel-inner">
+		<?php 
 
+		?>
 	</div>
 	<div id="ccm-SlideshowBlock-heightSetter<?=intval($bID)?>" class="ccm-SlideshowBlock-heightSetter"></div>
 	<div class="ccm-SlideshowBlock-clear" ></div>
