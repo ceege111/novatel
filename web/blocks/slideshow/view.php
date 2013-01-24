@@ -30,7 +30,7 @@ $(document).ready(function(){
 	_.each(imgInfos.slides, function(slide,key,list){
 		var slide = $("<div class='item'></div>");
 		var image = $("<img>");
-		image.attr('src',slide->fullFilePath);
+		image.attr('src',slide.fullFilePath);
 		slide.append(image);
 		container.append();
 	}
