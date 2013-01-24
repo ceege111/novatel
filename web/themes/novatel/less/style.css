@@ -6778,11 +6778,6 @@ body .headerWrap .mainHeader .mainMenu .nav {
   padding: 0px 10px;
   margin-left: 100px;
 }
-/* line 62, /Users/je/projects/novatel-corp/web/themes/novatel/less/header.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/header\.less}line{font-family:\0000362}}
-body .headerWrap .mainHeader .mainMenu .nav > li {
-  border-left: 1px solid rgba(85, 85, 85, 0.5);
-}
 /* line 64, /Users/je/projects/novatel-corp/web/themes/novatel/less/header.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/header\.less}line{font-family:\0000364}}
 body .headerWrap .mainHeader .mainMenu .nav > li a,
@@ -6805,7 +6800,7 @@ body .headerWrap .mainHeader .mainMenu .nav > li {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/header\.less}line{font-family:\0000380}}
 body .headerWrap .mainHeader .mainMenu .nav > li > a,
 body .headerWrap .mainHeader .mainMenu .nav > li > a:visited {
-  color: #eeeeee;
+  color: #333333;
   font-weight: 400;
   padding: 12px 20px 10px 20px;
 }
