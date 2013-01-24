@@ -8434,7 +8434,7 @@ body .socialButtons {
   position: relative;
   margin: 3px auto 0px;
   padding: 0;
-  height: 16px;
+  height: 12px;
   text-align: center;
 }
 /* line 170, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
@@ -8454,8 +8454,8 @@ body .socialButtons {
   float: left;
   padding: 0px;
   overflow: hidden;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   text-align: center;
   line-height: 16px;
   font-size: 7pt;
