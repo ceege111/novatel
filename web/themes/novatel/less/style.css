@@ -8376,19 +8376,17 @@ body .socialButtons {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003151}}
 .ether-ctrl-wrap .ether-ctrl {
   background-color: #b4b4b4;
-  *background-color: transparent;
-  *background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAARElEQVQYV2NkIBIwoqnzsbCw2AwTO3HihC+QvQXER1aIoghdMUwhVkXIisEKgdb9J+RUGikEWkucG6HuI8rXML/gDEcArFshmAzpB34AAAAASUVORK5CYII=);
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   border-radius: 100px;
 }
-/* line 159, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003159}}
+/* line 157, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003157}}
 .ether-ctrl-wrap .ether-ctrl:hover {
   opacity: 1;
 }
-/* line 161, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003161}}
+/* line 159, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003159}}
 .ether-ctrl-car {
   position: relative;
   width: 68px;
@@ -8396,8 +8394,8 @@ body .socialButtons {
   margin: 0 auto 0px;
   padding: 0px 0px;
 }
-/* line 162, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003162}}
+/* line 160, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003160}}
 .ether-ctrl-car > div {
   width: 33px;
   height: 32px;
@@ -8408,29 +8406,29 @@ body .socialButtons {
   margin: 0;
   float: left;
 }
-/* line 164, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003164}}
+/* line 162, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003162}}
 .ether-ctrl-car .ether-prev {
   background-position: 0 0;
   margin-right: 2px;
 }
-/* line 165, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003165}}
+/* line 163, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003163}}
 .ether-ctrl-car .ether-next {
   background-position: -40px 0;
 }
-/* line 167, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003167}}
+/* line 165, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003165}}
 .ether-scroll-axis-y .ether-ctrl-car .ether-prev {
+  -webkit-transform: rotate(90deg);
+}
+/* line 166, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003166}}
+.ether-scroll-axis-y .ether-ctrl-car .ether-next {
   -webkit-transform: rotate(90deg);
 }
 /* line 168, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003168}}
-.ether-scroll-axis-y .ether-ctrl-car .ether-next {
-  -webkit-transform: rotate(90deg);
-}
-/* line 170, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003170}}
 .ether-ctrl-pag {
   position: relative;
   margin: 3px auto 0px;
@@ -8438,8 +8436,8 @@ body .socialButtons {
   height: 12px;
   text-align: center;
 }
-/* line 171, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003171}}
+/* line 169, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003169}}
 .ether-ctrl-pag:after {
   display: block;
   visibility: hidden;
@@ -8449,8 +8447,8 @@ body .socialButtons {
   font-size: 0;
   clear: both;
 }
-/* line 172, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003172}}
+/* line 170, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003170}}
 .ether-ctrl-pag > div {
   float: left;
   padding: 0px;
@@ -8467,13 +8465,13 @@ body .socialButtons {
   vertical-align: top;
   background-position: 0px -40px;
 }
-/* line 175, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003175}}
+/* line 173, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003173}}
 .ether-ctrl-pag > div.ether-current {
   background-color: #42454c;
 }
-/* line 180, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003180}}
+/* line 178, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003178}}
 .ether-image-stretch-mode-x img {
   width: 100% !important;
   height: auto !important;
@@ -8482,8 +8480,8 @@ body .socialButtons {
   max-width: 100% !important;
   max-height: none !important;
 }
-/* line 181, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003181}}
+/* line 179, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003179}}
 .ether-image-stretch-mode-y img {
   height: 100% !important;
   width: auto !important;
@@ -8492,8 +8490,8 @@ body .socialButtons {
   max-height: 100% !important;
   max-width: none !important;
 }
-/* line 182, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003182}}
+/* line 180, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003180}}
 .ether-image-stretch-mode-fit img {
   width: auto !important;
   height: auto !important;
@@ -8502,8 +8500,8 @@ body .socialButtons {
   max-width: 100% !important;
   max-height: 100% !important;
 }
-/* line 183, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003183}}
+/* line 181, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003181}}
 .ether-image-stretch-mode-fill img {
   width: 100% !important;
   height: 100% !important;
@@ -8512,8 +8510,8 @@ body .socialButtons {
   max-width: 100% !important;
   max-height: 100% !important;
 }
-/* line 185, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003185}}
+/* line 183, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003183}}
 .ether-grid-height-auto.ether-image-stretch-mode-y img,
 .ether-grid-height-auto.ether-image-stretch-mode-fit img,
 .ether-grid-height-auto.ether-image-stretch-mode-fill img {
@@ -8521,8 +8519,8 @@ body .socialButtons {
   height: auto !important;
   width: 100% !important;
 }
-/* line 190, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003190}}
+/* line 188, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003188}}
 .ether-load-overlay {
   background: #ffffff url(ajax-loader.gif) 50% 50% no-repeat;
   width: 100%;
@@ -8534,14 +8532,14 @@ body .socialButtons {
   z-index: 99;
   min-height: 20px;
 }
-/* line 192, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003192}}
+/* line 190, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003190}}
 .ether-hide-grid-cell-overflow {
   overflow: hidden;
   max-height: 100%;
 }
-/* line 199, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003199}}
+/* line 197, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003197}}
 .ether-ctrl {
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
@@ -8559,8 +8557,8 @@ body .socialButtons {
   -ms-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 210, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003210}}
+/* line 208, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003208}}
 .ether-img-title {
   position: absolute;
   bottom: 0;
@@ -8572,22 +8570,22 @@ body .socialButtons {
   background: #fff;
   color: #000;
 }
-/* line 216, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003216}}
+/* line 214, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003214}}
 .ether-alignleft {
   float: left;
   margin-right: 20px;
   margin-top: 0;
 }
-/* line 217, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003217}}
+/* line 215, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003215}}
 .ether-alignright {
   float: right;
   margin-left: 20px;
   margin-bottom: 0;
 }
-/* line 218, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003218}}
+/* line 216, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003216}}
 .ether-aligncenter {
   float: none;
   margin-left: auto;
