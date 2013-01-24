@@ -35,6 +35,9 @@ $(document).ready(function(){
 		var slide = $("<div class='item'></div>");
 		slide.addClass('slider-group-'+item.groupSet);
 		var link = $("<a></a>");
+		if (item.url == ''){
+			item.url = '#';
+		}
 		link.attr('href',item.url);
 		if (key == 0){
 			slide.addClass('active');
