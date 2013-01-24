@@ -37,7 +37,7 @@ $(document).ready(function(){
 		image.attr('src',item.fullFilePath);
 		slide.append(image);
 		container.append();
-	}
+	});
 	$("#ccm-SlideshowBlock-display<?=intval($bID)?>").delay(100).carousel();
 });
 
