@@ -27,10 +27,14 @@ $(document).ready(function(){
 		} ?>
 	]};
 	var container = $("#ccm-SlideshowBlock-display<?=intval($bID)?>");
-	_.each(imgInfos.slides, function(slide,key,list){
+	_.each(imgInfos.slides, function(item,key,list){
+		console.log("adding slide to dom...");
+		console.log(item);
+		console.log(key);
+		console.log(list);
 		var slide = $("<div class='item'></div>");
 		var image = $("<img>");
-		image.attr('src',slide.fullFilePath);
+		image.attr('src',item.fullFilePath);
 		slide.append(image);
 		container.append();
 	}
