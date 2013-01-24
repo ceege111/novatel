@@ -56,8 +56,8 @@ $(document).ready(function(){
 //]]>
 </script>
 
-<div class="ccm-SlideshowBlock-display carousel slide">
-	<div id="ccm-SlideshowBlock-display<?=intval($bID)?>" class="carousel-inner">
+<div class="ccm-SlideshowBlock-display slide">
+	<div id="ccm-SlideshowBlock-display<?=intval($bID)?>" class="">
 		<?php 
 
 		?>
