@@ -6,7 +6,7 @@ $th = Loader::helper('text');
 //Note that $nh (navigation helper) is already loaded for us by the controller (for legacy reasons)
 ?>
 <div>
-	Latest News:&nbsp;
+	<span class="news-title">Latest News:</span>&nbsp;
 	<?php foreach ($pages as $page):
 
 		// Prepare data for each page being listed...
