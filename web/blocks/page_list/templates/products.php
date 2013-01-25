@@ -81,7 +81,7 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 					// if(strlen($description) > $word_char_limit){
 						$descrption = preg_replace('/\s+?(\S+)?$/', '', substr($description, 0, 51));
 					// }	
-					echo $description;
+					// echo $description;
 				?>...&nbsp;&nbsp;<a style="margin-left:-5px;margin-bottom:10px;" class="product-more-link" href="<?php echo $url ?>">more</a>
 			</div>
 		</div>
