@@ -7768,9 +7768,10 @@ body .product-list .row h3 {
 body .product-list .row h3 a,
 body .product-list .row h3 a:visited {
   font-size: 14px;
+  font-weight: bold;
 }
-/* line 127, /Users/je/projects/novatel-corp/web/themes/novatel/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/main\.less}line{font-family:\00003127}}
+/* line 128, /Users/je/projects/novatel-corp/web/themes/novatel/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/main\.less}line{font-family:\00003128}}
 body .product-list .row hr {
   margin: 0px 20px 15px;
   border-top: 1px solid #b4b4b4;
@@ -7790,13 +7791,13 @@ body .product-list .row hr:after {
 body .product-list .row hr:after {
   clear: both;
 }
-/* line 138, /Users/je/projects/novatel-corp/web/themes/novatel/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/main\.less}line{font-family:\00003138}}
+/* line 139, /Users/je/projects/novatel-corp/web/themes/novatel/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/main\.less}line{font-family:\00003139}}
 body .rightSidebar .product-list.container {
   width: 765px;
 }
-/* line 140, /Users/je/projects/novatel-corp/web/themes/novatel/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/main\.less}line{font-family:\00003140}}
+/* line 141, /Users/je/projects/novatel-corp/web/themes/novatel/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/main\.less}line{font-family:\00003141}}
 body .rightSidebar .product-list.container .offset1 {
   margin-left: 15px;
 }
@@ -8786,7 +8787,7 @@ body .splitColumn .splitLeft .ccm-page-list,
 body .splitColumn .splitRight .ccm-page-list {
   overflow: auto;
   margin-top: 10px;
-  border-top: 1px solid #555555;
+  border-top: 1px solid #b4b4b4;
 }
 /* line 233, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003233}}
