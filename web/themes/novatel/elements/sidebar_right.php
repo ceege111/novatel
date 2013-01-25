@@ -10,7 +10,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 		?>
 		<script type="text/javascript">
 			$(document).ready(function(){
-				var rightColumn = $('section.rightColumn.area div.gray-block:first-child');
+				var rightColumn = $('.product .rightColumn .sidebar-block:first-child');
 				rightColumn.addClass('no-block');
 			});
 		</script>
