@@ -9,7 +9,7 @@ $this->inc('elements/header.php'); ?>
 
 <div class="container oneColumn splitColumn">
 	<section class="column area row">
-		<div class="span5 gray-block splitLeft">
+		<div class="span5 gray-block splitLeft" style="margin-left: 60px;">
 			<?php 
 			$as = new Area('Main');
 			$as->display($c);

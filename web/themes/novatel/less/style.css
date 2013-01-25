@@ -8777,5 +8777,5 @@ body select.country-menu {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003225}}
 body .splitColumn .splitLeft,
 body .splitColumn .splitRight {
-  padding: 20px;
+  padding: 40px;
 }
