@@ -5,17 +5,18 @@ body {
 		margin-bottom: 15px;
 		.subNav {
 			min-height: 50px;
+			overflow: auto;
+			clear: both;
 			.breadcrumb {
 				position: absolute;
 				margin-top: 0px;
-				// color: @white;
-				a, a:visited {
-					// color: @white;
-				}
-				// clear:both;
 				background-color: fadeout(@white, 25%);
-				// margin: 0px;
 				padding-left: 20px;
+				&.default {
+					position: relative;
+					margin: 0px;
+					background-color: transparent;
+				}
 			}
 		}
 		.defaultBanner {
