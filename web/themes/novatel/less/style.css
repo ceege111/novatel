@@ -8773,3 +8773,9 @@ body select.country-menu {
   width: auto;
   min-width: 220px;
 }
+/* line 225, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003225}}
+body .splitColumn .splitLeft,
+body .splitColumn .splitRight {
+  padding: 20px;
+}
