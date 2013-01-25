@@ -32,27 +32,41 @@ body {
 			margin: 0px;
 			padding: 0px;
 			list-style: none;
-			background-color: @grayLight;
-			#gradient .vertical(#bcbcbc, #d9d9d9);
-			border: 1px solid @grayLightish;	
-			border-bottom: 3px solid @green;
+			// background-color: @grayLight;
+			// #gradient .vertical(#bcbcbc, #d9d9d9);
+			// border: 1px solid @grayLightish;	
+			// border-bottom: 3px solid @green;
 			.clearfix;
 			li {
 				display: block;
-				padding: 5px 10px;
+				margin-right: 2px;
+				padding: 5px 10px 0px 10px;
 				float: left;
-				border-right: 1px solid fadeout(@grayLightish, 30%);
+				font-size: 11px;
+				line-height: 14px;
+				//text-transform: uppercase; //M2M Modules page tab names are too long for this to work				
+				border: none 0px #878787;
+				border-bottom: 2px solid #a7a7a7;
+				#gradient .vertical(#c5c5c5, #a7a7a7);
+				.border-top-left-radius(3px);
+				.border-top-right-radius(3px);
 				p {
 					margin: 0;
 				}
+				a, a:visited {
+					color: #fff;
+				}
+
 				&:first-child{
 					padding-left: 10px;
 				}
 				&.nav-selected {
 					font-weight: bold;
-					background-color: fadeout(@grayDark, 40%);
+					border-bottom: 2px solid @green;
+					background-color: #ebebeb;
+					#gradient .vertical(#ebebeb, #ebebeb);
 					a, a:visited {
-						color: @grayLighter;
+						color: @blueDark;
 					}
 				}
 			}
@@ -72,16 +86,25 @@ body {
 	}
 
 	.product-list {
+		margin-left: -10px;
 		.row {
 			margin-bottom: 15px;
 		
+			&.product-item {
+				margin-left: 9px;	
+				height: 325px;
+			}
+
 			.productThumbnail {
 				text-align: center;
-				margin-top: 20px;
-				margin-bottom: 10px;
+				margin-top: 10px;
+				margin-bottom: 5px;
 				img {
 					// border: 1px solid #c2c2c2;
 				}
+			}
+			.ccm-page-list-description {
+				margin: 10px 20px;
 			}
 			a.find-out-more {
 				text-indent: 9999px;	
@@ -90,9 +113,16 @@ body {
 				}
 			}
 			h3 {
+				margin: 10px 0px 0px;
 				padding-left: 0px;
 				background: none transparent;
-				line-height: 26px;
+				font-size: 14px;
+				font-weight: bold;
+				line-height: 18px;
+				text-align: center;
+				a, a:visited {
+					font-size: 14px;
+				}
 			}
 			hr {
 				margin: 0px 20px 15px;

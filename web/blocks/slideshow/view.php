@@ -57,11 +57,11 @@ $(document).ready(function(){
 </script>
 
 <div class="ccm-SlideshowBlock-display slide">
-	<div id="ccm-SlideshowBlock-display<?=intval($bID)?>" class="">
+	<div id="ccm-SlideshowBlock-display<?=intval($bID)?>" class="" style="min-height:400px;>
 		<?php 
 
 		?>
 	</div>
-	<div id="ccm-SlideshowBlock-heightSetter<?=intval($bID)?>" class="ccm-SlideshowBlock-heightSetter"></div>
+	<div id="ccm-SlideshowBlock-heightSetter<?=intval($bID)?>" class="ccm-SlideshowBlock-heightSetter""></div>
 	<div class="ccm-SlideshowBlock-clear" ></div>
 </div>

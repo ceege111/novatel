@@ -6,7 +6,7 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 //Note that $nh (navigation helper) is already loaded for us by the controller (for legacy reasons)
 ?>
 
-<div class="ccm-page-list product-list container">
+<div class="ccm-page-list product-list container row">
 
 	<?php foreach ($pages as $page):
 
@@ -17,15 +17,15 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 		$target = empty($target) ? '_self' : $target;
 		$description = $page->getCollectionDescription();
 		$description = $controller->truncateSummaries ? $th->shorten($description, $controller->truncateChars) : $description;
-		$description = $th->entities($description);	
+		// $description = $th->entities($description);	
 
 		$img = $page->getAttribute('product_image');
 		if ($img){
 			$fullPath = $img->getPath();
 			$fullsize = $img->getRelativePath();
 			$size = @getimagesize($fullPath);
-			if ( ($size[0] > 250) || ($size[1] > 300) ){
-				$thumb = $ih->getThumbnail($img, 250, 300, false);
+			if ( ($size[0] > 250) || ($size[1] > 180) ){
+				$thumb = $ih->getThumbnail($img, 250, 180, false);
 				$thumbSrc = $thumb->src;
 				$thumbWidth = $thumb->width;
 				$thumbHeight = $thumb->height;
@@ -70,19 +70,20 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 		/* End data preparation. */
 
 		/* The HTML from here through "endforeach" is repeated for every item in the list... */ ?>
-		<div class="row product-item">
-			<div class="span3 productThumbnail"><a href="<?php echo $url ?>"><img src="<?php echo $thumbSrc ?>" width="<?php echo $thumbWidth ?>" height="<?php echo $thumbHeight ?>" alt="" /></a></div>
-			<div class="span6 offset1">
-				<h3 class="ccm-page-list-title">
-					<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
-				</h3>
-				<div class="ccm-page-list-description">
-					<?php echo $description ?>
-				</div>
-				<br>
-				<a style="margin-left:-5px;margin-bottom:10px;" class="clearfix btn btn-primary" href="<?php echo $url ?>">Learn More</a>
+		<div class="span4 row product-item gray-block">
+			<h3 class="ccm-page-list-title">
+				<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
+			</h3>
+			<div class="productThumbnail"><a href="<?php echo $url ?>"><img src="<?php echo $thumbSrc ?>" width="<?php echo $thumbWidth ?>" height="<?php echo $thumbHeight ?>" alt="" /></a></div>
+			<div class="ccm-page-list-description">
+				<?php 
+					$word_char_limit = 100;
+					if(strlen($description) > $word_char_limit){
+						$short_desc = preg_replace('/\s+?(\S+)?$/', '', substr($description, 0, $word_char_limit+1));
+					}	
+					echo $short_desc;
+				?>...&nbsp;&nbsp;<a style="margin-left:-5px;margin-bottom:10px;" class="product-more-link" href="<?php echo $url ?>">more</a>
 			</div>
-			<hr>
 		</div>
 			
 	<?php endforeach; ?>
