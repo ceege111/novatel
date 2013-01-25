@@ -7725,7 +7725,7 @@ body .product-list .row a.find-out-more img {
 /* line 115, /Users/je/projects/novatel-corp/web/themes/novatel/less/main.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/main\.less}line{font-family:\00003115}}
 body .product-list .row h3 {
-  margin: 0;
+  margin: 10px 0px 0px;
   padding-left: 0px;
   background: none transparent;
   font-size: 14px;
