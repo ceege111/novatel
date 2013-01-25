@@ -71,14 +71,12 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 
 		/* The HTML from here through "endforeach" is repeated for every item in the list... */ ?>
 		<div class="span4 row product-item gray-block">
+			<h3 class="ccm-page-list-title">
+				<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
+			</h3>
 			<div class="productThumbnail"><a href="<?php echo $url ?>"><img src="<?php echo $thumbSrc ?>" width="<?php echo $thumbWidth ?>" height="<?php echo $thumbHeight ?>" alt="" /></a></div>
-			<div class="">
-				<h3 class="ccm-page-list-title">
-					<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
-				</h3>
-				<div class="ccm-page-list-description">
-					<?php echo $description ?>...&nbsp;<a style="margin-left:-5px;margin-bottom:10px;" class="product-more-link" href="<?php echo $url ?>">more</a>
-				</div>
+			<div class="ccm-page-list-description">
+				<?php echo $description ?>...&nbsp;<a style="margin-left:-5px;margin-bottom:10px;" class="product-more-link" href="<?php echo $url ?>">more</a>
 			</div>
 		</div>
 			
