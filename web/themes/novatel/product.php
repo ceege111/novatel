@@ -19,14 +19,14 @@
 
 <div class="container rightSidebar product">
 	<section class="centerColumn area">
-		<div class="row">
-			<div class="span8 productTitle">
-				<?php 
-					$aj = new Area('Product Title');
-					$aj->display($c);
-				?>
-			</div>
+	
+		<div class="productTitle">
+			<?php 
+				$aj = new Area('Product Title');
+				$aj->display($c);
+			?>
 		</div>
+		
 		<div class="row">
 			<div class="span3 productImages">
 				<!-- TODO: If no images found load the image from Custom Attributes -->
@@ -70,11 +70,11 @@
 				<div class="socialButtons">
 				    <a href="#" class="share-btn" target="_blank" onclick="alert('social buttons disabled on test server');return false;">
 				      <span class="share-btn-action share-btn-tweet">Tweet</span>
-				      <span id="twitterCount" class="share-btn-count">0</span>
+				      <!-- <span id="twitterCount" class="share-btn-count">0</span> -->
 				    </a>
 				    <a href="#" class="share-btn" target="_blank" onclick="alert('social buttons disabled on test server');return false;">
 				      <span class="share-btn-action share-btn-like">Like</span>
-				      <span id="facebookCount" class="share-btn-count">0</span>
+				      <!-- <span id="facebookCount" class="share-btn-count">0</span> -->
 				    </a>
 				    <script type="text/javascript">
 				    	$(document).ready(function(){
@@ -97,8 +97,8 @@
 		<?php //Product Details Tabs: When in edit mode we display these as a table, in normal viewing mode we display them as tabs
 			if ($c->isEditMode()): //edit mode rendering ?>
 
-			<div class="row edit-info">
-				<div class="span8">
+			<div class="edit-info">
+				<div >
 					<?php 
 						$ap = new Area('Product More Info');
 						$ap->display($c);
@@ -108,78 +108,78 @@
 
 			<div class="row edit-tabs">
 
-				<div class="span8 tab-title">
+				<div class="tab-title">
 					<?php 
 						$tab_title_01 = new Area('Product Tab Title 01');
 						$tab_title_01->display($c);
 					?>
 				</div>
-				<div class="span8 tab">
+				<div class="tab">
 					<?php 
 						$tab_01 = new Area('Product Tab 01');
 						$tab_01->display($c);
 					?>
 				</div>
 
-				<div class="span8 tab-title">
+				<div class="tab-title">
 					<?php 
 						$tab_title_02 = new Area('Product Tab Title 02');
 						$tab_title_02->display($c);
 					?>
 				</div>
-				<div class="span8 tab">
+				<div class="tab">
 					<?php 
 						$tab_02 = new Area('Product Tab 02');
 						$tab_02->display($c);
 					?>
 				</div>
 
-				<div class="span8 tab-title">
+				<div class="tab-title">
 					<?php 
 						$tab_title_03 = new Area('Product Tab Title 03');
 						$tab_title_03->display($c);
 					?>
 				</div>
-				<div class="span8 tab">
+				<div class="tab">
 					<?php 
 						$tab_03 = new Area('Product Tab 03');
 						$tab_03->display($c);
 					?>
 				</div>
 
-				<div class="span8 tab-title">
+				<div class="tab-title">
 					<?php 
 						$tab_title_04 = new Area('Product Tab Title 04');
 						$tab_title_04->display($c);
 					?>
 				</div>
-				<div class="span8 tab">
+				<div class="tab">
 					<?php 
 						$tab_04 = new Area('Product Tab 04');
 						$tab_04->display($c);
 					?>
 				</div>
 
-				<div class="span8 tab-title">
+				<div class="tab-title">
 					<?php 
 						$tab_title_05 = new Area('Product Tab Title 05');
 						$tab_title_05->display($c);
 					?>
 				</div>
-				<div class="span8 tab">
+				<div class="tab">
 					<?php 
 						$tab_05 = new Area('Product Tab 05');
 						$tab_05->display($c);
 					?>
 				</div>
 
-				<div class="span8 tab-title">
+				<div class="tab-title">
 					<?php 
 						$tab_title_06 = new Area('Product Tab Title 06');
 						$tab_title_06->display($c);
 					?>
 				</div>
-				<div class="span8 tab">
+				<div class="tab">
 					<?php 
 						$tab_06 = new Area('Product Tab 06');
 						$tab_06->display($c);
@@ -224,11 +224,8 @@
 			</div>
 		<?php endif; ?>
 	</section>
-	<section class="rightColumn area">
-		<?php 
-		$aq = new Area('RightSidebar');
-		$aq->display($c);
-		?>
-	</section>
+	
+	<!-- Right Sidebar -->
+	<?php $this->inc('elements/sidebar_right.php'); ?>
 
 <?php  $this->inc('elements/footer.php'); ?>

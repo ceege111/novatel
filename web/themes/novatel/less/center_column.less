@@ -38,27 +38,40 @@ body {
 	.tab-titles{
 		.clearfix;
 		list-style: none;
-		margin: 0px 0px 5px;
+		margin: 0px 0px 7px;
 		padding: 0px;
-		border-bottom: 1px solid @grayLight;
+
 		li {
 			float: left;
-			border-right: 2px solid @white;
-			padding: 3px 15px;
+			margin: 0 2px 0 0;
+			padding: 0 0 7px 0;
 			text-align: center;
 			line-height: 13px;
-			color: @grayLighter;
-			background: @grayLightish;
 			a,a:visited {
-				color: @white;
+				display: block;
+				height: 14px;
+				padding: 0 7px 0 6px;
+				border-left: 1px solid #cfcfcf;
+
 				p {
-					margin: auto;
-					color: @grayLighter;
-					font-weight: 300;
+					padding: 0 3px 5px;
+					color: @gray;
+					font-weight: 600;
 				}
 			}
 			&.active {
-				background: @green;
+				a,a:visited {
+					p {
+						color: @blueDark;
+						border-bottom: 2px solid #8abb36;
+					}
+				}
+			}
+			&:first-child {
+				a, a:visited {
+					border-left: 0;
+					padding-left: 0;
+				}
 			}
 		}
 		}
