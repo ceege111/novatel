@@ -78,7 +78,7 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 			<div class="ccm-page-list-description">
 				<?php 
 					$word_char_limit = 100;
-					if(strlen($description) < $word_char_limit){
+					if(strlen($description) > $word_char_limit){
 						$descrption = preg_replace('/\s+?(\S+)?$/', '', substr($description, 0, $word_char_limit+1));
 					}	
 					echo $description; 
