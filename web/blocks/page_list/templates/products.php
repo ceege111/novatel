@@ -78,7 +78,7 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 			<div class="ccm-page-list-description">
 				<?php 
 					if(strlen($description) < 200){
-						preg_replace('/\s+?(\S+)?$/', '', substr($description, 0, 201));
+						$descrption = preg_replace('/\s+?(\S+)?$/', '', substr($description, 0, 201));
 					}	
 					echo $description; 
 				?>...&nbsp;<a style="margin-left:-5px;margin-bottom:10px;" class="product-more-link" href="<?php echo $url ?>">more</a>
