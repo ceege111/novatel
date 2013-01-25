@@ -77,7 +77,7 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 			<div class="productThumbnail"><a href="<?php echo $url ?>"><img src="<?php echo $thumbSrc ?>" width="<?php echo $thumbWidth ?>" height="<?php echo $thumbHeight ?>" alt="" /></a></div>
 			<div class="ccm-page-list-description">
 				<?php 
-					if(strlen($description) > 200){
+					if(strlen($description) < 200){
 						preg_replace('/\s+?(\S+)?$/', '', substr($description, 0, 201));
 					}	
 					echo $description; 
