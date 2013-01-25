@@ -7082,7 +7082,7 @@ body .pageTitle {
 /* line 6, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\000036}}
 body .pageTitle .subNav {
-  min-height: 50px;
+  min-height: 20px;
   overflow: auto;
   clear: both;
 }
