@@ -8726,34 +8726,35 @@ body .table.support-results tr td {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003174}}
 body .table.support-results tr td.product-thumbnail {
   min-width: 100px;
+  min-height: 180px;
   text-align: center;
   vertical-align: middle;
   background: #ffffff;
 }
-/* line 180, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003180}}
+/* line 181, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003181}}
 body .table.support-results tr td.product-name {
   min-width: 300px;
 }
-/* line 187, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003187}}
+/* line 188, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003188}}
 body .table.support-results tr td h5 {
   font-size: 12px;
   margin: 0px;
   padding: 0px;
 }
-/* line 197, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003197}}
+/* line 198, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003198}}
 body .underline .ccm-page-list-title {
   border-bottom: 1px solid #555555;
 }
-/* line 200, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003200}}
+/* line 201, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003201}}
 body .underline hr {
   border-bottom: 1px solid #555555;
 }
-/* line 206, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003206}}
+/* line 207, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003207}}
 body .ccm-page-list h5 {
   font-weight: normal;
   font-size: 12px;
@@ -8761,33 +8762,36 @@ body .ccm-page-list h5 {
   margin-top: -15px;
   margin-bottom: -10px;
 }
-/* line 215, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003215}}
+/* line 216, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003216}}
 body .ccm-gallery {
   border: 0px solid transparent;
 }
-/* line 219, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003219}}
+/* line 220, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003220}}
 body select.region-menu,
 body select.country-menu {
   width: auto;
   min-width: 220px;
 }
-/* line 225, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003225}}
+/* line 226, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003226}}
 body .splitColumn .splitLeft,
 body .splitColumn .splitRight {
   padding: 40px;
 }
-/* line 229, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003229}}
+/* line 230, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003230}}
 body .splitColumn .splitLeft .ccm-page-list .ccm-page-list-title,
 body .splitColumn .splitRight .ccm-page-list .ccm-page-list-title {
   background: none;
   float: left;
+  margin: 0;
+  padding: 0;
+  width: 40%;
 }
-/* line 232, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003232}}
+/* line 236, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003236}}
 body .splitColumn .splitLeft .ccm-page-list .ccm-page-list-title a,
 body .splitColumn .splitRight .ccm-page-list .ccm-page-list-title a,
 body .splitColumn .splitLeft .ccm-page-list .ccm-page-list-title a:visited,
