@@ -9,7 +9,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 		<script type="text/javascript">
 			$(document).ready(function(){
 				var breadOffset = $(".banner").height() - 20;
-				console.log('breadcrumb offset: '+-'+breadOffset+'px');
+				console.log('breadcrumb offset: '+'-'+breadOffset+'px');
 				$(".breadcrumb").css('margin-top','-'+breadOffset+'px').fadeIn();
 			});
 		</script>
