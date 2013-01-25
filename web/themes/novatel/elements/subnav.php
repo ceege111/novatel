@@ -12,6 +12,8 @@ defined('C5_EXECUTE') or die("Access Denied.");
 				console.log('breadcrumb offset: '+'-'+breadOffset+'px');
 				if ( breadOffset > 200 ){
 					$(".breadcrumb").css('margin-top','-'+breadOffset+'px').fadeIn();
+				} else {
+					$(".breadcrumb").fadeIn();
 				}
 			});
 		</script>
