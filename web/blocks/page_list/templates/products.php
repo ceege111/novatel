@@ -77,12 +77,11 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 			<div class="productThumbnail"><a href="<?php echo $url ?>"><img src="<?php echo $thumbSrc ?>" width="<?php echo $thumbWidth ?>" height="<?php echo $thumbHeight ?>" alt="" /></a></div>
 			<div class="ccm-page-list-description">
 				<?php 
-					// $word_char_limit = 100;
-					// if(strlen($description) > $word_char_limit){
-						$desc_short = substr($description, 0, 51);
-
-					// }	
-					echo $desc_short;
+					$word_char_limit = 100;
+					if(strlen($description) > $word_char_limit){
+						$short_desc = preg_replace('/\s+?(\S+)?$/', '', substr($description, 0, $word_char_limit+1));
+					}	
+					echo $short_desc;
 				?>...&nbsp;&nbsp;<a style="margin-left:-5px;margin-bottom:10px;" class="product-more-link" href="<?php echo $url ?>">more</a>
 			</div>
 		</div>
