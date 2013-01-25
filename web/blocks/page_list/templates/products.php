@@ -79,9 +79,10 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 				<?php 
 					// $word_char_limit = 100;
 					// if(strlen($description) > $word_char_limit){
-						$descrption = substr($description, 0, 51);
+						$desc_short = substr($description, 0, 51);
+
 					// }	
-					echo $description;
+					echo $desc_short;
 				?>...&nbsp;&nbsp;<a style="margin-left:-5px;margin-bottom:10px;" class="product-more-link" href="<?php echo $url ?>">more</a>
 			</div>
 		</div>
