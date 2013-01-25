@@ -3,17 +3,20 @@ body {
 
 	.pageTitle {
 		margin-bottom: 15px;
-		.breadcrumb {
-			position: absolute;
-			margin-top: -300px;
-			color: @white;
-			a, a:visited {
-				color: @white;
+		.subNav {
+			min-height: 50px;
+			.breadcrumb {
+				position: absolute;
+				margin-top: 0px;
+				// color: @white;
+				a, a:visited {
+					// color: @white;
+				}
+				// clear:both;
+				background-color: fadeout(@white, 25%);
+				// margin: 0px;
+				padding-left: 20px;
 			}
-			// clear:both;
-			background-color: transparent;
-			// margin: 0px;
-			padding-left: 20px;
 		}
 		.defaultBanner {
 			background: url(img/banner_generic.png) no-repeat top right transparent;
