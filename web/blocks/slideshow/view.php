@@ -57,7 +57,7 @@ $(document).ready(function(){
 </script>
 
 <div class="ccm-SlideshowBlock-display slide">
-	<div id="ccm-SlideshowBlock-display<?=intval($bID)?>" class="" style="min-height:400px;>
+	<div id="ccm-SlideshowBlock-display<?=intval($bID)?>" class="";>
 		<?php 
 
 		?>
