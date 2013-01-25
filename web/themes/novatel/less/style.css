@@ -6824,12 +6824,12 @@ body .headerWrap .mainHeader .mainMenu .nav > li > a.hover {
 /* line 93, /Users/je/projects/novatel-corp/web/themes/novatel/less/header.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/header\.less}line{font-family:\0000393}}
 body .headerWrap .mainHeader .mainMenu .nav > li.nav-selected {
-  background-color: rgba(85, 85, 85, 0.4);
+  background-color: rgba(180, 180, 180, 0.4);
 }
 /* line 96, /Users/je/projects/novatel-corp/web/themes/novatel/less/header.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/header\.less}line{font-family:\0000396}}
 body .headerWrap .mainHeader .mainMenu .nav > li.nav-path-selected {
-  background-color: rgba(85, 85, 85, 0.4);
+  background-color: rgba(180, 180, 180, 0.4);
 }
 /* line 100, /Users/je/projects/novatel-corp/web/themes/novatel/less/header.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/header\.less}line{font-family:\00003100}}
