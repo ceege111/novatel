@@ -17,7 +17,7 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 		$target = empty($target) ? '_self' : $target;
 		$description = $page->getCollectionDescription();
 		$description = $controller->truncateSummaries ? $th->shorten($description, $controller->truncateChars) : $description;
-		$description = $th->entities($description);	
+		// $description = $th->entities($description);	
 
 		$img = $page->getAttribute('product_image');
 		if ($img){
