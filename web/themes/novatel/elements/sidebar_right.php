@@ -10,9 +10,11 @@ defined('C5_EXECUTE') or die("Access Denied.");
 		?>
 		<script type="text/javascript">
 			$(document).ready(function(){
-				var rightColumn = $('.product .rightColumn .sidebar-block:first-child');
-				rightColumn.removeClass('gray-block');
-				rightColumn.css('margin','0').css('padding','0');
+				if($("html").hasClass('lt-ie9')){
+					var rightColumn = $('.product .rightColumn .sidebar-block:first-child');
+					rightColumn.removeClass('gray-block');
+					rightColumn.css('margin','0').css('padding','0'),css('width','250px');
+				}
 			});
 		</script>
 	</section>
