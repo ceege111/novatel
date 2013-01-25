@@ -7634,6 +7634,11 @@ body .support-results .table.tableHeader th {
 body .product-list .row {
   margin-bottom: 15px;
 }
+/* line 78, /Users/je/projects/novatel-corp/web/themes/novatel/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/main\.less}line{font-family:\0000378}}
+body .product-list .row.product-item {
+  margin-left: 9px;
+}
 /* line 82, /Users/je/projects/novatel-corp/web/themes/novatel/less/main.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/main\.less}line{font-family:\0000382}}
 body .product-list .row .productThumbnail {

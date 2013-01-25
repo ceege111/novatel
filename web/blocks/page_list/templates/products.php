@@ -6,7 +6,7 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 //Note that $nh (navigation helper) is already loaded for us by the controller (for legacy reasons)
 ?>
 
-<div class="ccm-page-list product-list container">
+<div class="ccm-page-list product-list container row">
 
 	<?php foreach ($pages as $page):
 
