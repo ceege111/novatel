@@ -7091,8 +7091,7 @@ body .pageTitle .subNav {
 body .pageTitle .subNav .breadcrumb {
   position: absolute;
   margin-top: 0px;
-  background-color: rgba(255, 255, 255, 0.75);
-  padding-left: 20px;
+  padding-left: 40px;
 }
 /* line 15, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000315}}
@@ -7100,16 +7099,17 @@ body .pageTitle .subNav .breadcrumb.default {
   position: relative;
   margin: 0px;
   background-color: transparent;
+  padding-left: 20px;
 }
-/* line 22, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000322}}
+/* line 23, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000323}}
 body .pageTitle .defaultBanner {
   background: url(img/banner_generic.png) no-repeat top right transparent;
   height: 112px;
   position: relative;
 }
-/* line 26, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000326}}
+/* line 27, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000327}}
 body .pageTitle .defaultBanner h1.defaultTitle {
   display: block;
   position: absolute;
@@ -7127,15 +7127,15 @@ body .pageTitle .defaultBanner h1.defaultTitle {
   text-align: right;
   background-color: rgba(255, 255, 255, 0.65);
 }
-/* line 50, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000350}}
+/* line 51, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000351}}
 body .pageTitle .banner img {
   -webkit-box-shadow: 0px 3px 4px #a1a1a1;
   -moz-box-shadow: 0px 3px 4px #a1a1a1;
   box-shadow: 0px 3px 4px #a1a1a1;
 }
-/* line 53, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000353}}
+/* line 54, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000354}}
 body .pageTitle .banner h1.bannerTitle {
   display: block;
   position: absolute;
@@ -7152,20 +7152,20 @@ body .pageTitle .banner h1.bannerTitle {
   bottom: 10px;
   line-height: 50px;
 }
-/* line 71, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000371}}
+/* line 72, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000372}}
 body .pageTitle .banner h1.bannerTitle.rightTitle {
   right: 0px;
   text-align: left;
   padding: 0px 60px 0px 20px;
 }
-/* line 77, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000377}}
+/* line 78, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000378}}
 body .pageTitle .banner > div {
   position: relative;
 }
-/* line 81, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000381}}
+/* line 82, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000382}}
 body .pageTitle .nav-header-tabs {
   margin: 0px;
   padding: 0px;
@@ -7185,8 +7185,8 @@ body .pageTitle .nav-header-tabs:after {
 body .pageTitle .nav-header-tabs:after {
   clear: both;
 }
-/* line 90, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000390}}
+/* line 91, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000391}}
 body .pageTitle .nav-header-tabs li {
   display: block;
   margin-right: 2px;
@@ -7210,19 +7210,19 @@ body .pageTitle .nav-header-tabs li {
   -moz-border-radius-topright: 3px;
   border-top-right-radius: 3px;
 }
-/* line 103, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003103}}
+/* line 104, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003104}}
 body .pageTitle .nav-header-tabs li a,
 body .pageTitle .nav-header-tabs li a:visited {
   color: #fff;
 }
-/* line 107, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003107}}
+/* line 108, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003108}}
 body .pageTitle .nav-header-tabs li:first-child {
   padding-left: 10px;
 }
-/* line 110, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003110}}
+/* line 111, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003111}}
 body .pageTitle .nav-header-tabs li.nav-selected {
   font-weight: bold;
   border-bottom: 2px solid #8dc63f;
@@ -7235,39 +7235,39 @@ body .pageTitle .nav-header-tabs li.nav-selected {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#ffebebeb', GradientType=0);
 }
-/* line 115, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003115}}
+/* line 116, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003116}}
 body .pageTitle .nav-header-tabs li.nav-selected a,
 body .pageTitle .nav-header-tabs li.nav-selected a:visited {
   color: #3361aa;
 }
-/* line 123, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003123}}
+/* line 124, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003124}}
 body .pageTitle .m2m .nav-header-tabs li {
   padding: 5px 14px;
 }
-/* line 125, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003125}}
+/* line 126, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003126}}
 body .pageTitle .m2m .nav-header-tabs li:first-child {
   padding-left: 14px;
 }
-/* line 128, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003128}}
+/* line 129, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003129}}
 body .pageTitle .m2m .nav-header-tabs li:last-child {
   border-right: 0px solid transparent;
 }
-/* line 136, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003136}}
+/* line 137, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003137}}
 body .pageTitle .solutions .nav-header-tabs li {
   padding: 5px 7px;
 }
-/* line 141, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003141}}
+/* line 142, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003142}}
 body .pageTitle .solutions .nav-header-tabs li:last-child {
   border-right: 0px solid transparent;
 }
-/* line 149, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003149}}
+/* line 150, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\00003150}}
 body .pageTitle .row .span12 img {
   width: 100%;
 }
