@@ -9,13 +9,13 @@ $this->inc('elements/header.php'); ?>
 
 <div class="container oneColumn">
 	<section class="column area row">
-		<div class="span5">
+		<div class="span6 gray-box">
 			<?php 
 			$as = new Area('Main');
 			$as->display($c);
 			?>		
 		</div>
-		<div class="span5" style="margin-left: 5px;">
+		<div class="span6 gray-box" style="margin-left: 5px;">
 			<?php 
 			$af = new Area('Main Right');
 			$af->display($c);
