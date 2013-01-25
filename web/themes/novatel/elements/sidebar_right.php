@@ -11,7 +11,8 @@ defined('C5_EXECUTE') or die("Access Denied.");
 		<script type="text/javascript">
 			$(document).ready(function(){
 				var rightColumn = $('.product .rightColumn .sidebar-block:first-child');
-				rightColumn.addClass('no-block');
+				rightColumn.removeClass('gray-block');
+				rightColumn.css('margin','0').css('padding','0');
 			});
 		</script>
 	</section>
