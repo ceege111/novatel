@@ -8356,8 +8356,8 @@ body .socialButtons {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003138}}
 .ether-ctrl-wrap {
   position: absolute;
-  bottom: -39px;
-  right: 20px;
+  bottom: 5px;
+  right: 5px;
   z-index: 20;
   z-index: 100;
   padding: 5px;
@@ -8372,8 +8372,8 @@ body .socialButtons {
 /* line 141, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003141}}
 .homeFeatured .ether-ctrl-wrap {
-  bottom: 5px;
-  right: 5px;
+  bottom: -39px;
+  right: 20px;
 }
 /* line 143, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003143}}
