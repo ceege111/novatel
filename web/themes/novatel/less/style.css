@@ -7589,7 +7589,7 @@ body .tables .nav-header-tabs li,
 body .support-results .nav-header-tabs li {
   display: block;
   margin-right: 2px;
-  padding: 5px 10px 4px 10px;
+  padding: 5px 10px 0px 10px;
   float: left;
   font-size: 11px;
   line-height: 14px;
