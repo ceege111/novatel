@@ -12,6 +12,32 @@
 	}
 ?>
 
+<div id="fb-root"></div>
+<script>
+	window.fbAsyncInit = function() {
+	  FB.init({
+	    appId      : 'YOUR_APP_ID', // App ID
+	    channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
+	    status     : true, // check login status
+	    cookie     : true, // enable cookies to allow the server to access the session
+	    xfbml      : true  // parse XFBML
+	  });
+	  FB.api('/me', function(user) {
+	    if (user) {
+	      console.log('name: ' + user.name);
+	    }
+	  });
+	};
+	// Load the SDK Asynchronously
+	(function(d){
+	   var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+	   if (d.getElementById(id)) {return;}
+	   js = d.createElement('script'); js.id = id; js.async = true;
+	   js.src = "//connect.facebook.net/en_US/all.js";
+	   ref.parentNode.insertBefore(js, ref);
+	 }(document));
+</script>
+
 <header class="pageTitle container">
 	<?php $this->inc('elements/content_banner.php'); ?>
 	<?php $this->inc('elements/subnav.php'); ?>
@@ -68,18 +94,19 @@
 				</script>
 				<!-- social plugins go here -->
 				<div class="socialButtons">
-				    <a href="#" class="share-btn" target="_blank" onclick="alert('social buttons disabled on test server');return false;">
-				      <span class="share-btn-action share-btn-tweet">Tweet</span>
-				      <!-- <span id="twitterCount" class="share-btn-count">0</span> -->
-				    </a>
-				    <a href="#" class="share-btn" target="_blank" onclick="alert('social buttons disabled on test server');return false;">
-				      <span class="share-btn-action share-btn-like">Like</span>
-				      <!-- <span id="facebookCount" class="share-btn-count">0</span> -->
-				    </a>
+				    <a href="#" class="share-btn facebook" target="_blank" onclick="alert('social buttons disabled on test server');return false;"></a>
+				    <a href="https://twitter.com/intent/tweet?text=#novatel" 
+				       class="share-btn twitter" target="_blank"></a>
+				    <!-- Twitter -->
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				    <script type="text/javascript">
 				    	$(document).ready(function(){
 				    		var currentUrl = document.URL;
 				    		console.log("current URL: "+currentUrl);
+
+				    		//twitter link
+				    		$('.share-btn.twitter').attr('href', 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(currentUrl) + '&hashtags=novatel');
+				    		
 				    	});
 				    </script>
 			    </div>
