@@ -8582,7 +8582,8 @@ body .product .rightColumn .sidebar-block p {
 }
 /* line 61, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\0000361}}
-body .product .rightColumn .sidebar-block:first-child {
+body .product .rightColumn .sidebar-block:first-child,
+body .product .rightColumn .sidebar-block.no-block {
   padding: 0;
   background: transparent;
   border: none;
