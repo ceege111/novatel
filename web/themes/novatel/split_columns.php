@@ -17,8 +17,8 @@ $this->inc('elements/header.php'); ?>
 		</div>
 		<div class="span5" style="margin-left: 5px;">
 			<?php 
-			$as = new Area('Main Right');
-			$as->display($c);
+			$af = new Area('Main Right');
+			$af->display($c);
 			?>
 		</div>
 
