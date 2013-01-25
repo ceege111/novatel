@@ -8,4 +8,10 @@ defined('C5_EXECUTE') or die("Access Denied.");
 		$as->setBlockWrapperEnd('</div>');	
 		$as->display($c);
 		?>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var rightColumn = $('section.rightColumn.area div.gray-block:first-child');
+				rightColumn.addClass('no-block');
+			});
+		</script>
 	</section>
