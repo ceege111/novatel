@@ -8369,6 +8369,12 @@ body .socialButtons {
   border-radius: 3px;
   /*width: 800px;*/
 }
+/* line 141, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003141}}
+.homeFeatured .ether-ctrl-wrap {
+  bottom: 5px;
+  right: 5px;
+}
 /* line 143, /Users/je/projects/novatel-corp/web/themes/novatel/less/gridslider.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/gridslider\.less}line{font-family:\00003143}}
 .ether-ctrl-wrap.ether-pos-bottom {
