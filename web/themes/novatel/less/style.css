@@ -7876,27 +7876,39 @@ body {
 body .socialButtons {
   margin-top: 15px;
   margin-bottom: 15px;
+  position: relative;
 }
-/* line 9, /Users/Daniel/OSXProjects/Novatel/Corporate/code/web/themes/novatel/less/social.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Daniel\/OSXProjects\/Novatel\/Corporate\/code\/web\/themes\/novatel\/less\/social\.less}line{font-family:\000039}}
+/* line 10, /Users/Daniel/OSXProjects/Novatel/Corporate/code/web/themes/novatel/less/social.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Daniel\/OSXProjects\/Novatel\/Corporate\/code\/web\/themes\/novatel\/less\/social\.less}line{font-family:\0000310}}
+body .socialButtons .fb-like {
+  position: absolute;
+  left: 15px;
+  top: 3px;
+  width: 99px;
+  height: 25px;
+  opacity: 0;
+  overflow: hidden;
+}
+/* line 20, /Users/Daniel/OSXProjects/Novatel/Corporate/code/web/themes/novatel/less/social.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Daniel\/OSXProjects\/Novatel\/Corporate\/code\/web\/themes\/novatel\/less\/social\.less}line{font-family:\0000320}}
 body .socialButtons a.share-btn:first-child {
   margin-left: 0;
 }
-/* line 14, /Users/Daniel/OSXProjects/Novatel/Corporate/code/web/themes/novatel/less/social.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Daniel\/OSXProjects\/Novatel\/Corporate\/code\/web\/themes\/novatel\/less\/social\.less}line{font-family:\0000314}}
+/* line 25, /Users/Daniel/OSXProjects/Novatel/Corporate/code/web/themes/novatel/less/social.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Daniel\/OSXProjects\/Novatel\/Corporate\/code\/web\/themes\/novatel\/less\/social\.less}line{font-family:\0000325}}
 body .share-btn {
   display: inline-block;
   width: 99px;
   height: 31px;
   margin-right: 8px;
 }
-/* line 20, /Users/Daniel/OSXProjects/Novatel/Corporate/code/web/themes/novatel/less/social.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Daniel\/OSXProjects\/Novatel\/Corporate\/code\/web\/themes\/novatel\/less\/social\.less}line{font-family:\0000320}}
+/* line 31, /Users/Daniel/OSXProjects/Novatel/Corporate/code/web/themes/novatel/less/social.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Daniel\/OSXProjects\/Novatel\/Corporate\/code\/web\/themes\/novatel\/less\/social\.less}line{font-family:\0000331}}
 body .share-btn.facebook {
   background: url('/img/products/fb_like_btn.png') no-repeat 0 0;
 }
-/* line 23, /Users/Daniel/OSXProjects/Novatel/Corporate/code/web/themes/novatel/less/social.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Daniel\/OSXProjects\/Novatel\/Corporate\/code\/web\/themes\/novatel\/less\/social\.less}line{font-family:\0000323}}
+/* line 34, /Users/Daniel/OSXProjects/Novatel/Corporate/code/web/themes/novatel/less/social.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Daniel\/OSXProjects\/Novatel\/Corporate\/code\/web\/themes\/novatel\/less\/social\.less}line{font-family:\0000334}}
 body .share-btn.twitter {
   background: url('/img/products/tweet_btn.png') no-repeat 0 0;
 }
