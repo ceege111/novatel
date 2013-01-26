@@ -13,30 +13,6 @@
 ?>
 
 <div id="fb-root"></div>
-<script>
-	window.fbAsyncInit = function() {
-	  FB.init({
-	    appId      : 'YOUR_APP_ID', // App ID
-	    channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
-	    status     : true, // check login status
-	    cookie     : true, // enable cookies to allow the server to access the session
-	    xfbml      : true  // parse XFBML
-	  });
-	  FB.api('/me', function(user) {
-	    if (user) {
-	      console.log('name: ' + user.name);
-	    }
-	  });
-	};
-	// Load the SDK Asynchronously
-	(function(d){
-	   var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-	   if (d.getElementById(id)) {return;}
-	   js = d.createElement('script'); js.id = id; js.async = true;
-	   js.src = "//connect.facebook.net/en_US/all.js";
-	   ref.parentNode.insertBefore(js, ref);
-	 }(document));
-</script>
 
 <header class="pageTitle container">
 	<?php $this->inc('elements/content_banner.php'); ?>
@@ -94,21 +70,36 @@
 				</script>
 				<!-- social plugins go here -->
 				<div class="socialButtons">
-				    <a href="#" class="share-btn facebook" target="_blank" onclick="alert('social buttons disabled on test server');return false;"></a>
+				    <div class="fb-like" data-href="http://novatelwireless.com/" data-send="false" data-width="200" data-show-faces="false"></div>
+				    <a href="#" class="share-btn facebook" target="_blank"></a>
+				    
 				    <a href="https://twitter.com/intent/tweet?text=#novatel" 
 				       class="share-btn twitter" target="_blank"></a>
+				    
 				    <!-- Twitter -->
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-				    <script type="text/javascript">
-				    	$(document).ready(function(){
-				    		var currentUrl = document.URL;
-				    		console.log("current URL: "+currentUrl);
+					
 
+				    <script type="text/javascript">
+				    	var currentUrl = document.URL;
+			    		console.log("current URL: "+currentUrl);
+				    	$(document).ready(function(){
 				    		//twitter link
 				    		$('.share-btn.twitter').attr('href', 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(currentUrl) + '&hashtags=novatel');
-				    		
-				    	});
+				    		//facebook link 
+			    		
+			    		});
+
+			    		$('.fb-like').attr('data-href', currentUrl);
 				    </script>
+				    <!-- Facebook -->
+					<script>(function(d, s, id) {
+					  var js, fjs = d.getElementsByTagName(s)[0];
+					  if (d.getElementById(id)) return;
+					  js = d.createElement(s); js.id = id;
+					  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=299258720176542";
+					  fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));</script>
 			    </div>
 			</div>
 		</div>
