@@ -8787,7 +8787,7 @@ body .splitColumn .splitRight {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003229}}
 body .splitColumn .splitLeft .ccm-page-list,
 body .splitColumn .splitRight .ccm-page-list {
-  overflow: auto;
+  overflow: hidden;
   margin-top: 10px;
   border-top: 1px solid #b4b4b4;
 }
