@@ -26,14 +26,14 @@
 		}
 
 		if ($i > 0) {
-			print ' <span class="ccm-autonav-breadcrumb-sep">&gt;</span> ';
+			print ' <span class="ccm-autonav-breadcrumb-sep">&gt;</span>';
 		}
 		if ($c->getCollectionID() == $_c->getCollectionID()) { 
 			echo($ni->getName());
 		} else {
 			$name = $ni->getName();
 			if (strcasecmp($name, "Home") == 0){
-				$name = "<i class='icon-home'></i> ";
+				$name = "<i class='icon-home icon-white'></i> ";
 			}
 			if ($_c->getCollectionAttributeValue('not_menu_link')){
 				// echo($name);

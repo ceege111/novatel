@@ -135,8 +135,10 @@
 
 
 .ether-ctrl-wrap > * { }
-.ether-ctrl-wrap { position: absolute; bottom: 0px; right: 0px; z-index: 20; z-index: 100; padding: 5px; background: #fff; border: 1px solid #ddd; -webkit-border-radius: 3px; -moz-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; /*width: 800px;*/}
-
+.ether-ctrl-wrap { 	position: absolute; bottom: 5px; right: 5px; z-index: 20; 
+					z-index: 100; padding: 5px; background: transparent; border: 0px solid transparent; 
+					-webkit-border-radius: 3px; -moz-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; /*width: 800px;*/}
+.homeFeatured .ether-ctrl-wrap { bottom: -39px; right: 20px; }
 
 .ether-ctrl-wrap.ether-pos-bottom { top: auto; bottom: 0; }
 .ether-ctrl-wrap.ether-pos-top {top: 0; bottom: auto; }
@@ -146,7 +148,12 @@
 .ether-ctrl-wrap.ether-pos-top { top: -40px; }
 .ether-ctrl-wrap.ether-pos-bottom { bottom: -40px; }
 
-.ether-ctrl-wrap .ether-ctrl { background-image: url(slider-ctrl.png); background-repeat: no-repeat; opacity: 0.5;}
+.ether-ctrl-wrap .ether-ctrl { 	
+								background-color: @grayLight;
+								// background-repeat: no-repeat; 
+								.border-radius(100px);
+								// opacity: 0.5;
+							}
 .ether-ctrl-wrap .ether-ctrl:hover { opacity: 1; }
 
 .ether-ctrl-car { position: relative; width: 68px; height: 32px; margin: 0 auto 0px; padding: 0px 0px;}
@@ -158,10 +165,12 @@
 .ether-scroll-axis-y .ether-ctrl-car .ether-prev { -webkit-transform: rotate(90deg); }
 .ether-scroll-axis-y .ether-ctrl-car .ether-next { -webkit-transform: rotate(90deg); }
 
-.ether-ctrl-pag { position: relative; margin: 3px auto 0px; padding: 0; height: 16px; text-align: center;}
+.ether-ctrl-pag { position: relative; margin: 3px auto 0px; padding: 0; height: 12px; text-align: center;}
 .ether-ctrl-pag:after { display: block; visibility: hidden; content: "."; height: 0; line-height: 0; font-size: 0; clear: both; }
-.ether-ctrl-pag > div { float: left; padding: 0px; overflow: hidden; width: 16px; height: 16px; text-align: center; line-height: 16px; font-size: 7pt; cursor: pointer; margin: 0 1px 0 1px; text-align: left; text-indent: -9999px; vertical-align: top; background-position: 0px -40px;}
-.ether-ctrl-pag > div.ether-current { background-position: -24px -40px; opacity: 1}
+.ether-ctrl-pag > div { float: left; padding: 0px; overflow: hidden; width: 12px; height: 12px; text-align: center; 
+						line-height: 16px; font-size: 7pt; cursor: pointer; margin: 0 1px 0 1px; text-align: left; 
+						text-indent: -9999px; vertical-align: top; background-position: 0px -40px;}
+.ether-ctrl-pag > div.ether-current { background-color: @grayDark;}
 
 
 

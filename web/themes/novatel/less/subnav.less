@@ -3,11 +3,23 @@ body {
 
 	.pageTitle {
 		margin-bottom: 15px;
-		.breadcrumb {
-			clear:both;
-			background-color: transparent;
-			margin: 0px;
-			padding-left: 20px;
+		.subNav {
+			min-height: 20px;
+			overflow: auto;
+			clear: both;
+			.breadcrumb {
+				position: absolute;
+				margin-top: 0px;
+				margin-left: 10px;
+				background-color: transparent; 
+				font-weight: ;
+				&.default {
+					position: relative;
+					margin: 0px;
+					background-color: transparent;
+					padding-left: 0px;
+				}
+			}
 		}
 		.defaultBanner {
 			background: url(img/banner_generic.png) no-repeat top right transparent;
@@ -17,7 +29,7 @@ body {
 				// width: 45%;
 				display: block;
 				position: absolute;
-				color: @grayLighter;
+				color: @grayDark;
 				padding: 0;
 				margin: 0;
 				max-width: 450px;
@@ -32,7 +44,8 @@ body {
 				font-weight: 400;
 				text-align: right;
 				// background-color: @greenLight;
-				background: url(img/hero_title_bg.png) repeat-x transparent;
+				// background: url(img/hero_title_bg.png) repeat-x transparent;
+				#translucent .background(@white, 0.65);
 			}
 		}
 		.banner {
@@ -50,13 +63,18 @@ body {
 				text-align: right;
 				font-size: 30px;
 				font-weight: 400;
-				color: @grayLighter;
+				color: @grayDark;
 				// background: @greenLight;
-				// #translucent .background(@greenLight, 0.65);
-				background: url(img/hero_title_bg.png) repeat-x transparent;
+				#translucent .background(@white, 0.65);
+				// background: url(img/hero_title_bg.png) repeat-x transparent;
 				// margin-top: -110px;
 				bottom: 10px;
 				line-height: 50px;
+				&.rightTitle {
+					right: 0px;
+					text-align: left;
+					padding: 0px 60px 0px 20px;
+				}
 			}
 			>div {
 				position: relative;
