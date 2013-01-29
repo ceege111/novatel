@@ -144,4 +144,93 @@ $(document).ready(function(){
 		return false;
 	});
 
+	/* Downloads results table */
+	$(".downloads_mifi").click(function(){
+		$("table.support-results").not("table.support-results:nth-child(1)").each(function(){
+			$(this).hide();
+		});
+		$("table.support-results:nth-child(1)").fadeIn(100);
+		return false;
+	});
+
+	$(".downloads_modem").click(function(){
+		$("table.support-results").not("table.support-results:nth-child(2)").each(function(){
+			$(this).hide();
+		});
+		$("table.support-results:nth-child(2)").fadeIn(100);
+		return false;
+	});
+
+	$(".downloads_datacard").click(function(){
+		$("table.support-results").not("table.support-results:nth-child(3)").each(function(){
+			$(this).hide();
+		});
+		$("table.support-results:nth-child(3)").fadeIn(100);
+		return false;
+	});
+
+	$(".downloads_embedded").click(function(){
+		$("table.support-results").not("table.support-results:nth-child(4)").each(function(){
+			$(this).hide();
+		});
+		$("table.support-results:nth-child(4)").fadeIn(100);
+		return false;
+	});
+
+	$(".downloads_software").click(function(){
+		$("table.support-results").not("table.support-results:nth-child(5)").each(function(){
+			$(this).hide();
+		});
+		$("table.support-results:nth-child(5)").fadeIn(100);
+		return false;
+	});
+
+	$(".downloads_m2m_modules").click(function(){
+		$("table.support-results").not("table.support-results:nth-child(6)").each(function(){
+			$(this).hide();
+		});
+		$("table.support-results:nth-child(6)").fadeIn(100);
+		return false;
+	});
+
+	$(".downloads_mobile_tracking").click(function(){
+		$("table.support-results").not("table.support-results:nth-child(7)").each(function(){
+			$(this).hide();
+		});
+		$("table.support-results:nth-child(7)").fadeIn(100);
+		return false;
+	});
+
+	$(".downloads_monitoring_tracking").click(function(){
+		$("table.support-results").not("table.support-results:nth-child(8)").each(function(){
+			$(this).hide();
+		});
+		$("table.support-results:nth-child(8)").fadeIn(100);
+		return false;
+	});
+
+	$(".downloads_telemetry").click(function(){
+		$("table.support-results").not("table.support-results:nth-child(9)").each(function(){
+			$(this).hide();
+		});
+		$("table.support-results:nth-child(9)").fadeIn(100);
+		return false;
+	});
+
+	$(".downloads_enablements").click(function(){
+		$("table.support-results").not("table.support-results:nth-child(10)").each(function(){
+			$(this).hide();
+		});
+		$("table.support-results:nth-child(10)").fadeIn(100);
+		return false;
+	});
+
+	$(".downloads_workforce").click(function(){
+		$("table.support-results").not("table.support-results:nth-child(11)").each(function(){
+			$(this).hide();
+		});
+		$("table.support-results:nth-child(11)").fadeIn(100);
+		return false;
+	});
+
 });
