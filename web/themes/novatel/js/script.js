@@ -87,7 +87,7 @@ $(document).ready(function(){
 			$(this).find('a').addClass('nav-selected');
 		});
 	});
-	$(".nav-header-tabs-sp li").each(function(){
+	$(".nav-header-tabs-sp li a").each(function(){
 		$(this).click(function(e){
 			e.preventDefault();
 			console.log("loading tab "+$(this).data('products'));
