@@ -28,13 +28,14 @@
 				$subPage = $_c->getFirstChild();
 				if ($subPage instanceof Page) {
 					$pageLink = $nh->getLinkToCollection($subPage);
-					$dataProducts = str_replace(" ", "", $ni->getName());
 				}
 			}
 			
 			if (!$pageLink) {
 				$pageLink = $ni->getURL();
 			}
+			
+			$dataProducts = str_replace(" ", "", $ni->getName());
 
 			if ($isFirst) $isFirstClass = 'first';
 			else $isFirstClass = '';
