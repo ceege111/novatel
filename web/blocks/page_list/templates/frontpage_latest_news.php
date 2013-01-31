@@ -60,7 +60,7 @@ $th = Loader::helper('text');
 				console.log('... next news item');
 				$(".news-ticker.active").slideUp(function(){
 					var $selected = $(".news-ticker.active").removeClass("active");
-    				var news = $selected.parent().children('a');
+    				var news = $selected.parent().children('.news-ticker');
     				console.log("selected: "+ (news.index($selected) +1) );
     				console.log("length: "+news.length);
     				console.log("index mod length: "+ ((news.index($selected) + 1) % news.length) );
