@@ -72,7 +72,27 @@ $(document).ready(function(){
 		});
 	});
 
-
+	//special product tabs
+	// $(".tableTabs li.tab:first-child").addClass('nav-selected');
+	// var tabCounter = 1;
+	$(".nav-header-tabs-sp li").each(function(){
+		// $(this).addClass("tableSection"+tabCounter).data('tableSection',tabCounter);
+		// tabCounter++;
+		$(this).click(function(){
+			$(".tableTabs li").not(this).each(function(){
+				$(this).removeClass('nav-selected');
+				$(this).children('a').removeClass('nav-selected');
+			});
+			$(this).addClass('nav-selected');
+			$(this).children('a').addClass('nav-selected');
+			// $(".table.tableContent tr").not(".table.tableContent tr.tableSection"+$(this).data('tableSection')).not(".table.tableContent tr.tableHeader").each(function(){
+			// 	$(this).hide();
+			// });
+			// $(".table.tableContent tr.tableSection"+$(this).data('tableSection')).each(function(){
+			// 	$(this).fadeIn();
+			// });
+		});
+	});
 	//where to buy menus
 
 	//extra rows need right display class
