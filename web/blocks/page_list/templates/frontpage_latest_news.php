@@ -49,15 +49,19 @@ $th = Loader::helper('text');
 		/* End data preparation. */
 
 		/* The HTML from here through "endforeach" is repeated for every item in the list... */ ?>
-			<a class="news-ticker <?php if($firstItem){} else { echo "hide"; } ?>" href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
+			<a class="news-ticker <?php if($firstItem){ echo "active";} else { echo "hide"; } ?>" href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
 	<?php 
 		$firstItem = false;
 		endforeach; ?>
 		<script type="text/javascript">
 		$(document).ready(function(){
 			console.log('news ticker cycle...');
-			var rotateNews = function(){};
-
+			var rotateNews = function(){
+				console.log('... next news item');
+			};
+			var newsTimer = setinterval(function(){
+				rotateNews();
+			}, 2000);
 		});
 		</script>
 </div>
