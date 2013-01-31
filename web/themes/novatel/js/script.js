@@ -92,9 +92,9 @@ $(document).ready(function(){
 			e.preventDefault();
 			console.log("loading tab "+$(this).data('products'));
 			$.get($(this).attr('href'),function(data){
-				var output = $(data).find('section.column-area').first();
+				var output = $(data).find('section.column.area').first();
 				console.log(output);
-				$("section.column-area").html(output);
+				$("div.container.oneColumn").html(output);
 			});
 		});
 	});
