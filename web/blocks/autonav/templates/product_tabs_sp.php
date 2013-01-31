@@ -28,6 +28,7 @@
 				$subPage = $_c->getFirstChild();
 				if ($subPage instanceof Page) {
 					$pageLink = $nh->getLinkToCollection($subPage);
+					$dataProducts = str_replace(" ", "", $ni->getName());
 				}
 			}
 			
@@ -41,9 +42,9 @@
 			echo '<li class="'.$navSelected.' '.$isFirstClass.'">';
 			
 			if ($c->getCollectionID() == $_c->getCollectionID()) { 
-				echo('<a class="nav-selected" href="#"  data-products="' .$pageLink. '">' . $ni->getName() . '</a>');
+				echo('<a class="nav-selected" href="#"  data-products="' .$dataProducts. '">' . $ni->getName() . '</a>');
 			} else {
-				echo('<a href="#" data-products="'.$pageLink.'">' . $ni->getName() . '</a>');
+				echo('<a href="#" data-products="'.$dataProducts.'">' . $ni->getName() . '</a>');
 			}	
 			
 			echo('</li>');
