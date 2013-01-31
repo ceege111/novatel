@@ -14,6 +14,7 @@ $th = Loader::helper('text');
 		// Prepare data for each page being listed...
 		$title = $th->entities($page->getCollectionName());
 		$url = $nh->getLinkToCollection($page);
+		$url = ($page->getAttribute('iframe_url') != '') ? $page->getAttribute('iframe_url') : $nh->getLinkToCollection($page);;
 		$target = ($page->getCollectionPointerExternalLink() != '' && $page->openCollectionPointerExternalLinkInNewWindow()) ? '_blank' : $page->getAttribute('nav_target');
 		$target = empty($target) ? '_self' : $target;
 		$description = $page->getCollectionDescription();
