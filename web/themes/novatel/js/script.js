@@ -85,24 +85,16 @@ $(document).ready(function(){
 			});
 			$(this).addClass('nav-selected');
 			$(this).find('a').addClass('nav-selected');
-			// $(".table.tableContent tr").not(".table.tableContent tr.tableSection"+$(this).data('tableSection')).not(".table.tableContent tr.tableHeader").each(function(){
-			// 	$(this).hide();
-			// });
-			// $(".table.tableContent tr.tableSection"+$(this).data('tableSection')).each(function(){
-			// 	$(this).fadeIn();
-			// });
 		});
 	});
-	//where to buy menus
+	$(".nav-header-tabs-sp li").each(function(){
+		$(this).click(function(e){
+			e.preventDefault();
+			console.log("loading tab "+$(this).data('products'));
+		});
+	});
 
-	//extra rows need right display class
-	// $(".tableContent tr.extra").each(function(){
-	// 	var prevRow = $(this).prev('tr');
-	// 	var prevClass = $(prevRow).attr('class');
-	// 	console.log(prevRow);
-	// 	console.log	(prevClass);
-	// 	$(this).addClass(prevClass);
-	// });
+	//where to buy menus
 
 	$("select.region-menu").each(function(){
 		$(this).change(function(){
