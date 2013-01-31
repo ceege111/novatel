@@ -91,10 +91,10 @@ $(document).ready(function(){
 			$.get($(this).find('a').attr('href'),function(data){
 				var output = $(data).find('section.column.area').first();
 				console.log(output);
-				$(curTab).addClass('nav-selected');
-				$(curTab).find('a').addClass('nav-selected');
+				$("div.container.oneColumn").html(output);
 				$("div.container.oneColumn").fadeIn(function(){
-					$("div.container.oneColumn").html(output);
+					$(curTab).addClass('nav-selected');
+					$(curTab).find('a').addClass('nav-selected');
 				});
 			});
 		});
