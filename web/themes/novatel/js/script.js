@@ -83,19 +83,25 @@ $(document).ready(function(){
 				$(this).removeClass('nav-selected');
 				$(this).find('a').removeClass('nav-selected');
 			});
-			$(this).addClass('nav-selected');
-			$(this).find('a').addClass('nav-selected');
+			var curTab = this;
+			// $(this).addClass('nav-selected');
+			// $(this).find('a').addClass('nav-selected');
+			console.log("loading tab "+$(this).data('products'));
+			$("div.container.oneColumn").fadeOut();
+			$.get($(this).find('a').attr('href'),function(data){
+				var output = $(data).find('section.column.area').first();
+				console.log(output);
+				$(curTab).addClass('nav-selected');
+				$(curTab).find('a').addClass('nav-selected');
+				$("div.container.oneColumn").fadeIn(function(){
+					$("div.container.oneColumn").html(output);
+				});
+			});
 		});
 	});
 	$(".nav-header-tabs-sp li a").each(function(){
 		$(this).click(function(e){
 			e.preventDefault();
-			console.log("loading tab "+$(this).data('products'));
-			$.get($(this).attr('href'),function(data){
-				var output = $(data).find('section.column.area').first();
-				console.log(output);
-				$("div.container.oneColumn").html(output);
-			});
 		});
 	});
 	$(".product-tabs-sp").each(function(){
