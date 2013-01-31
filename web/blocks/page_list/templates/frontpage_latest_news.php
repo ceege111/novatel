@@ -4,6 +4,8 @@ $rssUrl = $showRss ? $controller->getRssUrl($b) : '';
 $th = Loader::helper('text');
 //$ih = Loader::helper('image'); //<--uncomment this line if displaying image attributes (see below)
 //Note that $nh (navigation helper) is already loaded for us by the controller (for legacy reasons)
+
+	$firstItem = true;
 ?>
 <div>
 	<span class="news-title">Latest News:</span>&nbsp;
@@ -47,6 +49,15 @@ $th = Loader::helper('text');
 		/* End data preparation. */
 
 		/* The HTML from here through "endforeach" is repeated for every item in the list... */ ?>
-			<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
-	<?php endforeach; ?>
+			<a class="news-ticker <?php if($firstItem){} else { echo "hide"; } ?>" href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
+	<?php 
+		$firstItem = false;
+		endforeach; ?>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			console.log('news ticker cycle...');
+			var rotateNews = function(){};
+
+		});
+		</script>
 </div>
