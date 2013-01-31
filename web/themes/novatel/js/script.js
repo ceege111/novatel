@@ -81,10 +81,10 @@ $(document).ready(function(){
 		$(this).click(function(){
 			$(".tableTabs li").not(this).each(function(){
 				$(this).removeClass('nav-selected');
-				$(this).children('a').removeClass('nav-selected');
+				$(this).find('a').removeClass('nav-selected');
 			});
 			$(this).addClass('nav-selected');
-			$(this).children('a').addClass('nav-selected');
+			$(this).find('a').addClass('nav-selected');
 			// $(".table.tableContent tr").not(".table.tableContent tr.tableSection"+$(this).data('tableSection')).not(".table.tableContent tr.tableHeader").each(function(){
 			// 	$(this).hide();
 			// });
