@@ -91,7 +91,14 @@ $(document).ready(function(){
 		$(this).click(function(e){
 			e.preventDefault();
 			console.log("loading tab "+$(this).data('products'));
+			$.get($(this).attr('href'),function(data){
+				var output = $(data).find('.product-list').first();
+				console.log(output);
+			});
 		});
+	});
+	$(".product-tabs-sp").each(function(){
+		// $(this).hide();
 	});
 
 	//where to buy menus

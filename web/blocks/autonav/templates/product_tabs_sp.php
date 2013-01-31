@@ -34,7 +34,7 @@
 			if (!$pageLink) {
 				$pageLink = $ni->getURL();
 			}
-			
+
 			$dataProducts = str_replace(" ", "", $ni->getName());
 
 			if ($isFirst) $isFirstClass = 'first';
@@ -43,9 +43,9 @@
 			echo '<li class="'.$navSelected.' '.$isFirstClass.'">';
 			
 			if ($c->getCollectionID() == $_c->getCollectionID()) { 
-				echo('<a class="nav-selected" href="#"  data-products="' .$dataProducts. '">' . $ni->getName() . '</a>');
+				echo('<a class="nav-selected" href="'.$pageLink.'"  data-products="' .$dataProducts. '">' . $ni->getName() . '</a>');
 			} else {
-				echo('<a href="#" data-products="'.$dataProducts.'">' . $ni->getName() . '</a>');
+				echo('<a href="'.$pageLink.'" data-products="'.$dataProducts.'">' . $ni->getName() . '</a>');
 			}	
 			
 			echo('</li>');
