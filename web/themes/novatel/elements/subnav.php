@@ -10,7 +10,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 			$(document).ready(function(){
 				var breadOffset = $(".banner").find('img').first().attr('height');
 				breadOffset = parseInt(breadOffset);
-				breadOffset += 15;
+				breadOffset += 45;
 				console.log('breadcrumb offset: '+'-'+breadOffset+'px');
 				if ( breadOffset > 200 ){
 					$(".breadcrumb").css('margin-top','-'+breadOffset+'px').fadeIn();
