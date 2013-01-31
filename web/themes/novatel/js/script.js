@@ -98,6 +98,7 @@ $(document).ready(function(){
 				});
 			});
 		});
+		$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
 	});
 	$(".nav-header-tabs-sp li a").each(function(){
 		$(this).click(function(e){

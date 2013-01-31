@@ -6878,6 +6878,7 @@ body .headerWrap .mainHeader .mainMenu .nav .dropdown-menu li span.nav-static {
 body .wrap {
   margin: 0px auto;
   width: 1024px;
+  min-height: 400px;
 }
 /* line 1, /Users/JE/projects/novatel-corporate/web/themes/novatel/less/search_widget.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/JE\/projects\/novatel-corporate\/web\/themes\/novatel\/less\/search_widget\.less}line{font-family:\000031}}
