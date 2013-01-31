@@ -89,8 +89,10 @@ $(document).ready(function(){
 			console.log("loading tab "+$(this).data('products'));
 			$("div.container.oneColumn").fadeOut();
 			$.get($(this).find('a').attr('href'),function(data){
+				var breadCrumb = $(data).find('div.breadcrumb').first();
 				var output = $(data).find('section.column.area').first();
 				console.log(output);
+				$("div.breadcrumb").html($(breadCrumb).html());
 				$("div.container.oneColumn").html(output);
 				$("div.container.oneColumn").fadeIn(function(){
 					$(curTab).addClass('nav-selected');
