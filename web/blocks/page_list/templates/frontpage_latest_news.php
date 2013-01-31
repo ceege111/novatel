@@ -58,8 +58,13 @@ $th = Loader::helper('text');
 			console.log('news ticker cycle...');
 			var rotateNews = function(){
 				console.log('... next news item');
+				$(".news-ticker.active").slideUp(function(){
+					var $selected = $(".news-ticker.active").removeClass("active");
+    				var news = $selected.parent().children();
+    				news.eq((news.index($selected) + 1) % news.length).addClass("active").slideDown(function(){}); 
+				});
 			};
-			var newsTimer = setinterval(function(){
+			var newsTimer = setInterval(function(){
 				rotateNews();
 			}, 2000);
 		});
