@@ -90,6 +90,9 @@ $(document).ready(function(){
 			$("div.container.oneColumn").fadeOut();
 			$.get($(this).find('a').attr('href'),function(data){
 				var breadCrumb = $(data).find('div.breadcrumb').first();
+				if (breadCrumb.hasClass('default')){
+					breadCrumb.find('i').removeClass('icon-white');
+				}
 				var output = $(data).find('section.column.area').first();
 				console.log(output);
 				$("div.breadcrumb").html($(breadCrumb).html());
