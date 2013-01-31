@@ -69,7 +69,7 @@ $th = Loader::helper('text');
 			};
 			var newsTimer = setInterval(function(){
 				rotateNews();
-			}, 2000);
+			}, 4000);
 		});
 		</script>
 </div>
