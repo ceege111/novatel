@@ -61,9 +61,9 @@ $th = Loader::helper('text');
 				$(".news-ticker.active").slideUp(function(){
 					var $selected = $(".news-ticker.active").removeClass("active");
     				var news = $selected.parent().children();
-    				console.log("selected: "+news.index($selected +1));
+    				console.log("selected: "+ (news.index($selected) +1) );
     				console.log("length: "+news.length);
-    				console.log("index mod length: "+ (news.index($selected) + 1) % news.length);
+    				console.log("index mod length: "+ ((news.index($selected) + 1) % news.length) );
     				news.eq((news.index($selected) + 1) % news.length).addClass("active").slideDown(function(){});
 				});
 			};
