@@ -79,7 +79,7 @@ $(document).ready(function(){
 		// $(this).addClass("tableSection"+tabCounter).data('tableSection',tabCounter);
 		// tabCounter++;
 		$(this).click(function(){
-			$(".tableTabs li").not(this).each(function(){
+			$(".nav-header-tabs-sp li").not(this).each(function(){
 				$(this).removeClass('nav-selected');
 				$(this).find('a').removeClass('nav-selected');
 			});
