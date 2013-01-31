@@ -61,7 +61,7 @@ $th = Loader::helper('text');
 				$(".news-ticker.active").slideUp(function(){
 					var $selected = $(".news-ticker.active").removeClass("active");
     				var news = $selected.parent().children();
-    				news.eq((news.index($selected) + 1) % news.length).addClass("active").slideDown(function(){}); 
+    				news.eq((news.index($selected)) % news.length).addClass("active").slideDown(function(){}); 
 				});
 			};
 			var newsTimer = setInterval(function(){
