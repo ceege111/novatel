@@ -97,6 +97,7 @@ $(document).ready(function(){
 				$("div.container.oneColumn").fadeIn(function(){
 					$(curTab).addClass('nav-selected');
 					$(curTab).find('a').addClass('nav-selected');
+					$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
 				});
 			});
 		});
