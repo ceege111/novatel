@@ -74,7 +74,12 @@ $(document).ready(function(){
 
 	//special product tabs
 	$(".nav-header-tabs-sp li").each(function(){
-		var containerSp = $("div.container.oneColumn") || $("div.container.rightSidebar");
+		if ($("div.container.oneColumn").length) {
+			var containerSp = $("div.container.oneColumn");
+		} else {
+			var containerSp = $("div.container.rightSidebar");
+		}
+		// var containerSp = $("div.container.oneColumn") || $("div.container.rightSidebar");
 		console.log(containerSp);
 		$(this).click(function(){
 			var link = $(this).find('a').first();
