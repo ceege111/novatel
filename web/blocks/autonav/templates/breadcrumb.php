@@ -33,7 +33,7 @@
 		} else {
 			$name = $ni->getName();
 			if (strcasecmp($name, "Home") == 0){
-				$name = "<i class='icon-home icon-white'></i> ";
+				$name = "<i class='icon-home'></i> ";
 			}
 			if ($_c->getCollectionAttributeValue('not_menu_link')){
 				// echo($name);
