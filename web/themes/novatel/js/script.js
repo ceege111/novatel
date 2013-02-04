@@ -108,9 +108,9 @@ $(document).ready(function(){
 				console.log($(output).html());
 				containerSp.html(output.html());
 
+				$(curTab).addClass('nav-selected');
 				$(curTab).find('a').addClass('nav-selected');
 				containerSp.fadeIn(function(){
-					$(curTab).addClass('nav-selected');
 					$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
 				});
 			});
