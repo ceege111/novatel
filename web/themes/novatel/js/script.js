@@ -83,6 +83,7 @@ $(document).ready(function(){
 			var curTab = this;
 			// $(this).addClass('nav-selected');
 			// $(this).find('a').addClass('nav-selected');
+			console.log(this);
 			console.log("loading tab "+$(this).attr('href'));
 			containerSp.fadeOut();
 			$.get($(this).find('a').attr('href'),function(data){
