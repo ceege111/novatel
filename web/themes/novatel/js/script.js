@@ -97,7 +97,10 @@ $(document).ready(function(){
 				var breadCrumb = $(data).find('div.breadcrumb').first();
 				$("div.breadcrumb").html($(breadCrumb).html());
 
-				var output = $(data).find("div.container.oneColumn") || $("div.container.rightSidebar");
+				var output = $(data).find("div.container.oneColumn") || $(data).find("div.container.rightSidebar");
+				if (output.length == 0){
+					output = $(data).find("div.container.rightSidebar");
+				}
 				console.log(output);
 				console.log($(output).html());
 				containerSp.html(output.html());
