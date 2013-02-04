@@ -90,10 +90,10 @@ $(document).ready(function(){
 				if ($("div.breadcrumb").hasClass('default')){
 					breadCrumb.find('i').removeClass('icon-white');
 				}
-				var output = $(data).find('section.column.area').first();
-				console.log(output);
+				var output = $(data).find(containerSp).first();
+				console.log(output.html());
 				$("div.breadcrumb").html($(breadCrumb).html());
-				containerSp.html(output);
+				containerSp.html(output.html());
 				containerSp.fadeIn(function(){
 					$(curTab).addClass('nav-selected');
 					$(curTab).find('a').addClass('nav-selected');
