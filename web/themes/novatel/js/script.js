@@ -88,14 +88,15 @@ $(document).ready(function(){
 			console.log("loading tab "+link.attr('href'));
 			containerSp.fadeOut();
 			$.get(link.attr('href'),function(data){
+
 				var breadCrumb = $(data).find('div.breadcrumb').first();
-				if ($("div.breadcrumb").hasClass('default')){
-					breadCrumb.find('i').removeClass('icon-white');
-				}
-				var output = $(data).find(containerSp).first();
-				console.log($(output).html());
 				$("div.breadcrumb").html($(breadCrumb).html());
+
+				var output = $(data).find('div.container').first();
+				console.log(output);
+				console.log($(output).html());
 				containerSp.html(output.html());
+				
 				containerSp.fadeIn(function(){
 					$(curTab).addClass('nav-selected');
 					$(curTab).find('a').addClass('nav-selected');
