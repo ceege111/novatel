@@ -16,7 +16,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 				// 	$(".breadcrumb").css('margin-top','-'+breadOffset+'px').css('margin-left','0').fadeIn();
 				// } else {
 				// 	$(".breadcrumb").find('i').removeClass('icon-white');
-				// 	$(".breadcrumb").addClass('default').fadeIn();
+					$(".breadcrumb").addClass('default').fadeIn();
 				// }
 			});
 		</script>

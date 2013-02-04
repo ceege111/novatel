@@ -83,8 +83,6 @@ $(document).ready(function(){
 				$(this).find('a').removeClass('nav-selected');
 			});
 			var curTab = this;
-			// $(this).addClass('nav-selected');
-			// $(this).find('a').addClass('nav-selected');
 			console.log(this);
 			console.log(link);
 			console.log("loading tab "+link.attr('href'));
@@ -95,7 +93,7 @@ $(document).ready(function(){
 					breadCrumb.find('i').removeClass('icon-white');
 				}
 				var output = $(data).find(containerSp).first();
-				console.log(output.html());
+				console.log($(output).html());
 				$("div.breadcrumb").html($(breadCrumb).html());
 				containerSp.html(output.html());
 				containerSp.fadeIn(function(){
