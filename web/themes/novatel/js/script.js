@@ -74,7 +74,7 @@ $(document).ready(function(){
 
 	//special product tabs
 	$(".nav-header-tabs-sp li").each(function(){
-		var containerSp = $("div.container.oneColumn") || $("div.container.rightSidevar");
+		var containerSp = $("div.container.oneColumn") || $("div.container.rightSidebar");
 		console.log(containerSp);
 		$(this).click(function(){
 			var link = $(this).find('a').first();
@@ -92,7 +92,7 @@ $(document).ready(function(){
 				var breadCrumb = $(data).find('div.breadcrumb').first();
 				$("div.breadcrumb").html($(breadCrumb).html());
 
-				var output = $(data).find('body>div.wrap>div.container');
+				var output = $(data).find("div.container.oneColumn") || $("div.container.rightSidebar");
 				console.log(output);
 				console.log($(output).html());
 				containerSp.html(output.html());
