@@ -73,11 +73,8 @@ $(document).ready(function(){
 	});
 
 	//special product tabs
-	// $(".tableTabs li.tab:first-child").addClass('nav-selected');
-	// var tabCounter = 1;
 	$(".nav-header-tabs-sp li").each(function(){
-		// $(this).addClass("tableSection"+tabCounter).data('tableSection',tabCounter);
-		// tabCounter++;
+		var containerSp = $("div.container.oneColumn") || $("div.container.rightSidevar");
 		$(this).click(function(){
 			$(".nav-header-tabs-sp li").not(this).each(function(){
 				$(this).removeClass('nav-selected');
@@ -87,7 +84,7 @@ $(document).ready(function(){
 			// $(this).addClass('nav-selected');
 			// $(this).find('a').addClass('nav-selected');
 			console.log("loading tab "+$(this).data('products'));
-			$("div.container.oneColumn").fadeOut();
+			containerSp.fadeOut();
 			$.get($(this).find('a').attr('href'),function(data){
 				var breadCrumb = $(data).find('div.breadcrumb').first();
 				if ($("div.breadcrumb").hasClass('default')){
@@ -96,8 +93,8 @@ $(document).ready(function(){
 				var output = $(data).find('section.column.area').first();
 				console.log(output);
 				$("div.breadcrumb").html($(breadCrumb).html());
-				$("div.container.oneColumn").html(output);
-				$("div.container.oneColumn").fadeIn(function(){
+				containerSp.html(output);
+				containerSp.fadeIn(function(){
 					$(curTab).addClass('nav-selected');
 					$(curTab).find('a').addClass('nav-selected');
 					$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
@@ -110,9 +107,6 @@ $(document).ready(function(){
 		$(this).click(function(e){
 			e.preventDefault();
 		});
-	});
-	$(".product-tabs-sp").each(function(){
-		// $(this).hide();
 	});
 
 	//where to buy menus
