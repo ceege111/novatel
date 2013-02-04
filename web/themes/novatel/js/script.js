@@ -75,6 +75,7 @@ $(document).ready(function(){
 	//special product tabs
 	$(".nav-header-tabs-sp li").each(function(){
 		var containerSp = $("div.container.oneColumn") || $("div.container.rightSidevar");
+		console.log(containerSp);
 		$(this).click(function(){
 			var link = $(this).find('a').first();
 			$(".nav-header-tabs-sp li").not(this).each(function(){
