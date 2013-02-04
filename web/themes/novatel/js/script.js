@@ -92,11 +92,11 @@ $(document).ready(function(){
 				var breadCrumb = $(data).find('div.breadcrumb').first();
 				$("div.breadcrumb").html($(breadCrumb).html());
 
-				var output = $(data).find('div.container').first();
-				console.log(output);
+				var output = $(data).find('.wrap>div.container').first();
+				// console.log(output);
 				console.log($(output).html());
 				containerSp.html(output.html());
-				
+
 				containerSp.fadeIn(function(){
 					$(curTab).addClass('nav-selected');
 					$(curTab).find('a').addClass('nav-selected');
