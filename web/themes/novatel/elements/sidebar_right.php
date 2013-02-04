@@ -13,7 +13,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 				// if($("html").hasClass('lt-ie9')){
 					var rightColumn = $('.product .rightColumn .sidebar-block:first-child');
 					rightColumn.removeClass('gray-block');
-					rightColumn.css('margin','0').css('padding','0'),css('width','250px');
+					rightColumn.css('margin','0').css('padding','0').css('width','250px');
 				// }
 			});
 		</script>
