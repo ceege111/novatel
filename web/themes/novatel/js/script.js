@@ -76,6 +76,7 @@ $(document).ready(function(){
 	$(".nav-header-tabs-sp li").each(function(){
 		var containerSp = $("div.container.oneColumn") || $("div.container.rightSidevar");
 		$(this).click(function(){
+			var link = $(this).find('a').first();
 			$(".nav-header-tabs-sp li").not(this).each(function(){
 				$(this).removeClass('nav-selected');
 				$(this).find('a').removeClass('nav-selected');
@@ -84,9 +85,10 @@ $(document).ready(function(){
 			// $(this).addClass('nav-selected');
 			// $(this).find('a').addClass('nav-selected');
 			console.log(this);
-			console.log("loading tab "+$(this).attr('href'));
+			console.log(link);
+			console.log("loading tab "+link.attr('href'));
 			containerSp.fadeOut();
-			$.get($(this).find('a').attr('href'),function(data){
+			$.get(link.attr('href'),function(data){
 				var breadCrumb = $(data).find('div.breadcrumb').first();
 				if ($("div.breadcrumb").hasClass('default')){
 					breadCrumb.find('i').removeClass('icon-white');
