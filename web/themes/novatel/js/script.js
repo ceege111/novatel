@@ -83,7 +83,7 @@ $(document).ready(function(){
 			var curTab = this;
 			// $(this).addClass('nav-selected');
 			// $(this).find('a').addClass('nav-selected');
-			console.log("loading tab "+$(this).data('products'));
+			console.log("loading tab "+$(this).attr('href'));
 			containerSp.fadeOut();
 			$.get($(this).find('a').attr('href'),function(data){
 				var breadCrumb = $(data).find('div.breadcrumb').first();
