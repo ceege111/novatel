@@ -92,8 +92,8 @@ $(document).ready(function(){
 				var breadCrumb = $(data).find('div.breadcrumb').first();
 				$("div.breadcrumb").html($(breadCrumb).html());
 
-				var output = $(data).find('.wrap>div.container').first();
-				// console.log(output);
+				var output = $(data).find('body>div.wrap>div.container');
+				console.log(output);
 				console.log($(output).html());
 				containerSp.html(output.html());
 
