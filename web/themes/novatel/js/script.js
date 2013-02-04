@@ -97,9 +97,12 @@ $(document).ready(function(){
 				var breadCrumb = $(data).find('div.breadcrumb').first();
 				$("div.breadcrumb").html($(breadCrumb).html());
 
-				var output = $(data).find("div.container.oneColumn") || $(data).find("div.container.rightSidebar");
+				var output = $(data).find("div.container.oneColumn");
 				if (output.length == 0){
 					output = $(data).find("div.container.rightSidebar");
+					containerSp.addClass('rightSidebar').removeClass('oneColumn');
+				} else {
+					containerSp.addClass('oneColumn').removeClass('rightSidebar');
 				}
 				console.log(output);
 				console.log($(output).html());
