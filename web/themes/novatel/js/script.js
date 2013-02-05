@@ -79,8 +79,6 @@ $(document).ready(function(){
 		} else {
 			var containerSp = $("div.container.rightSidebar");
 		}
-		// var containerSp = $("div.container.oneColumn") || $("div.container.rightSidebar");
-		console.log(containerSp);
 		$(this).click(function(){
 			var link = $(this).find('a').first();
 			$(".nav-header-tabs-sp li").not(this).each(function(){
@@ -122,6 +120,10 @@ $(document).ready(function(){
 			e.preventDefault();
 		});
 	});
+
+	if ($(".product-list").length){
+		console.log("products found. loading product list AJAX...");
+	}
 
 	//where to buy menus
 
