@@ -134,7 +134,6 @@ $(document).ready(function(){
 		$(".product-list a").live('click',function(e){
 				e.preventDefault();
 				console.log('product page AJAX goes here...');
-			})
 		});
 	}
 
