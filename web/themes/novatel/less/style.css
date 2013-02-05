@@ -7160,9 +7160,8 @@ body .pageTitle .defaultBanner h1.defaultTitle {
 /* line 53, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000353}}
 body .pageTitle .banner img {
-  -webkit-box-shadow: 0px 3px 4px #a1a1a1;
-  -moz-box-shadow: 0px 3px 4px #a1a1a1;
-  box-shadow: 0px 3px 4px #a1a1a1;
+  /*.box-shadow(0px 3px 4px @grayLightish);*/
+
 }
 /* line 56, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000356}}
