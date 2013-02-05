@@ -108,6 +108,14 @@ $(document).ready(function(){
 
 				$(curTab).addClass('nav-selected');
 				$(curTab).find('a').addClass('nav-selected');
+
+				$(".product-list a").each(function(){
+					$(this).live('click',function(e){
+						e.preventDefault();
+						console.log('product page AJAX goes here...');
+					})
+				});
+
 				containerSp.fadeIn(function(){
 					$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
 				});
