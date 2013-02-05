@@ -132,33 +132,33 @@ $(document).ready(function(){
 	if ($(".product-list").length){
 		console.log("products found. loading product list AJAX...");
 		$(".product-list a").live('click',function(e){
-				e.preventDefault();
-				console.log('product page AJAX goes here...');
-				if ($("div.container.oneColumn").length) {
-					var containerSp = $("div.container.oneColumn");
+			e.preventDefault();
+			console.log('product page AJAX goes here...');
+			if ($("div.container.oneColumn").length) {
+				var containerSp = $("div.container.oneColumn");
+			} else {
+				var containerSp = $("div.container.rightSidebar");
+			}
+			var link = $(this);
+			$.get(link.attr('href'),function(data){
+				var breadCrumb = $(data).find('div.breadcrumb').first();
+				$("div.breadcrumb").html($(breadCrumb).html());
+
+				var output = $(data).find("div.container.oneColumn");
+				if (output.length == 0){
+					output = $(data).find("div.container.rightSidebar");
+					containerSp.addClass('rightSidebar').removeClass('oneColumn');
 				} else {
-					var containerSp = $("div.container.rightSidebar");
+					containerSp.addClass('oneColumn').removeClass('rightSidebar');
 				}
-				var link = $(this);
-				$.get(link.attr('href'),function(data){
+				console.log(output);
+				console.log($(output).html());
+				containerSp.html(output.html());
 
-					var breadCrumb = $(data).find('div.breadcrumb').first();
-					$("div.breadcrumb").html($(breadCrumb).html());
-
-					var output = $(data).find("div.container.oneColumn");
-					if (output.length == 0){
-						output = $(data).find("div.container.rightSidebar");
-						containerSp.addClass('rightSidebar').removeClass('oneColumn');
-					} else {
-						containerSp.addClass('oneColumn').removeClass('rightSidebar');
-					}
-					console.log(output);
-					console.log($(output).html());
-					containerSp.html(output.html());
-
-					containerSp.fadeIn(function(){
-						$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
+				containerSp.fadeIn(function(){
+					$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
 				});
+			});
 		});
 	}
 
