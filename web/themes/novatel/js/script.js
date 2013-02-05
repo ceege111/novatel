@@ -123,6 +123,12 @@ $(document).ready(function(){
 
 	if ($(".product-list").length){
 		console.log("products found. loading product list AJAX...");
+		$(".product-list a").each(function(){
+			$(this).on('click',function(e){
+				e.preventDefault();
+				console.log('product page AJAX goes here...');
+			})
+		});
 	}
 
 	//where to buy menus
