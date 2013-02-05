@@ -140,6 +140,7 @@ $(document).ready(function(){
 				var containerSp = $("div.container.rightSidebar");
 			}
 			var link = $(this);
+			containerSp.fadeOut();
 			$.get(link.attr('href'),function(data){
 				var breadCrumb = $(data).find('div.breadcrumb').first();
 				$("div.breadcrumb").html($(breadCrumb).html());
