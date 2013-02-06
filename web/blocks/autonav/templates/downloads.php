@@ -60,7 +60,7 @@
 		if (array_search($category, $category_list) === false) {
 			continue;
 		}
-		echo("<table style='display:block;' class='table table-striped support-results menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($category))."'>\n");
+		echo("<table style='display:none;' class='table table-striped support-results menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($category))."'>\n");
 		echo("<tr><th>".$category."</th><th>Name:</th><th>Support Info:</th></tr>\n");
 		foreach ($product as $product_row) {
 			echo("<tr>");
