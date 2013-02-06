@@ -29,7 +29,7 @@
 			?>
 		</div>
 		
-		<div class="row">
+		<div class="row span4" style="width: 350px;">
 			<div class="span3 productImages">
 				<!-- TODO: If no images found load the image from Custom Attributes -->
 				<?php  
