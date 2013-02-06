@@ -8769,37 +8769,42 @@ body .ccm-page-list h5 {
 }
 /* line 217, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003217}}
-body .ccm-gallery {
-  border: 0px solid transparent;
+body .ccm-gallery-wrap {
+  padding-bottom: 30px;
 }
 /* line 221, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003221}}
-body .galleryImages {
-  float: left;
+body .ccm-gallery {
+  border: 0px solid transparent;
 }
 /* line 225, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003225}}
+body .galleryImages {
+  float: left;
+}
+/* line 229, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003229}}
 body select.region-menu,
 body select.country-menu {
   width: auto;
   min-width: 220px;
 }
-/* line 231, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003231}}
+/* line 235, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003235}}
 body .splitColumn .splitLeft,
 body .splitColumn .splitRight {
   padding: 40px;
 }
-/* line 234, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003234}}
+/* line 238, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003238}}
 body .splitColumn .splitLeft .ccm-page-list,
 body .splitColumn .splitRight .ccm-page-list {
   overflow: hidden;
   margin-top: 10px;
   border-top: 1px solid #b4b4b4;
 }
-/* line 238, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003238}}
+/* line 242, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003242}}
 body .splitColumn .splitLeft .ccm-page-list .ccm-page-list-title,
 body .splitColumn .splitRight .ccm-page-list .ccm-page-list-title {
   background: none;
@@ -8807,8 +8812,8 @@ body .splitColumn .splitRight .ccm-page-list .ccm-page-list-title {
   padding: 0;
   line-height: 25px;
 }
-/* line 245, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003245}}
+/* line 249, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003249}}
 body .splitColumn .splitLeft .ccm-page-list .ccm-page-list-title a,
 body .splitColumn .splitRight .ccm-page-list .ccm-page-list-title a,
 body .splitColumn .splitLeft .ccm-page-list .ccm-page-list-title a:visited,
