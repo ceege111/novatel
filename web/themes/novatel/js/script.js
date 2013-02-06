@@ -118,7 +118,7 @@ $(document).ready(function(){
 
 				//update url
 				document.title = $(data).find("title").text();
-				window.history.pushstate({"html":$(output).html(),"pageTitle":document.title},'',link.attr('src'));
+				window.history.pushstate({"html":$(output).html(),"pageTitle":document.title},'',link.attr('href'));
 
 				containerSp.fadeIn(function(){
 					$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
@@ -162,7 +162,7 @@ $(document).ready(function(){
 
 				//update url
 				document.title = $(data).find("title").text();
-				window.history.pushstate({"html":$(output).html(),"pageTitle":document.title},'',link.attr('src'));
+				window.history.pushstate({"html":$(output).html(),"pageTitle":document.title},'',link.attr('href'));
 
 				containerSp.fadeIn(function(){
 					$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
