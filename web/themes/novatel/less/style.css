@@ -8798,10 +8798,8 @@ body .splitColumn .splitRight .ccm-page-list {
 body .splitColumn .splitLeft .ccm-page-list .ccm-page-list-title,
 body .splitColumn .splitRight .ccm-page-list .ccm-page-list-title {
   background: none;
-  float: left;
   margin: 0;
   padding: 0;
-  width: 50%;
   line-height: 25px;
 }
 /* line 241, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
