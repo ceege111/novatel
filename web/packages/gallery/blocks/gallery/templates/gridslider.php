@@ -98,13 +98,11 @@
 	</tbody>		
 </table>
 
-<?php  echo $postTableHiddenImgs ?>
-
 <script type="text/javascript">
-	$(function() {
-       $('#ccm-gallery-wrap-<?php  echo $bID?>').gridSlider({cols: 10, rows: 10,autoplay_enable:true,autoplay_interval:6,scroll_axis:'x',loop:true,ctrl_arrows:false,ctrl_pag:true,ctrl_always_visible:true});
-    });
-    
+	$(document).ready(function(){
+       $('#ccm-gallery-<?php  echo $bID?>').gridSlider({cols: 4, rows: 10,autoplay_enable:true,autoplay_interval:6,scroll_axis:'x',loop:true,ctrl_arrows:false,ctrl_pag:true,ctrl_always_visible:true});
+    	});
+	});	
 </script>
 
 </div>
