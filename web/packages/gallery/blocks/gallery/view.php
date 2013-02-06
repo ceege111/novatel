@@ -7,7 +7,7 @@
 		$thumbfak = FileAttributeKey::getByID($thumbnailAttributeKeyID);
 	}
 ?>	
-<div id="ccm-gallery-wrap-<?php  echo $bID?>" class="ccm-gallery-wrap">
+<div id="ccm-gallery-<?php  echo $bID?>" class="ccm-gallery-wrap">
 
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" class="ccm-gallery" id="ccm-gallery-<?php  echo $bID?>">
 	<tbody>
