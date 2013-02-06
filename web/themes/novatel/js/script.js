@@ -16,7 +16,7 @@ $(document).ready(function(){
 		$(".nav ul.dropdown-menu").not(currentMenu).each(function(){
 			$(this).hide();
 		});
-		$(currentMenu).fadeIn(50, 'swing', function(){
+		$(currentMenu).fadeIn(0, 'swing', function(){
 			$(".mainMenu .nav > li > a.dropdown-toggle").each(function(){
 				$(this).mouseover(function(){
 					menuMouseover(this);
@@ -35,7 +35,7 @@ $(document).ready(function(){
 			$(".mainMenu .nav > li > a.dropdown-toggle").each(function(){
 				$(this).removeClass('hover');
 			});
-			$(this).fadeOut();
+			$(this).fadeOut(0);
 		});
 	});
 
