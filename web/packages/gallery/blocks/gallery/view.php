@@ -86,7 +86,7 @@
 						</tr><tr>
 					<?php    } ?>		
 					
-					<div id="file_<?php   echo $imgInfo['fID'];?>" class="galleryImages"> 
+					<div id="file_<?php   echo $imgInfo['fID'];?>" class="galleryImages" style="display:none;"> 
 						<!-- <a class="ccmGalleryImage" href="<?php   echo $f->getRelativePath()?>" title="<?php   echo $imgInfo['caption']?>"><?php    $ih->outputThumbnail($thumbf,$thumbnailWidth,$thumbnailHeight,'', false, true); ?></a>			 -->
 						<?php    $ih->outputThumbnail($thumbf,$thumbnailWidth,$thumbnailHeight,'', false, true); ?>		
 					</div>
