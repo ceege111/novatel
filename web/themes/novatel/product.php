@@ -29,7 +29,7 @@
 			?>
 		</div>
 		
-		<div class="row span4" style="width: 350px;">
+		<div class="row span4" style="width: 285px;">
 			<div class="span3 productImages">
 				<!-- TODO: If no images found load the image from Custom Attributes -->
 				<?php  
@@ -104,7 +104,7 @@
 			</div>
 		</div>
 		
-		<div class="productDescription">
+		<div class="productDescription" style="padding-right: 20px;">
 			<?php 
 				$ah = new Area('Product Description');
 				$ah->display($c);
