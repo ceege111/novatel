@@ -123,6 +123,7 @@ $(document).ready(function(){
 				containerSp.fadeIn(function(){
 					// $("body .wrap").css('min-height', $("body .wrap").innerHeight() );
 					if($(".ether-grid").length){
+						console.log('loading gridslider...');
 						$(".ether-grid").gridSlider({cols: 4, rows: 4,align:'center',width:'800px',autoplay_enable:true,autoplay_interval:6,scroll_axis:'x',loop:true,ctrl_arrows:false,ctrl_pag:true,ctrl_always_visible:true});
 					}
 				});
