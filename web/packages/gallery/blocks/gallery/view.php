@@ -102,13 +102,13 @@
 
 <script type="text/javascript">
 	$(function() {
-       $('#ccm-gallery-wrap-<?php  echo $bID?> a.ccmGalleryImage').lightBox({
-        	imageLoading: '<?php   echo ASSETS_URL_IMAGES?>/throbber_white_32.gif',
-			imageBtnPrev: '<?php   echo $this->getBlockURL()?>/images/lightbox-btn-prev.gif',	
-			imageBtnNext: '<?php   echo $this->getBlockURL()?>/images/lightbox-btn-next.gif',			
-			imageBtnClose: '<?php   echo $this->getBlockURL()?>/images/lightbox-btn-close.gif',	
-			imageBlank:	'<?php   echo $this->getBlockURL()?>/images/lightbox-blank.gif'        
-        });
+   //     $('#ccm-gallery-wrap-<?php  echo $bID?> a.ccmGalleryImage').lightBox({
+   //      	imageLoading: '<?php   echo ASSETS_URL_IMAGES?>/throbber_white_32.gif',
+			// imageBtnPrev: '<?php   echo $this->getBlockURL()?>/images/lightbox-btn-prev.gif',	
+			// imageBtnNext: '<?php   echo $this->getBlockURL()?>/images/lightbox-btn-next.gif',			
+			// imageBtnClose: '<?php   echo $this->getBlockURL()?>/images/lightbox-btn-close.gif',	
+			// imageBlank:	'<?php   echo $this->getBlockURL()?>/images/lightbox-blank.gif'        
+   //      });
        $('#ccm-gallery-<?php  echo $bID?>').gridSlider({cols: 4, rows: 10,autoplay_enable:true,autoplay_interval:6,scroll_axis:'x',loop:true,ctrl_arrows:false,ctrl_pag:true,ctrl_always_visible:true});
     });
     
