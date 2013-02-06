@@ -9,9 +9,9 @@
 ?>	
 <div id="ccm-gallery-wrap-<?php  echo $bID?>" class="ccm-gallery-wrap">
 
-<table border="0" cellspacing="0" cellpadding="0" width="100%" class="ccm-gallery" id="ccm-gallery-<?php  echo $bID?>">
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" class="ccm-gallery" id="ccm-gallery-<?php  echo $bID?>">
 	<tbody>
-		<tr>
+		<tr> -->
 			<?php    for($i=0;$i<count($images);$i++){ ?>
 				<?php    
 				$imgInfo = $images[$i]; 
@@ -86,17 +86,17 @@
 						</tr><tr>
 					<?php    } ?>		
 					
-					<td id="file_<?php   echo $imgInfo['fID'];?>" class="galleryImages"> 
+					<div id="file_<?php   echo $imgInfo['fID'];?>" class="galleryImages"> 
 						<!-- <a class="ccmGalleryImage" href="<?php   echo $f->getRelativePath()?>" title="<?php   echo $imgInfo['caption']?>"><?php    $ih->outputThumbnail($thumbf,$thumbnailWidth,$thumbnailHeight,'', false, true); ?></a>			 -->
 						<?php    $ih->outputThumbnail($thumbf,$thumbnailWidth,$thumbnailHeight,'', false, true); ?>		
-					</td>
+					</div>
 	
 			<?php    
 				}
 			} ?>
-		</tr>
+<!-- 		</tr>
 	</tbody>		
-</table>
+</table> -->
 
 <?php  echo $postTableHiddenImgs ?>
 
@@ -109,7 +109,7 @@
 			// imageBtnClose: '<?php   echo $this->getBlockURL()?>/images/lightbox-btn-close.gif',	
 			// imageBlank:	'<?php   echo $this->getBlockURL()?>/images/lightbox-blank.gif'        
    //      });
-       $('#ccm-gallery-<?php  echo $bID?>').gridSlider({cols: 4, rows: 10,autoplay_enable:true,autoplay_interval:6,scroll_axis:'x',loop:true,ctrl_arrows:false,ctrl_pag:true,ctrl_always_visible:true});
+       $('#ccm-gallery-<?php  echo $bID?>').gridSlider({cols: 4, rows: 5,autoplay_enable:true,autoplay_interval:6,scroll_axis:'x',loop:true,ctrl_arrows:false,ctrl_pag:true,ctrl_always_visible:true});
     });
     
 </script>
