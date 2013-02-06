@@ -7431,22 +7431,6 @@ body .container.rightSidebar .centerColumn {
   float: left;
   width: 765px;
 }
-/* line 104, /Users/je/projects/novatel-corp/web/themes/novatel/less/columns.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/columns\.less}line{font-family:\00003104}}
-body .container.rightSidebar.product {
-  margin-top: 40px;
-}
-/* line 107, /Users/je/projects/novatel-corp/web/themes/novatel/less/columns.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/columns\.less}line{font-family:\00003107}}
-body .container.rightSidebar.product .centerColumn {
-  float: left;
-  width: 525px;
-}
-/* line 111, /Users/je/projects/novatel-corp/web/themes/novatel/less/columns.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/columns\.less}line{font-family:\00003111}}
-body .container.rightSidebar.product .rightColumn {
-  margin: 33px 88px 0 0;
-}
 /* line 1, /Users/je/projects/novatel-corp/web/themes/novatel/less/center_column.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/center_column\.less}line{font-family:\000031}}
 body {
