@@ -109,7 +109,7 @@
 			// imageBtnClose: '<?php   echo $this->getBlockURL()?>/images/lightbox-btn-close.gif',	
 			// imageBlank:	'<?php   echo $this->getBlockURL()?>/images/lightbox-blank.gif'        
    //      });
-       $('#ccm-gallery-<?php  echo $bID?>').gridSlider({cols: 3, rows: 4,align:'center',width:'800px',autoplay_enable:true,autoplay_interval:6,scroll_axis:'x',loop:true,ctrl_arrows:false,ctrl_pag:true,ctrl_always_visible:true});
+       $('#ccm-gallery-<?php  echo $bID?>').gridSlider({cols: 4, rows: 4,align:'center',width:'800px',autoplay_enable:true,autoplay_interval:6,scroll_axis:'x',loop:true,ctrl_arrows:false,ctrl_pag:true,ctrl_always_visible:true});
     });
     
 </script>
