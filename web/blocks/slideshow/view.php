@@ -12,14 +12,12 @@ $(document).ready(function(){
 
 <div class="ccm-SlideshowBlock-display slide">
 	<div id="ccm-SlideshowBlock-display<?=intval($bID)?>" class="";>
+		<?php $first = true; ?>
 		<?php foreach($images as $imgInfo) {
 		$f = File::getByID($imgInfo['fID']);
 		$fp = new Permissions($f);
-		if ($fp->canRead()) {
-			if(!$notFirst) echo ',';
-			$notFirst=0
-			?>
-			<div style="display:none;">
+		if ($fp->canRead()) {?>
+			<div <?php if($first){ $first = false; } else { echo(" style='display:none;' "); } ?>>
 				<a href="<?=$imgInfo['url']?>"><img alt="" src="<?=$f->getRelativePath()?>"></a>
 			</div>
 		<? }
