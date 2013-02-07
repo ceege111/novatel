@@ -120,7 +120,9 @@ $(document).ready(function(){
 
 				//update url
 				document.title = $(data).find("title").text();
-				window.history.pushState({"html":$(output).html(),"pageTitle":document.title},'',link.attr('href'));
+				if($("html").hasClass('history')){
+					window.history.pushState({"html":$(output).html(),"pageTitle":document.title},'',link.attr('href'));
+				}
 
 				containerSp.fadeIn(function(){
 					// $("body .wrap").css('min-height', $("body .wrap").innerHeight() );
@@ -169,7 +171,9 @@ $(document).ready(function(){
 
 				//update url
 				document.title = $(data).find("title").text();
-				window.history.pushState({"html":$(output).html(),"pageTitle":document.title},'',link.attr('href'));
+				if ($("html").hasClass('history')){
+					window.history.pushState({"html":$(output).html(),"pageTitle":document.title},'',link.attr('href'));
+				}
 
 				containerSp.fadeIn(function(){
 					// $("body .wrap").css('min-height', $("body .wrap").innerHeight() );
