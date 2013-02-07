@@ -7471,10 +7471,11 @@ body .ccm-block-styles p.feature {
 /* line 33, /Users/je/projects/novatel-corp/web/themes/novatel/less/center_column.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/center_column\.less}line{font-family:\0000333}}
 body .product p {
+  margin-top: 10px;
   color: #555555;
 }
-/* line 38, /Users/je/projects/novatel-corp/web/themes/novatel/less/center_column.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/center_column\.less}line{font-family:\0000338}}
+/* line 39, /Users/je/projects/novatel-corp/web/themes/novatel/less/center_column.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/center_column\.less}line{font-family:\0000339}}
 body .tab-titles {
   *zoom: 1;
   list-style: none;
@@ -7494,8 +7495,8 @@ body .tab-titles:after {
 body .tab-titles:after {
   clear: both;
 }
-/* line 44, /Users/je/projects/novatel-corp/web/themes/novatel/less/center_column.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/center_column\.less}line{font-family:\0000344}}
+/* line 45, /Users/je/projects/novatel-corp/web/themes/novatel/less/center_column.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/center_column\.less}line{font-family:\0000345}}
 body .tab-titles li {
   float: left;
   margin: 0 2px 0 0;
@@ -7503,8 +7504,8 @@ body .tab-titles li {
   text-align: center;
   line-height: 13px;
 }
-/* line 50, /Users/je/projects/novatel-corp/web/themes/novatel/less/center_column.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/center_column\.less}line{font-family:\0000350}}
+/* line 51, /Users/je/projects/novatel-corp/web/themes/novatel/less/center_column.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/center_column\.less}line{font-family:\0000351}}
 body .tab-titles li a,
 body .tab-titles li a:visited {
   display: block;
@@ -7512,23 +7513,23 @@ body .tab-titles li a:visited {
   padding: 0 7px 0 6px;
   border-left: 1px solid #cfcfcf;
 }
-/* line 56, /Users/je/projects/novatel-corp/web/themes/novatel/less/center_column.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/center_column\.less}line{font-family:\0000356}}
+/* line 57, /Users/je/projects/novatel-corp/web/themes/novatel/less/center_column.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/center_column\.less}line{font-family:\0000357}}
 body .tab-titles li a p,
 body .tab-titles li a:visited p {
   padding: 0 3px 5px;
   color: #555555;
   font-weight: 600;
 }
-/* line 64, /Users/je/projects/novatel-corp/web/themes/novatel/less/center_column.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/center_column\.less}line{font-family:\0000364}}
+/* line 65, /Users/je/projects/novatel-corp/web/themes/novatel/less/center_column.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/center_column\.less}line{font-family:\0000365}}
 body .tab-titles li.active a p,
 body .tab-titles li.active a:visited p {
   color: #3361aa;
   border-bottom: 2px solid #8abb36;
 }
-/* line 71, /Users/je/projects/novatel-corp/web/themes/novatel/less/center_column.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/center_column\.less}line{font-family:\0000371}}
+/* line 72, /Users/je/projects/novatel-corp/web/themes/novatel/less/center_column.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/center_column\.less}line{font-family:\0000372}}
 body .tab-titles li:first-child a,
 body .tab-titles li:first-child a:visited {
   border-left: 0;
