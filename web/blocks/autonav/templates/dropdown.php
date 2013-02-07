@@ -68,19 +68,34 @@
 
 			if ($c->getCollectionID() == $_c->getCollectionID()) { 
 				if($_c->getCollectionAttributeValue('not_menu_link')){
-					echo('<li class="nav-selected nav-path-selected"><span class="nav-static">' . $ni->getName() . '</span>');
+					if( $_c->getCollectionAttributeValue('iframe_url') != '' ){
+						echo('<li class="nav-selected nav-path-selected"><span class="nav-static">' . $ni->getName() . '</span>');
+					} else {
+						echo('<li class="nav-selected nav-path-selected"><a class="dropdown-toggle nav-selected nav-path-selected" ' . $target . ' href="' . $_c->getCollectionAttributeValue('iframe_url') . '">' . $ni->getName() . '</a>');
+					}
 				} else {
 					echo('<li class="nav-selected nav-path-selected"><a class="dropdown-toggle nav-selected nav-path-selected" ' . $target . ' href="' . $pageLink . '">' . $ni->getName() . '</a>');
 				}
 			} elseif ( in_array($_c->getCollectionID(),$selectedPathCIDs) && ($_c->getCollectionID() != HOME_CID) ) {
 				if ($_c->getCollectionAttributeValue('not_menu_link')){
-					echo('<li class="nav-path-selected"><span class="nav-static">' . $ni->getName() . '</span>');
+
+					if($_c->getCollectionAttributeValue('iframe_url') != ''){
+						echo('<li class="nav-path-selected"><a class="dropdown-toggle nav-path-selected" href="' . $pageLink . '" ' . $_c->getCollectionAttributeValue('iframe_url') . '>' . $ni->getName() . '</a>');
+					}else {
+						echo('<li class="nav-path-selected"><span class="nav-static">' . $ni->getName() . '</span>');
+					}
+					
 				} else {
 					echo('<li class="nav-path-selected"><a class="dropdown-toggle nav-path-selected" href="' . $pageLink . '" ' . $target . '>' . $ni->getName() . '</a>');
 				}
 			} else {
 				if ($_c->getCollectionAttributeValue('not_menu_link')){
-					echo('<li><span class="nav-static">' . $ni->getName() . '</span>');
+
+					if ($_c->getCollectionAttributeValue('iframe_url') != ''){
+						echo('<li><a class="dropdown-toggle" href="' . $pageLink . '" ' . $_c->getCollectionAttributeValue('iframe_url') . ' >' . $ni->getName() . '</a>');
+					} else {
+						echo('<li><span class="nav-static">' . $ni->getName() . '</span>');
+					}
 
 				} else {
 					echo('<li><a class="dropdown-toggle" href="' . $pageLink . '" ' . $target . ' >' . $ni->getName() . '</a>');
