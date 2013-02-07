@@ -102,6 +102,8 @@ $(document).ready(function(){
 				} else {
 					containerSp.addClass('oneColumn').removeClass('rightSidebar');
 				}
+				containerSp.removeClass('product');
+				
 				console.log(output);
 				console.log($(output).html());
 				containerSp.html(output.html());
@@ -139,7 +141,7 @@ $(document).ready(function(){
 
 	if ($(".product-list").length){
 		console.log("products found. loading product list AJAX...");
-		$(".product-list a").live('click',function(e){
+		$(".product-list a,a.product-link").live('click',function(e){
 			e.preventDefault();
 			console.log('product page AJAX goes here...');
 			if ($("div.container.oneColumn").length) {
@@ -160,6 +162,7 @@ $(document).ready(function(){
 				} else {
 					containerSp.addClass('oneColumn').removeClass('rightSidebar');
 				}
+				containerSp.addClass('product');
 				console.log(output);
 				console.log($(output).html());
 				containerSp.html(output.html());
