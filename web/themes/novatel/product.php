@@ -213,7 +213,8 @@
 					$ap->display($c);
 				?>	
 			</div>
-			<div class="gray-block productTab-block">
+			<hr>
+			<div class="productTab-block">
 				<ul id="productTabs" class="tab-titles">
 					<?php $tab_title_01 = new Area('Product Tab Title 01'); if($tab_title_01->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title active'><a data-toggle='tab' href='#tabOne'>";   $tab_title_01->display($c); echo "</a></li>\n"; } ?>
 					<?php $tab_title_02 = new Area('Product Tab Title 02'); if($tab_title_02->getTotalBlocksInArea($c) > 0){ echo "<li class='tab-title       '><a data-toggle='tab' href='#tabTwo'>";   $tab_title_02->display($c); echo "</a></li>\n"; } ?>
