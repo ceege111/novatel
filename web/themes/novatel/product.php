@@ -226,7 +226,18 @@
 						//check for support content
 						$support = ($page->getAttribute('product_support') != '') ? $page->getAttribute('product_support') : '';
 						if($support != ''){
-							echo "<li class='tab-title'><a data-toggle='tab' href='#tabSupport'><p>Support</p></a></li>\n";
+							if (
+								($tab_title_01->getTotalBlocksInArea($c) == 0) &&
+								($tab_title_02->getTotalBlocksInArea($c) == 0) &&
+								($tab_title_03->getTotalBlocksInArea($c) == 0) &&
+								($tab_title_04->getTotalBlocksInArea($c) == 0) &&
+								($tab_title_05->getTotalBlocksInArea($c) == 0) &&
+								($tab_title_06->getTotalBlocksInArea($c) == 0) 
+								){
+								echo "<li class='tab-title active'><a data-toggle='tab' href='#tabSupport'><p>Support</p></a></li>\n";
+							} else {
+								echo "<li class='tab-title'><a data-toggle='tab' href='#tabSupport'><p>Support</p></a></li>\n";
+							}
 						}
 					?>
 				</ul>
