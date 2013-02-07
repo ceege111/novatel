@@ -248,7 +248,20 @@
 					<?php $tab_04 = new Area('Product Tab 04'); if($tab_04->getTotalBlocksInArea($c) > 0){ echo "<div id='tabFour'  class='tab-pane tab       '>"; $tab_04->display($c); echo "</div>\n"; } ?>
 					<?php $tab_05 = new Area('Product Tab 05'); if($tab_05->getTotalBlocksInArea($c) > 0){ echo "<div id='tabFive'  class='tab-pane tab       '>"; $tab_05->display($c); echo "</div>\n"; } ?>
 					<?php $tab_06 = new Area('Product Tab 06'); if($tab_06->getTotalBlocksInArea($c) > 0){ echo "<div id='tabSix'   class='tab-pane tab       '>"; $tab_06->display($c); echo "</div>\n"; } ?>
-					<?php if($support != '') { echo "<div id='tabSupport' class='tab-pane tab'>".$support."</div>\n"; } ?>
+					<?php if($support != '') { 
+						if (
+								($tab_01->getTotalBlocksInArea($c) == 0) &&
+								($tab_02->getTotalBlocksInArea($c) == 0) &&
+								($tab_03->getTotalBlocksInArea($c) == 0) &&
+								($tab_04->getTotalBlocksInArea($c) == 0) &&
+								($tab_05->getTotalBlocksInArea($c) == 0) &&
+								($tab_06->getTotalBlocksInArea($c) == 0) 
+							){
+							echo "<div id='tabSupport' class='tab-pane tab'>".$support."</div>\n"; 
+						} else {
+							echo "<div id='tabSupport' class='tab-pane tab'>".$support."</div>\n"; 
+						}
+					} ?>
 				</div>		
 			</div>
 		<?php endif; ?>
