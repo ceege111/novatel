@@ -47,9 +47,13 @@ body {
 				// background-color: @greenLight;
 				// background: url(img/hero_title_bg.png) repeat-x transparent;
 				#translucent .background(@white, 0.45);
-				&.flip-right {
+
+			}
+			&.flip-right {
+					h1.bannerTitle {
 					text-align: left;
 					right: 0px;
+					padding: 0px 60px 0px 20px;				
 				}
 			}
 		}
@@ -70,11 +74,11 @@ body {
 				font-weight: 400;
 				color: @grayDark;
 				// background: @greenLight;
-				#translucent .background(@white, 0.65);
+				#translucent .background(@white, 0.45);
 				// background: url(img/hero_title_bg.png) repeat-x transparent;
 				// margin-top: -110px;
 				bottom: 10px;
-				line-height: 50px;
+				line-height: 40px;
 				&.rightTitle {
 					right: 0px;
 					text-align: left;
@@ -83,6 +87,13 @@ body {
 			}
 			>div {
 				position: relative;
+			}
+			&.flip-right {
+				h1.bannerTitle {
+					right: 0px;
+					text-align: left;
+					padding: 0px 60px 0px 20px;
+				}
 			}
 		}
 		.nav-header-tabs {
