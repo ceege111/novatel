@@ -8812,16 +8812,16 @@ body .splitColumn .splitLeft,
 body .splitColumn .splitRight {
   padding: 40px;
 }
-/* line 231, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003231}}
+/* line 230, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003230}}
 body .splitColumn .splitLeft .ccm-page-list,
 body .splitColumn .splitRight .ccm-page-list {
   overflow: hidden;
   margin-top: 10px;
   border-top: 1px solid #b4b4b4;
 }
-/* line 235, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003235}}
+/* line 234, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003234}}
 body .splitColumn .splitLeft .ccm-page-list .ccm-page-list-title,
 body .splitColumn .splitRight .ccm-page-list .ccm-page-list-title {
   background: none;
@@ -8829,12 +8829,22 @@ body .splitColumn .splitRight .ccm-page-list .ccm-page-list-title {
   padding: 0;
   line-height: 25px;
 }
-/* line 242, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003242}}
+/* line 241, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003241}}
 body .splitColumn .splitLeft .ccm-page-list .ccm-page-list-title a,
 body .splitColumn .splitRight .ccm-page-list .ccm-page-list-title a,
 body .splitColumn .splitLeft .ccm-page-list .ccm-page-list-title a:visited,
 body .splitColumn .splitRight .ccm-page-list .ccm-page-list-title a:visited {
   font-size: 14px;
   line-height: 16px;
+}
+/* line 248, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003248}}
+body .splitColumn .splitLeft {
+  padding: 40px;
+}
+/* line 251, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003251}}
+body .splitColumn .splitRight {
+  padding: 40px;
 }
