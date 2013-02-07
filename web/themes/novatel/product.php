@@ -257,9 +257,9 @@
 								($tab_05->getTotalBlocksInArea($c) == 0) &&
 								($tab_06->getTotalBlocksInArea($c) == 0) 
 							){
-							echo "<div id='tabSupport' class='tab-pane tab'>".$support."</div>\n"; 
+							echo "<div id='tabSupport' class='tab-pane tab active'>".$support."</div>\n";
 						} else {
-							echo "<div id='tabSupport' class='tab-pane tab'>".$support."</div>\n"; 
+							echo "<div id='tabSupport' class='tab-pane tab'>".$support."</div>\n";
 						}
 					} ?>
 				</div>		
