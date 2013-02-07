@@ -6919,6 +6919,11 @@ body form.header-search-form input.searchSubmit {
   -moz-box-shadow: none;
   box-shadow: none;
 }
+/* line 28, /Users/je/projects/novatel-corp/web/themes/novatel/less/search_widget.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/search_widget\.less}line{font-family:\0000328}}
+body .product form.header-search-form input.searchSubmit {
+  margin-top: -11px;
+}
 /* line 1, /Users/je/projects/novatel-corp/web/themes/novatel/less/home.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/home\.less}line{font-family:\000031}}
 body {
