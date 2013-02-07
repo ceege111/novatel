@@ -8,13 +8,4 @@ defined('C5_EXECUTE') or die("Access Denied.");
 		$as->setBlockWrapperEnd('</div>');	
 		$as->display($c);
 		?>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				if($("html").hasClass('lt-ie9')){
-					var rightColumn = $('.product .rightColumn .sidebar-block:first-child');
-					rightColumn.removeClass('gray-block');
-					rightColumn.css('margin','0').css('padding','0');
-				}
-			});
-		</script>
 	</section>
