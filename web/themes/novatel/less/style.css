@@ -7161,7 +7161,7 @@ body .pageTitle .defaultBanner h1.defaultTitle {
   line-height: 40px;
   text-align: right;
   font-weight: 400;
-  background-color: rgba(255, 255, 255, 0.45);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 /* line 53, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000353}}
@@ -7190,7 +7190,7 @@ body .pageTitle .banner h1.bannerTitle {
   font-size: 30px;
   font-weight: 400;
   color: #42454c;
-  background-color: rgba(255, 255, 255, 0.45);
+  background-color: rgba(255, 255, 255, 0.75);
   bottom: 10px;
   line-height: 40px;
 }
