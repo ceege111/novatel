@@ -7733,7 +7733,7 @@ body .product-list .row.product-item {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/main\.less}line{font-family:\0000398}}
 body .product-list .row .productThumbnail {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 55px;
   margin-bottom: 5px;
 }
 /* line 106, /Users/je/projects/novatel-corp/web/themes/novatel/less/main.less */
@@ -7756,9 +7756,9 @@ body .product-list .row a.find-out-more img {
 body .product-list .row h3 {
   position: absolute;
   width: 300px;
-  padding-left: 25px;
   margin: 10px 0px 0px;
   padding: 5px;
+  padding-left: 17px;
   background: none transparent;
   font-size: 14px;
   font-weight: bold;
