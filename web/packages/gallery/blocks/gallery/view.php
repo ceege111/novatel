@@ -9,9 +9,6 @@
 ?>	
 <div id="ccm-gallery-<?php  echo $bID?>" class="ccm-gallery-wrap">
 
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" class="ccm-gallery" id="ccm-gallery-<?php  echo $bID?>">
-	<tbody>
-		<tr> -->
 			<?php    for($i=0;$i<count($images);$i++){ ?>
 				<?php    
 				$imgInfo = $images[$i]; 
@@ -73,42 +70,24 @@
 					ob_start();
 					?>
 					<div style="display:none">
-						<!-- <a class="ccmGalleryImage" href="<?php   echo $f->getRelativePath()?>" title="<?php   echo $imgInfo['caption']?>"><?php    $ih->outputThumbnail($thumbf,$thumbnailWidth,$thumbnailHeight,''); ?></a> -->
 						<?php    $ih->outputThumbnail($thumbf,$thumbnailWidth,$thumbnailHeight,''); ?>
 					</div>
 					<?php   
-					$postTableHiddenImgs.=ob_get_contents();
-					ob_end_clean();
 				
-				}else{
-				
-					if($i % $thumbnailPerRow == 0) {  ?>
-						</tr><tr>
-					<?php    } ?>		
+				}else{ ?>		
 					
 					<div id="file_<?php   echo $imgInfo['fID'];?>" class="galleryImages" style="display:none;"> 
-						<!-- <a class="ccmGalleryImage" href="<?php   echo $f->getRelativePath()?>" title="<?php   echo $imgInfo['caption']?>"><?php    $ih->outputThumbnail($thumbf,$thumbnailWidth,$thumbnailHeight,'', false, true); ?></a>			 -->
 						<?php    $ih->outputThumbnail($thumbf,$thumbnailWidth,$thumbnailHeight,'', false, true); ?>		
 					</div>
 	
 			<?php    
 				}
 			} ?>
-<!-- 		</tr>
-	</tbody>		
-</table> -->
 
 <?php  echo $postTableHiddenImgs ?>
 
 <script type="text/javascript">
 	$(function() {
-   //     $('#ccm-gallery-wrap-<?php  echo $bID?> a.ccmGalleryImage').lightBox({
-   //      	imageLoading: '<?php   echo ASSETS_URL_IMAGES?>/throbber_white_32.gif',
-			// imageBtnPrev: '<?php   echo $this->getBlockURL()?>/images/lightbox-btn-prev.gif',	
-			// imageBtnNext: '<?php   echo $this->getBlockURL()?>/images/lightbox-btn-next.gif',			
-			// imageBtnClose: '<?php   echo $this->getBlockURL()?>/images/lightbox-btn-close.gif',	
-			// imageBlank:	'<?php   echo $this->getBlockURL()?>/images/lightbox-blank.gif'        
-   //      });
        $('#ccm-gallery-<?php  echo $bID?>').gridSlider({cols: 4, rows: 4,align:'center',width:'800px',autoplay_enable:true,autoplay_interval:6,scroll_axis:'x',loop:true,ctrl_arrows:false,ctrl_pag:true,ctrl_always_visible:true});
     });
     
