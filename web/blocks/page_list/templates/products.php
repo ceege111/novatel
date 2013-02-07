@@ -80,6 +80,8 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 					$word_char_limit = 100;
 					if(strlen($description) > $word_char_limit){
 						$short_desc = preg_replace('/\s+?(\S+)?$/', '', substr($description, 0, $word_char_limit+1));
+					} else {
+						$short_desc = $description;
 					}	
 					echo $short_desc;
 				?>&nbsp;&nbsp;<a style="margin-bottom:10px;" class="product-more-link" href="<?php echo $url ?>">Read more</a>
