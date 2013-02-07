@@ -7165,7 +7165,7 @@ body .pageTitle .defaultBanner h1.defaultTitle {
 }
 /* line 53, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000353}}
-body .pageTitle .defaultBanner.flip-right h1.bannerTitle {
+body .pageTitle .defaultBanner .flip-right h1.bannerTitle {
   text-align: left;
   right: 0px;
   padding: 0px 60px 0px 20px;
@@ -7208,7 +7208,7 @@ body .pageTitle .banner > div {
 }
 /* line 92, /Users/je/projects/novatel-corp/web/themes/novatel/less/subnav.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/subnav\.less}line{font-family:\0000392}}
-body .pageTitle .banner.flip-right h1.bannerTitle {
+body .pageTitle .banner .flip-right h1.bannerTitle {
   right: 0px;
   text-align: left;
   padding: 0px 60px 0px 20px;
