@@ -8808,43 +8808,40 @@ body select.country-menu {
 }
 /* line 228, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003228}}
+body .splitColumn .ccm-page-list-title {
+  background: none;
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
+}
+/* line 235, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003235}}
+body .splitColumn .ccm-page-list-title a,
+body .splitColumn .ccm-page-list-title a:visited {
+  font-size: 14px;
+  line-height: 16px;
+}
+/* line 240, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003240}}
 body .splitColumn .splitLeft,
 body .splitColumn .splitRight {
   padding: 40px;
 }
-/* line 230, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003230}}
+/* line 242, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003242}}
 body .splitColumn .splitLeft .ccm-page-list,
 body .splitColumn .splitRight .ccm-page-list {
   overflow: hidden;
   margin-top: 10px;
   border-top: 1px solid #b4b4b4;
 }
-/* line 234, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003234}}
-body .splitColumn .splitLeft .ccm-page-list .ccm-page-list-title,
-body .splitColumn .splitRight .ccm-page-list .ccm-page-list-title {
-  background: none;
-  margin: 0;
-  padding: 0;
-  line-height: 25px;
-}
-/* line 241, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003241}}
-body .splitColumn .splitLeft .ccm-page-list .ccm-page-list-title a,
-body .splitColumn .splitRight .ccm-page-list .ccm-page-list-title a,
-body .splitColumn .splitLeft .ccm-page-list .ccm-page-list-title a:visited,
-body .splitColumn .splitRight .ccm-page-list .ccm-page-list-title a:visited {
-  font-size: 14px;
-  line-height: 16px;
-}
-/* line 248, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003248}}
+/* line 249, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003249}}
 body .splitColumn .splitLeft {
   padding: 40px;
 }
-/* line 251, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003251}}
+/* line 252, /Users/je/projects/novatel-corp/web/themes/novatel/less/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/je\/projects\/novatel-corp\/web\/themes\/novatel\/less\/style\.less}line{font-family:\00003252}}
 body .splitColumn .splitRight {
   padding: 40px;
 }
