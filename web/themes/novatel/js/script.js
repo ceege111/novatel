@@ -244,7 +244,7 @@ $(document).ready(function(){
 			$(this).hide();
 		});
 		$("table.support-results:nth-child(1)").fadeIn(100);
-		$(window).animate({"scrollTop":530}, 500);
+		// $(window).animate({"scrollTop":530}, 500);
 		return false;
 	});
 
@@ -253,7 +253,6 @@ $(document).ready(function(){
 			$(this).hide();
 		});
 		$("table.support-results:nth-child(2)").fadeIn(100);
-		$(window).animate({"scrollTop":530}, 500);
 		return false;
 	});
 
@@ -262,7 +261,6 @@ $(document).ready(function(){
 			$(this).hide();
 		});
 		$("table.support-results:nth-child(3)").fadeIn(100);
-		$(window).animate({"scrollTop":530}, 500);
 		return false;
 	});
 
@@ -271,7 +269,6 @@ $(document).ready(function(){
 			$(this).hide();
 		});
 		$("table.support-results:nth-child(4)").fadeIn(100);
-		$(window).animate({"scrollTop":530}, 500);
 		return false;
 	});
 
@@ -296,7 +293,6 @@ $(document).ready(function(){
 			$(this).hide();
 		});
 		$("table.support-results:nth-child(6)").fadeIn(100);
-		$(window).animate({"scrollTop":530}, 500);
 		return false;
 	});
 
@@ -305,7 +301,6 @@ $(document).ready(function(){
 			$(this).hide();
 		});
 		$("table.support-results:nth-child(7)").fadeIn(100);
-		$(window).animate({"scrollTop":530}, 500);
 		return false;
 	});
 
@@ -314,7 +309,6 @@ $(document).ready(function(){
 			$(this).hide();
 		});
 		$("table.support-results:nth-child(8)").fadeIn(100);
-		$(window).animate({"scrollTop":530}, 500);
 		return false;
 	});
 
@@ -331,7 +325,6 @@ $(document).ready(function(){
 			$(this).hide();
 		});
 		$("table.support-results:nth-child(10)").fadeIn(100);
-		$(window).animate({"scrollTop":530}, 500);
 		return false;
 	});
 
