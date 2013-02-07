@@ -82,7 +82,7 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 						$short_desc = preg_replace('/\s+?(\S+)?$/', '', substr($description, 0, $word_char_limit+1));
 					}	
 					echo $short_desc;
-				?>&nbsp;<a style="margin-bottom:10px;" class="product-more-link" href="<?php echo $url ?>">more</a>
+				?>&nbsp;<a style="margin-bottom:10px;" class="product-more-link" href="<?php echo $url ?>">Read more</a>
 			</div>
 		</div>
 			
