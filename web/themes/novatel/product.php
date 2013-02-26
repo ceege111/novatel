@@ -22,7 +22,7 @@
 <div class="container rightSidebar product">
 	<section class="centerColumn area">
 	
-		<div class="productTitle">
+		<div class="productTitle" style="margin-left: 305px;">
 			<?php 
 				$aj = new Area('Product Title');
 				$aj->display($c);
