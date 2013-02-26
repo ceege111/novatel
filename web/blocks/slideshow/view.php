@@ -22,7 +22,7 @@ $(document).ready(function(){
 						<a href="<?=$imgInfo['url']?>"><img alt="" src="<?=$f->getRelativePath()?>"></a>
 					<?php } else { ?>
 						<img alt="" src="<?=$f->getRelativePath()?>">
-					} ?>
+					<?php } ?>
 			</div>
 		<? }
 		} ?>
