@@ -825,7 +825,7 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .show{display:block;}
 .invisible{visibility:hidden;}
 .affix{position:fixed;}
-body{}body .headerWrap{padding-top:20px;border-top:5px solid #3361aa;background:url(img/main_menu_bg.png) repeat-x 0px 74px transparent;}body .headerWrap .mainHeader>.row:first-child{margin-bottom:15px;}
+body{}body .headerWrap{padding-top:20px;border-top:5px solid #3361aa;background:url(img/main_menu_bg.png) repeat-x center bottom transparent;}body .headerWrap .mainHeader>.row:first-child{margin-bottom:15px;}
 body .headerWrap .mainHeader .logo img{margin-left:40px;}
 body .headerWrap .mainHeader .altNav p{margin:5px 0px 10px;}
 body .headerWrap .mainHeader .altNav form{margin:0px 30px 0px 0px;}body .headerWrap .mainHeader .altNav form input{border:1px solid #ccc;border-radius:0px;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);-moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);}body .headerWrap .mainHeader .altNav form input.searchInput{width:130px;}
