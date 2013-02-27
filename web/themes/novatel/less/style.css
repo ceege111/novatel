@@ -1015,6 +1015,7 @@ body .share-btn.twitter{background:url('/img/products/tweet_btn.png') no-repeat 
 .ether-alignright{float:right;margin-left:20px;margin-bottom:0;}
 .ether-aligncenter{float:none;margin-left:auto;margin-right:auto;}
 html.lt-ie9 h1.bannerTitle{background:#fff;position:absolute;left:0;}
+html.lt-ie9 body .pageTitle .banner .flip-right h1.bannerTitle{left:inherit;right:0;}
 html.lt-ie9 ul.dropdown-menu{z-index:100;}
 html.lt-ie9 div.row.banner{position:relative;z-index:-1;}
 html.lt-ie9 body.wrap{z-index:0;}
