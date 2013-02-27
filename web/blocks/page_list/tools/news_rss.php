@@ -37,7 +37,7 @@ if($_GET['bID'] && $_GET['cID'] && $nh->integer($_GET['bID']) && $nh->integer($_
 				<item>
 				  <title><?=htmlspecialchars($title);?></title>
 				  <link>
-					<?= BASE_URL.$cob->getAttribute('iframe_url') ?>		  
+					<?= BASE_URL.$cobj->getAttribute('iframe_url') ?>		  
 				  </link>
 				  <?php
 				  if(strlen(htmlspecialchars(strip_tags($cobj->getCollectionDescription()))) != 0) {
