@@ -18,11 +18,18 @@ html {
 			z-index: 100;
 		}
 
-		.mainHeader .mainMenu ul.dropdown.nav {
-			li {
-				display: block;
-				a {
+		.mainHeader{ 
+			.mainMenu {
+				margin-top: -6px;
+				ul.dropdown.nav {
+					padding-left: 250px;
+				li {
 					display: block;
+					&:first-child {
+						margin-left: 0 !important;
+					}
+					a {
+					}
 				}
 			}
 		}
