@@ -80,3 +80,9 @@ $th = Loader::helper('text');
 		</td></tr>
 	<?php endforeach; ?>
 </table><!-- end .ccm-page-list -->
+<?php if ($showRss): ?>
+	<div class="hide">
+		<a href="<?php echo $rssUrl ?>" target="_blank"><img src="<?php echo $rssIconSrc ?>" width="14" height="14" alt="<?php echo t('RSS Icon') ?>" title="<?php echo t('RSS Feed') ?>" /></a>
+	</div>
+	<link href="<?php echo BASE_URL.$rssUrl ?>" rel="alternate" type="application/rss+xml" title="<?php echo $rssTitle; ?>" />
+<?php endif; ?>
