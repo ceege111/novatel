@@ -1,6 +1,6 @@
 <?php
 defined('C5_EXECUTE') or die("Access Denied.");
-$rssUrl = $showRss ? $controller->getRssUrl($b) : 'news_rss';
+$rssUrl = $showRss ? $controller->getRssUrl($b,'news_rss') : '';
 $th = Loader::helper('text');
 // $ih = Loader::helper('image'); //<--uncomment this line if displaying image attributes (see below)
 //Note that $nh (navigation helper) is already loaded for us by the controller (for legacy reasons)
