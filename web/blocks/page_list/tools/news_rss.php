@@ -46,7 +46,7 @@ if($_GET['bID'] && $_GET['cID'] && $nh->integer($_GET['bID']) && $nh->integer($_
 					$desc = "";
 				  }
 				  ?>
-				  <description><?php echo $desc;?></description>
+				  <description><?php echo $cobj->getAttribute('external_content_title');?>: <?php echo $desc;?></description>
 				  <? /* <pubDate><?=$cobj->getCollectionDatePublic()?></pubDate>
 				  Wed, 23 Feb 2005 16:12:56 GMT  */ ?>
 				  <pubDate><?=date( 'D, d M Y H:i:s T',strtotime($cobj->getCollectionDatePublic())) ?></pubDate>
