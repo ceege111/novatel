@@ -19,10 +19,16 @@ $v = View::getInstance();
 			?>
 		</div>
 		<div class="icons">
-			<a href="#"><img src="<?php echo $this->getThemePath(); ?>/img/icons/email-icon.png"></a>
+			<div class="homeNews area">
+				<?php 
+					$aj = new Area("Main Social");
+					$aj->display($c);
+				?>
+			</div>
+<!-- 			<a href="#"><img src="<?php echo $this->getThemePath(); ?>/img/icons/email-icon.png"></a>
 			<a href="#"><img src="<?php echo $this->getThemePath(); ?>/img/icons/facebook-icon.png"></a>
 			<a href="#"><img src="<?php echo $this->getThemePath(); ?>/img/icons/twitter-icon.png"></a>
-			<a href="#"><img src="<?php echo $this->getThemePath(); ?>/img/icons/rss-icon.png"></a>
+			<a href="#"><img src="<?php echo $this->getThemePath(); ?>/img/icons/rss-icon.png"></a> -->
 		</div>
 	</div>
 	<div class="row homeMain area">
