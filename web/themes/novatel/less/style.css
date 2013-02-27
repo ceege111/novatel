@@ -1017,6 +1017,7 @@ body .share-btn.twitter{background:url('/img/products/tweet_btn.png') no-repeat 
 html.lt-ie9 h1.bannerTitle{background:#fff;position:absolute;left:0;}
 html.lt-ie9 body .pageTitle .banner .flip-right h1.bannerTitle{position:absolute;text-align:left;left:auto !important;right:0 !important;}
 html.lt-ie9 ul.dropdown-menu{z-index:100;}
+html.lt-ie9 .mainHeader .mainMenu ul.dropdown.nav li{display:block;}html.lt-ie9 .mainHeader .mainMenu ul.dropdown.nav li a{display:block;}
 html.lt-ie9 div.row.banner{position:relative;z-index:-1;}
 html.lt-ie9 body.wrap{z-index:0;}
 body .gray-block{background:#f9f9f9;border-width:1px;border-style:solid;border-color:#f8f8f8 #d3d3d3 #d4d4d4 #f7f7f7;border-radius:0 1px 1px 0;-webkit-box-shadow:inset -1px -1px 0px #ececec, 1px 1px 0px #f2f2f2;-moz-box-shadow:inset -1px -1px 0px #ececec, 1px 1px 0px #f2f2f2;box-shadow:inset -1px -1px 0px #ececec, 1px 1px 0px #f2f2f2;}
