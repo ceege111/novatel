@@ -73,77 +73,76 @@ $(document).ready(function(){
 	});
 
 	//special product tabs
-	$(".nav-header-tabs-sp li").each(function(){
-		if ($("div.container.oneColumn").length) {
-			var containerSp = $("div.container.oneColumn");
-		} else {
-			var containerSp = $("div.container.rightSidebar");
-		}
-		$(this).click(function(){
-			var link = $(this).find('a').first();
-			$(".nav-header-tabs-sp li").not(this).each(function(){
-				$(this).removeClass('nav-selected');
-				$(this).find('a').removeClass('nav-selected');
-			});
-			var curTab = this;
-			console.log(this);
-			console.log(link);
-			console.log("loading tab "+link.attr('href'));
-			$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
-			containerSp.fadeOut();
-			$.get(link.attr('href'),function(data){
+	if(!$("html").hasClass('lt-ie9')){
+		$(".nav-header-tabs-sp li").each(function(){
+			if ($("div.container.oneColumn").length) {
+				var containerSp = $("div.container.oneColumn");
+			} else {
+				var containerSp = $("div.container.rightSidebar");
+			}
+			$(this).click(function(){
+				var link = $(this).find('a').first();
+				$(".nav-header-tabs-sp li").not(this).each(function(){
+					$(this).removeClass('nav-selected');
+					$(this).find('a').removeClass('nav-selected');
+				});
+				var curTab = this;
+				console.log(this);
+				console.log(link);
+				console.log("loading tab "+link.attr('href'));
+				$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
+				containerSp.fadeOut();
+				$.get(link.attr('href'),function(data){
 
-				var breadCrumb = $(data).find('div.breadcrumb').first();
-				$("div.breadcrumb").html($(breadCrumb).html());
+					var breadCrumb = $(data).find('div.breadcrumb').first();
+					$("div.breadcrumb").html($(breadCrumb).html());
 
-				var output = $(data).find("div.container.oneColumn");
-				if (output.length == 0){
-					output = $(data).find("div.container.rightSidebar");
-					containerSp.addClass('rightSidebar').removeClass('oneColumn');
-				} else {
-					containerSp.addClass('oneColumn').removeClass('rightSidebar');
-				}
-				containerSp.removeClass('product');
-				
-				console.log(output);
-				console.log($(output).html());
-				containerSp.html(output.html());
-
-				$(curTab).addClass('nav-selected');
-				$(curTab).find('a').addClass('nav-selected');
-
-				// $(".product-list a").each(function(){
-				// 	$(this).live('click',function(e){
-				// 		e.preventDefault();
-				// 		console.log('product page AJAX goes here...');
-				// 	})
-				// });
-
-				//update url
-				document.title = $(data).find("title").text();
-				if($("html").hasClass('history')){
-					window.history.pushState({"html":$(output).html(),"pageTitle":document.title},'',link.attr('href'));
-				}
-
-				containerSp.fadeIn(function(){
-					$("body .wrap").css('min-height', 'inherit' );
-					if($("div.ccm-gallery-wrap").length){
-						console.log('loading gridslider...');
-						$("div.ccm-gallery-wrap").gridSlider({cols: 4, rows: 4,align:'center',width:'800px',autoplay_enable:true,autoplay_interval:6,scroll_axis:'x',loop:true,ctrl_arrows:false,ctrl_pag:true,ctrl_always_visible:true});
+					var output = $(data).find("div.container.oneColumn");
+					if (output.length == 0){
+						output = $(data).find("div.container.rightSidebar");
+						containerSp.addClass('rightSidebar').removeClass('oneColumn');
+					} else {
+						containerSp.addClass('oneColumn').removeClass('rightSidebar');
 					}
+					containerSp.removeClass('product');
+					
+					console.log(output);
+					console.log($(output).html());
+					containerSp.html(output.html());
+
+					$(curTab).addClass('nav-selected');
+					$(curTab).find('a').addClass('nav-selected');
+
+					// $(".product-list a").each(function(){
+					// 	$(this).live('click',function(e){
+					// 		e.preventDefault();
+					// 		console.log('product page AJAX goes here...');
+					// 	})
+					// });
+
+					//update url
+					document.title = $(data).find("title").text();
+					if($("html").hasClass('history')){
+						window.history.pushState({"html":$(output).html(),"pageTitle":document.title},'',link.attr('href'));
+					}
+
+					containerSp.fadeIn(function(){
+						$("body .wrap").css('min-height', 'inherit' );
+						if($("div.ccm-gallery-wrap").length){
+							console.log('loading gridslider...');
+							$("div.ccm-gallery-wrap").gridSlider({cols: 4, rows: 4,align:'center',width:'800px',autoplay_enable:true,autoplay_interval:6,scroll_axis:'x',loop:true,ctrl_arrows:false,ctrl_pag:true,ctrl_always_visible:true});
+						}
+					});
 				});
 			});
+			$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
 		});
-		$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
-	});
-	$(".nav-header-tabs-sp li a").each(function(){
-		$(this).click(function(e){
-			e.preventDefault();
+		$(".nav-header-tabs-sp li a").each(function(){
+			$(this).click(function(e){
+				e.preventDefault();
+			});
 		});
-	});
 
-	// if ($(".product-list").length){
-		// console.log("products found. loading product list AJAX...");
 		$(".product-list a,a.product-link").live('click',function(e){
 			e.preventDefault();
 			console.log('product page AJAX goes here...');
@@ -182,7 +181,7 @@ $(document).ready(function(){
 				});
 			});
 		});
-	// }
+	}
 
 	//where to buy menus
 
