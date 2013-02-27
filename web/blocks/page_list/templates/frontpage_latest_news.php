@@ -56,15 +56,15 @@ $th = Loader::helper('text');
 		endforeach; ?>
 		<script type="text/javascript">
 		$(document).ready(function(){
-			console.log('news ticker cycle...');
+			// console.log('news ticker cycle...');
 			var rotateNews = function(){
-				console.log('... next news item');
+				// console.log('... next news item');
 				$(".news-ticker.active").slideUp(function(){
 					var $selected = $(".news-ticker.active").removeClass("active");
     				var news = $selected.parent().children('.news-ticker');
-    				console.log("selected: "+ (news.index($selected) +1) );
-    				console.log("length: "+news.length);
-    				console.log("index mod length: "+ ((news.index($selected) + 1) % news.length) );
+    				// console.log("selected: "+ (news.index($selected) +1) );
+    				// console.log("length: "+news.length);
+    				// console.log("index mod length: "+ ((news.index($selected) + 1) % news.length) );
     				news.eq((news.index($selected) + 1) % news.length).addClass("active").slideDown(function(){});
 				});
 			};
