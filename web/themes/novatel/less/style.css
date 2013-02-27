@@ -1017,8 +1017,8 @@ body .share-btn.twitter{background:url('/img/products/tweet_btn.png') no-repeat 
 html.lt-ie9 h1.bannerTitle,html.no-rgba h1.bannerTitle{background:#fff;position:absolute;left:0;}
 html.lt-ie9 body .pageTitle .banner .flip-right h1.bannerTitle,html.no-rgba body .pageTitle .banner .flip-right h1.bannerTitle{position:absolute;text-align:left;left:auto !important;right:0 !important;}
 html.lt-ie9 ul.dropdown-menu,html.no-rgba ul.dropdown-menu{z-index:100;position:absolute;}
-html.lt-ie9 .mainHeader .mainMenu>div,html.no-rgba .mainHeader .mainMenu>div{margin-top:-6px;}
-html.lt-ie9 .mainHeader .mainMenu ul.dropdown.nav,html.no-rgba .mainHeader .mainMenu ul.dropdown.nav{z-index:99;overflow:visible;height:42px;margin:0;padding-left:250px;}
+html.lt-ie9 .mainHeader .mainMenu>div,html.no-rgba .mainHeader .mainMenu>div{background-image:none;background:transparent;margin-top:-6px;}
+html.lt-ie9 .mainHeader .mainMenu ul.dropdown.nav,html.no-rgba .mainHeader .mainMenu ul.dropdown.nav{z-index:99;overflow:visible;height:40px;margin:0;padding-left:250px;}
 html.lt-ie9 .mainHeader .mainMenu li,html.no-rgba .mainHeader .mainMenu li{display:block;}html.lt-ie9 .mainHeader .mainMenu li:first-child,html.no-rgba .mainHeader .mainMenu li:first-child{margin-left:0 !important;}
 html.lt-ie9 div.row.banner,html.no-rgba div.row.banner{position:relative;z-index:-1;}
 html.lt-ie9 body.wrap,html.no-rgba body.wrap{z-index:0;}
