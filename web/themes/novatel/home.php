@@ -25,10 +25,6 @@ $v = View::getInstance();
 					$aj->display($c);
 				?>
 			</div>
-<!-- 			<a href="#"><img src="<?php echo $this->getThemePath(); ?>/img/icons/email-icon.png"></a>
-			<a href="#"><img src="<?php echo $this->getThemePath(); ?>/img/icons/facebook-icon.png"></a>
-			<a href="#"><img src="<?php echo $this->getThemePath(); ?>/img/icons/twitter-icon.png"></a>
-			<a href="#"><img src="<?php echo $this->getThemePath(); ?>/img/icons/rss-icon.png"></a> -->
 		</div>
 	</div>
 	<div class="row homeMain area">
