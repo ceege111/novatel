@@ -151,6 +151,13 @@ $(document).ready(function(){
 							console.log('loading gridslider...');
 							$("div.ccm-gallery-wrap").gridSlider({cols: 4, rows: 4,align:'center',width:'800px',autoplay_enable:true,autoplay_interval:6,scroll_axis:'x',loop:true,ctrl_arrows:false,ctrl_pag:true,ctrl_always_visible:true});
 						}
+						if($("#modules_list").length){
+							var read_more = $("<div></div>");
+							read_more.addClass('gray-block span4 row product-item read-more');
+							read_more.append('<h4>See Also:</h4>');
+							read_more.append('<a title="M2M Modules" href="http://dev.v2.novatel.rtio.nl/index.php?cID=382">M2M Modules</a><p><a title="M2M Modules" href="/index.php?cID=219"><img style="margin-top: 0px; margin-bottom: 0px;" src="/index.php/download_file/view_inline/28/" alt="NVTL-13.jpg" width="250" /></a></p>');
+							$("#modules_list > div").append(read_more);
+						}
 					});
 				});
 			});
@@ -197,6 +204,14 @@ $(document).ready(function(){
 
 				containerSp.fadeIn(function(){
 					$("body .wrap").css('min-height', 'inherit' );
+
+					if($("#modules_list").length){
+						var read_more = $("<div></div>");
+						read_more.addClass('gray-block span4 row product-item read-more');
+						read_more.append('<h4>See Also:</h4>');
+						read_more.append('<a title="M2M Modules" href="http://dev.v2.novatel.rtio.nl/index.php?cID=382">M2M Modules</a><p><a title="M2M Modules" href="/index.php?cID=219"><img style="margin-top: 0px; margin-bottom: 0px;" src="/index.php/download_file/view_inline/28/" alt="NVTL-13.jpg" width="250" /></a></p>');
+						$("#modules_list > div").append(read_more);
+					}
 				});
 			});
 		});
