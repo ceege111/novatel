@@ -1032,6 +1032,7 @@ html.lt-ie9 div.row.banner,html.no-rgba div.row.banner{position:relative;z-index
 html.lt-ie9 body.wrap,html.no-rgba body.wrap{z-index:0;}
 html.lt-ie9 body .homeSocial,html.no-rgba body .homeSocial{overflow:visible;height:40px;margin-bottom:25px;}
 html.lt-ie9 body .ether-ctrl-wrap,html.no-rgba body .ether-ctrl-wrap{width:56px;}
+html.lt-ie9 body .socialButtons,html.no-rgba body .socialButtons{margin-left:25px;}
 html.lt-ie9 body #fb_btn,html.no-rgba body #fb_btn{display:none;}
 html.lt-ie9 body #fb_div.fb-like,html.no-rgba body #fb_div.fb-like{width:52px;}
 html.lt-ie9 body #twitter_btn,html.no-rgba body #twitter_btn{display:block;margin-left:75px;}
