@@ -61,7 +61,7 @@
 			continue;
 		}
 		echo("<table style='display:none;' class='table table-striped support-results menu-".preg_replace('/[^a-zA-Z0-9_-]/', "-", strtolower($category))."'>\n");
-		echo("<tr><th>".$category."</th><th>Name:</th><th>Support Info:</th></tr>\n");
+		echo("<tr><th>".$category."</th><th>Name:</th><th>Downloads:</th></tr>\n");
 		foreach ($product as $product_row) {
 			echo("<tr>");
 				echo("<td class='product-thumbnail'>");
