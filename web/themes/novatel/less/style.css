@@ -1033,7 +1033,8 @@ html.lt-ie9 body.wrap,html.no-rgba body.wrap{z-index:0;}
 html.lt-ie9 body .homeSocial,html.no-rgba body .homeSocial{overflow:visible;height:40px;margin-bottom:25px;}
 html.lt-ie9 body .ether-ctrl-wrap,html.no-rgba body .ether-ctrl-wrap{width:56px;}
 html.lt-ie9 body #fb_btn,html.no-rgba body #fb_btn{display:none;}
-html.lt-ie9 body #twitter_btn,html.no-rgba body #twitter_btn{margin-top:-20px;}
+html.lt-ie9 body #fb_box,html.no-rgba body #fb_box{width:40px;}
+html.lt-ie9 body #twitter_btn,html.no-rgba body #twitter_btn{margin-left:50px;}
 body .gray-block{background:#f9f9f9;border-width:1px;border-style:solid;border-color:#f8f8f8 #d3d3d3 #d4d4d4 #f7f7f7;border-radius:0 1px 1px 0;-webkit-box-shadow:inset -1px -1px 0px #ececec, 1px 1px 0px #f2f2f2;-moz-box-shadow:inset -1px -1px 0px #ececec, 1px 1px 0px #f2f2f2;box-shadow:inset -1px -1px 0px #ececec, 1px 1px 0px #f2f2f2;}
 body .span3{width:225px;}
 body .oneColumn .span12{margin-left:0px;}
