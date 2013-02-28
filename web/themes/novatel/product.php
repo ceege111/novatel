@@ -82,14 +82,12 @@
 
 				    <script type="text/javascript">
 				    	var currentUrl = document.URL;
-			    		console.log("current URL: "+currentUrl);
+			    		// console.log("current URL: "+currentUrl);
 				    	$(document).ready(function(){
 				    		//twitter link
 				    		$('.share-btn.twitter').attr('href', 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(currentUrl) + '&hashtags=novatel');
 				    		//facebook link 
-			    		
 			    		});
-
 			    		$('.fb-like').attr('data-href', currentUrl);
 				    </script>
 				    <!-- Facebook -->
