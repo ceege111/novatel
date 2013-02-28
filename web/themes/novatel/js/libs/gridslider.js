@@ -9,7 +9,7 @@ website: http://ether-wp.com/ or http://pordesign.eu/
 buy license at: http://codecanyon.net/item/ether-grid-slider-jquery-plugin/1713182
 */
 
-$(document).ready(function($) {
+(function($) {
 	
 	"use strict";
 	
@@ -1429,4 +1429,3 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 		});
     }    
 })(jQuery);
-
