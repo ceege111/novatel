@@ -899,6 +899,7 @@ body .product-list .row a.find-out-more{text-indent:9999px;}body .product-list .
 body .product-list .row h3{position:absolute;width:186px;margin:10px 0px 0px;padding:0px 71px;background:none transparent;font-size:14px;font-weight:bold;line-height:18px;text-align:center;}body .product-list .row h3 a,body .product-list .row h3 a:visited{font-size:14px;font-weight:bold;}
 body .product-list .row hr{margin:0px 20px 15px;border-top:1px solid #b4b4b4;*zoom:1;clear:both;}body .product-list .row hr:before,body .product-list .row hr:after{display:table;content:"";line-height:0;}
 body .product-list .row hr:after{clear:both;}
+body .product-list .row .read-more{margin-left:10px;padding:30px 0px;text-align:center;height:300px;}
 body .rightSidebar .product-list.container{width:765px;}body .rightSidebar .product-list.container .offset1{margin-left:15px;}
 body{}body #pagination.newsPagination{padding:3px 20px;background:#2d4761;color:#eeeeee;font-size:11px;}body #pagination.newsPagination a,body #pagination.newsPagination a:visited{color:#eeeeee;}
 body table.news-list td{padding:5px 0px 5px 20px;}body table.news-list td h3{font-size:14px;line-height:16px;margin:0px 0px 5px;padding:0;color:#3361aa;}body table.news-list td h3 a,body table.news-list td h3 a:visited{color:#3361aa;}
