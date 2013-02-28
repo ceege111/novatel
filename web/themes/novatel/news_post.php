@@ -1,8 +1,9 @@
 <?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 
-	//check for external url 
-	$url = ($page->getAttribute('iframe_url') != '') ? $page->getAttribute('iframe_url') : $this->getBaseURL();
+//check for external url 
+$page = Page::getCurrentPage();
+$url = ($page->getAttribute('iframe_url') != '') ? $page->getAttribute('iframe_url') : $this->getBaseURL();
 ?>
 
 <script type="text/javascript">
