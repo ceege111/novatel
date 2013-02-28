@@ -1,0 +1,96 @@
+body {
+	.product {
+		p {
+			margin-top: 10px;
+			color: @gray;
+		}
+	}
+	.product-list {
+		margin-left: -10px;
+		.row {
+			margin-bottom: 15px;
+		
+			&.product-item {
+				margin-left: 9px;	
+				height: 340px;
+			}
+
+			.productThumbnail {
+				text-align: center;
+				margin-top: 60px;
+				margin-bottom: 5px;
+				img {
+					// border: 1px solid #c2c2c2;
+				}
+			}
+			.ccm-page-list-description {
+				margin: 10px 20px;
+			}
+			a.find-out-more {
+				text-indent: 9999px;	
+				img {
+					margin-bottom: 20px;
+				}
+			}
+			h3 {
+				// min-height: 40px;
+				position: absolute;
+				width: 218px;
+				margin: 10px 0px 0px;
+				padding: 0px 55px;
+				background: none transparent;
+				font-size: 14px;
+				font-weight: bold;
+				line-height: 18px;
+				text-align: center;
+				a, a:visited {
+					font-size: 14px;
+					font-weight: bold;
+				}
+			}
+			hr {
+				margin: 0px 20px 15px;
+				border-top: 1px solid @grayLight;
+				.clearfix;
+				clear: both;
+			}
+			&.read-more {
+				h4 {
+					margin-top: 50px;
+					text-align: center;
+					font-size: 18px;	
+				}
+				a,a:visited {
+					text-align: center;
+					display: block;
+					font-size: 14px;
+				}
+			}
+		}
+		#mifi_list {
+			.product-list {
+				.row {
+					.productThumbnail {
+						margin-top: 80px;
+					}
+					h3 {
+						width: 186px;
+						margin: 10px 0px 0px;
+						padding: 0px 71px;
+					}
+				}
+			}
+		}
+	}
+	//rightSidebar product list adjustments
+	.rightSidebar {
+		.product-list {
+			&.container {
+				width: 765px;
+				.offset1 {
+					margin-left: 15px;
+				}		
+			}
+		}
+	}
+}
