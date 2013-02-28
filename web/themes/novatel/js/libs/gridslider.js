@@ -1,15 +1,15 @@
+//gridslider_start
 /*
-
-GridSlider v1.2 - for jQuery 1.5+ - May 2012
-
+Ether Gridslider 1.3 jQuery Plugin for jQuery 1.5+
+created: May 2012
+latest update: September 30, 2012
 copyright: Por Design 2012
 contact: contact.pordesign@gmail.com
 website: http://ether-wp.com/ or http://pordesign.eu/
 buy license at: http://codecanyon.net/item/ether-grid-slider-jquery-plugin/1713182
-
 */
 
-(function($) {
+$(document).ready(function($) {
 	
 	"use strict";
 	
@@ -39,6 +39,7 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 	window.egs = {};
 	egs.elem_cfg = {};
 	egs.prefix = 'ether';
+	egs.window_ref = $(window);
 	
 	egs.add_prefix = function (string)
 	{
@@ -47,9 +48,17 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 			return egs.prefix + '-' + string;
 		} else
 		{
-			//console.log(string);
 			return string;
 		}
+	}
+	
+	
+	egs.log = function (msg)
+	{
+		! egs.msg ? egs.msg = [msg] : egs.msg.push(msg);
+		! $('body').find('#egs-log').length ? $('body').append('<div id="egs-log" style="font-size: 8pt; position: absolute; top: 0; left: 0; right: 0; background: rgb(0,0,0); z-index: 999999999"></div>') : '';
+		$('body').find('#egs-log').append('<p style="margin: 0; padding: 2px 10px; font-size: 9pt; color: #fff;">' + egs.msg.length + ': ' + msg + '</p>');
+		$('body').find('#egs-log').children().length > 10 ? $('body').find('#egs-log').children().eq(0).remove() : '';	
 	}
 	
 	egs.in_view = function($elem) 
@@ -70,9 +79,22 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 	
 	egs.set_slider_window_height = function ($elem, cfg) 
 	{
-		cfg.$slider_window
-			.stop(true, true)
-			.animate({height: cfg.col_group_elems_height[cfg.view_pos]}, cfg.scroll_speed);
+		if (cfg.slider)
+		{
+			cfg.$slider_window
+				.stop(true, true)
+				.animate({height: cfg.col_group_elems_height[cfg.view_pos]}, cfg.scroll_speed)
+				.queue(function ()
+				{
+					if (! cfg.shift_busy || cfg.shift_busy === 0)
+					{
+						$(this).css({overflow: 'visible'});
+					}
+					$(this).dequeue();
+				});
+		//////egs.log('set_slider_window_height');
+		//alert('fasd')
+		}
 	}
 	
 	egs.apply_shift = function ($elem, cfg) 
@@ -149,6 +171,7 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 		
 		var t = setTimeout(function () 
 		{
+			cfg.$slider_window.css({overflow: 'visible'});
 			cfg.shift_busy = 0;
 		}, cfg.scroll_speed);
 	}
@@ -246,10 +269,12 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 	
 	egs.set_grid_rows = function ($elem, cfg) 
 	{
+		//console.log('set rows');
 		var a;
-		var target_class = egs.add_prefix('first-col'); 
+		var first_col_class = egs.add_prefix('first-col');
 		
-		cfg.$col_elems.removeClass(target_class);
+		//reassign first col for every row
+		cfg.$col_elems.removeClass(first_col_class);
 		
 		if (cfg.grid_height === 'auto' ) 
 		{	
@@ -257,18 +282,132 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 			{
 				if (a % cfg.true_cols === 0)
 				{
-					cfg.$col_elems.eq(a).addClass(target_class);
+					cfg.$col_elems.eq(a).addClass(first_col_class);
 				}
 			}
-		} else if (cfg.grid_height === 'constrain') 
-		{
-			cfg.$col_elems.css({height: cfg.col_elem_width, overflow: 'hidden'});
-		} else if (typeof cfg.grid_height === 'number') 
-		{
-			cfg.$col_elems.css({height: cfg.grid_height, overflow: 'hidden'});
 		}
+		
+		cfg.$col_elems.each(function ()
+		{
+			var $media = $(this).find('*[class*="' + egs.add_prefix('media-') + '"]');
+			var $media_img = $media.find('img');
+			
+			if (cfg.grid_height === 'constrain') 
+			{
+				$(this).css({
+					height: cfg.col_elem_width * cfg.grid_height_ratio/100,
+					overflow: 'hidden'
+				});
+			} else if (typeof cfg.grid_height === 'number') 
+			{
+				$(this).css({
+					height: cfg.grid_height, 
+					overflow: 'hidden'
+				});
+			}
+			
+			//gridslider supports build in media-x behaviour even though media-x isn't really a part of it anymore
+			if ($media.length > 0)
+			{
+				if ($media_img.length > 0)
+				{
+					egs.on_image_load_end($media_img, function () 
+					{
+						egs.init_media ($media_img, cfg.image_stretch_mode, $media, cfg.media_height, cfg.media_height_ratio)
+					});
+				} else
+				{
+					//egs.adjust_image_size_and_pos($media_img, $media, cfg.image_stretch_mode);
+				}
+			}
+			
+		});
 	}
 	
+	egs.init_media = function ($img, img_stretch_mode, $media, media_height, media_height_ratio)
+	{
+		$img.attr('style', ''); //read on the style attr notes below
+		
+		if (media_height !== 'auto')
+		{
+			if (media_height === 'constrain')
+			{
+				$media.height($media.width() * media_height_ratio / 100);
+			} else if (typeof parseInt(media_height) === 'number' && media_height / media_height === 1)
+			{
+				$media.height(media_height);
+			} 
+		} else
+		{
+			if ($media.height() > $media.parent().height())
+			{
+				$media.height($media.parent().height());
+			}
+		}
+		
+		var h = $media.height();
+		var w = $media.width();
+		var img_w = $img.width(); 
+		var img_h = $img.height();
+		var img_ratio;
+		var parent_ratio;
+		var ratio;
+		
+		/*
+			NOTE:
+				-style attribute may not be the cleanest way here
+				-we need to have these attributes passed and native jQuery does not support !important
+				-this way style attribute is exclusively taken for purpouses of proper image alignment. 
+				-since this widget is pretty hermetic it shouldn't be a problem as long as there are no internal conflits
+		*/	
+		switch (img_stretch_mode)
+		{
+			case 'x':
+			{
+				if (img_h > h)
+				{
+					$img.attr('style', 'margin-top: ' + (-(img_h - h) / 2) + 'px !important');
+				} else
+				{
+					$img.attr('style', 'margin-top: ' + ((h - img_h) / 2) + 'px !important');
+				}
+				
+				break;
+			}
+			case 'y':
+			{
+				if (img_w > w)
+				{
+					$img.attr('style', 'margin-left: ' + (-(img_w - w) / 2) + 'px !important');
+				}
+				
+				break;
+			}
+			case 'fill':
+			{
+				img_ratio = img_w / img_h;
+				parent_ratio = w / h;
+				ratio = parent_ratio / img_ratio;
+				
+				if (ratio >= 1)
+				{
+					////console.log('>=1')
+					$img.attr('style', 'width: ' + w + 'px; ' +  'height: ' + (w / img_ratio) + 'px; ' + 'margin-top: ' + (-(w / img_ratio - h) / 2) + 'px !important;');
+				} else
+				{
+					////console.log('<1')
+					$img.attr('style', 'width: ' + (h * img_ratio) + 'px; ' + 'height: ' + h + 'px; ' + 'margin-left: ' + (-(h * img_ratio - w) / 2) + 'px !important;');
+				}
+				
+				break;
+			}
+			case 'fit':
+			{
+				$img.attr('style', 'margin-top: ' + ((h - img_h) / 2) + 'px !important;');
+			}
+		}
+	}
+
 	egs.init_slider_functions = function ($elem, cfg) 
 	{
 		if (cfg.col_group_elems_count > 1) 
@@ -292,42 +431,42 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 			$elem
 				.bind('mousewheel', function (event, delta, deltaX, deltaY) 
 				{	
-					// var shiftdest = -1;
+					var shiftdest = -1;
 					
-					// if (deltaY !== 0 && deltaY < 0 || deltaX !== 0 && deltaX > 0)
-					// {
-					// 	shiftdest = 1;
-					// }
+					if (deltaY !== 0 && deltaY < 0 || deltaX !== 0 && deltaX > 0)
+					{
+						shiftdest = 1;
+					}
 					
-					// egs.init_shift($elem, cfg, 'relative', shiftdest);
-					// //egs.resume_autoplay($elem, cfg);
-					// event.preventDefault();
+					egs.init_shift($elem, cfg, 'relative', shiftdest);
+					//egs.resume_autoplay($elem, cfg);
+					event.preventDefault();
 				})
 				.bind('mouseenter', function () 
 				{
 					//var					
 					//	scroll_x = $(window).scrollLeft(),
 					//	scroll_y = $(window).scrollTop();
-					// egs.pause_autoplay($elem, cfg);
+					egs.pause_autoplay($elem, cfg);
 				})
 				.bind('mouseleave', function () 
 				{
-					// egs.resume_autoplay($elem, cfg);
+					egs.resume_autoplay($elem, cfg);
 				});
 				
 			if (cfg.$ctrl_wrap) 
 			{
 				cfg.$ctrl_wrap
-					// .css({	
-					// 	'margin-left': function() 
-					// 	{
-					// 		return -$(this).outerWidth()/2;
-					// 	},
-					// 	'margin-top': function () 
-					// 	{
-					// 		return -$(this).outerHeight()/2 - cfg.col_spacing_size / 2 * cfg.col_spacing_enable;
-					// 	}
-					// })
+					.css({	
+						'margin-left': function() 
+						{
+							return -$(this).outerWidth()/2;
+						},
+						'margin-top': function () 
+						{
+							return -$(this).outerHeight()/2 - cfg.col_spacing_size / 2 * cfg.col_spacing_enable;
+						}
+					})
 					.find('.' + egs.add_prefix('ctrl'))
 						.attr('unselectable', 'on')
 						.css({
@@ -357,7 +496,6 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 					var $elem = elem[0]
 					var destination = elem[1];
 					var shifttype = typeof destination === 'number' ? 'absolute' : 'relative';
-					console.log(typeof destination === 'number')
 					$elem
 						.attr('data-shifttype', shifttype)
 						.attr('data-shiftdest', destination === 'prev' ? '-1' : '1')
@@ -378,48 +516,57 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 	
 	egs.set_col_groups = function ($elem, cfg) 
 	{	
-		var a;
-		var col_group_class = egs.add_prefix('col-group');
-
-		if (cfg.$col_group_elems && cfg.$col_group_elems.length > 0) 
+		if (cfg.slider)
 		{
-			cfg.$col_elems.unwrap();
-		}
-		
-		for (a = 0; a < cfg.col_elem_count; a += cfg.col_group_elems_capacity) 
-		{
-			$('<div class="' + col_group_class + '"></div>')
-				.appendTo(cfg.$col_elems_wrap)
-				.append(function () 
-				{
-					if(a + cfg.col_group_elems_capacity < cfg.col_elem_count) 
+			var a;
+			var col_group_class = egs.add_prefix('col-group');
+			
+			//egs.on_images_load_end($elem, cfg);
+			
+			if (cfg.$col_group_elems && cfg.$col_group_elems.length > 0) 
+			{
+				//console.log(cfg.$col_group_elems)
+				//console.log(cfg.$col_group_elems.length);
+				//console.log('should not  happen i fslider 0')
+				cfg.$col_elems.unwrap();
+			}
+			
+			for (a = 0; a < cfg.col_elem_count; a += cfg.col_group_elems_capacity) 
+			{
+				$('<div class="' + col_group_class + '"></div>')
+					.appendTo(cfg.$col_elems_wrap)
+					.append(function () 
 					{
-						return cfg.$col_elems_wrap.children().slice(0, cfg.col_group_elems_capacity);
-					} else 
-					{
-						return cfg.$col_elems_wrap.children().slice(0, cfg.col_elem_count - a);
-					}
+						if(a + cfg.col_group_elems_capacity < cfg.col_elem_count) 
+						{
+							return cfg.$col_elems_wrap.children().slice(0, cfg.col_group_elems_capacity);
+						} else 
+						{
+							return cfg.$col_elems_wrap.children().slice(0, cfg.col_elem_count - a);
+						}
+					});
+			}
+			
+			cfg.$col_group_elems = $elem.find('.' + col_group_class);
+			cfg.$col_group_elems
+				.eq(cfg.view_pos)
+					.css({'z-index': 1, visibility: 'visible'});
+			
+			//egs.on_images_load_end($elem, cfg, function () 
+			//{
+				cfg.col_group_elems_height = [];
+				cfg.$col_group_elems.each(function (id)
+				{			
+					cfg.col_group_elems_height.push(cfg.$col_group_elems.eq(id).outerHeight() - cfg.col_spacing_size * cfg.col_spacing_enable);			
 				});
+			//});
+		//////egs.log('set_col_groups');
 		}
-		
-		cfg.$col_group_elems = $elem.find('.' + col_group_class);
-		cfg.$col_group_elems
-			.eq(cfg.view_pos)
-				.css({'z-index': 1, visibility: 'visible'});
-		
-		egs.on_images_load_end($elem, cfg, function () 
-		{
-			cfg.col_group_elems_height = [];
-			cfg.$col_group_elems.each(function (id)
-			{			
-				cfg.col_group_elems_height.push(cfg.$col_group_elems.eq(id).outerHeight() - cfg.col_spacing_size * cfg.col_spacing_enable);			
-			});
-		});
 	};
 	
 	egs.update_slider_ctrl = function ($elem, cfg) 
 	{
-		if (cfg.ctrl_active === true)
+		if (cfg.slider && cfg.ctrl_active)
 		{
 			if (cfg.ctrl_pag === true) 
 			{
@@ -463,6 +610,7 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 					cfg.$ctrl_wrap.css({ width: cfg.ctrl_car_elem_width });
 			}
 		}
+//////egs.log('update_slider_ctrl');
 	}
 	
 	egs.init_slider_ctrl = function ($elem, cfg)
@@ -532,13 +680,11 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 		}
 		
 		egs.update_slider_ctrl($elem, cfg);
-		
-		$(window)
-			.bind('resize', function () {
-				egs.update_slider_ctrl($elem, cfg);
-			});
 	}
 	
+	egs.init_load_overlay = function ($elem, cfg)
+	{
+	}
 		
 	egs.init_slider_structure = function ($elem, cfg)
 	{
@@ -548,6 +694,7 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 		
 		if (cfg.slider === true)
 		{
+			//console.log('init_slider');
 			slider_class = egs.add_prefix('slider');
 			slider_window_class = egs.add_prefix('slider-window');
 			load_overlay_class = egs.add_prefix('load-overlay');
@@ -570,16 +717,17 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 				
 			cfg.$slider_window.find(load_overlay_class).show();
 			
-			egs.set_col_groups($elem, cfg);
-			
 			egs.on_images_load_end($elem, cfg, function () 
 			{
+				egs.set_col_groups($elem, cfg);
+				
 				cfg.$slider_window
 					.css({overflow: 'hidden' }) 
 					.children('.' + load_overlay_class).delay(cfg.scroll_speed).fadeOut(1000).end()
 					.queue(function () 
 					{
 						$(this)
+							.find('.' + load_overlay_class).remove()
 							.css({'overflow': 'visible'})
 							.dequeue();
 					});
@@ -589,20 +737,23 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 			
 			egs.init_slider_ctrl($elem, cfg);
 			egs.init_slider_functions($elem, cfg);
-			
-			$(window)
-				.bind('resize', function () {
-					egs.set_col_groups($elem, cfg);
-					egs.set_slider_window_height($elem, cfg);
-				});
 		}
 	}
 	
 	egs.get_grid_data = function ($elem, cfg) 
 	{
 		cfg.elem_width = $elem.outerWidth();
-		cfg.$col_elems_wrap = $elem.find('.' + egs.add_prefix('cols'));
-		cfg.$col_elems = $elem.find('.' + egs.add_prefix('col'));
+		cfg.$col_elems_wrap = $elem.find('.' + egs.add_prefix('cols')).eq(0);
+		cfg.$col_elems = function () 
+		{
+			if( ! cfg.$col_elems_wrap.children('.' + egs.add_prefix('col')).length)
+			{
+				return cfg.$col_elems_wrap.children().children('.' + egs.add_prefix('col'));
+			} else
+			{
+				return cfg.$col_elems_wrap.children()
+			}
+		}();
 		cfg.col_elem_count = cfg.$col_elems.length;
 		cfg.col_elem_width = cfg.$col_elems.outerWidth();
 		cfg.img_count = $elem.find('img').length;
@@ -629,6 +780,10 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 		{
 			cfg.view_pos = 0;
 		}
+		
+		//////egs.log('get_grid_data');
+		
+		//egs.log('col_elems_wrap: ' + cfg.$col_elems_wrap.length + ' col_elems: ' + cfg.$col_elems.length + ' col_elem_count: ' + cfg.col_elem_count + ' col_elem_width: ' + cfg.col_elem_width + ' true_cols : ' + cfg.true_cols);
 	}
 	
 	egs.generate_rules = function (obj)
@@ -667,7 +822,7 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 		{
 			styles['.' + grid_class + cfg.elem_selector + ' .' + cols_class] = 
 			{
-				margin: -(cfg.col_spacing_size/2) + 'px',
+				margin: -(cfg.col_spacing_size/2) + 'px'
 			};
 			styles['.' + grid_class + cfg.elem_selector  + ' .' +  cols_class + ' .' + col_class] =
 			{
@@ -678,7 +833,7 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 			
 			if ($.browser.msie && parseInt($.browser.version, 10) === 7) 
 			{
-				ie7_styles['.' + ie_grid_fix_class + '.cols-wrap'] =
+				ie7_styles['.' + ie7_grid_fix_class + '.cols-wrap'] =
 				{
 					margin: -(cfg.col_spacing_size/2) + 'px !important'
 				},
@@ -739,7 +894,7 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 						$title 
 							.stop(true, true).animate({opacity: 1, bottom: 0}, 500); 
 					}) 
-					.on('mouseleave', function () 
+					.bind('mouseleave', function () 
 					{ 
 						$title .delay(250).animate({opacity: 0, bottom: -title_h}, 500); 
 					}) 
@@ -756,6 +911,7 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 			{	
 				var loaded = 0;
 				var locked = 0;
+				var broken = 0;
 				var $img = $elem.find('img');
 				var img_count = $img.length;
 				
@@ -765,36 +921,62 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 						.bind('load', function () 
 						{
 							loaded += 1;
-							if ((loaded === img_count && locked === 0) || (loaded !== img_count && id === img_count - 1 && locked === 0)) 
+							//what was the (loaded !== img_count && id === img_count - 1 && locked === 0) thing for?
+							//if ((loaded === img_count && locked === 0) || (loaded !== img_count && id === img_count - 1 && locked === 0)) 
+							if ((loaded === img_count && locked === 0))
 							{
 								locked = 1;
 								cfg.all_images_loaded = true;
-								//var timeout = setTimeout(function ()
-								//{
-									callback();
-								//}, 1000);
+								
+								callback ? callback($elem, cfg) : '';
+								
+								//console.log('all ' + loaded + ' of ' + cfg.img_count + ' detected images have loaded.' + (broken ? '(' + broken + ') links seem to be broken ;(' : ''));
 							}
 						})
 						.bind('error', function () 
 						{
-							 $(this).off('error').attr('src', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAMAAAAoyzS7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwNkI5RDRFNjFBQzExRTE5MjJDRjRGMUM2MTdDODUyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwNkI5RDRGNjFBQzExRTE5MjJDRjRGMUM2MTdDODUyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDA2QjlENEM2MUFDMTFFMTkyMkNGNEYxQzYxN0M4NTIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDA2QjlENEQ2MUFDMTFFMTkyMkNGNEYxQzYxN0M4NTIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4G1oNaAAAABlBMVEX///8AAABVwtN+AAAADElEQVR42mJgAAgwAAACAAFPbVnhAAAAAElFTkSuQmCC');
+							broken += 1;
+							$(this).unbind('error').attr('src', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAMAAAAoyzS7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwNkI5RDRFNjFBQzExRTE5MjJDRjRGMUM2MTdDODUyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwNkI5RDRGNjFBQzExRTE5MjJDRjRGMUM2MTdDODUyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDA2QjlENEM2MUFDMTFFMTkyMkNGNEYxQzYxN0M4NTIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDA2QjlENEQ2MUFDMTFFMTkyMkNGNEYxQzYxN0M4NTIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4G1oNaAAAABlBMVEX///8AAABVwtN+AAAADElEQVR42mJgAAgwAAACAAFPbVnhAAAAAElFTkSuQmCC');
 						});
 						
 					if ((typeof this.complete != 'undefined' && this.complete) || (typeof this.naturalWidth != 'undefined' && this.naturalWidth > 0)) 
 					{
 						$(this)
 							.trigger('load')
-							.off('load');
+							.unbind('load');
 					}
 				});
 			}  else 
 			{
-				callback ();
+				callback ? callback($elem, cfg) : '';
 			}
 		} else
 		{
-			callback();
+			callback ? callback($elem, cfg) : '';
 		}
+	}
+	
+	egs.on_image_load_end = function ($img, callback)
+	{
+		$img.each(function ()
+		{
+			$(this).bind('load', function () 
+			{
+				callback();
+			}).bind('error', function () 
+			{
+				 $(this)
+				 	.unbind('error')
+				 	.attr('src', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAMAAAAoyzS7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwNkI5RDRFNjFBQzExRTE5MjJDRjRGMUM2MTdDODUyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwNkI5RDRGNjFBQzExRTE5MjJDRjRGMUM2MTdDODUyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDA2QjlENEM2MUFDMTFFMTkyMkNGNEYxQzYxN0M4NTIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDA2QjlENEQ2MUFDMTFFMTkyMkNGNEYxQzYxN0M4NTIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4G1oNaAAAABlBMVEX///8AAABVwtN+AAAADElEQVR42mJgAAgwAAACAAFPbVnhAAAAAElFTkSuQmCC');
+			});
+				
+			if ((typeof this.complete != 'undefined' && this.complete) || (typeof this.naturalWidth != 'undefined' && this.naturalWidth > 0)) 
+			{
+				$(this)
+					.trigger('load')
+					.unbind('load');
+			}
+		});
 	}
 	
 	egs.update_elem = function ($elem, cfg)
@@ -813,6 +995,7 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 			egs.set_slider_window_height($elem, cfg);
 			egs.update_slider_ctrl($elem, cfg);
 		}
+		//////egs.log('update');
 	}
 	
 	egs.add_elements = function ($gridslider_elem, $target_elem, remove_target, callback)
@@ -879,7 +1062,6 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 			{
 				if (cfg.$col_elems.eq(targets_id).length > 0)
 				{
-					//console.log(cfg.$col_elems.eq(targets_id));
 					cfg.$col_elems.eq(targets_id)
 						//.fadeOut(500)
 						//.queue(function ()
@@ -983,12 +1165,36 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 		}
 	}
 	
+	egs.class_string_from_arr = function (arr)
+	{
+		var result = '';
+		
+		arr.forEach(function (elem)
+		{
+			result += egs.add_prefix(elem) + ' ';
+		});
+		
+		return result;
+	}
+	
 	egs.init_grid_structure = function ($elem, cfg) 
 	{
+		/*
+		var elem_class = [
+			'grid', 
+			'grid-height'
+		];
+		var cols_class = [
+			'cols', 
+			'cols-' + cfg.cols,
+			'rows-' + cfg.rows,
+			'spacing-' + (cfg.col_spacing_enable === true ? 1 : 0)
+		];
+		*/
+		
 		var target_elem_classes = function () 
 		{
 			var arr = [
-				egs.add_prefix('id-' + cfg.elem_id),
 				egs.add_prefix('grid'),
 				egs.add_prefix('scroll-axis-' + cfg.scroll_axis),
 				egs.add_prefix('grid-height-' + cfg.grid_height),
@@ -1002,6 +1208,7 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 		var cols_container_classes = function () 
 		{
 			var arr = [
+				egs.add_prefix('cols'),
 				egs.add_prefix('cols-' + cfg.cols),
 				egs.add_prefix('rows-' + cfg.rows),
 				egs.add_prefix('spacing-' + (cfg.col_spacing_enable === true ? 1 : 0))
@@ -1031,10 +1238,11 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
  					}
 		 		});
 		 	}
+		 	
 	 		$elem
 	 			.addClass(target_elem_classes())
 		 		.children()
-		 			.wrapAll('<div class="' + egs.add_prefix('cols') + ' ' + cols_container_classes() + '"></div>')
+		 			.wrapAll('<div class="' + cols_container_classes() + '"></div>')
 			 		.wrap('<div class="' + egs.add_prefix('col') + '"></div>');
 		}
 		 		
@@ -1055,55 +1263,124 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 		{
 			egs.init_gallery_title($elem, cfg);
 		}
-		
-		$(window)
-			.bind('resize', function () {
-				egs.get_grid_data($elem, cfg);
-				egs.set_grid_rows($elem, cfg);
-			});
 	}
 	
-	egs.assign_gridslider_id = function (cfg)
+	egs.assign_gridslider_id = function ()
 	{
 		var id = Math.round(Math.random()*10000);
 		
 		if ( ! egs.elem_cfg[id])
 		{
-			egs.elem_cfg[id] = cfg;
-			cfg.elem_id = id;
+			return id;
 		} else
 		{
-			egs.assign_gridslider_id(cfg);	
+			egs.assign_gridslider_id();	
 			return false;
 		}
-		
-		return id;
 	}
 	
 	egs.init_gridslider = function ($elem, cfg)
-	{
-		cfg.$elem = $elem;
-		
-		if ( ! egs.style_destination)
+	{	
+		if ( ! $elem.attr('data-egs'))
 		{
-			if ($.browser.msie && $.browser.version < 9) {
-				egs.style_destination = 'body';
+			//console.log('start egs initialization');
+			
+			$elem.attr('data-egs', true);
+			
+			if ( ! egs.style_destination)
+			{
+				if ($.browser.msie && $.browser.version < 9) {
+					egs.style_destination = 'body';
+				}
+				else {
+					egs.style_destination = 'head';
+				}
 			}
-			else {
-				egs.style_destination = 'head';
+			
+			if (egs.browser_msie_7 === undefined)
+			{
+				egs.browser_msie_7 = ($.browser.msie && parseInt($.browser.version, 10) === 7);
 			}
-		}
-		
-		if (egs.browser_msie_7 === undefined)
+			
+			if ( ! cfg.elem_id)
+			{
+				cfg.elem_id = egs.assign_gridslider_id();
+				$elem.addClass(egs.add_prefix('id-' + cfg.elem_id));
+			}
+			cfg.$elem = $elem;
+			if ( ! cfg.defaults)
+			{
+				cfg.defaults = jQuery.extend({}, true, cfg);
+			}
+			egs.elem_cfg[cfg.elem_id] = cfg;
+			egs.init_grid_structure($elem, cfg);
+			egs.init_slider_structure($elem, cfg);
+			
+			$(window).bind('resize.egs', function ()
+			{
+				egs.update_elem($elem, cfg);
+			});
+			//console.log('end egs initialization');
+		} else
 		{
-			egs.browser_msie_7 = ($.browser.msie && parseInt($.browser.version, 10) === 7);
+			//console.log('there\'s a gridslider for this elem defined already!');
 		}
-		
-		egs.assign_gridslider_id(cfg);
-		egs.init_grid_structure($elem, cfg);
-		egs.init_slider_structure($elem, cfg);
 	}
 	
+	egs.uninit_gridslider = function (id)
+	{
+		var cfg = egs.elem_cfg[id];
+		var css_dep = [
+			'scroll-axis-',
+			'grid-height-',
+			'image-stretch-mode-',
+			'align'
+		];
+		
+		if (cfg.slider == 0)
+		{
+			cfg.$col_elems.children().unwrap().unwrap();
+		} else if (cfg.slider == 1)
+		{
+			cfg.$col_elems.children().unwrap().unwrap().unwrap().unwrap();	
+			if (cfg.$ctrl_wrap && cfg.$ctrl_wrap.length > 0)
+			{
+				cfg.$ctrl_wrap.remove();
+			}
+		}
+		
+		if (cfg.gallery_img_title == 1)
+		{
+			cfg.$elem.find('.' + egs.add_prefix('img-title')).remove();
+		}
+		
+		css_dep.forEach(function (name)
+	 	{
+	 		var class_prop = cfg.$elem.prop('class');
+	 		var re = new RegExp(egs.add_prefix(name + '\\S+\\s*'))
+	 		cfg.$elem.prop('class', class_prop.replace(re, ''))
+	 	});
+	 	
+	 	cfg.$elem.attr('data-egs', '');
+	 	
+	 	$(window).unbind('resize.egs' + id);
+	}
+	
+	egs.reinit_gridslider = function (id)
+	{
+		var $elem = egs.elem_cfg[id].$elem;
+		var new_cfg = jQuery.extend({}, true, egs.elem_cfg[id].defaults);
+		
+		new_cfg.elem_id = id;
+		
+		for (var key in cfg)
+		{
+			new_cfg[key] = cfg[key];
+		}
+		
+		egs.uninit_gridslider(id);
+	}
+
     $.fn.gridSlider = function(options) {
     	
         var defaults = {
@@ -1128,6 +1405,9 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 			autoplay_shift_dir: 1,
 			view_pos: 0,
 			grid_height: 'auto',
+			grid_height_ratio: 100,
+			media_height: 'auto',
+			media_height_ratio: 100,
 			image_stretch_mode: 'auto',
 			gallery_img_title: false,
 			loop: true,
@@ -1142,16 +1422,11 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
         
 		var options = $.extend(defaults, options);
 		
+		
 		return this.each(function() 
 		{
-			if (!$(this).data('ether_grid_slider')) 
-			{
-				$(this).data('ether_grid_slider', true);
-				egs.init_gridslider($(this), jQuery.extend(true, {}, options));
-			}
+			egs.init_gridslider($(this), jQuery.extend(true, {}, options));
 		});
-    }
-
-    
+    }    
 })(jQuery);
      

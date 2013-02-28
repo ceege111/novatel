@@ -28,7 +28,7 @@
 
 	<!-- google-analytics -->
 	<script>
-		var _gaq=[['_setAccount','UA-PLACEHOLDER-5'],['_trackPageview']];
+		var _gaq=[['_setAccount','UA-38882020-1'],['_trackPageview']];
 		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
 		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 		s.parentNode.insertBefore(g,s)}(document,'script'));
