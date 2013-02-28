@@ -901,6 +901,7 @@ body .product-list .row hr{margin:0px 20px 15px;border-top:1px solid #b4b4b4;*zo
 body .product-list .row hr:after{clear:both;}
 body .product-list .row.read-more h4{margin-top:50px;text-align:center;font-size:18px;}
 body .product-list .row.read-more a,body .product-list .row.read-more a:visited{text-align:center;display:block;font-size:14px;}
+body #mifi_list .product-list .row.product-item{height:340px;}
 body #mifi_list .product-list .row .productThumbnail{margin-top:80px;}
 body #mifi_list .product-list .row h3{width:186px;margin:10px 0px 0px;padding:0px 71px;}
 body .rightSidebar .product-list.container{width:765px;}body .rightSidebar .product-list.container .offset1{margin-left:15px;}
