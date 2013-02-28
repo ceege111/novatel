@@ -69,11 +69,7 @@
 .ether-cols-8 > * > .ether-col { width: 12.5%; }
 .ether-cols-10 > .ether-col,
 .ether-cols-10 > * > .ether-col { width: 10%; }
-
-
-
 /*m*/
-
 @media screen and (max-width: 780px) {
 	
 	.ether-cols .ether-col { width: 100% !important; }
@@ -85,13 +81,10 @@
 	.ether-cols-8 .ether-col,
 	.ether-cols-10 .ether-col { width: 50% !important; }
 }
-
 @media screen and (max-width: 580px) {
 	
 	.ether-cols .ether-col { width: 100% !important; }
 }
-
-
 /*	***GRIDSLIDER NOTES***
 	
 	ether-GRID - element uses gridslider with slider turned off (grid only)
@@ -105,49 +98,31 @@
 	
 	ether-SLIDER-WINDOW - top and bottom padding to prevent margin collapse in some cases
 */
-
 .ether-grid { position: relative; }
 .ether-grid .ether-cols { position: relative; margin-top: -15px; margin-bottom: -15px;}
 .ether-grid .ether-col-group { position: absolute; top: 0px; left: 0px; width: 100%; z-index: -1; visibility: hidden; }
-
 .ether-grid .ether-spacing-0.ether-cols { margin: 0; }
 .ether-grid	.ether-spacing-0 .ether-col { padding: 0;}
-
-
 .ether-grid .ether-col { margin: 0; float: left; }
 .ether-grid .ether-first-col { clear: left; }
-
 .ether-grid .ether-col > :first-child { margin: 0 !important; display: block !important; float: none !important; max-height: 100% !important;}
-
-
 .ether-slider-window { padding-top: 1px; padding-bottom: 1px; position: relative; }
-
 /* ie7 fix */
 .ether-ie7-grid-fix .ether-cols { float: left; width: 100%; position: relative;}
 .ether-ie7-grid-fix .ether-col { padding: 0 !important; margin-right: -1px; position: relative;}
 .ether-ie7-grid-fix .ether-col > *:first-child { margin: 15px !important; }
 .ether-ie7-grid-fix .ether-spacing-0 .ether-col { padding: 0px !important; }
 .ether-ie7-grid-fix .ether-spacing-0 .ether-col > *:first-child { margin: 0 !important; }
-
-
-
-
-
-
 .ether-ctrl-wrap > * { }
 .ether-ctrl-wrap { 	position: absolute; bottom: 5px; right: 5px; z-index: 20; 
 					z-index: 100; padding: 5px; background: transparent; border: 0px solid transparent; 
 					-webkit-border-radius: 3px; -moz-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; /*width: 800px;*/}
 .homeFeatured .ether-ctrl-wrap { bottom: -39px; right: 20px; }
-
 .ether-ctrl-wrap.ether-pos-bottom { top: auto; bottom: 0; }
 .ether-ctrl-wrap.ether-pos-top {top: 0; bottom: auto; }
 .ether-ctrl-wrap.ether-pos-center { top: 50%;}
-
-
 .ether-ctrl-wrap.ether-pos-top { top: -40px; }
 .ether-ctrl-wrap.ether-pos-bottom { bottom: -40px; }
-
 .ether-ctrl-wrap .ether-ctrl { 	
 								background-color: @grayLight;
 								// background-repeat: no-repeat; 
@@ -155,63 +130,33 @@
 								// opacity: 0.5;
 							}
 .ether-ctrl-wrap .ether-ctrl:hover { opacity: 1; }
-
 .ether-ctrl-car { position: relative; width: 68px; height: 32px; margin: 0 auto 0px; padding: 0px 0px;}
 .ether-ctrl-car > div { width: 33px; height: 32px; text-align: center; cursor: pointer; line-height: 32px; font-size: 16pt; margin: 0; float: left; }
-
 .ether-ctrl-car .ether-prev { background-position: 0 0; margin-right: 2px; }
 .ether-ctrl-car .ether-next { background-position: -40px 0; }
-
 .ether-scroll-axis-y .ether-ctrl-car .ether-prev { -webkit-transform: rotate(90deg); }
 .ether-scroll-axis-y .ether-ctrl-car .ether-next { -webkit-transform: rotate(90deg); }
-
 .ether-ctrl-pag { position: relative; margin: 3px auto 0px; padding: 0; height: 12px; text-align: center;}
 .ether-ctrl-pag:after { display: block; visibility: hidden; content: "."; height: 0; line-height: 0; font-size: 0; clear: both; }
 .ether-ctrl-pag > div { float: left; padding: 0px; overflow: hidden; width: 12px; height: 12px; text-align: center; 
 						line-height: 16px; font-size: 7pt; cursor: pointer; margin: 0 1px 0 1px; text-align: left; 
 						text-indent: -9999px; vertical-align: top; background-position: 0px -40px;}
 .ether-ctrl-pag > div.ether-current { background-color: @grayDark;}
-
-
-
-
 .ether-image-stretch-mode-x img { width: 100% !important; height: auto !important; margin: 0 auto !important; display: block !important; max-width: 100% !important; max-height: none !important;}
 .ether-image-stretch-mode-y img { height: 100% !important; width: auto !important; margin: 0 auto !important; display: block !important; max-height: 100% !important; max-width: none !important;}
 .ether-image-stretch-mode-fit img { width: auto !important; height: auto !important; margin: 0 auto !important; display: block !important; max-width: 100% !important; max-height: 100% !important;}
 .ether-image-stretch-mode-fill img { width: 100% !important; height: 100% !important; margin: 0 auto !important; display: block !important; max-width: 100% !important; max-height: 100% !important;}
-
 .ether-grid-height-auto.ether-image-stretch-mode-y img,
 .ether-grid-height-auto.ether-image-stretch-mode-fit img,
 .ether-grid-height-auto.ether-image-stretch-mode-fill img { max-height: none !important; height: auto !important; width: 100% !important;}
-
-
 .ether-load-overlay { background: #fff url(ajax-loader.gif) 50% 50% no-repeat; width: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 99; min-height: 20px; }
-
 .ether-hide-grid-cell-overflow { overflow: hidden; max-height: 100%;}
-
-
-
-
-
-
 .ether-ctrl { 
 	-webkit-transition-property: opacity; -moz-transition-property: opacity; -o-transition-property: opacity; -ms-transition-property: opacity; transition-property: opacity; 
 	-webkit-transition-duration: .2s; -moz-transition-duration: .2s; -o-transition-duration: .2s; -ms-transition-duration: .2s; transition-duration: .2s;
 	-webkit-transition-timing-function: ease; -moz-transition-timing-function: ease; -o-transition-timing-function: ease; -ms-transition-timing-function: ease; transition-timing-function: ease;
 }
-
-
-
-
-
-
 .ether-img-title { position: absolute; bottom: 0; left: 0; right: 0; padding: 5px 15px; text-align: center; z-index: 20; background: #fff; color: #000;}
-
-
-
-
-
 .ether-alignleft { float: left; margin-right: 20px; margin-top: 0;}
 .ether-alignright { float: right; margin-left: 20px; margin-bottom: 0;}
 .ether-aligncenter { float: none; margin-left: auto; margin-right: auto; }
-

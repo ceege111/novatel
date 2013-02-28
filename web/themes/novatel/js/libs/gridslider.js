@@ -442,17 +442,17 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 				// 	//egs.resume_autoplay($elem, cfg);
 				// 	event.preventDefault();
 				// })
-				.bind('mouseenter', function () 
-				{
-					//var					
-					//	scroll_x = $(window).scrollLeft(),
-					//	scroll_y = $(window).scrollTop();
-					egs.pause_autoplay($elem, cfg);
-				})
-				.bind('mouseleave', function () 
-				{
-					egs.resume_autoplay($elem, cfg);
-				});
+				// .bind('mouseenter', function () 
+				// {
+				// 	//var					
+				// 	//	scroll_x = $(window).scrollLeft(),
+				// 	//	scroll_y = $(window).scrollTop();
+				// 	egs.pause_autoplay($elem, cfg);
+				// })
+				// .bind('mouseleave', function () 
+				// {
+				// 	egs.resume_autoplay($elem, cfg);
+				// });
 				
 			if (cfg.$ctrl_wrap) 
 			{
@@ -1134,30 +1134,30 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 						egs.resume_autoplay($elem, cfg);
 					}
 				})
-				.bind('blur', function () 
-				{
-					egs.pause_autoplay($elem, cfg);
-				})
-				.bind('focus', function () 
-				{
-					egs.resume_autoplay($elem, cfg);
-				})
-				.bind('scroll', function () 
-				{
-					if (!egs.in_view($elem)) 
-					{
-						if (cfg.autoplay_active === 1 && cfg.autoplay_enable === true) 
-						{
-							egs.pause_autoplay($elem, cfg)
-						}
-					} else 
-					{
-						if (cfg.autoplay_active !== 1  && cfg.autoplay_enable === true) 
-						{
-							egs.resume_autoplay($elem, cfg)
-						}
-					}
-				});
+				// .bind('blur', function () 
+				// {
+				// 	egs.pause_autoplay($elem, cfg);
+				// })
+				// .bind('focus', function () 
+				// {
+				// 	egs.resume_autoplay($elem, cfg);
+				// })
+				// .bind('scroll', function () 
+				// {
+				// 	if (!egs.in_view($elem)) 
+				// 	{
+				// 		if (cfg.autoplay_active === 1 && cfg.autoplay_enable === true) 
+				// 		{
+				// 			egs.pause_autoplay($elem, cfg)
+				// 		}
+				// 	} else 
+				// 	{
+				// 		if (cfg.autoplay_active !== 1  && cfg.autoplay_enable === true) 
+				// 		{
+				// 			egs.resume_autoplay($elem, cfg)
+				// 		}
+				// 	}
+				// });
 		} else
 		{
 			clearTimeout(cfg.autoplay_stamp)
