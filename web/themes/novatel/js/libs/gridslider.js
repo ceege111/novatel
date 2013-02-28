@@ -1400,7 +1400,7 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 			transition: 'slide',
 			easing: 'swing',
 			scroll_speed: 500,
-			autoplay_enable: false,
+			autoplay_enable: true,
 			autoplay_interval: 5,
 			autoplay_shift_dir: 1,
 			view_pos: 0,

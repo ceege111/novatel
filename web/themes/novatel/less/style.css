@@ -847,7 +847,7 @@ body{}body form.header-search-form{margin:0px 0px 0px 0px;}body form.header-sear
 body form.header-search-form input.searchSubmit{background:url(img/icons/search-icon.png) no-repeat 50% 50% transparent;text-indent:-9999px;margin-top:-8px;margin-left:-4px;width:30px;height:30px;border:none;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
 body .product form.header-search-form input.searchSubmit{margin-top:-11px;}
 body{}body .homeFeatured{min-height:400px;margin-bottom:10px;}body .homeFeatured>img.ccm-image-block{margin-left:20px;}
-body .homeSocial{position:relative;margin:3px 15px 43px;padding-top:10px;*zoom:1;}body .homeSocial:before,body .homeSocial:after{display:table;content:"";line-height:0;}
+body .homeSocial{position:relative;margin:3px 15px 43px;padding-top:10px;height:23px;*zoom:1;}body .homeSocial:before,body .homeSocial:after{display:table;content:"";line-height:0;}
 body .homeSocial:after{clear:both;}
 body .homeSocial .homeNews{margin-left:21px;float:left;font-size:15px;}body .homeSocial .homeNews .news-title{font-size:19px;}
 body .homeSocial .homeNews a{color:#333;}
