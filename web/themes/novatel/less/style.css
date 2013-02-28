@@ -851,7 +851,7 @@ body .homeSocial{position:relative;margin:3px 15px 43px;padding-top:10px;height:
 body .homeSocial:after{clear:both;}
 body .homeSocial .homeNews{margin-left:21px;float:left;font-size:15px;}body .homeSocial .homeNews .news-title{font-size:19px;position:absolute;}
 body .homeSocial .homeNews a{color:#333;}
-body .homeSocial .homeNews a.news-ticker{margin-left:80px;}
+body .homeSocial .homeNews a.news-ticker{margin-left:112px;}
 body .homeSocial .icons{position:absolute;*zoom:1;top:35px;right:10px;}body .homeSocial .icons:before,body .homeSocial .icons:after{display:table;content:"";line-height:0;}
 body .homeSocial .icons:after{clear:both;}
 body .homeSocial .icons a{display:block;float:left;}
