@@ -414,19 +414,19 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 		{
 			egs.init_autoplay($elem, cfg);
 			
-			if ( ! $.browser.msie || $.browser.msie && $.browser.version > 8)
-			{
-				$elem
-					.swipe({
-					     swipeLeft: function() 
-					     { 
-					     	egs.init_shift($elem, cfg, 'relative', 1); 
-					     },
-					     swipeRight: function() { 
-					     	egs.init_shift($elem, cfg, 'relative', -1); 
-					     }
-					});
-			}
+			// if ( ! $.browser.msie || $.browser.msie && $.browser.version > 8)
+			// {
+			// 	$elem
+			// 		.swipe({
+			// 		     swipeLeft: function() 
+			// 		     { 
+			// 		     	egs.init_shift($elem, cfg, 'relative', 1); 
+			// 		     },
+			// 		     swipeRight: function() { 
+			// 		     	egs.init_shift($elem, cfg, 'relative', -1); 
+			// 		     }
+			// 		});
+			// }
 				
 			// $elem
 				// .bind('mousewheel', function (event, delta, deltaX, deltaY) 
