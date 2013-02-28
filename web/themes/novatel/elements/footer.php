@@ -20,7 +20,6 @@
 	<script src="<?php echo $this->getThemePath(); ?>/js/libs/underscore-min.js"></script>
 	<script src="<?php echo $this->getThemePath(); ?>/js/libs/bootstrap/bootstrap.min.js"></script>
 	<script src="<?php echo $this->getThemePath(); ?>/js/libs/jquery.easing.1.3.js"></script>
-	<script src="<?php echo $this->getThemePath(); ?>/js/libs/jquery.jswipe.js"></script>
 	<script src="<?php echo $this->getThemePath(); ?>/js/libs/gridslider.js"></script>
 
 	<script src="<?php echo $this->getThemePath(); ?>/js/plugins.js"></script>
