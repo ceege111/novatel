@@ -2,6 +2,8 @@
 
 */
 
+var popped = ('state' in window.history), initialURL = location.href; //chrome popstate onload check
+
 $(document).ready(function(){
 
 	//dropdown menu
@@ -216,9 +218,11 @@ $(document).ready(function(){
 		});
 
 		window.onpopstate = function(event){
-			if(event.originalEvent.state!=null){ //check for chrome to not exectue on page load
-				//console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
-			}
+			var initialPop = !popped && location.href == initialURL;
+			popped = true;
+			if ( initialPop ) return;
+
+			console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
 		}
 	}
 
