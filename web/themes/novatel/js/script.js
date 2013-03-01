@@ -3,7 +3,7 @@
 */
 
 var popped = ('state' in window.history), initialURL = location.href; //chrome popstate onload check
-var first_pop = false;
+var first_pop = true;
 
 $(document).ready(function(){
 
@@ -219,7 +219,7 @@ $(document).ready(function(){
 		window.onpopstate = function(event){
 			var initialPop = !popped && location.href == initialURL;
 			popped = true;
-			first_pop = true;
+			first_pop = false;
 			if ( initialPop ) return;
 
 			var state = event.state;
