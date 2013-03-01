@@ -61,14 +61,14 @@ $(document).ready(function(){
 	//iframe content resize
 	var calculatedHeight = $(window).innerHeight() - $(".headerWrap").outerHeight(true) - 20;
 	$("#iframeContent").attr('height', calculatedHeight);
-	console.log('iframe height changed to: '+calculatedHeight);
+	//console.log('iframe height changed to: '+calculatedHeight);
 	$(window).resize(function(){
 		var calcHeight = $(window).innerHeight() - $(".headerWrap").outerHeight(true) - 20;
 		// if (calcHeight < 1000){
 			// calcHeight = 1000;
 		// }
 		$("#iframeContent").attr('height',calcHeight);
-		console.log('iframe height changed to: '+calcHeight);
+		//console.log('iframe height changed to: '+calcHeight);
 	});
 
 	//table tabs
@@ -107,9 +107,9 @@ $(document).ready(function(){
 					$(this).find('a').removeClass('nav-selected');
 				});
 				var curTab = this;
-				console.log(this);
-				console.log(link);
-				console.log("loading tab "+link.attr('href'));
+				//console.log(this);
+				//console.log(link);
+				//console.log("loading tab "+link.attr('href'));
 				$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
 				containerSp.fadeOut();
 				$.get(link.attr('href'),function(data){
@@ -126,8 +126,8 @@ $(document).ready(function(){
 					}
 					containerSp.removeClass('product');
 					
-					console.log(output);
-					console.log($(output).html());
+					//console.log(output);
+					//console.log($(output).html());
 					containerSp.html(output.html());
 
 					$(curTab).addClass('nav-selected');
@@ -136,7 +136,7 @@ $(document).ready(function(){
 					// $(".product-list a").each(function(){
 					// 	$(this).live('click',function(e){
 					// 		e.preventDefault();
-					// 		console.log('product page AJAX goes here...');
+					// 		//console.log('product page AJAX goes here...');
 					// 	})
 					// });
 
@@ -155,7 +155,7 @@ $(document).ready(function(){
 					containerSp.fadeIn(function(){
 						$("body .wrap").css('min-height', 'inherit' );
 						if($("div.ccm-gallery-wrap").length){
-							console.log('loading gridslider...');
+							//console.log('loading gridslider...');
 							$("div.ccm-gallery-wrap").gridSlider({cols: 4, rows: 4,align:'center',width:'800px',autoplay_enable:true,autoplay_interval:6,scroll_axis:'x',loop:true,ctrl_arrows:false,ctrl_pag:true,ctrl_always_visible:true});
 						}
 
@@ -172,7 +172,7 @@ $(document).ready(function(){
 
 		$(".product-list a,a.product-link").live('click',function(e){
 			e.preventDefault();
-			console.log('product page AJAX goes here...');
+			//console.log('product page AJAX goes here...');
 			if ($("div.container.oneColumn").length) {
 				var containerSp = $("div.container.oneColumn");
 			} else {
@@ -193,8 +193,8 @@ $(document).ready(function(){
 					containerSp.addClass('oneColumn').removeClass('rightSidebar');
 				}
 				containerSp.addClass('product');
-				console.log(output);
-				console.log($(output).html());
+				//console.log(output);
+				//console.log($(output).html());
 				containerSp.html(output.html());
 
 				//update url
@@ -211,15 +211,13 @@ $(document).ready(function(){
 				}
 				containerSp.fadeIn(function(){
 					$("body .wrap").css('min-height', 'inherit' );
-
-
 				});
 			});
 		});
 
 		window.onpopstate = function(event){
 			if(event.originalEvent.state!=null){ //check for chrome to not exectue on page load
-				console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
+				//console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
 			}
 		}
 	}
@@ -229,7 +227,7 @@ $(document).ready(function(){
 	$("select.region-menu").each(function(){
 		$(this).change(function(){
 			var region = $(this).val();
-			console.log('changing to region '+region);
+			//console.log('changing to region '+region);
 			$(this).parentsUntil('tr').find('div.carrier-list').each(function(){
 				$(this).hide();
 			});
@@ -245,8 +243,8 @@ $(document).ready(function(){
 	$("select.country-menu").each(function(){
 		$(this).change(function(){
 			var country = $(this).val();
-			console.log('changing country to '+country);
-			console.log($(this).parentsUntil('td'));
+			//console.log('changing country to '+country);
+			//console.log($(this).parentsUntil('td'));
 			$(this).parentsUntil('tr').find("div.carrier-list").not('.carrier-list.menu-'+country).each(function(){
 				$(this).hide();
 			});
