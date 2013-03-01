@@ -224,7 +224,7 @@ $(document).ready(function(){
 			// console.log(event);
 			console.log(state);
 
-			// if ( state == null ) return;
+			if ( state == null ) return;
 
 			if ($("div.container.oneColumn").length) {
 				var containerSp = $("div.container.oneColumn");
