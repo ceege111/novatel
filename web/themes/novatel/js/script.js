@@ -113,6 +113,7 @@ $(document).ready(function(){
 				//console.log(link);
 				//console.log("loading tab "+link.attr('href'));
 				$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
+				window.history.pushState({"link":link.attr('href')},'',link.attr('href'));
 				containerSp.fadeOut();
 				$.get(link.attr('href'),function(data){
 
@@ -144,7 +145,6 @@ $(document).ready(function(){
 
 					//update url
 					document.title = $(data).find("title").text();
-					window.history.pushState({"html":$(output).html(),"pageTitle":document.title},'',link.attr('href'));
 					if($("#modules_list").length){
 						var read_more = $("<div></div>");
 						read_more.addClass('gray-block span4 row product-item read-more');
@@ -180,6 +180,7 @@ $(document).ready(function(){
 			}
 			var link = $(this);
 			$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
+			window.history.pushState({"link":link.attr('href')},'',link.attr('href'));
 			containerSp.fadeOut();
 			$.get(link.attr('href'),function(data){
 				var breadCrumb = $(data).find('div.breadcrumb').first();
@@ -199,7 +200,6 @@ $(document).ready(function(){
 
 				//update url
 				document.title = $(data).find("title").text();
-				window.history.pushState({"html":$(output).html(),"pageTitle":document.title},'',link.attr('href'));
 				if($("#modules_list").length){
 					var read_more = $("<div></div>");
 					read_more.addClass('gray-block span4 row product-item read-more');
