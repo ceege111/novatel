@@ -222,12 +222,13 @@ $(document).ready(function(){
 			popped = true;
 			if ( initialPop ) return;
 
-			console.log("location: " + window.location + ", state: " + JSON.stringify(event.state));
-			console.log(event);
 			var state = event.state;
-			console.log(state);
-			if ( state == null ) return;
 
+			// console.log("location: " + window.location + ", state: " + JSON.stringify(event.state));
+			// console.log(event);
+			// console.log(state);
+
+			if ( state == null ) return;
 			window.location.href = window.location.href;
 		}
 	}

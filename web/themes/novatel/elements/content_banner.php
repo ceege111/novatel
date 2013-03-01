@@ -11,7 +11,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 				$(document).ready(function(){
 					$(".row.banner img").each(function(){
 						$(this).parent().addClass('span12');
-						console.log("banner image alt: "+$(this).attr('alt'));
+						// console.log("banner image alt: "+$(this).attr('alt'));
 						if ($(this).attr('alt')){
 							var bannerTitle = $("<h1>"+$(this).attr('alt')+"</h1>")
 							$(bannerTitle).addClass('bannerTitle').css('display','none');
