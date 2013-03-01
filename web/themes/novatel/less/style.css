@@ -902,9 +902,7 @@ body .product-list .row hr{margin:0px 20px 15px;border-top:1px solid #b4b4b4;*zo
 body .product-list .row hr:after{clear:both;}
 body .product-list .row.read-more h4{margin-top:50px;text-align:center;font-size:18px;}
 body .product-list .row.read-more a,body .product-list .row.read-more a:visited{text-align:center;display:block;font-size:14px;}
-body #mifi_list .product-list .row.product-item{height:340px;}
-body #mifi_list .product-list .row .productThumbnail{margin-top:80px;}
-body #mifi_list .product-list .row h3{width:186px;margin:10px 0px 0px;padding:0px 71px;}
+body .rightSidebar .product-list.container{width:765px;}body .rightSidebar .product-list.container .offset1{margin-left:15px;}
 body{}body #pagination.newsPagination{padding:3px 20px;background:#2d4761;color:#eeeeee;font-size:11px;}body #pagination.newsPagination a,body #pagination.newsPagination a:visited{color:#eeeeee;}
 body table.news-list td{padding:5px 0px 5px 20px;}body table.news-list td h3{font-size:14px;line-height:16px;margin:0px 0px 5px;padding:0;color:#3361aa;}body table.news-list td h3 a,body table.news-list td h3 a:visited{color:#3361aa;}
 body .tables .nav-header-tabs,body .support-results .nav-header-tabs{font-family:arial,helvetica,sans-serif !important;clear:both;margin:0px;margin-bottom:-10px;padding:0px;list-style:none;*zoom:1;}body .tables .nav-header-tabs:before,body .support-results .nav-header-tabs:before,body .tables .nav-header-tabs:after,body .support-results .nav-header-tabs:after{display:table;content:"";line-height:0;}
