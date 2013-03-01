@@ -11,7 +11,8 @@ $ih = Loader::helper('image'); //<--uncomment this line if displaying image attr
 	<?php foreach ($pages as $page):
 
 		// Prepare data for each page being listed...
-		$title = $th->entities($page->getCollectionName());
+		// $title = $th->entities($page->getCollectionName());
+		$title = ($page->getAttribute('product_alt_title') != '') ? $page->getAttribute('product_alt_title') :$th->entities($page->getCollectionName());
 		$url = $nh->getLinkToCollection($page);
 		$target = ($page->getCollectionPointerExternalLink() != '' && $page->openCollectionPointerExternalLinkInNewWindow()) ? '_blank' : $page->getAttribute('nav_target');
 		$target = empty($target) ? '_self' : $target;
