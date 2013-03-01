@@ -222,7 +222,11 @@ $(document).ready(function(){
 			popped = true;
 			if ( initialPop ) return;
 
-			console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
+			console.log("location: " + window.location + ", state: " + JSON.stringify(event.state));
+			var state = event.state;
+			if (state && state.pjax){
+				window.location = window.location.href;
+			}
 		}
 	}
 
