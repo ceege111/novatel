@@ -224,9 +224,9 @@ $(document).ready(function(){
 
 			var state = event.state;
 
-			// console.log("location: " + window.location + ", state: " + JSON.stringify(event.state));
+			console.log("location: " + window.location + ", state: " + JSON.stringify(event.state));
 			// console.log(event);
-			// console.log(state);
+			console.log(state);
 
 			if ( state == null ) return;
 
@@ -236,8 +236,8 @@ $(document).ready(function(){
 				var containerSp = $("div.container.rightSidebar");
 			}
 			$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
-			containerSp.fadeOut();
 			window.location.href = window.location.href;
+			containerSp.fadeOut();
 
 			// if ($("div.container.oneColumn").length) {
 			// 	var containerSp = $("div.container.oneColumn");
