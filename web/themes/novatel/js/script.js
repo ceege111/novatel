@@ -223,10 +223,13 @@ $(document).ready(function(){
 			if ( initialPop ) return;
 
 			console.log("location: " + window.location + ", state: " + JSON.stringify(event.state));
+			console.log(event);
 			var state = event.state;
-			if (state && state.pjax){
-				window.location = window.location.href;
-			}
+			console.log(state);
+			if ( JSON.stringify(state) == null ) return;
+
+
+			window.location.href = window.location.href;
 		}
 	}
 
