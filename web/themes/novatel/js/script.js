@@ -226,8 +226,7 @@ $(document).ready(function(){
 			console.log(event);
 			var state = event.state;
 			console.log(state);
-			if ( JSON.stringify(state) == null ) return;
-
+			if ( state == null ) return;
 
 			window.location.href = window.location.href;
 		}
