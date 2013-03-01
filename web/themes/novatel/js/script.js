@@ -229,7 +229,48 @@ $(document).ready(function(){
 			// console.log(state);
 
 			if ( state == null ) return;
-			window.location.href = window.location.href;
+			// window.location.href = window.location.href;
+
+			if ($("div.container.oneColumn").length) {
+				var containerSp = $("div.container.oneColumn");
+			} else {
+				var containerSp = $("div.container.rightSidebar");
+			}
+			var link = window.location.href;
+			$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
+			containerSp.fadeOut();
+			$.get(link.attr('href'),function(data){
+				var breadCrumb = $(data).find('div.breadcrumb').first();
+				$("div.breadcrumb").html($(breadCrumb).html());
+
+				var output = $(data).find("div.container.oneColumn");
+				if (output.length == 0){
+					output = $(data).find("div.container.rightSidebar");
+					containerSp.addClass('rightSidebar').removeClass('oneColumn');
+				} else {
+					containerSp.addClass('oneColumn').removeClass('rightSidebar');
+				}
+				containerSp.addClass('product');
+				//console.log(output);
+				//console.log($(output).html());
+				containerSp.html(output.html());
+
+				//update url
+				document.title = $(data).find("title").text();
+				if ($("html").hasClass('history')){
+					window.history.pushState({"html":$(output).html(),"pageTitle":document.title},'',link.attr('href'));
+				}
+				if($("#modules_list").length){
+					var read_more = $("<div></div>");
+					read_more.addClass('gray-block span4 row product-item read-more');
+					read_more.append('<h4>See Also:</h4>');
+					read_more.append('<a title="M2M Modules" href="http://dev.v2.novatel.rtio.nl/index.php?cID=382">M2M Modules</a><p><a title="M2M Modules" href="/index.php?cID=219"><img style="margin-top: 0px; margin-bottom: 0px;" src="/index.php/download_file/view_inline/28/" alt="NVTL-13.jpg" width="250" /></a></p>');
+					$("#modules_list > div").append(read_more);
+				}
+				containerSp.fadeIn(function(){
+					$("body .wrap").css('min-height', 'inherit' );
+				});
+			});
 		}
 	}
 
