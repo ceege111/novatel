@@ -114,7 +114,7 @@ $(document).ready(function(){
 				//console.log("loading tab "+link.attr('href'));
 				$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
 				window.history.pushState({"link":link.attr('href')},'',link.attr('href'));
-				containerSp.fadeOut();
+				containerSp.fadeOut(100);
 				$.get(link.attr('href'),function(data){
 
 					var breadCrumb = $(data).find('div.breadcrumb').first();
@@ -181,7 +181,7 @@ $(document).ready(function(){
 			var link = $(this);
 			$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
 			window.history.pushState({"link":link.attr('href')},'',link.attr('href'));
-			containerSp.fadeOut();
+			containerSp.fadeOut(100);
 			$.get(link.attr('href'),function(data){
 				var breadCrumb = $(data).find('div.breadcrumb').first();
 				$("div.breadcrumb").html($(breadCrumb).html());
