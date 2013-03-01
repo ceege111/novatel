@@ -883,7 +883,7 @@ body{}body .container{width:1024px;}body .container p{font-size:13px;}
 body .container.leftSidebar .centerColumn{width:765px;}
 body .container.threeColumn .centerColumn{width:624px;}
 body .container.rightSidebar .centerColumn{float:left;width:765px;}
-body{}body .ccm-page-list h3{background:url(img/icons/list-arrow.png) no-repeat 0% 50% transparent;padding-left:30px;}body .ccm-page-list h3 a,body .ccm-page-list h3 a:visited{color:#3361aa;font-size:18px;font-weight:normal;}
+body{}body .ccm-page-list h3{font-family:arial,helvetica,sans-serif !important;background:url(img/icons/list-arrow.png) no-repeat 0% 50% transparent;padding-left:30px;}body .ccm-page-list h3 a,body .ccm-page-list h3 a:visited{color:#3361aa;font-size:18px;font-weight:normal;}
 body .ccm-block-styles img.feature{margin-top:-6px;margin-right:4px;}
 body .ccm-block-styles h1.feature img{margin-top:-6px;margin-right:4px;}
 body .ccm-block-styles p.feature{margin-left:30px;}
