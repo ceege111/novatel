@@ -219,7 +219,6 @@ $(document).ready(function(){
 		window.onpopstate = function(event){
 			var initialPop = !popped && location.href == initialURL;
 			popped = true;
-			first_pop = true;
 			if ( initialPop ) return;
 
 			var state = event.state;
