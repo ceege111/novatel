@@ -229,7 +229,7 @@ $(document).ready(function(){
 			console.log(state);
 
 			if ( state == null ){
-				if (popped){
+				if (first_pop){
 					window.location.href = window.location.href;
 				} else {
 					return;
