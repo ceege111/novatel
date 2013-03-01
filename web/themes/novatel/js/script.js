@@ -3,6 +3,7 @@
 */
 
 var popped = ('state' in window.history), initialURL = location.href; //chrome popstate onload check
+var cur_url = location.href;
 
 $(document).ready(function(){
 
@@ -114,6 +115,7 @@ $(document).ready(function(){
 				//console.log("loading tab "+link.attr('href'));
 				$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
 				window.history.pushState({"link":link.attr('href')},'',link.attr('href'));
+				cur_url = link.attr('href');
 				containerSp.fadeOut(100);
 				$.get(link.attr('href'),function(data){
 
@@ -181,6 +183,7 @@ $(document).ready(function(){
 			var link = $(this);
 			$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
 			window.history.pushState({"link":link.attr('href')},'',link.attr('href'));
+			cur_url = link.attr('href');
 			containerSp.fadeOut(100);
 			$.get(link.attr('href'),function(data){
 				var breadCrumb = $(data).find('div.breadcrumb').first();
@@ -224,7 +227,13 @@ $(document).ready(function(){
 			// console.log(event);
 			console.log(state);
 
-			if ( state == null ) return;
+			if ( state == null ){
+				if (cur_url != window.location.href){
+					window.location.href = window.location.href;
+				} else {
+					return;
+				}
+			}
 
 			if ($("div.container.oneColumn").length) {
 				var containerSp = $("div.container.oneColumn");
