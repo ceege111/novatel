@@ -3,7 +3,7 @@
 */
 
 var popped = ('state' in window.history), initialURL = location.href; //chrome popstate onload check
-var first_pop = true;
+var first_pop = false;
 var cur_url = location.href;
 
 $(document).ready(function(){
