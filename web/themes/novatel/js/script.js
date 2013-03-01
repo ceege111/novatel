@@ -239,7 +239,7 @@ $(document).ready(function(){
 			var link = window.location.href;
 			$("body .wrap").css('min-height', $("body .wrap").innerHeight() );
 			containerSp.fadeOut();
-			$.get(link.attr('href'),function(data){
+			$.get(link,function(data){
 				var breadCrumb = $(data).find('div.breadcrumb').first();
 				$("div.breadcrumb").html($(breadCrumb).html());
 
