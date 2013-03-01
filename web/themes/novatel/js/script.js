@@ -231,7 +231,6 @@ $(document).ready(function(){
 				if (first_pop){
 					window.location.href = window.location.href;
 				} else {
-					first_pop = true;
 					return;
 				}
 			}
