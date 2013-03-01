@@ -92,8 +92,8 @@ $(document).ready(function(){
 	});
 
 	//special product tabs
-	// if($("html").hasClass('history')){
-	if(0){
+	if($("html").hasClass('history')){
+	// if(0){
 		$(".nav-header-tabs-sp li").each(function(){
 			if ($("div.container.oneColumn").length) {
 				var containerSp = $("div.container.oneColumn");
@@ -216,6 +216,10 @@ $(document).ready(function(){
 				});
 			});
 		});
+
+		window.onpopstate = function(event){
+			console.log("location: " + window.location + ", state: " JSON.stringify(event.state));
+		}
 	}
 
 	//where to buy menus
