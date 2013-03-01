@@ -144,9 +144,7 @@ $(document).ready(function(){
 
 					//update url
 					document.title = $(data).find("title").text();
-					if($("html").hasClass('history')){
-						window.history.pushState({"html":$(output).html(),"pageTitle":document.title},'',link.attr('href'));
-					}
+					window.history.pushState({"html":$(output).html(),"pageTitle":document.title},'',link.attr('href'));
 					if($("#modules_list").length){
 						var read_more = $("<div></div>");
 						read_more.addClass('gray-block span4 row product-item read-more');
@@ -201,9 +199,7 @@ $(document).ready(function(){
 
 				//update url
 				document.title = $(data).find("title").text();
-				if ($("html").hasClass('history')){
-					window.history.pushState({"html":$(output).html(),"pageTitle":document.title},'',link.attr('href'));
-				}
+				window.history.pushState({"html":$(output).html(),"pageTitle":document.title},'',link.attr('href'));
 				if($("#modules_list").length){
 					var read_more = $("<div></div>");
 					read_more.addClass('gray-block span4 row product-item read-more');
@@ -228,7 +224,7 @@ $(document).ready(function(){
 			// console.log(event);
 			console.log(state);
 
-			if ( state == null ) return;
+			// if ( state == null ) return;
 
 			if ($("div.container.oneColumn").length) {
 				var containerSp = $("div.container.oneColumn");
