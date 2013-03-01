@@ -218,7 +218,9 @@ $(document).ready(function(){
 		});
 
 		window.onpopstate = function(event){
-			console.log("location: " + window.location + ", state: " JSON.stringify(event.state));
+			if(event.originalEvent.state!=null){ //check for chrome to not exectue on page load
+				console.log("location: " + window.location + ", state: " JSON.stringify(event.state));
+			}
 		}
 	}
 
