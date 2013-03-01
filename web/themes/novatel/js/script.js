@@ -92,7 +92,8 @@ $(document).ready(function(){
 	});
 
 	//special product tabs
-	if($("html").hasClass('history')){
+	// if($("html").hasClass('history')){
+	if(0){
 		$(".nav-header-tabs-sp li").each(function(){
 			if ($("div.container.oneColumn").length) {
 				var containerSp = $("div.container.oneColumn");
