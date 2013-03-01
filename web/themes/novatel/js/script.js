@@ -228,7 +228,7 @@ $(document).ready(function(){
 			console.log(state);
 
 			if ( state == null ){
-				if (cur_url != window.location.href){
+				if (popped){
 					window.location.href = window.location.href;
 				} else {
 					return;
