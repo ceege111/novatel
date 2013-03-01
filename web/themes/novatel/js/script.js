@@ -219,7 +219,7 @@ $(document).ready(function(){
 		window.onpopstate = function(event){
 			var initialPop = !popped && location.href == initialURL;
 			popped = true;
-			first_pop = false;
+			first_pop = true;
 			if ( initialPop ) return;
 
 			var state = event.state;
@@ -232,6 +232,7 @@ $(document).ready(function(){
 				if (first_pop){
 					window.location.href = window.location.href;
 				} else {
+					first_pop = true;
 					return;
 				}
 			}
