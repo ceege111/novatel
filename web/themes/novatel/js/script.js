@@ -258,7 +258,7 @@ $(document).ready(function(){
 				//update url
 				document.title = $(data).find("title").text();
 				if ($("html").hasClass('history')){
-					window.history.pushState({"html":$(output).html(),"pageTitle":document.title},'',link.attr('href'));
+					window.history.pushState({"html":$(output).html(),"pageTitle":document.title},'',link);
 				}
 				if($("#modules_list").length){
 					var read_more = $("<div></div>");
