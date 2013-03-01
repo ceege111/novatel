@@ -3,7 +3,7 @@
 <script type="text/javascript">
 //<![CDATA[
 $(document).ready(function(){
-	$("#ccm-SlideshowBlock-display<?=intval($bID)?>").gridSlider({autoplay_enable:true,autoplay_interval:5,scroll_axis:'x',loop:true,ctrl_arrows:false,ctrl_pag:true,ctrl_always_visible:true});
+	$("#ccm-SlideshowBlock-display<?=intval($bID)?>").gridSlider({autoplay_enable:true,autoplay_interval:6,scroll_axis:'x',loop:true,ctrl_arrows:false,ctrl_pag:true,ctrl_always_visible:true});
 });
 
 //]]>
