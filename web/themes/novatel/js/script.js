@@ -229,6 +229,13 @@ $(document).ready(function(){
 			// console.log(state);
 
 			if ( state == null ) return;
+
+			if ($("div.container.oneColumn").length) {
+				var containerSp = $("div.container.oneColumn");
+			} else {
+				var containerSp = $("div.container.rightSidebar");
+			}
+			containerSp.fadeOut();
 			window.location.href = window.location.href;
 
 			// if ($("div.container.oneColumn").length) {
