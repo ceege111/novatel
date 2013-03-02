@@ -22,7 +22,7 @@
 
 	<!-- Site Header Content //-->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,300,600,800' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" media="screen" type="text/css" href="<?php echo $this->getStyleSheet('less/style.css')?>?v=<?php echo rand(); ?>" />
+	<link rel="stylesheet" media="screen" type="text/css" href="<?php echo $this->getStyleSheet('less/style.css')?>" />
 
 	<!-- All JavaScript at the bottom, except this Modernizr build.
 	Modernizr enables HTML5 elements & feature detects for optimal performance.
