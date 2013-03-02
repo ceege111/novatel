@@ -70,7 +70,7 @@ $th = Loader::helper('text');
 				<?php if ($url == ''): ?>
 					<?php echo $description ?>
 				<?php else: ?>
-					<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $description ?></a>
+					<a href="<?php echo $url ?>" target="_blank"><?php echo $description ?></a>
 				<?php endif; ?>
 			</h3>
 			<div><?php echo $date; ?></div>
