@@ -31,7 +31,9 @@ nbproject
 */node_modules/
 
 #*/config/site.php
-*/files/*
+#web/files/*
+web/files/tmp/*
+web/files/cache/*
 
 sftp-config.json
 
