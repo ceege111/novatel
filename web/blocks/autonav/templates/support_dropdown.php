@@ -34,7 +34,7 @@
 
 	foreach($aBlocks as $ni) {
 		$_c = $ni->getCollectionObject();
-		if (!$_c->getCollectionAttributeValue('exclude_support')) {
+		if (!$_c->getCollectionAttributeValue('exclude_nav')) {
 			
 			
 			// $target = $ni->getTarget();
