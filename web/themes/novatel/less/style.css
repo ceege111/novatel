@@ -944,9 +944,9 @@ body .footerWrap .footer ul.nav ul.footer-column>li.level-0{margin-bottom:10px;}
 body .footerWrap .footer ul.nav ul.footer-column ul{margin:0px;}
 body .footerWrap .footer .footer-sub{margin-top:15px;}
 body .footerWrap .footer .iso-logo{margin-top:30px;}
-body{}body .socialButtons{margin-top:15px;margin-bottom:5px;position:relative;text-align:center;}body .socialButtons .fb-like{width:99px;float:left;}
+body{}body .socialButtons{margin-top:15px;margin-left:25px;margin-bottom:5px;position:relative;text-align:center;}body .socialButtons .fb-like{width:99px;float:left;}
 body .socialButtons a.share-btn:first-child{margin-left:0;}
-body .share-btn{display:inline-block;width:99px;height:31px;margin-top:-6px;float:left;}body .share-btn.facebook{background:url('img/products/fb_like_btn.png') no-repeat 0 0;}
+body .share-btn{display:inline-block;width:99px;height:31px;margin-top:-1px;float:left;}body .share-btn.facebook{background:url('img/products/fb_like_btn.png') no-repeat 0 0;}
 body .share-btn.twitter{background:url('img/products/tweet_btn.png') no-repeat 0 0;}
 .ether-cols{margin:15px -15px;}
 .ether-cols+*{margin-top:0px !important;}
