@@ -70,8 +70,9 @@
 				</script>
 				<!-- social plugins go here -->
 				<div class="socialButtons">
-					<div id="fb-root"></div>
-				    <a id="twitter_btn" href="https://twitter.com/intent/tweet?text=#novatel" class="share-btn twitter" target="_blank"></a>
+					<?php $current_url = BASE_URL. $this->url($this->getCollectionObject()->cPath); ?>
+					<div class="fb-like" data-href="<?php echo $current_url; ?>" data-send="false" data-layout="button_count" data-width="130" data-show-faces="false"></div>
+					<a id="twitter_btn" href="https://twitter.com/intent/tweet?text=#novatel" class="share-btn twitter" target="_blank"></a>
 				    
 				    <!-- Twitter -->
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -85,7 +86,9 @@
 			    		});
 			    		$('.fb-like').attr('data-href', currentUrl);
 				    </script>
+				    
 				    <!-- Facebook -->
+					<div id="fb-root"></div>
 					<script>(function(d, s, id) {
 					  var js, fjs = d.getElementsByTagName(s)[0];
 					  if (d.getElementById(id)) return;
