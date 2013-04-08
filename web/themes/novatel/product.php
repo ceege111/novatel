@@ -70,8 +70,7 @@
 				</script>
 				<!-- social plugins go here -->
 				<div class="socialButtons">
-				    <div id="fb_div" class="fb-like" data-href="http://novatelwireless.com/" data-send="false" data-width="200" data-show-faces="false"></div>
-				    <a id="fb_btn" href="#" class="share-btn facebook" target="_blank"></a>
+					<div id="fb-root"></div>
 				    <a id="twitter_btn" href="https://twitter.com/intent/tweet?text=#novatel" class="share-btn twitter" target="_blank"></a>
 				    
 				    <!-- Twitter -->
