@@ -71,7 +71,7 @@
 				<!-- social plugins go here -->
 				<div class="socialButtons">
 					<?php $current_url = BASE_URL. $this->url($this->getCollectionObject()->cPath); ?>
-					<div class="fb-like" data-href="<?php echo $current_url; ?>" data-send="false" data-layout="button_count" data-width="130" data-show-faces="false"></div>
+					<div class="fb-like" data-href="<?php echo $current_url; ?>" data-send="false" data-layout="button_count" data-width="99" data-show-faces="false"></div>
 					<a id="twitter_btn" href="https://twitter.com/intent/tweet?text=#novatel" class="share-btn twitter" target="_blank"></a>
 				    
 				    <!-- Twitter -->
