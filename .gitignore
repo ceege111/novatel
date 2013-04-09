@@ -30,8 +30,10 @@ nbproject
 /node_modules/
 */node_modules/
 
+#concrete5 web folder files to ignore
 #*/config/site.php
 #web/files/*
+web/sitemap.xml
 web/files/tmp/*
 web/files/cache/*
 
