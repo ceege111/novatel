@@ -1,0 +1,264 @@
+@import "bootstrap/bootstrap.less";
+
+// @import "bootstrap/responsive.less";
+
+//theme variables
+@headerHeight:			125px;
+@bodyWidth:				1024px;
+
+//theme styles
+@import "header.less";
+@import "search_widget.less";
+@import "home.less";
+@import "subnav.less";
+@import "columns.less";
+@import "center_column.less";
+@import "products.less";
+@import "main.less";
+@import "right_sidebar.less";
+@import "edit_mode.less";
+@import "footer.less";
+@import "social.less";
+@import "gridslider.less";
+@import "ie.less";
+//TODO: fix the order of the less include files
+
+/* ===== Primary Styles ========================================================
+   Author: Rational
+   ========================================================================== */
+
+h1 {
+	font-family: arial,helvetica,sans-serif !important;
+}
+
+
+html {  }
+
+body {
+
+	//Gray panels
+	.gray-block {				
+		background: #f9f9f9;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #f8f8f8 #d3d3d3 #d4d4d4 #f7f7f7;
+		border-radius: 0 1px 1px 0;
+		.box-shadow(inset -1px -1px 0px #ececec, 1px 1px 0px #f2f2f2);
+	}
+
+	//grid overrides
+	.span3 {
+		width: 225px;
+	}
+	.oneColumn .span12 {
+		margin-left: 0px;
+	}
+
+	table {
+		&.support {
+				
+		}
+	}
+	.product {
+		.rightColumn {
+			.sidebar-block {
+				p {
+					text-align: center;
+				}
+				&.no-block {
+					padding: 0;
+					background: transparent;
+					border: none;
+					border-radius: 0;
+					.box-shadow(none);
+				}
+			}
+		}
+	}
+	.productTitle {
+		margin-bottom: 10px;
+		h4 {
+			font-weight: 600;
+			font-style: italic;
+			strong {
+				font-weight: 700;
+			}
+		}
+	}
+	.productMainImages{
+		img {
+			cursor: pointer;
+			text-align: center;
+			display: block;
+			margin: 0px auto;
+		}
+	}
+	.productMoreImages {
+		img {
+			cursor: pointer;
+		}
+	}
+	.productDescription {
+		margin-bottom: 30px;
+		.see-more-link {
+			text-align: right;
+			font-weight: bold;
+			font-style: italic;
+		}
+	}
+
+	.productTab-block {
+		padding: 0px 20px 30px;
+	}
+	.modal {
+		.modal-body {
+			text-align: center;
+			padding: 20px 0px 30px;
+		}
+	}
+	.slideImgWrap {
+		border: 1px solid #c2c2c2;
+		.border-radius(3px);
+	}
+
+	//where to buy
+	.where-to-buy-header {
+
+	}
+	.where-to-buy-results {
+		background: url(img/map_bg.png) no-repeat top center #eee;
+		min-height: 340px;
+		.carrier-list{
+			margin: 20px 10px 10px;
+			.carrier-item {
+				margin: 10px 10px;
+				width: 30%;
+				float: left;
+				font-size: 16px;
+				color: @blueDark;
+				.carrier-sub {
+					color: @gray;
+					font-size: 12px;
+				}
+				&:nth-child(3n+4) {
+					clear: left;
+				}
+				&.carrier-item-full{
+					width: 100%;
+					clear: both;
+				}
+			}		
+		}	
+	}
+	.region-menu, .country-menu {
+		margin-bottom: 0px;
+	}
+
+	.table.support-results {
+		// margin-left: -8px;
+		// margin-right: -8px;
+		// margin-bottom: -8px;
+		// width: 765px;
+		tr {
+			th {
+				min-width: 200px;
+				padding: 10px;
+				background: @blueDarker;
+				border: 1px solid @blueDarker;
+				color: @grayLighter;
+				font-weight: bold;
+			}
+			td {
+				margin: 2px;
+				padding: 10px;
+				border: 1px solid @grayLight;
+				&.product-thumbnail {
+					min-width: 100px;
+					min-height: 180px;
+					text-align: center;
+					vertical-align: middle;
+					background: @white;
+				}
+				&.product-name {
+					min-width: 300px;
+				}
+				&.product-description {
+				}
+				&.product-support {
+					width: 100%;
+				}
+				h5 {
+					font-size: 12px;
+					margin: 0px;
+					padding: 0px;
+				}
+			}
+		}
+	}
+
+	.underline {
+		.ccm-page-list-title {
+			border-bottom: 1px solid @gray;
+		}
+		hr {
+			border-bottom: 1px solid @gray;
+		}
+	}
+
+	.ccm-page-list {
+		h5 {
+			font-weight: normal;
+			font-size: 12px;
+			margin-left: 3px;
+			margin-top: -15px;
+			margin-bottom: -10px;
+		}
+	}
+
+	.ccm-gallery-wrap {
+		padding-bottom: 30px;
+	}
+
+	.ccm-gallery {
+		border: 0px solid transparent;
+	}
+
+	.galleryImages {
+		float: left;
+	}
+
+	select.region-menu, select.country-menu {
+		width: auto;
+		min-width: 220px;
+	}
+
+	.splitColumn {
+		.ccm-page-list-title {
+			background: none;
+			// float: left;
+			margin: 0;
+			padding: 0;
+			// width: 50%;
+			line-height: 25px;
+			a,a:visited {
+				font-size: 14px;
+				line-height: 16px;
+			}
+		}
+		.splitLeft,.splitRight {
+			padding: 40px;
+			.ccm-page-list {
+				overflow: hidden;
+				margin-top: 10px;
+				border-top: 1px solid @grayLight;
+
+			}
+		}
+		.splitLeft {
+			padding: 40px;
+		}
+		.splitRight {
+			padding: 40px;
+		}
+	}
+}

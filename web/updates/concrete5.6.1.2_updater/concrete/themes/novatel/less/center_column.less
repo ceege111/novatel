@@ -1,0 +1,73 @@
+body {
+/* =============== Center Column Content Layout LESS =============== */
+
+	.ccm-page-list {
+		h3 {
+			font-family: arial,helvetica,sans-serif !important;
+			background: url(img/icons/list-arrow.png) no-repeat 0% 50% transparent;
+			padding-left: 30px;
+			a,a:visited{
+				color: @blueDark;
+				font-size: 18px;
+				font-weight: normal;
+			}
+		}
+	}
+
+	.ccm-block-styles {
+		img.feature {
+			margin-top: -6px;
+			margin-right: 4px;
+		}
+		h1.feature {
+			img {
+				margin-top: -6px;
+				margin-right: 4px;
+			}
+		}
+		p.feature {
+			margin-left: 30px;
+		}
+	}
+	
+	.tab-titles{
+		.clearfix;
+		list-style: none;
+		margin: 0px 0px 7px;
+		padding: 0px;
+
+		li {
+			float: left;
+			margin: 0 2px 0 0;
+			padding: 0 0 7px 0;
+			text-align: center;
+			line-height: 13px;
+			a,a:visited {
+				display: block;
+				height: 14px;
+				padding: 0 7px 0 6px;
+				border-left: 1px solid #cfcfcf;
+
+				p {
+					padding: 0 3px 5px;
+					color: @gray;
+					font-weight: 600;
+				}
+			}
+			&.active {
+				a,a:visited {
+					p {
+						color: @blueDark;
+						border-bottom: 2px solid #8abb36;
+					}
+				}
+			}
+			&:first-child {
+				a, a:visited {
+					border-left: 0;
+					padding-left: 0;
+				}
+			}
+		}
+		}
+}
