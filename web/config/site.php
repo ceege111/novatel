@@ -1,8 +1,8 @@
 <?php
-define('DB_SERVER', "${_SERVER["DB_HOST"]}");
-define('DB_USERNAME', "${_SERVER["DB_USER"]}");
-define('DB_PASSWORD', "${_SERVER["DB_PASS"]}");
-define('DB_DATABASE', "${_SERVER["DB_NAME"]}");
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'novatel');
+define('DB_PASSWORD', 'H8y^j0Lnen');
+define('DB_DATABASE', 'novatel');
 define('PASSWORD_SALT', 'VB6kbNLP60TfCGakVqTYaEa2T8oJaJJ0B00g1KnChhDRJnjYi8D8wfFsyemhCH31');
 define('ENABLE_NEWSFLOW_OVERLAY', FALSE);
 define('EMAIL_DEFAULT_FROM_ADDRESS', 'info@nvtl.com');
