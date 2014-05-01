@@ -3,7 +3,7 @@ namespace('db', function () {
 	task('export', function () {
 		// TODO: Load db info from config files
 		process.stdout.write('Dumping mysql database... ');
-		jake.exec(['mysqldump -u novatel -pH8y^j0Lnen novatel > db/concrete5.sql'], function () {
+		jake.exec(['mysqldump -u deploy -poPNNT4deUr novatel_prod -h ec2-54-86-109-233.compute-1.amazonaws.com > db/concrete5.sql'], function () {
 			console.log('Done!');
 			complete();
 		});
@@ -11,7 +11,7 @@ namespace('db', function () {
 	task('import', function () {
 		// TODO: Load db info from config files
 		process.stdout.write('Importing mysql database... ');
-		jake.exec(['mysql -u novatel -pH8y^j0Lnen novatel < db/concrete5.sql'], function () {
+		jake.exec(['mysql -u deploy -poPNNT4deUr novatel_prod -h ec2-54-86-109-233.compute-1.amazonaws.com < db/concrete5.sql'], function () {
 			console.log('Done!');
 			complete();
 		});
