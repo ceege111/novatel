@@ -36,7 +36,7 @@ nbproject
 web/sitemap.xml
 web/files/tmp/*
 web/files/cache/*
-
+jakelib/*
 sftp-config.json
 
 #template files ignored
