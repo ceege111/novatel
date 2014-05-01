@@ -17,7 +17,8 @@ $(document).ready(function(){
 		$fp = new Permissions($f);
 		if ($fp->canRead()) {?>
 			<div <?php if($first){ $first = false; } else { echo(" style='display:none;' "); } ?>>
-					<?php if($imgInfo['url]'] != ''){ ?>
+					<pre style="display:none;"><?php var_dump($imgInfo);?></pre>
+					<?php if($imgInfo['url'] != ''){ ?>
 						<a href="<?=$imgInfo['url']?>"><img alt="" src="<?=$f->getRelativePath()?>"></a>
 					<?php } else { ?>
 						<img alt="" src="<?=$f->getRelativePath()?>">
