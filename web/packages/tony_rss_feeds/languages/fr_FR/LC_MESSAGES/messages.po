@@ -1,0 +1,291 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Concrete5 RSS Creator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-06 08:43-0800\n"
+"PO-Revision-Date: 2011-02-07 15:34+0100\n"
+"Last-Translator: cali <cali@concrete5.fr>\n"
+"Language-Team: concrete5 FR <cali@concrete5.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: gettext;gettext_noop;t\n"
+"X-Poedit-Basepath: /Users/tony/ConcreteCMS/concrete5-addons/trunk/web/packaged_blocks/tony_rss_feeds/\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: controller.php:3
+#: blocks/rss_link/add.php:2
+#: blocks/rss_link/controller.php:2
+#: blocks/rss_link/edit.php:2
+#: blocks/rss_link/form_setup_html.php:2
+#: blocks/rss_link/view.php:2
+#: controllers/dashboard/rss_feeds.php:3
+#: controllers/page_types/rss_feed.php:3
+#: single_pages/dashboard/rss_feeds.php:2
+msgid "Access Denied."
+msgstr "Accès refusé"
+
+#: controller.php:17
+msgid "Create and configure rich-text feeds for your site, with clean URLs"
+msgstr "Génère et configure un flux RSS avec textes enrichis pour votre site, avec des URLs propres"
+
+#: controller.php:21
+msgid "RSS Feed Creator"
+msgstr "Créateur de flux RSS"
+
+#: controller.php:33
+#: single_pages/dashboard/rss_feeds.php:72
+msgid "RSS Feed Manager"
+msgstr "Gestionnaire de flux RSS"
+
+#: controller.php:33
+msgid "Add and Configure RSS Feeds on your site"
+msgstr "Ajouter et configurer un flux RSS sur votre site"
+
+#: controller.php:41
+msgid "RSS Feed"
+msgstr "Flux RSS"
+
+#: blocks/rss_link/add.php:5
+msgid "Subscribe"
+msgstr "S'abonner"
+
+#: blocks/rss_link/controller.php:23
+msgid "Display a link to your rss feeds"
+msgstr "Afficher un lien vers votre flux rss"
+
+#: blocks/rss_link/controller.php:27
+msgid "RSS Link"
+msgstr "Lien RSS"
+
+#: blocks/rss_link/form_setup_html.php:17
+msgid "Select Feed"
+msgstr "Sélectionner un flux"
+
+#: blocks/rss_link/form_setup_html.php:32
+msgid "Manage your RSS Feeds"
+msgstr "Gerer vos flux RSS"
+
+#: blocks/rss_link/form_setup_html.php:37
+msgid "Link Text"
+msgstr "Texte du lien"
+
+#: blocks/rss_link/form_setup_html.php:37
+msgid "Optional"
+msgstr "En option"
+
+#: blocks/rss_link/form_setup_html.php:42
+msgid "fID"
+msgstr "Icône du flux"
+
+#: blocks/rss_link/form_setup_html.php:62
+msgid "Choose your own"
+msgstr "Choisissez le votre"
+
+#: blocks/rss_link/form_setup_html.php:68
+msgid "None"
+msgstr "Aucun"
+
+#: blocks/rss_link/form_setup_html.php:77
+msgid "Right Align Icon"
+msgstr "Aligner l'icône à droite"
+
+#: blocks/rss_link/form_setup_html.php:84
+msgid "Open in a new window"
+msgstr "Ouvrir dans une nouvelle fenêtre"
+
+#: blocks/rss_link/view.php:20
+msgid "RSS feed not found."
+msgstr "Flux RSS non trouvé."
+
+#: controllers/dashboard/rss_feeds.php:13
+msgid "The page type rss_feed was not found. Please reinstall the RSS Feeds package. "
+msgstr "Le type de page rss_feed n'a pas été trouvé. Veuillez ré-installer le paquet RSS Feeds."
+
+#: controllers/dashboard/rss_feeds.php:44
+#: controllers/dashboard/rss_feeds.php:170
+msgid "RSS Feed Not Found."
+msgstr "Flux RSS non trouvé."
+
+#: controllers/dashboard/rss_feeds.php:59
+msgid "A Feed Title is required"
+msgstr "Un titre est requis pour ce flux"
+
+#: controllers/dashboard/rss_feeds.php:67
+msgid "A Feed URL is required"
+msgstr "Une URL est requise pour ce fulx"
+
+#: controllers/dashboard/rss_feeds.php:70
+msgid "Remove index.php from your feed URL."
+msgstr "Enlever index.php du lien de votre flux."
+
+#: controllers/dashboard/rss_feeds.php:91
+msgid "Invalid Feed Url. The path to this feed must already exist.  You must create the parent pages."
+msgstr "Url de flux invalide. Le chemin vers cette page de flux doit préalablement exister. Vous devez créer les pages parentes."
+
+#: controllers/dashboard/rss_feeds.php:95
+msgid "Error: You can't add this feed under itself."
+msgstr "Erreur: Vous ne pouvez pas ajouter ce flux sous lui même."
+
+#: controllers/dashboard/rss_feeds.php:103
+msgid "Oops, there were some errors with your feed configuration:"
+msgstr "Oops, il des erreurs dans votre configuration de flux:"
+
+#: controllers/dashboard/rss_feeds.php:132
+msgid "RSS Feed Configuration Saved"
+msgstr "Configuration de flux RSS sauvegardée."
+
+#: controllers/dashboard/rss_feeds.php:173
+msgid "Invalid RSS Feed page type"
+msgstr "Type de page de flux rss invalide"
+
+#: controllers/dashboard/rss_feeds.php:180
+msgid "RSS Feed Deleted"
+msgstr "Fux RSS supprimé"
+
+#: controllers/page_types/rss_feed.php:175
+msgid "Feed: "
+msgstr "Flux:"
+
+#: single_pages/dashboard/rss_feeds.php:98
+msgid "Configure Your RSS Feed"
+msgstr "Configurer votre flux RSS"
+
+#: single_pages/dashboard/rss_feeds.php:103
+msgid "Title"
+msgstr "Titre"
+
+#: single_pages/dashboard/rss_feeds.php:111
+msgid "URL Path"
+msgstr "Chemin URL"
+
+#: single_pages/dashboard/rss_feeds.php:121
+msgid "Description"
+msgstr "Description"
+
+#: single_pages/dashboard/rss_feeds.php:130
+msgid "Show pages from"
+msgstr "Afficher depuis les pages"
+
+#: single_pages/dashboard/rss_feeds.php:133
+msgid "Everywhere"
+msgstr "De tout le site"
+
+#: single_pages/dashboard/rss_feeds.php:134
+msgid "Beneath feed's parent"
+msgstr "Enfants du flux"
+
+#: single_pages/dashboard/rss_feeds.php:135
+msgid "Beneath another page"
+msgstr "Une autre page"
+
+#: single_pages/dashboard/rss_feeds.php:148
+msgid "Filter By Page Type"
+msgstr "Filtrer par type de page"
+
+#: single_pages/dashboard/rss_feeds.php:166
+msgid "Filter By Author"
+msgstr "Filtrer par auteur"
+
+#: single_pages/dashboard/rss_feeds.php:169
+msgid "Limit by user"
+msgstr "Limitation par utilisateurs"
+
+#: single_pages/dashboard/rss_feeds.php:180
+msgid "Page Descriptions"
+msgstr "Description des pages"
+
+#: single_pages/dashboard/rss_feeds.php:183
+msgid "Summaries only"
+msgstr "Résumé uniquement"
+
+#: single_pages/dashboard/rss_feeds.php:184
+msgid "Page area only"
+msgstr "Zone de page uniquement"
+
+#: single_pages/dashboard/rss_feeds.php:185
+msgid "Use summary if available"
+msgstr "Utiliser le résumé si disponible"
+
+#: single_pages/dashboard/rss_feeds.php:201
+msgid "Rich Text / HTML"
+msgstr "Texte enrichi / HTML"
+
+#: single_pages/dashboard/rss_feeds.php:202
+msgid "Plain Text"
+msgstr "Texte plein"
+
+#: single_pages/dashboard/rss_feeds.php:207
+msgid "Truncate after"
+msgstr "Tronquer après"
+
+#: single_pages/dashboard/rss_feeds.php:209
+msgid "characters"
+msgstr "caractères"
+
+#: single_pages/dashboard/rss_feeds.php:216
+msgid "Max Displayed Posts"
+msgstr "Max de messages affichés"
+
+#: single_pages/dashboard/rss_feeds.php:226
+msgid "Sort Order"
+msgstr "Méthode de trie"
+
+#: single_pages/dashboard/rss_feeds.php:241
+msgid "Cache Time"
+msgstr "Durée de vie du cache"
+
+#: single_pages/dashboard/rss_feeds.php:245
+msgid "Hours"
+msgstr "Heures"
+
+#: single_pages/dashboard/rss_feeds.php:247
+msgid "Note: With caching enabled, only pages that guests can view are returned"
+msgstr "Note: Avec le cache activé, seules les pages publiques seront envoyées."
+
+#: single_pages/dashboard/rss_feeds.php:256
+msgid "Save"
+msgstr "Enregistrer"
+
+#: single_pages/dashboard/rss_feeds.php:257
+#: single_pages/dashboard/rss_feeds.php:278
+msgid "Cancel"
+msgstr "Annuler"
+
+#: single_pages/dashboard/rss_feeds.php:270
+msgid "Are you sure you want to delete the following feed?!"
+msgstr "Etes vous certain de vouloir supprimer ce flux !?"
+
+#: single_pages/dashboard/rss_feeds.php:277
+#: single_pages/dashboard/rss_feeds.php:312
+msgid "Delete"
+msgstr "Supprimer"
+
+#: single_pages/dashboard/rss_feeds.php:288
+msgid "Create RSS Feed"
+msgstr "Créer un flux RSS"
+
+#: single_pages/dashboard/rss_feeds.php:295
+msgid "No Feeds Found"
+msgstr "Aucun flux trouvé"
+
+#: single_pages/dashboard/rss_feeds.php:301
+msgid "Feed Name"
+msgstr "Nom du flux"
+
+#: single_pages/dashboard/rss_feeds.php:302
+msgid "URL"
+msgstr "URL"
+
+#: single_pages/dashboard/rss_feeds.php:303
+msgid "Options"
+msgstr "Options"
+
+#: single_pages/dashboard/rss_feeds.php:310
+msgid "Configure"
+msgstr "Configurer"
+
