@@ -2,7 +2,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
-
 RewriteRule ^mifi index.php/products/mobile-broadband-solutions/mifi-intelligent-mobile-hotspots [L,NC]
 
 RewriteCond %{REQUEST_FILENAME} !-f
