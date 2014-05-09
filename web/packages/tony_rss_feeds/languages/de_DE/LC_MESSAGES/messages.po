@@ -1,0 +1,291 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: rss_feed_creator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-04-23 09:46+0100\n"
+"PO-Revision-Date: 2011-06-01 10:52+0100\n"
+"Last-Translator: Riadh Jouili <info@concrete5-cms.de>\n"
+"Language-Team: concrete5-cms.de <info@concrete5-cms.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: t\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplural=2; plural=n>1;\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: Germany\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: /Users/riadh/Concrete5/packages/tony_rss_feeds\n"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controller.php:3
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/blocks/rss_link/add.php:2
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/blocks/rss_link/controller.php:2
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/blocks/rss_link/edit.php:2
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/blocks/rss_link/form_setup_html.php:2
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/blocks/rss_link/view.php:2
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controllers/dashboard/rss_feeds.php:3
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controllers/page_types/rss_feed.php:3
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:2
+msgid "Access Denied."
+msgstr "Zugriff verweigert."
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controller.php:17
+msgid "Create and configure rich-text feeds for your site, with clean URLs"
+msgstr "Erstelle und konfiguriere Rich-Text RSS Feeds für deine Website mit freundlichen URLs"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controller.php:21
+msgid "RSS Feed Creator"
+msgstr "RSS-Feed Ersteller"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controller.php:33
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:72
+msgid "RSS Feed Manager"
+msgstr "RSS-Feed Manager"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controller.php:33
+msgid "Add and Configure RSS Feeds on your site"
+msgstr "RSS Feeds hinzufügen und konfigurieren"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controller.php:41
+msgid "RSS Feed"
+msgstr "RSS-Feed"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/blocks/rss_link/add.php:5
+msgid "Subscribe"
+msgstr "Abonnieren"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/blocks/rss_link/controller.php:23
+msgid "Display a link to your rss feeds"
+msgstr "Link zu RSS Feeds anzeigen"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/blocks/rss_link/controller.php:27
+msgid "RSS Link"
+msgstr "RSS-Link"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/blocks/rss_link/form_setup_html.php:17
+msgid "Select Feed"
+msgstr "Feed auswählen"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/blocks/rss_link/form_setup_html.php:32
+msgid "Manage your RSS Feeds"
+msgstr "verwalte deine RSS-Feeds"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/blocks/rss_link/form_setup_html.php:37
+msgid "Link Text"
+msgstr "Link Text"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/blocks/rss_link/form_setup_html.php:37
+msgid "Optional"
+msgstr "Optional"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/blocks/rss_link/form_setup_html.php:42
+msgid "fID"
+msgstr "fID"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/blocks/rss_link/form_setup_html.php:62
+msgid "Choose your own"
+msgstr "eigenes auswählen"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/blocks/rss_link/form_setup_html.php:68
+msgid "None"
+msgstr "Keine"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/blocks/rss_link/form_setup_html.php:77
+msgid "Right Align Icon"
+msgstr "Icon rechts ausrichten"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/blocks/rss_link/form_setup_html.php:84
+msgid "Open in a new window"
+msgstr "In ein neues Fenster öffnen"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/blocks/rss_link/view.php:20
+msgid "RSS feed not found."
+msgstr "RSS Feed nicht gefunden"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controllers/dashboard/rss_feeds.php:13
+msgid "The page type rss_feed was not found. Please reinstall the RSS Feeds package. "
+msgstr "Der Seitentyp rss_feed wurde nicht gefunden, Bitte installiere RSS Feeds Paket neu."
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controllers/dashboard/rss_feeds.php:44
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controllers/dashboard/rss_feeds.php:170
+msgid "RSS Feed Not Found."
+msgstr "RSS feed nicht gefunden."
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controllers/dashboard/rss_feeds.php:59
+msgid "A Feed Title is required"
+msgstr "Ein Feedtitel ist erforderlich"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controllers/dashboard/rss_feeds.php:67
+msgid "A Feed URL is required"
+msgstr "Eine Feed-URL ist erforderlich"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controllers/dashboard/rss_feeds.php:70
+msgid "Remove index.php from your feed URL."
+msgstr "Entferne index.php von deine feed URL."
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controllers/dashboard/rss_feeds.php:91
+msgid "Invalid Feed Url. The path to this feed must already exist.  You must create the parent pages."
+msgstr "Ungültige Feed URL. Der Pfad zu diesem Feed muss bereits existieren. Sie müssen die Elternseiten erstellen."
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controllers/dashboard/rss_feeds.php:95
+msgid "Error: You can't add this feed under itself."
+msgstr "Fehler: Sie können dieses Feed unter sich selbst hinzufügen."
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controllers/dashboard/rss_feeds.php:103
+msgid "Oops, there were some errors with your feed configuration:"
+msgstr "Ups, es gab einige Fehler mit der Konfiguration deines Feeds:"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controllers/dashboard/rss_feeds.php:132
+msgid "RSS Feed Configuration Saved"
+msgstr "RSS-Feed Konfiguration gespeichert"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controllers/dashboard/rss_feeds.php:173
+msgid "Invalid RSS Feed page type"
+msgstr "Ungültiger RSS Feed Seitentyp"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controllers/dashboard/rss_feeds.php:180
+msgid "RSS Feed Deleted"
+msgstr "RSS-Feed gelöscht"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/controllers/page_types/rss_feed.php:175
+msgid "Feed: "
+msgstr "Feed:"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:98
+msgid "Configure Your RSS Feed"
+msgstr "Konfiguriere dein RSS-Feed"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:103
+msgid "Title"
+msgstr "Titel"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:111
+msgid "URL Path"
+msgstr "URL-Pfad"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:121
+msgid "Description"
+msgstr "Beschreibung"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:130
+msgid "Show pages from"
+msgstr "Seiten anzeigen von"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:133
+msgid "Everywhere"
+msgstr "Überall"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:134
+msgid "Beneath feed's parent"
+msgstr "Unterhalb des Feedselternteil"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:135
+msgid "Beneath another page"
+msgstr "unterhalb einer anderen Seite"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:148
+msgid "Filter By Page Type"
+msgstr "Nach Seitentyp filtern"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:166
+msgid "Filter By Author"
+msgstr "Nach Autor filtern"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:169
+msgid "Limit by user"
+msgstr "Limit per Benutzer"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:180
+msgid "Page Descriptions"
+msgstr "Seitenbeschreibungen"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:183
+msgid "Summaries only"
+msgstr "Nur Zusammenfassungen"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:184
+msgid "Page area only"
+msgstr "Nur Seitenbereich"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:185
+msgid "Use summary if available"
+msgstr "Benutze Zusammenfassung falls vorhanden"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:201
+msgid "Rich Text / HTML"
+msgstr "Rich Text / HTML"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:202
+msgid "Plain Text"
+msgstr "Text"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:207
+msgid "Truncate after"
+msgstr "abschneiden nach"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:209
+msgid "characters"
+msgstr "Zeichen"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:216
+msgid "Max Displayed Posts"
+msgstr "Maximal angezeigte Beiträge"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:226
+msgid "Sort Order"
+msgstr "Sortierreihenfolge"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:241
+msgid "Cache Time"
+msgstr "Cache-Zeit"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:245
+msgid "Hours"
+msgstr "Stunden"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:247
+msgid "Note: With caching enabled, only pages that guests can view are returned"
+msgstr "Notiz: Wenn Caching aktiviert ist, werden nur Seiten zurückgegeben, die Gästen sichtbar sind"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:256
+msgid "Save"
+msgstr "Speichern"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:257
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:278
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:270
+msgid "Are you sure you want to delete the following feed?!"
+msgstr "Sind Sie sicher, dass die folgenden Feeds gelöscht werden sollen?"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:277
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:312
+msgid "Delete"
+msgstr "Löschen"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:288
+msgid "Create RSS Feed"
+msgstr "RSS-Feed erstellen"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:295
+msgid "No Feeds Found"
+msgstr "Keine Feeds gefunden"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:301
+msgid "Feed Name"
+msgstr "Feed Name"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:302
+msgid "URL"
+msgstr "URL"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:303
+msgid "Options"
+msgstr "Optionen"
+
+#: /Users/riadh/Concrete5/packages/tony_rss_feeds/single_pages/dashboard/rss_feeds.php:310
+msgid "Configure"
+msgstr "Konfigurieren"
+

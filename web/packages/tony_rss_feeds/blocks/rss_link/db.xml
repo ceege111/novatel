@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btTonyRssLink">
+	
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+		
+		<field name="rssPage_cID" type="I">
+			<unsigned />
+			<default value="0" />
+		</field>
+		
+		<field name="rss_image" type="I"> 
+			<default value="1" />
+		</field>			
+		
+		<field name="fID" type="I">
+			<unsigned />
+			<default value="0" />
+		</field>		
+		
+		<field name="linkTxt" type="C" size="128">
+		</field> 		
+		
+		<field name="launchInNewWindow" type="I1"> 
+			<unsigned /> 
+			<notnull /> 
+			<default value="1" /> 
+		</field>	
+		
+		<field name="iconRight" type="I1"> 
+			<unsigned /> 
+			<notnull /> 
+			<default value="0" /> 
+		</field>		
+			
+	</table>
+</schema>
