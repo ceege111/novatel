@@ -31,7 +31,6 @@
 </head>
 
 <body>
-<h2>testing</h2>
 <div class="headerWrap">
 	<div class="mainHeader container">
 		<div class="row">
