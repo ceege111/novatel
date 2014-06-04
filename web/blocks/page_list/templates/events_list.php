@@ -25,8 +25,8 @@ $th = Loader::helper('text');
 		$target = ($page->getCollectionPointerExternalLink() != '' && $page->openCollectionPointerExternalLinkInNewWindow()) ? '_blank' : $page->getAttribute('nav_target');
 		$target = empty($target) ? '_self' : $target;
 		$description = $page->getCollectionEvent();
-		$description = $controller->truncateSummaries ? $th->shorten($description, $controller->truncateChars) : $description;
-		$description = $th->entities($description);	
+		//$description = $controller->truncateSummaries ? $th->shorten($description, $controller->truncateChars) : $description;
+		//$description = $th->entities($description);	
 
 		$url = ($page->getAttribute('iframe_url') != '') ? $page->getAttribute('iframe_url') : '';
 		$source = ($page->getAttribute('external_content_title') != '') ? $page->getAttribute('external_content_title') : '';
@@ -77,7 +77,7 @@ $th = Loader::helper('text');
 				<?php echo $source ?>	
 			</div>
 			<div><?php echo $date; ?></div>
-			<div><?php echo $description; ?></div>			
+			<div><?php echo $description.'ajmal'; ?></div>			
 		</td></tr>
 	<?php endforeach; ?>
 </table><!-- end .ccm-page-list -->
