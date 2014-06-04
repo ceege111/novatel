@@ -68,7 +68,7 @@ $th = Loader::helper('text');
 		<tr><td class="row product-item">
 			<h3 class="ccm-page-list-title">
 				<?php if ($url == ''): ?>
-					<?php echo $title ?>
+					<?php echo $title.'rt66666'; ?>
 				<?php else: ?>
 					<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
 				<?php endif; ?>
