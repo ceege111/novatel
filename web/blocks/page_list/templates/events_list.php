@@ -77,7 +77,7 @@ $th = Loader::helper('text');
 				<?php echo $source ?>	
 			</div>
 			<div><?php echo $date; ?></div>
-			<div><?php echo $description; ?></div>			
+			<div><?php echo $description.'ttttttttt'; ?></div>			
 		</td></tr>
 	<?php endforeach; ?>
 </table><!-- end .ccm-page-list -->
