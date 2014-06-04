@@ -68,7 +68,7 @@ $th = Loader::helper('text');
 		<tr><td class="row product-item">
 			<h3 class="ccm-page-list-title">
 				<?php if ($url == ''): ?>
-					<?php echo $title.'rt66666'; ?>
+					<?php echo $title; ?>
 				<?php else: ?>
 					<a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
 				<?php endif; ?>
@@ -77,7 +77,7 @@ $th = Loader::helper('text');
 				<?php echo $source ?>	
 			</div>
 			<div><?php echo $date; ?></div>
-			<div><?php echo $description.'llllllllllll'; ?></div>			
+			<div><?php echo $description; ?></div>			
 		</td></tr>
 	<?php endforeach; ?>
 </table><!-- end .ccm-page-list -->
