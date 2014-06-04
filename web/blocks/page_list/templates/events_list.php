@@ -24,7 +24,7 @@ $th = Loader::helper('text');
 		// $url = $nh->getLinkToCollection($page);
 		$target = ($page->getCollectionPointerExternalLink() != '' && $page->openCollectionPointerExternalLinkInNewWindow()) ? '_blank' : $page->getAttribute('nav_target');
 		$target = empty($target) ? '_self' : $target;
-		$description = $page->getCollectionDescription();
+		$description = $page->getCollectionEvent();
 		$description = $controller->truncateSummaries ? $th->shorten($description, $controller->truncateChars) : $description;
 		$description = $th->entities($description);	
 
