@@ -24,14 +24,14 @@ $th = Loader::helper('text');
 		// $url = $nh->getLinkToCollection($page);
 		$target = ($page->getCollectionPointerExternalLink() != '' && $page->openCollectionPointerExternalLinkInNewWindow()) ? '_blank' : $page->getAttribute('nav_target');
 		$target = empty($target) ? '_self' : $target;
-		$description = $page->getCollectionDescription();
-		$description = $controller->truncateSummaries ? $th->shorten($description, $controller->truncateChars) : $description;
-		$description = $th->entities($description);	
+		//$description = $page->getCollectionDescription();
+		//$description = $controller->truncateSummaries ? $th->shorten($description, $controller->truncateChars) : $description;
+		//$description = $th->entities($description);	
 
 		$url = ($page->getAttribute('iframe_url') != '') ? $page->getAttribute('iframe_url') : '';
 		$source = ($page->getAttribute('external_content_title') != '') ? $page->getAttribute('external_content_title') : '';
 		$date = ($page->getAttribute('external_content_posted_date') != '') ? $page->getAttribute('external_content_posted_date') : '';
-
+		$description = ($page->getAttribute('event') != '') ? $page->getAttribute('event') : '';
 
 		// $img = $page->getAttribute('product_image');
 		// $thumb = $ih->getThumbnail($img, 250, 9999, false);
