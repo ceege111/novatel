@@ -9,7 +9,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+        <meta name="google-site-verification" content="_H_D8zI7aNdHnXRGUUalaOF_laRGisOlGcsAAt7kODo" />
 	<meta name="description" content="">
 	<meta name="author" content="">
 
