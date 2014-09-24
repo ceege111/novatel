@@ -9,7 +9,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="google-site-verification" content="_H_D8zI7aNdHnXRGUUalaOF_laRGisOlGcsAAt7kODo" />
+        <meta name="google-site-verificatiom" content="_H_D8zI7aNdHnXRGUUalaOF_laRGisOlGcsAAt7kODo" />
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -28,9 +28,14 @@
 	Modernizr enables HTML5 elements & feature detects for optimal performance.
 	Create your own custom Modernizr build: www.modernizr.com/download/ -->
 	<script src="<?php echo $this->getThemePath(); ?>/js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+	
+	
 </head>
 
 <body>
+
+<a id="ecommercepopup" href="http://www.brisbaneca.org/beta/mifi.html"></a>
+	
 <div class="headerWrap">
 	<div class="mainHeader container">
 		<div class="row">
