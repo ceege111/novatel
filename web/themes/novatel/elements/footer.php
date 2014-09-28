@@ -54,6 +54,7 @@
 
 
 
+
 	<script src="<?php echo $this->getThemePath(); ?>/js/libs/underscore-min.js"></script>
 	<script src="<?php echo $this->getThemePath(); ?>/js/libs/bootstrap/bootstrap.min.js"></script>
 	<script src="<?php echo $this->getThemePath(); ?>/js/libs/jquery.easing.1.3.js"></script>
