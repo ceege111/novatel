@@ -13,9 +13,14 @@
 		</div>
 	</footer>
 </div>
-	<!-- JavaScript at the bottom for fast page loading -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+       <script>window.jQuery || document.write('<script src="<?php echo $this->getThemePath(); ?>/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+	<!-- JavaScript at the bottom for fast page loading 
 
  	<script type='text/javascript' src='http://code.jquery.com/jquery-1.8.3.js'></script>
+-->
   <link rel="stylesheet" type="text/css" href="//yandex.st/jquery/fancybox/1.3.4/jquery.fancybox.css">
   <script type='text/javascript' src="//yandex.st/jquery/fancybox/1.3.4/jquery.fancybox.min.js"></script>
   <script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.js"></script>
@@ -34,7 +39,7 @@
 	        openFancybox(); // first page load, launch fancybox
 	    }
 	    $.cookie('visited', 'yes', {
-	        expires: 0 // the number of days cookie  will be effective
+	        expires: 1 // the number of days cookie  will be effective
 	    });
 	    $("#ecommercepopup").click(function () {
 	        $.fancybox({
