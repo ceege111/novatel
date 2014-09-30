@@ -9,5 +9,3 @@ define('EMAIL_DEFAULT_FROM_ADDRESS', 'info@nvtl.com');
 define('EMAIL_DEFAULT_FROM_NAME', 'NVTL.com Automated System');
 define('FORM_BLOCK_SENDER_EMAIL', EMAIL_DEFAULT_FROM_ADDRESS);
 define('CACHE_FRONTEND_OPTIONS', serialize(array('automatic_cleaning_factor' => 0)));?><?php define('DIRNAME_APP_UPDATED', 'concrete5.6.1.2_updater');?>
-~
-~

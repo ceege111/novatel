@@ -18,7 +18,7 @@
 		$page = Page::getCurrentPage();
 		echo $page->getCollectionName();
 	?></title>
-	<?php Loader::element('header_required'); ?>
+	<?php Loader::element('header_required');?>
 
 	<!-- Site Header Content //-->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,300,600,800' rel='stylesheet' type='text/css'>
@@ -48,7 +48,7 @@ z-index: 10;">
 <div class="headerWrap">
 	<div class="mainHeader container">
 		<div class="row">
-	<!-- 		<div class="logo span6"><a href="/"><img src="http://rtio.nl/i/?w=400&h=125&message=Novatel Wireless"></a></div> -->		
+	 	<!--	<div class="logo span6"><a href="/"><img src="http://rtio.nl/i/?w=400&h=125&message=Novatel Wireless"></a></div>	-->	
 			<div class="logo span4"><?php  $al = new GlobalArea('Company Logo'); $al->display($c);?></div>
 			<div class="altNav area offset2 span6">
 				<?php 

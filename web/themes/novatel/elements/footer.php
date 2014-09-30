@@ -76,7 +76,7 @@
 		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 		s.parentNode.insertBefore(g,s)}(document,'script'));
 	</script>
-	<?php Loader::element('footer_required'); ?>
 
+<?php loader::element('footer_required'); ?>
 </body>
 </html>

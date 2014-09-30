@@ -5,11 +5,11 @@
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]> <html class="no-js" lang="en"> <![endif]-->
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+        <meta name="google-site-verificatiom" content="_H_D8zI7aNdHnXRGUUalaOF_laRGisOlGcsAAt7kODo" />
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -18,7 +18,7 @@
 		$page = Page::getCurrentPage();
 		echo $page->getCollectionName();
 	?></title>
-	<?php Loader::element('header_required'); ?>
+	<?php Loader::element('header_required');?>
 
 	<!-- Site Header Content //-->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,300,600,800' rel='stylesheet' type='text/css'>
@@ -28,13 +28,27 @@
 	Modernizr enables HTML5 elements & feature detects for optimal performance.
 	Create your own custom Modernizr build: www.modernizr.com/download/ -->
 	<script src="<?php echo $this->getThemePath(); ?>/js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+	
+	
 </head>
 
 <body>
+	 
+<a id="ecommercepopup" href="http://www.brisbaneca.org/beta/mifi.html"></a>
+<a href="">        <div style="position: absolute;
+top: 150px;
+left: 0;
+width: 76px;
+height: 342px;
+z-index: 10;">
+<img src="http://www.brisbaneca.org/beta/tab.png" alt="Buy Tab">
+</div>
+</a>
+
 <div class="headerWrap">
 	<div class="mainHeader container">
 		<div class="row">
-	<!-- 		<div class="logo span6"><a href="/"><img src="http://rtio.nl/i/?w=400&h=125&message=Novatel Wireless"></a></div> -->		
+	 	<!--	<div class="logo span6"><a href="/"><img src="http://rtio.nl/i/?w=400&h=125&message=Novatel Wireless"></a></div>	-->	
 			<div class="logo span4"><?php  $al = new GlobalArea('Company Logo'); $al->display($c);?></div>
 			<div class="altNav area offset2 span6">
 				<?php 
