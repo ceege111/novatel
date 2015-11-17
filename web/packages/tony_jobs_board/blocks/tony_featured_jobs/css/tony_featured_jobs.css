@@ -1,0 +1,16 @@
+/* Jobs Board Listings Search Block */
+.jobs_board_featured_listings .jobs-board-listing { padding-bottom:16px; position:relative; width:100%; height:auto; top:0px; left:0px; font-size:12px; line-height:16px; } 
+
+.jobs_board_featured_listings .jobs-board-listing-title { font-size:15px; line-height:18px; margin-bottom:4px; }
+.jobs_board_featured_listings .jobs-board-listing-data { margin-bottom:2px; color:#999; }
+.jobs_board_featured_listings .jobs-board-listing-description { margin-bottom:2px; font-size:13px; line-height:17px; }
+.jobs_board_featured_listings .jobs-board-listing-details { font-size:11px; color:#999; margin-bottom:2px; } 
+.jobs_board_featured_listings .jobs-board-listing-date { padding-right:8px; } 
+
+.jobs_board_featured_listings .jobs-board-listing .jobs-board-listing-info { margin-top:4px; }
+.jobs_board_featured_listings .jobs-board-listing .jobs-board-listing-image { margin:auto; text-align:center; } 
+.jobs_board_featured_listings .jobs-board-listing .jobs_board_featured_arrows{ float:right; margin-top:2px; }
+.jobs_board_featured_listings .jobs-board-listing .jobs_board_featured_arrows a { border:1px solid #069; color:#069; background:#eee; padding:0px 3px; margin-left:4px; font-size:12px; line-height:12px; cursor:pointer; }
+.jobs_board_featured_listings .jobs-board-listing .jobs_board_featured_arrows a:hover { border-color:#06F; color:#06F; } 
+
+.jobs_board_featured_listings_wrap var { display:none; } 

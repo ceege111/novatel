@@ -1,0 +1,956 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tony jobs board 0.90\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-01 08:37+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: cali <cali@concrete5.fr>\n"
+"Language-Team: Concrete5 FR <cali@concrete5.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: t\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: /var/www/c551fr/packages/tony_jobs_board\n"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:3
+#: /var/www/c551fr/packages/tony_jobs_board/tools/listing_search_results.php:2
+#: /var/www/c551fr/packages/tony_jobs_board/tools/customize_search_columns.php:1
+#: /var/www/c551fr/packages/tony_jobs_board/page_types/jobs_board_listings.php:2
+#: /var/www/c551fr/packages/tony_jobs_board/page_types/jobs_board_listing.php:2
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/job_application.php:2
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/dashboard/jobs_board/view.php:2
+#: /var/www/c551fr/packages/tony_jobs_board/models/tony_jobs_board.php:2
+#: /var/www/c551fr/packages/tony_jobs_board/models/attribute/types/jobs_board_multiple_files/controller.php:2
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/add.php:2
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/form_setup_html.php:2
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/edit.php:2
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/view.php:2
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/controller.php:3
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/add.php:2
+msgid "Access Denied."
+msgstr "Accès refusé."
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:41
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/dashboard/jobs_board/view.php:35
+msgid "Search & Display Jobs Board Listings"
+msgstr "Recherche & Affiche des offres d'emploi"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:45
+msgid "Job Board"
+msgstr "Offre d'emploi"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:101
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:426
+msgid "Jobs Board"
+msgstr "Offres d'emploi"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:101
+msgid "Manage your job listings"
+msgstr "Gérer vos offres d'emploi"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:102
+msgid "Error: /dashboard/jobs_board page not created"
+msgstr "Erreur: Page /dashboard/jobs_board non créée"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:112
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:147
+msgid "Job Application"
+msgstr "Répondre à une offre d'emploi"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:112
+msgid "Apply for a position listed on the jobs board"
+msgstr "Postuler à une offre d'emploi listée"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:121
+#, php-format
+msgid "Error: %s page not created"
+msgstr "Erreur: page %s non créée"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:140
+msgid "If you feel that you are qualified for this position please complete the following form:"
+msgstr "Si vous pensez être qualifié pour ce poste, remplissez le formulaire suivant:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:155
+msgid "Thank you for applying. We will contact you if we feel you are a good fit for this position."
+msgstr "Merci pour votre candidature. Nous faisons notre possible pour étudier celle-ci dans les plus brefs délais. Nous vous contacteront par la suite."
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:156
+msgid "Name"
+msgstr "Nom"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:157
+msgid "Phone"
+msgstr "Téléphone"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:158
+msgid "E-Mail"
+msgstr "E-mail"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:159
+msgid "Upload Resume"
+msgstr "Envoyer son CV"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:160
+msgid "Cover Letter"
+msgstr "Lettre de motivation"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:161
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/job_application.php:58
+msgid "Job Title"
+msgstr "Titre de l'annonce"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:162
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/job_application.php:52
+msgid "Job URL"
+msgstr "URL de l'annonce"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:163
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:312
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/job_application.php:55
+msgid "Job ID"
+msgstr "ID de l'annonce"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:172
+msgid "Jobs Board Multiple Files"
+msgstr "Multi-fichiers d'offre d'emploi"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:195
+msgid "Address"
+msgstr "Adresse"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:207
+msgid "Locations"
+msgstr "QA / Service Qualité"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:208
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:525
+msgid "Auckland, New Zealand"
+msgstr "Auckland, nouvelle-Zélande"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:210
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:543
+msgid "Dublin, Ireland"
+msgstr "Paris, France"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:212
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:564
+msgid "Portland, Oregon, USA"
+msgstr "Portland, Oregon, USA"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:218
+msgid "Employment Type"
+msgstr "Type de contrat"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:219
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:524
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:542
+msgid "Full Time"
+msgstr "Temps plein"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:221
+msgid "Contractor"
+msgstr "Intérime"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:223
+msgid "Part time"
+msgstr "Temps partiel"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:225
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:563
+msgid "Intern"
+msgstr "Stage"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:227
+msgid "Seasonal/Temp"
+msgstr "Saisonnier/Temporaire"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:233
+msgid "Employment Category"
+msgstr "Catégorie d'offres"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:235
+msgid "Accounting"
+msgstr "Comptabilité"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:237
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:523
+msgid "Admin - Clerical"
+msgstr "Administration - Clérical"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:239
+msgid "Business Development"
+msgstr "Chargé d'affaires"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:241
+msgid "Consultant"
+msgstr "Consultant"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:243
+msgid "Customer Service"
+msgstr "Service client"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:245
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:562
+msgid "Entry Level"
+msgstr "Niveau d'entrée"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:247
+msgid "Executive"
+msgstr "Cadre"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:249
+msgid "Finance"
+msgstr "Finance"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:251
+msgid "General Labor"
+msgstr "Ouvrier"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:253
+msgid "Human Resources"
+msgstr "Ressources humaines"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:255
+msgid "Information Technology"
+msgstr "Technologie de l'information"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:257
+msgid "Legal"
+msgstr "Juridique"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:259
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:541
+msgid "Management"
+msgstr "Management"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:261
+msgid "Manufacturing"
+msgstr "Industrie"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:263
+msgid "Marketing"
+msgstr "Marketing"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:265
+msgid "Other"
+msgstr "Autre"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:267
+msgid "Professional Services"
+msgstr "Services professionnels"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:269
+msgid "Purchasing - Procurement"
+msgstr "Achats"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:271
+msgid "QA / Quality Control"
+msgstr "QA / Servicequalité"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:273
+msgid "Research"
+msgstr "Recherche"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:275
+msgid "Retail"
+msgstr "Vente au détail"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:277
+msgid "Sales"
+msgstr "Commercial"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:279
+msgid "Shipping / Warehouse"
+msgstr "Logistique / Stock"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:281
+msgid "Supply Chain"
+msgstr "Supply Chain"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:283
+msgid "Training"
+msgstr "Formation"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:285
+msgid "Transportation"
+msgstr "Transport"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:291
+msgid "Minimum Education"
+msgstr "Niveau d'étude minimum"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:292
+msgid "High School"
+msgstr "Études supérieures"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:294
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:529
+msgid "Associate's Degree"
+msgstr "Maitrise"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:296
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:529
+msgid "Some College"
+msgstr "Collège"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:298
+msgid "Bachelor's Degree"
+msgstr "Baccalauréat"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:300
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:547
+msgid "Master's Degree"
+msgstr "Licence"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:302
+msgid "Doctorate"
+msgstr "Doctorat"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:308
+msgid "Salary"
+msgstr "Salaire"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:316
+msgid "File Attachments"
+msgstr "Fichiers joints"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:320
+msgid "Minimum Years Experience"
+msgstr "Années d'expérience minimum"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:324
+msgid "Featured Listing"
+msgstr "Offres vedettes"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:331
+msgid "Jobs Board Listing"
+msgstr "Offre d'emploi"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:341
+msgid "Jobs Board Search"
+msgstr "Recherche d'offres d'emploi"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:392
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:394
+#: /var/www/c551fr/packages/tony_jobs_board/models/tony_jobs_board.php:79
+msgid "Jobs Board File Attachments"
+msgstr "Pièces jointes de l'offre"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:436
+msgid "Jobs Board Listings page could not be created"
+msgstr "La page des offres d'emploi ne peut être créée"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:478
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/add.php:11
+msgid "Search Listings"
+msgstr "Recherche d'offres"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:489
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/add.php:13
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/controller.php:33
+msgid "Featured Jobs"
+msgstr "Offres vedettes"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:518
+msgid "Data Entry"
+msgstr "Saisie de données"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:524
+msgid "Part Time"
+msgstr "Temps partiel"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:536
+msgid "Regional Manager"
+msgstr "Directeur régional"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:557
+msgid "Summer Intern"
+msgstr "Stage d'été"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:568
+msgid "Enter job description here..."
+msgstr "Saisissez la description de l'offre ici ..."
+
+#: /var/www/c551fr/packages/tony_jobs_board/controller.php:593
+msgid "Description"
+msgstr "Description"
+
+#: /var/www/c551fr/packages/tony_jobs_board/tools/listing_search_results.php:7
+#: /var/www/c551fr/packages/tony_jobs_board/tools/customize_search_columns.php:5
+msgid "Access Denied"
+msgstr "Accès refusé"
+
+#: /var/www/c551fr/packages/tony_jobs_board/tools/customize_search_columns.php:45
+msgid "Additional Searchable Attributes"
+msgstr "Attributs de recherche additionnels"
+
+#: /var/www/c551fr/packages/tony_jobs_board/tools/customize_search_columns.php:47
+msgid "Choose the additional attributes you wish to include as column headers."
+msgstr "Choisir les atributs additionnels que vous désirez inclure comme entête de colonne"
+
+#: /var/www/c551fr/packages/tony_jobs_board/tools/customize_search_columns.php:58
+msgid "Save"
+msgstr "Enregistrer"
+
+#: /var/www/c551fr/packages/tony_jobs_board/page_types/jobs_board_listings.php:8
+msgid "TonyJobsBoard class & listings controller not found. Clear cache and reinstall."
+msgstr "TonyJobsBoard class & listings controller non trouvée. Videz le cache et réinstaller."
+
+#: /var/www/c551fr/packages/tony_jobs_board/page_types/jobs_board_listing.php:32
+msgid "Apply to Job"
+msgstr "Postuler à l'offre d'emploi"
+
+#: /var/www/c551fr/packages/tony_jobs_board/page_types/jobs_board_listing.php:36
+msgid "Job Details"
+msgstr "Détails de l'offre:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/page_types/jobs_board_listing.php:40
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/job_application.php:22
+msgid "Job ID:"
+msgstr "ID de l'offre:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/page_types/jobs_board_listing.php:47
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/job_application.php:29
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/view.php:87
+msgid "Category:"
+msgstr "Catégorie:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/page_types/jobs_board_listing.php:54
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/job_application.php:36
+msgid "Type:"
+msgstr "Type:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/page_types/jobs_board_listing.php:61
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/job_application.php:43
+msgid "Location:"
+msgstr "Lieu:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/page_types/jobs_board_listing.php:68
+msgid "Salary: "
+msgstr "Salaire:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/page_types/jobs_board_listing.php:75
+msgid "Minimum Experience: "
+msgstr "Expérience minimum:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/page_types/jobs_board_listing.php:76
+msgid "Years"
+msgstr "an(s)"
+
+#: /var/www/c551fr/packages/tony_jobs_board/page_types/jobs_board_listing.php:82
+msgid "Minimum Education:"
+msgstr "Niveau d'étude minimum:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/page_types/jobs_board_listing.php:88
+msgid "Posted:"
+msgstr "Postée le:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/page_types/jobs_board_listing.php:94
+msgid "Attachments: "
+msgstr "Pièce(s) jointe(s):"
+
+#: /var/www/c551fr/packages/tony_jobs_board/page_types/jobs_board_listing.php:117
+msgid "Back to Job Listings"
+msgstr "Revenir aux offres d'emploi"
+
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/job_application.php:17
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/job_application.php:63
+msgid "Job Application:"
+msgstr "Candidature:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/job_application.php:47
+msgid "View Job Details &raquo;"
+msgstr "Voir les détail de l'offre &raquo;"
+
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/dashboard/jobs_board/view.php:35
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/dashboard/jobs_board/view.php:37
+msgid "Search Jobs Board Listings"
+msgstr "Recherche d'offres d'emploi"
+
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/dashboard/jobs_board/view.php:62
+msgid "Search Indexing:"
+msgstr "Indexation de la recherche:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/dashboard/jobs_board/view.php:63
+msgid "Run"
+msgstr "Lancer"
+
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/dashboard/jobs_board/view.php:64
+msgid "Configure"
+msgstr "Configurer"
+
+#: /var/www/c551fr/packages/tony_jobs_board/single_pages/dashboard/jobs_board/view.php:68
+msgid "View Recent Job Applications &raquo;"
+msgstr "Voir les récentes candidatures &raquo;"
+
+#: /var/www/c551fr/packages/tony_jobs_board/models/tony_jobs_board.php:20
+msgid "Parent page not given in TonyJobsBoard::addListing()"
+msgstr "Page parente non renseignée dans TonyJobsBoard::addListing()"
+
+#: /var/www/c551fr/packages/tony_jobs_board/models/tony_jobs_board.php:23
+msgid "No parameters found in TonyJobsBoard::addListing()"
+msgstr "Aucun paramètres trouvés dans TonyJobsBoard::addListing()"
+
+#: /var/www/c551fr/packages/tony_jobs_board/models/tony_jobs_board.php:26
+msgid "Listing page type not found in TonyJobsBoard::addListing()"
+msgstr "Type de page des offres nontrouvée dans TonyJobsBoard::addListing()"
+
+#: /var/www/c551fr/packages/tony_jobs_board/models/attribute/types/jobs_board_multiple_files/form.php:24
+msgid "Add a File or Image &raquo;"
+msgstr "Ajouter un fichier ou une image &raquo;"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/form_setup_html.php:29
+msgid "Title"
+msgstr "Titre"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/form_setup_html.php:36
+msgid "Mode"
+msgstr "Mode"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/form_setup_html.php:39
+msgid "Slideshow"
+msgstr "Diaporama"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/form_setup_html.php:40
+msgid "List"
+msgstr "Liste"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/form_setup_html.php:45
+msgid "Animation Settings"
+msgstr "Paramètres de l'animation"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/form_setup_html.php:48
+msgid "Transition:"
+msgstr "Transition:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/form_setup_html.php:57
+msgid "Duration:"
+msgstr "Durée:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/form_setup_html.php:57
+msgid "seconds"
+msgstr "secondes"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/form_setup_html.php:64
+msgid "Included Listings"
+msgstr "Offres incluses"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/form_setup_html.php:67
+msgid "Display pages that are located"
+msgstr "Afficher les pages situées"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/form_setup_html.php:70
+msgid "everywhere"
+msgstr "partout"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/form_setup_html.php:74
+msgid "beneath this page"
+msgstr "sous cette page"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/form_setup_html.php:78
+msgid "beneath another page"
+msgstr "sous une autre page"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/form_setup_html.php:93
+msgid "Require \"Featured Listings\" page attribute"
+msgstr "L'attribut de page \"offre vedette\" , ayant comme identifiant \"featured_listing\" est obligatoire."
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/form_setup_html.php:102
+msgid "Results"
+msgstr "Résultats"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/form_setup_html.php:104
+msgid "Max number to show: "
+msgstr "Nombre max à afficher:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/form_setup_html.php:111
+msgid "Sort by:"
+msgstr "Trier par:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/view.php:15
+msgid "No Featured Jobs Found."
+msgstr "Aucun offre vedette trouvée."
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/view.php:111
+msgid "Posted"
+msgstr "Postée"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/view.php:115
+msgid "Job #"
+msgstr "Offre #"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/view.php:120
+msgid "Apply"
+msgstr "Postuler"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/view.php:122
+msgid "More Info"
+msgstr "Détails de l'offre"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/controller.php:29
+msgid "Display featured jobs board listings"
+msgstr "Afficher la liste des offres vedettes"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/controller.php:42
+msgid "Random"
+msgstr "Aléatoire"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/controller.php:43
+msgid "Newest"
+msgstr "Plus récentes"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/controller.php:44
+msgid "Oldest"
+msgstr "Moins récentes"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/controller.php:45
+msgid "Price: Low to High"
+msgstr "Salaire: Croissant"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/controller.php:46
+msgid "Price: High to Low"
+msgstr "Salaire: Décroissant"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_featured_jobs/controller.php:103
+msgid "jobs_board_listing page type not found"
+msgstr "Type de page jobs_board_listing non trouvé"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:43
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:134
+msgid "Search Options"
+msgstr "Options de recherhe"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:49
+msgid "Remove"
+msgstr "Supprimer"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:50
+msgid "Show Label"
+msgstr "Afficher les labels"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:56
+msgid "Search Box and Results"
+msgstr "Bloc de recherche et de résultats"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:57
+msgid "Search Box Only"
+msgstr "Bloc de recherche uniquement"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:58
+msgid "Results Only"
+msgstr "Résultats uniquement"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:61
+msgid "If you include the search form and the results as different blocks, the results block must at least include all of the search block's searchable properties."
+msgstr "Si vous intégrez le formulaire de recherche et les résultats dans différents blocs, le bloc de résultats doit inclure les même propriétés et paramètres que le bloc de recherche."
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:67
+msgid "Searchable Properties"
+msgstr "Propriétés de la recherche"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:70
+msgid "------"
+msgstr "------"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:88
+msgid "+"
+msgstr "+"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:117
+msgid "Which countries do you want to display states/provinces for?"
+msgstr "Pour quel pays voulez vous afficher le champ État/Région ?"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:126
+msgid "Show reset button"
+msgstr "Afficher le bouton initialiser"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:136
+msgid "Search Box Title: "
+msgstr "Titre du bloc de recherche"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:140
+msgid "Use a seperate page to display search results"
+msgstr "Afficher les résultats de recherche sur une autre page"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:149
+msgid "The target page have another instance of this block, with results shown."
+msgstr "La page cible doit contenir une autre instance de ce bloc pour pouvoir afficher les résultats."
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:198
+msgid "Page Size: "
+msgstr "Taille de la page:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:203
+msgid "Listing Titles"
+msgstr "Titres de la liste"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:207
+msgid "Use Page Title"
+msgstr "Utiliser le titre de la page"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:210
+msgid "Use Listing Address (if available)"
+msgstr "Utiliser les adresses de la liste (si disponibles)"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:215
+msgid "Sort By"
+msgstr "Tirer par"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/form_setup_html.php:225
+msgid "Show"
+msgstr "Afficher"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/view.php:83
+msgid "All"
+msgstr "Tout"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/view.php:126
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/view.php:139
+msgid "Any"
+msgstr "N'importe"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/view.php:178
+msgid ": "
+msgstr ":"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/view.php:187
+msgid "Reset"
+msgstr "Initialiser"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/view.php:189
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:100
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:282
+msgid "Search"
+msgstr "Chercher"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/view.php:207
+msgid "No results match your query."
+msgstr "Aucun résultats ne correspond à votre recherche."
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/view.php:208
+msgid "Please try another search."
+msgstr "Veuillez essayer avec d'autres critères."
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/view.php:225
+msgid "Sort By: "
+msgstr "Trier par:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/view.php:249
+msgid "Result"
+msgstr "Résultats"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/view.php:251
+msgid "Match the"
+msgstr "correspondent à"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/view.php:251
+msgid "Tag"
+msgstr "Tag"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/view.php:251
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/controller.php:46
+msgid "Keywords"
+msgstr "Mots-clés"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/view.php:253
+msgid "Found"
+msgstr "Trouvé"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/view.php:356
+msgid "Next &raquo;"
+msgstr "Suivante  &raquo;"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/view.php:357
+msgid "&laquo; Previous"
+msgstr "&laquo; Précédente"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/controller.php:29
+msgid "search jobs listings"
+msgstr "Recherche d'offres"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/controller.php:47
+msgid "Page ID"
+msgstr "ID de la page"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/controller.php:48
+msgid "Zip/Postal Code"
+msgstr "Code postal"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/controller.php:49
+msgid "State/Province"
+msgstr "État/Région"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/controller.php:50
+msgid "City"
+msgstr "Ville"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/controller.php:56
+msgid "Image"
+msgstr "Image"
+
+#: /var/www/c551fr/packages/tony_jobs_board/blocks/tony_jobs_board_search/controller.php:59
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:6
+msgid "Date Added"
+msgstr "Date d'ajout"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/mortgage_calculator.php:21
+msgid "Mortgage Calculator"
+msgstr "Calculateur d'hypothèque"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/mortgage_calculator.php:25
+msgid "Price"
+msgstr "Prix"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/mortgage_calculator.php:32
+msgid "Down Payment"
+msgstr "Acompte"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/mortgage_calculator.php:39
+msgid "Principle"
+msgstr "Principe"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/mortgage_calculator.php:47
+msgid "Interest Rate"
+msgstr "Taux d'intérêt"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/mortgage_calculator.php:51
+msgid "Mortgage Term"
+msgstr "Terme hypothécaire"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/mortgage_calculator.php:52
+msgid "years"
+msgstr "années"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/mortgage_calculator.php:55
+msgid "Monthly Payment"
+msgstr "Salaire mensuel"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/mortgage_calculator.php:61
+msgid "Recalculate &raquo;"
+msgstr "Recalculer &raquo;"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_results.php:28
+msgid "Add New Listing"
+msgstr "Ajouter une nouvelle offre"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_results.php:39
+msgid "With Selected: "
+msgstr "Pour la sélection:"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_results.php:43
+msgid "Edit Properties"
+msgstr "Éditer les propriétés"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_results.php:70
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:7
+msgid "Public Date"
+msgstr "Date publique"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_results.php:72
+msgid "Owner"
+msgstr "Propriétaire"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_results.php:145
+msgid "No jobs found."
+msgstr "Aucune offre trouvée."
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:5
+msgid "Fields"
+msgstr "Champs"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:8
+msgid "Page Owner"
+msgstr "Propriétaire de la page"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:9
+msgid "# Children"
+msgstr "# Enfant"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:10
+msgid "Approved Version"
+msgstr "Version approuvée"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:14
+msgid "Parent Page"
+msgstr "Page parente"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:32
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:38
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:208
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:216
+msgid "to"
+msgstr "a"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:47
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:241
+msgid "Unapproved"
+msgstr "Non approuvé"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:48
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:244
+msgid "Approved"
+msgstr "Approuvé"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:54
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:252
+msgid "Search All Children"
+msgstr "Rechercher tous les enfants"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:55
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:253
+msgid "Yes"
+msgstr "Oui"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:56
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:254
+msgid "No"
+msgstr "Non"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:65
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:230
+msgid "More Than"
+msgstr "Plus que"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:66
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:231
+msgid "Equal To"
+msgstr "Égal à"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:67
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:232
+msgid "Fewer Than"
+msgstr "Moins que"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:120
+msgid "Page Name"
+msgstr "Nom de la page"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:134
+msgid "Keyword Search"
+msgstr "Recherche de mots-clés"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:144
+msgid "Results Per Page"
+msgstr "Résultat par page"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/listing_search_form_advanced.php:173
+msgid "Select Search Field."
+msgstr "Sélectionner "
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/install.php:3
+msgid "Install Sample Content"
+msgstr "Installer les contenus d'exemple"
+
+#: /var/www/c551fr/packages/tony_jobs_board/elements/dashboard/install.php:7
+msgid "Yes, install sample search page, related blocks, and listings"
+msgstr "Oui, installer les exemples de recherches de pages, les blocs, et les exemples offres"
+
+#: /var/www/c551fr/packages/tony_jobs_board/controllers/dashboard/jobs_board/controller.php:85
+msgid "Jobs Board Listing page type not found!"
+msgstr "Type de page pour les offres d'emploi non trouvée !"
+

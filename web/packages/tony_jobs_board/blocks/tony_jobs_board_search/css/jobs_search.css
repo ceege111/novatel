@@ -1,0 +1,199 @@
+/*.tonyJobsBoardSearch .jobsBoardSearchBox { margin-bottom:32px; }
+.tonyJobsBoardSearch h3 { margin-top:0px; padding-top:0px; clear:none; }
+.tonyJobsBoardSearch .jobsBoardSearchBox .searchButtonWrap {   } 
+.tonyJobsBoardSearch .jobsBoardSearchBox .fieldPair label { margin-bottom:2px; display:block } 
+.tonyJobsBoardSearch .jobsBoardSearchBox .fieldPair .fieldCol { float:left }
+.tonyJobsBoardSearch .jobsBoardSearchBox .fieldPair .fieldCol .ccm-search-option-type-number .ccm-input-text { width:50px !important; }
+.tonyJobsBoardSearch .jobsBoardListingSearch_ak_wrap_job_id input{ width:50px !important; }
+.tonyJobsBoardSearch .jobsBoardSearchBox .fieldPair .fieldCol .jobsBoardSearch-input-fID,
+.tonyJobsBoardSearch .jobsBoardSearchBox .fieldPair .fieldCol .jobsBoardSearch-input-cID { width:30px !important; }
+.tonyJobsBoardSearch .jobsBoardSearchBox .fieldPair .fieldCol .ccm-input-text { width:100px; }
+
+.tonyJobsBoardSearch .jobsBoardSearchBox .fieldPair { margin-bottom:12px; }
+.tonyJobsBoardSearch .jobsBoardSearchBox .searchButtonWrap { padding-top:4px; }
+
+.tonyJobsBoardSearch .jobsBoardSearch_orderByWrap { float:right; }
+.tonyJobsBoardSearch .jobsBoardSearchResults { width:100%; margin-top:16px; }
+.tonyJobsBoardSearch .jobsBoardSearchResults .photo-list-item { text-align:center; vertical-align:top; padding-bottom:16px; float:left; }
+.tonyJobsBoardSearch .jobsBoardSearchResults .photo-list-item .photo-list-item-inner { padding:0px 8px; overflow:hidden; }
+.tonyJobsBoardSearch .jobsBoardSearchResults .photo-list-item .photo-list-item-inner.first { padding-left:0px }
+.tonyJobsBoardSearch .jobsBoardSearchResults .photo-list-item .photo-list-item-inner.last { padding-right:0px }
+.tonyJobsBoardSearch .jobsBoardSearchResults .photo-list-item .imgWrap { margin-bottom:4px; }
+
+.tonyJobsBoardSearch .jobsBoardSearch_noFile { margin: 32px 0px; text-align:center; } 
+.tonyJobsBoardSearch .jobsBoardSearch_row { margin-bottom:4px; text-align:left; }
+.tonyJobsBoardSearch .jobsBoardSearch_row label { padding:0px; margin:0px;  background:none; padding-right:2px; display:inline; } 
+.tonyJobsBoardSearch .jobsBoardSearch_row .jobsBoardSearch_rowVal { display:inline; }
+.tonyJobsBoardSearch .jobsBoardSearch_row .jobsBoardSearch_fullRow { width: auto !important; float:none !important; text-align:center; }
+.tonyJobsBoardSearch .jobsBoardSearch_row .jobsBoardSearch_noLabelImage { text-align:center; padding-bottom:2px; } 
+
+.tonyJobsBoardSearch .spacer { clear:both; font-size:1px; line-height:1px; } 
+
+.tonyJobsBoardSearch .pagingNav{ margin:16px 0px 8px 0px}
+.tonyJobsBoardSearch .pagination{ text-align:center; color:#bbb; padding-top:4px}
+.tonyJobsBoardSearch .pagination .pageRight{width:20%; float:right; text-align:right}
+.tonyJobsBoardSearch .pagination .pageLeft{width:20%; float:left; text-align:left}
+ 
+/* Jobs Board Listings Search Block */
+/*.jobs-board-search-listing { padding-bottom:24px; position:relative; width:100%; height:auto; top:0px; left:0px; } 
+.jobs-board-search-listing .jobs-board-listing-title { margin-bottom:4px; }
+.jobs-board-search-listing .jobs-board-listing-title h3 { display:inline; padding-right:4px; }
+.jobs-board-search-listing .jobs-board-listing-type { line-height:16px; }
+.jobs-board-search-listing .jobs-board-listing-salary { float:right; text-align:right; padding-left:8px; } 
+.jobs-board-search-listing .jobs-board-listing-status { font-size:11px; line-height:14px; } 
+
+.jobs-board-search-listing .jobs-board-listing-data { color:#999; margin-bottom:2px; }
+.jobs-board-search-listing .jobs-board-listing-data span { padding-right:8px; } 
+
+.jobsBoardSearchResults .jobs-board-listing-description { margin:0 0 2px 0; }
+.jobsBoardSearchResults .jobs-board-listing-details { color:#999; font-size:11px; margin-bottom:2px; } 
+.jobsBoardSearchResults .jobs-board-listing-job-id { padding-left:12px; } 
+.jobs-board-search-listing .listing-more-info { margin-top:2px; font-size:13px; line-height:16px; } */
+body {
+  font-family: 'arial';
+  color: #000000 ;
+}
+h1 {
+  font-size: 19px;
+}
+.wrapper {
+  width: 960px;
+  margin: auto;
+}
+.table_cover {
+  padding: 15px;
+}
+.serach_words label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.serach_words input {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  outline: 0;
+  /* min-height: 18px; */
+  height: 28px;
+  padding: 1px 4px;
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: #555;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+.serach_words input[type="submit"] {
+  cursor: pointer;
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #fff, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #fff, #e6e6e6);
+  background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#e6e6e6));
+  background-image: -o-linear-gradient(top, #fff, #e6e6e6);
+  background-image: linear-gradient(top, #fff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  margin-left: 5px;
+  padding: 0 10px;
+  height: 32px;
+}
+.table_inn {
+  border: 1px solid #d8d8d8;
+  margin-top: 15px;
+}
+.table_inn table {
+  border-spacing: 0;
+}
+.table_inn table tr {
+	font-size: 15px;
+}
+.table_inn table th {
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #f5f5f5, #e5e5e5);
+  background-image: -ms-linear-gradient(top, #f5f5f5, #e5e5e5);
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #e5e5e5);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#e5e5e5));
+  background-image: -o-linear-gradient(top, #f5f5f5, #e5e5e5);
+  background-image: linear-gradient(top, #f5f5f5, #e5e5e5);
+  background-repeat: repeat-x;
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#e5e5e5', GradientType=0);
+  font-weight: normal;
+  padding: 10px 14px;
+  text-align: left;
+}
+.pagination > span {
+    display: block;
+    width: auto !important;
+    float: left;
+    text-align: center !important;
+    color: #c4c4c4;
+    border-color: #c4c4c4;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    padding: 4px 6px;
+    background: #fff;
+    border-image: initial;
+    border-radius: 4px;
+    line-height: normal;
+    margin: 0 2px;
+}
+.pagination > span a {
+	    color: #0069d6;
+}
+.pagination > span.currentPage.active.numbers {
+    background: #dcdcdc;
+    color: #0069d6;
+}
+.pagination_cvr {
+    text-align: center;
+    margin: 10px 0 5px;
+}
+.pagination > span.numbers > a, .pagination_cvr .pagination .pageRight > a {
+    color: #0069d6;
+    text-decoration: none;
+}
+.pagination_cvr .pagination .pageRight {
+	float: right;
+}
+.pagination_cvr {
+    text-align: center;
+}
+.pagination_cvr .pagination {
+    display: inline-block;
+}
+
+.table_inn table tr td {
+	padding: 15px 14px;
+}
+.table_inn table tr td a {
+	text-decoration: none;
+	color: #0069d6;
+}
+.table_inn table tr.rowEven td {
+	background: #f5f5f5;
+}
+.serach_words input[type="text"] {
+    width: 235px;
+}
+a.sort {
+    background: url('sortdesc.png');
+    height: 6px;
+    width: 8px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    top: -11px;
+    right: -50px;
+}
+a.sorted-class {
+	background: url('sortAsc.png');
+	height: 6px;
+    width: 8px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    top: -11px;
+    right: -50px;
+}
